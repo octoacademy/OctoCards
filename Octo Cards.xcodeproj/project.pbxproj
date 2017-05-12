@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069201EC4EAD0004DC195 /* AppDelegate.swift */; };
+		BF0069231EC4EAD0004DC195 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069221EC4EAD0004DC195 /* FirstViewController.swift */; };
+		BF0069251EC4EAD0004DC195 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069241EC4EAD0004DC195 /* SecondViewController.swift */; };
+		BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0069261EC4EAD0004DC195 /* Main.storyboard */; };
+		BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0069291EC4EAD0004DC195 /* Assets.xcassets */; };
+		BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */; };
+		BF0069351EC4F3AA004DC195 /* Gotitcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069341EC4F3AA004DC195 /* Gotitcell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF00691D1EC4EAD0004DC195 /* Octo Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Octo Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0069201EC4EAD0004DC195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF0069221EC4EAD0004DC195 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BF0069241EC4EAD0004DC195 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BF0069271EC4EAD0004DC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF0069291EC4EAD0004DC195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF00692C1EC4EAD0004DC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF00692E1EC4EAD0004DC195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0069341EC4F3AA004DC195 /* Gotitcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gotitcell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF00691A1EC4EAD0004DC195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0069141EC4EAD0004DC195 = {
+			isa = PBXGroup;
+			children = (
+				BF00691F1EC4EAD0004DC195 /* Octo Cards */,
+				BF00691E1EC4EAD0004DC195 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF00691E1EC4EAD0004DC195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF00691D1EC4EAD0004DC195 /* Octo Cards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF00691F1EC4EAD0004DC195 /* Octo Cards */ = {
+			isa = PBXGroup;
+			children = (
+				BF0069201EC4EAD0004DC195 /* AppDelegate.swift */,
+				BF0069221EC4EAD0004DC195 /* FirstViewController.swift */,
+				BF0069241EC4EAD0004DC195 /* SecondViewController.swift */,
+				BF0069261EC4EAD0004DC195 /* Main.storyboard */,
+				BF0069291EC4EAD0004DC195 /* Assets.xcassets */,
+				BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */,
+				BF00692E1EC4EAD0004DC195 /* Info.plist */,
+				BF0069341EC4F3AA004DC195 /* Gotitcell.swift */,
+			);
+			path = "Octo Cards";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF00691C1EC4EAD0004DC195 /* Octo Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0069311EC4EAD0004DC195 /* Build configuration list for PBXNativeTarget "Octo Cards" */;
+			buildPhases = (
+				BF0069191EC4EAD0004DC195 /* Sources */,
+				BF00691A1EC4EAD0004DC195 /* Frameworks */,
+				BF00691B1EC4EAD0004DC195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Octo Cards";
+			productName = "Octo Cards";
+			productReference = BF00691D1EC4EAD0004DC195 /* Octo Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0069151EC4EAD0004DC195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = OctoAcademy;
+				TargetAttributes = {
+					BF00691C1EC4EAD0004DC195 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6TWE9F9E5G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF0069181EC4EAD0004DC195 /* Build configuration list for PBXProject "Octo Cards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF0069141EC4EAD0004DC195;
+			productRefGroup = BF00691E1EC4EAD0004DC195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF00691C1EC4EAD0004DC195 /* Octo Cards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF00691B1EC4EAD0004DC195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */,
+				BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */,
+				BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0069191EC4EAD0004DC195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0069251EC4EAD0004DC195 /* SecondViewController.swift in Sources */,
+				BF0069351EC4F3AA004DC195 /* Gotitcell.swift in Sources */,
+				BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */,
+				BF0069231EC4EAD0004DC195 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF0069261EC4EAD0004DC195 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0069271EC4EAD0004DC195 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF00692C1EC4EAD0004DC195 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF00692F1EC4EAD0004DC195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF0069301EC4EAD0004DC195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0069321EC4EAD0004DC195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6TWE9F9E5G;
+				INFOPLIST_FILE = "Octo Cards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BF0069331EC4EAD0004DC195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6TWE9F9E5G;
+				INFOPLIST_FILE = "Octo Cards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0069181EC4EAD0004DC195 /* Build configuration list for PBXProject "Octo Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF00692F1EC4EAD0004DC195 /* Debug */,
+				BF0069301EC4EAD0004DC195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0069311EC4EAD0004DC195 /* Build configuration list for PBXNativeTarget "Octo Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0069321EC4EAD0004DC195 /* Debug */,
+				BF0069331EC4EAD0004DC195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0069151EC4EAD0004DC195 /* Project object */;
+}
