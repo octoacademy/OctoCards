@@ -312,6 +312,7 @@
 				BF0069331EC4EAD0004DC195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
