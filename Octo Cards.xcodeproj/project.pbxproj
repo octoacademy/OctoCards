@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069201EC4EAD0004DC195 /* AppDelegate.swift */; };
-		BF0069231EC4EAD0004DC195 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069221EC4EAD0004DC195 /* FirstViewController.swift */; };
-		BF0069251EC4EAD0004DC195 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069241EC4EAD0004DC195 /* SecondViewController.swift */; };
 		BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0069261EC4EAD0004DC195 /* Main.storyboard */; };
 		BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0069291EC4EAD0004DC195 /* Assets.xcassets */; };
 		BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */; };
@@ -23,8 +21,6 @@
 /* Begin PBXFileReference section */
 		BF00691D1EC4EAD0004DC195 /* Octo Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Octo Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0069201EC4EAD0004DC195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF0069221EC4EAD0004DC195 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BF0069241EC4EAD0004DC195 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BF0069271EC4EAD0004DC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF0069291EC4EAD0004DC195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF00692C1EC4EAD0004DC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,10 +64,8 @@
 			children = (
 				FA09E90A1ECA5086003AF8CE /* Resources */,
 				BF0069201EC4EAD0004DC195 /* AppDelegate.swift */,
-				BF0069221EC4EAD0004DC195 /* FirstViewController.swift */,
-				BF0069241EC4EAD0004DC195 /* SecondViewController.swift */,
 				BF0069261EC4EAD0004DC195 /* Main.storyboard */,
-				FA09E9121ECB97DE003AF8CE /* Storyboard */,
+				FA09E9121ECB97DE003AF8CE /* Storyboards */,
 				BF0069291EC4EAD0004DC195 /* Assets.xcassets */,
 				BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */,
 				BF00692E1EC4EAD0004DC195 /* Info.plist */,
@@ -96,14 +90,14 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		FA09E9121ECB97DE003AF8CE /* Storyboard */ = {
+		FA09E9121ECB97DE003AF8CE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				FA09E9171ECB990B003AF8CE /* GotIt.storyboard */,
 				FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */,
 				FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */,
 			);
-			name = Storyboard;
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,10 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF0069251EC4EAD0004DC195 /* SecondViewController.swift in Sources */,
 				BF0069351EC4F3AA004DC195 /* starredCell.swift in Sources */,
 				BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */,
-				BF0069231EC4EAD0004DC195 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
