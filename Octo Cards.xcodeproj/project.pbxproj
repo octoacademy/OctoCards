@@ -15,6 +15,9 @@
 		BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */; };
 		BF0069351EC4F3AA004DC195 /* starredCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069341EC4F3AA004DC195 /* starredCell.swift */; };
 		FA09E90F1ECB968D003AF8CE /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = FA09E90E1ECB968D003AF8CE /* Category.json */; };
+		FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */; };
+		FA09E9161ECB98E7003AF8CE /* PickOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */; };
+		FA09E9181ECB990B003AF8CE /* GotIt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9171ECB990B003AF8CE /* GotIt.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		BF00692E1EC4EAD0004DC195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF0069341EC4F3AA004DC195 /* starredCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = starredCell.swift; sourceTree = "<group>"; };
 		FA09E90E1ECB968D003AF8CE /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
+		FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyOcto.storyboard; path = Storyboards/MyOcto.storyboard; sourceTree = "<group>"; };
+		FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PickOne.storyboard; path = Storyboards/PickOne.storyboard; sourceTree = "<group>"; };
+		FA09E9171ECB990B003AF8CE /* GotIt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GotIt.storyboard; path = Storyboards/GotIt.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 				BF0069221EC4EAD0004DC195 /* FirstViewController.swift */,
 				BF0069241EC4EAD0004DC195 /* SecondViewController.swift */,
 				BF0069261EC4EAD0004DC195 /* Main.storyboard */,
+				FA09E9121ECB97DE003AF8CE /* Storyboard */,
 				BF0069291EC4EAD0004DC195 /* Assets.xcassets */,
 				BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */,
 				BF00692E1EC4EAD0004DC195 /* Info.plist */,
@@ -84,9 +91,19 @@
 		FA09E90B1ECA5086003AF8CE /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				FA09E90C1ECA5086003AF8CE /* Category.json */,
+				FA09E90E1ECB968D003AF8CE /* Category.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		FA09E9121ECB97DE003AF8CE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA09E9171ECB990B003AF8CE /* GotIt.storyboard */,
+				FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */,
+				FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +166,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA09E9181ECB990B003AF8CE /* GotIt.storyboard in Resources */,
+				FA09E9161ECB98E7003AF8CE /* PickOne.storyboard in Resources */,
 				BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */,
 				BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */,
 				BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */,
+				FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */,
 				FA09E90F1ECB968D003AF8CE /* Category.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
