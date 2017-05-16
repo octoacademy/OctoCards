@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Gotitcell: UITableViewCell {
+class starredCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
