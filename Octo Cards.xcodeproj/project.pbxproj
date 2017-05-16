@@ -58,6 +58,7 @@
 		BF00691F1EC4EAD0004DC195 /* Octo Cards */ = {
 			isa = PBXGroup;
 			children = (
+				FA09E90A1ECA5086003AF8CE /* Resources */,
 				BF0069201EC4EAD0004DC195 /* AppDelegate.swift */,
 				BF0069221EC4EAD0004DC195 /* FirstViewController.swift */,
 				BF0069241EC4EAD0004DC195 /* SecondViewController.swift */,
@@ -68,6 +69,22 @@
 				BF0069341EC4F3AA004DC195 /* starredCell.swift */,
 			);
 			path = "Octo Cards";
+			sourceTree = "<group>";
+		};
+		FA09E90A1ECA5086003AF8CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA09E90B1ECA5086003AF8CE /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA09E90B1ECA5086003AF8CE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FA09E90C1ECA5086003AF8CE /* Category.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +150,7 @@
 				BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */,
 				BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */,
 				BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */,
+				FA09E90D1ECA5086003AF8CE /* Category.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

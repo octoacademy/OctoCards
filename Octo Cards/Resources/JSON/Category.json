@@ -1,0 +1,216 @@
+{
+    "categories": [
+                   {
+                   "key": "AtHome",
+                   "title": "At Home",
+                   "subcategories": [
+                        {
+                            "key": "ChangingDiapers",
+                            "title": "Changing Diapers",
+                            "items" : [
+                                     {
+                                       "itemName": "",
+                                       "phrase": "Lay you down",
+                                       "phrase_trans": "放下你",
+                                       "phrase_py" : "",
+                                       "scenario":"When laying baby down to change"
+                                     },
+                                       {
+                                       "itemName": "",
+                                       "phrase": "Foot",
+                                       "phrase_trans": "腳丫子",
+                                       "phrase_py" : "Jiǎoyāzi",
+                                       "scenario":"When putting on clothes, point to baby's feet"
+                                       }
+                                     ]
+                        },
+                        {
+                            "key": "GettingDressed",
+                            "title": "Getting Dressed",
+                             "items" : [
+                                        {
+                                        "itemName": "",
+                                        "phrase": "Put away",
+                                        "phrase_trans": "收起來",
+                                        "phrase_py" : "Shōu qǐlái",
+                                        "scenario":"When putting away dirty clothes"
+                                        },
+                                        {
+                                        "itemName": "",
+                                        "phrase": "Put on socks ",
+                                        "phrase_trans": "穿襪子",
+                                        "phrase_py" : "Chuān wàzi",
+                                        "scenario":"When putting socks on baby"
+                                        }
+                           ]
+                        }
+                   ]
+                   },
+                   {
+                   "key": "OutAndAbout",
+                   "title": "Out and About",
+                   "subcategories": [
+                       {
+                            "key": "AtTheStore",
+                            "title": "At the Store",
+                            "items" : [
+                                        {
+                                       "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        },
+                                        {
+                                       "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        }
+                            ]
+
+                       },
+                       {
+                            "key": "AtThePark",
+                            "title": "At the Park or Play Area",
+                            "items" : [
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        },
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        }
+                            ]
+
+                       },
+                       {
+                            "key": "AtAnAppointment",
+                             "title": "At an Appointment",
+                             "items" : [
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        },
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        }
+                             ]
+
+                       }
+                   ]
+                   },
+                   {
+                   "key": "OnTheGo",
+                   "title": "On the Go",
+                   "subcategories": [
+                       {
+                            "key": "OnADrive",
+                             "title": "On a Drive",
+                             "items" : [
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        },
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        }
+                            ]
+
+                       },
+                       {
+                            "key": "OnAWalk",
+                             "title": "On a Walk",
+                             "items" : [
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        },
+                                        {
+                                        "itemName": "",
+                                        "phrase": "",
+                                        "phrase_trans": "",
+                                        "phrase_py" : "",
+                                        "scenario":""
+                                        }
+                             ]
+
+                                
+                       }
+                   ]
+                   },
+                   {
+                   "key": "Other",
+                   "title": "Other",
+                   "subcategories": [
+                       {
+                            "key": "key1",
+                            "title": "",
+                            "items" : [
+                                    {
+                                    "iconName": "",
+                                    "phrase": "",
+                                    "phrase_trans": "",
+                                    "phrase_py" : "",
+                                    "scenario":""
+                                    },
+                                    {
+                                    "iconName": "",
+                                    "phrase": "",
+                                    "phrase_trans": "",
+                                    "phrase_py" : "",
+                                    "scenario":""
+                                    }
+                            ]
+
+                       },
+                       {
+                            "key": "key2",
+                            "title": "",
+                            "items" : [
+                                    {
+                                    "iconName": "",
+                                    "phrase": "",
+                                    "phrase_trans": "",
+                                    "phrase_py" : "",
+                                    "scenario":""
+                                    },
+                                    {
+                                    "iconName": "",
+                                    "phrase": "",
+                                    "phrase_trans": "",
+                                    "phrase_py" : "",
+                                    "scenario":""
+                                    }
+                            ]
+
+                       }
+                   ]
+                   }
+                   ]
+}
