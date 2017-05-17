@@ -16,6 +16,12 @@
 		FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */; };
 		FA09E9161ECB98E7003AF8CE /* PickOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */; };
 		FA09E9181ECB990B003AF8CE /* GotIt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9171ECB990B003AF8CE /* GotIt.storyboard */; };
+		FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E91D1ECBBF89003AF8CE /* SubCategory.swift */; };
+		FA09E9201ECBC05B003AF8CE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E91F1ECBC05B003AF8CE /* Item.swift */; };
+		FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E9211ECBC21A003AF8CE /* Category.swift */; };
+		FA09E9251ECBC5B8003AF8CE /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E9241ECBC5B8003AF8CE /* CategoryManager.swift */; };
+		FA09E92D1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E92C1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift */; };
+		FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyOcto.storyboard; path = Storyboards/MyOcto.storyboard; sourceTree = "<group>"; };
 		FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PickOne.storyboard; path = Storyboards/PickOne.storyboard; sourceTree = "<group>"; };
 		FA09E9171ECB990B003AF8CE /* GotIt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GotIt.storyboard; path = Storyboards/GotIt.storyboard; sourceTree = "<group>"; };
+		FA09E91D1ECBBF89003AF8CE /* SubCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubCategory.swift; path = Model/SubCategory.swift; sourceTree = "<group>"; };
+		FA09E91F1ECBC05B003AF8CE /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Model/Item.swift; sourceTree = "<group>"; };
+		FA09E9211ECBC21A003AF8CE /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Model/Category.swift; sourceTree = "<group>"; };
+		FA09E9241ECBC5B8003AF8CE /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryManager.swift; path = Managers/CategoryManager.swift; sourceTree = "<group>"; };
+		FA09E92C1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionViewController.swift; sourceTree = "<group>"; };
+		FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,10 @@
 		BF00691F1EC4EAD0004DC195 /* Octo Cards */ = {
 			isa = PBXGroup;
 			children = (
+				FA09E9291ECBCC41003AF8CE /* ControllerCells */,
+				FA09E9261ECBCBCB003AF8CE /* ViewControllers */,
+				FA09E9231ECBC595003AF8CE /* Managers */,
+				FA09E91C1ECBBF4B003AF8CE /* Model */,
 				FA09E90A1ECA5086003AF8CE /* Resources */,
 				BF0069201EC4EAD0004DC195 /* AppDelegate.swift */,
 				BF0069261EC4EAD0004DC195 /* Main.storyboard */,
@@ -98,6 +114,49 @@
 				FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA09E91C1ECBBF4B003AF8CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA09E9211ECBC21A003AF8CE /* Category.swift */,
+				FA09E91D1ECBBF89003AF8CE /* SubCategory.swift */,
+				FA09E91F1ECBC05B003AF8CE /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA09E9231ECBC595003AF8CE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA09E9241ECBC5B8003AF8CE /* CategoryManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		FA09E9261ECBCBCB003AF8CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA09E92B1ECBCCCF003AF8CE /* PickOne */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA09E9291ECBCC41003AF8CE /* ControllerCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ControllerCells;
+			sourceTree = "<group>";
+		};
+		FA09E92B1ECBCCCF003AF8CE /* PickOne */ = {
+			isa = PBXGroup;
+			children = (
+				FA09E92C1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift */,
+				FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */,
+			);
+			name = PickOne;
+			path = ViewControllers/PickOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +236,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA09E92D1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift in Sources */,
+				FA09E9201ECBC05B003AF8CE /* Item.swift in Sources */,
+				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
+				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				BF0069351EC4F3AA004DC195 /* starredCell.swift in Sources */,
+				FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */,
 				BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */,
+				FA09E9251ECBC5B8003AF8CE /* CategoryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
