@@ -8,7 +8,7 @@
 
 import UIKit
 
-class starredCell: UITableViewCell {
+class MyOctoViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
