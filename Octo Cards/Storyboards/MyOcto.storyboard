@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wVn-cZ-VFZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hPc-Ic-1dm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,27 +12,27 @@
         <!--My Octo-->
         <scene sceneID="Cg1-S5-Lad">
             <objects>
-                <tableViewController id="wVn-cZ-VFZ" sceneMemberID="viewController">
+                <tableViewController id="wVn-cZ-VFZ" customClass="MyOctoViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YwU-75-eHQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="starredCell" id="YTo-Cg-LhA" customClass="Gotitcell" customModule="Octo_Cards" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyOctoItem" id="YTo-Cg-LhA" userLabel="MyOctoItemCell" customClass="Gotitcell" customModule="Octo_Cards" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTo-Cg-LhA" id="ye4-0a-Nvu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chī xiāngjiāo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzE-ZU-E0e">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chī xiāngjiāo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzE-ZU-E0e">
                                             <rect key="frame" x="86" y="0.0" width="227" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
                                             <color key="textColor" red="0.011764705882352941" green="0.396078431372549" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eat banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSJ-4H-Rip">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eat banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSJ-4H-Rip">
                                             <rect key="frame" x="86" y="22" width="163" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -52,7 +52,6 @@
                             <outlet property="delegate" destination="wVn-cZ-VFZ" id="5rc-nz-aP8"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="My Octo" image="first" id="mc5-ts-Spf"/>
                     <navigationItem key="navigationItem" title="My Octo" id="mDi-2z-wBk">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="r6u-RG-J0c"/>
                     </navigationItem>
@@ -60,7 +59,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brS-LB-Cl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="-466"/>
+            <point key="canvasLocation" x="1780" y="-466.41679160419795"/>
+        </scene>
+        <!--My Octo-->
+        <scene sceneID="W9Y-sk-jrn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hPc-Ic-1dm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Octo" image="first" id="mc5-ts-Spf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qOf-88-Qcs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wVn-cZ-VFZ" kind="relationship" relationship="rootViewController" id="62t-Qq-K9j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKt-q5-7zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="-466.41679160419795"/>
         </scene>
     </scenes>
     <resources>
