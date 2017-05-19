@@ -11,7 +11,12 @@ import Foundation
 class CategoryManager
 {
     static let sharedInstance: CategoryManager = CategoryManager()
-    var categories = [Category]()
+    fileprivate var categories = [Category]()
+    
+    var categoryList: [Category]
+    {
+        return categories
+    }
     
      fileprivate init()
     {

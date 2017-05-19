@@ -12,22 +12,28 @@ private let reuseIdentifier = "Cell"
 
 class PickOneCollectionViewController: UICollectionViewController {
 
+    var categories = [Category]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //self.navigationController?.navigationBar.topItem?.title = "Title here"
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
-        let categories = CategoryManager.sharedInstance.categories
-
-        print (categories.count)
-        
-
-        // Do any additional setup after loading the view.
-    }
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async { () -> Void in
+            
+            self.categories = CategoryManager.sharedInstance.categoryList
+            DispatchQueue.main.async {() -> Void in
+                self.collectionView?.reloadData()
+            }
+ 
+        }
+       }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -43,25 +49,55 @@ class PickOneCollectionViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+     // MARK: UICollectionViewDelegateFlowLayout
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+       return CGSize( width: self.view.frame.size.width, height: 40)
+    }
+
 
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return categories.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            if let sub = categories[section].subCategories
+            {
+                return sub.count
+            }
+        
         // #warning Incomplete implementation, return the number of items
         return 0
     }
+    
+    override func collectionView(_ collectionView: UICollectionView,                                viewForSupplementaryElementOfKind kind: String,                                                                   at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        var header: PickOneCollectionReusableView?
+        
+        if kind == UICollectionElementKindSectionHeader {
+            header =
+                collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                withReuseIdentifier: "PickOneHeader", for: indexPath)
+                as? PickOneCollectionReusableView
+            
+            header?.HeaderLabel.text = self.categories[indexPath.section].title
+            
+        }
+        return header!
+    }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PickOneCollectionViewCell
     
         // Configure the cell
     
+        cell.label.text = categories[indexPath.section].subCategories?[indexPath.row].title
         return cell
     }
 

@@ -17,10 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        if self.window!.rootViewController as? UITabBarController != nil {
-            let tababarController = self.window!.rootViewController as! UITabBarController
-            tababarController.selectedIndex = 1
-        }
+        //UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+
+        
+        let color = UIColor(red: 128.0/255.0, green: 203.0/255.0, blue: 253.0/255.0, alpha: 1.0)
+        let font = UIFont(name: "Helvetica-bold", size: 24)!
+        
+        let attributes: [String: AnyObject] = [
+            NSFontAttributeName: font,
+            NSForegroundColorAttributeName: color
+        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = attributes
+
+       if let nav = self.window!.rootViewController as? UINavigationController
+       {
+            nav.navigationBar.topItem?.title = "Octo"
+       }
+       
+        let tababarController = self.window!.rootViewController?.childViewControllers[0] as! UITabBarController
+        tababarController.selectedIndex = 1
 
         return true
     }
