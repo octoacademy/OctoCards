@@ -12,6 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class PickOneCollectionViewController: UICollectionViewController {
 
+    let sectionInsets = UIEdgeInsets(top: 18.0, left: 18.0, bottom: 18.0, right: 18.0)
+    let maxItem: CGFloat  = 3.0
+    var spacing: CGFloat = 0.0
+    
     var categories = [Category]()
     
     override func viewDidLoad() {
@@ -40,15 +44,19 @@ class PickOneCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-    }
-    */
+        
+        if segue.identifier == "octodetail" {
+            let indexPath = collectionView?.indexPathsForSelectedItems?.first
+        }
+    }*/
+ 
     
      // MARK: UICollectionViewDelegateFlowLayout
     
@@ -100,36 +108,40 @@ class PickOneCollectionViewController: UICollectionViewController {
         cell.label.text = categories[indexPath.section].subCategories?[indexPath.row].title
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+        
+        if UIDevice.current.userInterfaceIdiom == .pad
+        {
+            return CGSize(width: 120, height:120)
+        }
+        else
+        {
+            let width = (collectionView.frame.width - sectionInsets.left - sectionInsets.right - (spacing * maxItem)) / maxItem
+            return CGSize(width: width - 10.0, height:width + 30.0)
+        }
     }
-    */
+    
+    
+    //3
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+       
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "octodetail")
+    
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let nav = appDelegate.window!.rootViewController as? UINavigationController
+        {
+            nav.pushViewController(vc!, animated: true)
+        }
 
+    }
 }

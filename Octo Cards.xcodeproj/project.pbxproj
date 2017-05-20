@@ -12,7 +12,6 @@
 		BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0069291EC4EAD0004DC195 /* Assets.xcassets */; };
 		BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */; };
 		BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069341EC4F3AA004DC195 /* MyOctoViewCell.swift */; };
-		BFBB9E2A1ECF364B00DA1C37 /* MyOctoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB9E291ECF364B00DA1C37 /* MyOctoViewController.swift */; };
 		BFBB9E2C1ECF393800DA1C37 /* MyOctoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB9E2B1ECF393800DA1C37 /* MyOctoItem.swift */; };
 		FA09E90F1ECB968D003AF8CE /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = FA09E90E1ECB968D003AF8CE /* Category.json */; };
 		FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */; };
@@ -26,6 +25,7 @@
 		FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */; };
 		FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A096A1ECF6829000457C2 /* PickOneCollectionReusableView.swift */; };
 		FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */; };
+		FA6A09731ECF9AFA000457C2 /* OctoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09721ECF9AFA000457C2 /* OctoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +50,7 @@
 		FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA6A096A1ECF6829000457C2 /* PickOneCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionReusableView.swift; sourceTree = "<group>"; };
 		FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		FA6A09721ECF9AFA000457C2 /* OctoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OctoDetailViewController.swift; path = ViewControllers/Detail/OctoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +156,7 @@
 		FA09E9261ECBCBCB003AF8CE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA6A09711ECF9AD0000457C2 /* Detail */,
 				BFBB9E281ECF358700DA1C37 /* MyOcto */,
 				FA09E92B1ECBCCCF003AF8CE /* PickOne */,
 			);
@@ -185,6 +187,14 @@
 				FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA6A09711ECF9AD0000457C2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A09721ECF9AFA000457C2 /* OctoDetailViewController.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +278,10 @@
 				FA09E9201ECBC05B003AF8CE /* Item.swift in Sources */,
 				FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */,
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
+				FA6A09731ECF9AFA000457C2 /* OctoDetailViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */,
-				BF0069351EC4F3AA004DC195 /* starredCell.swift in Sources */,
+				BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */,
 				FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */,
 				BFBB9E2C1ECF393800DA1C37 /* MyOctoItem.swift in Sources */,
 				BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */,
