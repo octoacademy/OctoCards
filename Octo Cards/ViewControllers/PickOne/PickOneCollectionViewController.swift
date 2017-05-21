@@ -135,12 +135,19 @@ class PickOneCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "octodetail")
+        let infantCardStoryboard: UIStoryboard = UIStoryboard(name: "InfantCard", bundle: nil)
+        let vc = infantCardStoryboard.instantiateViewController(withIdentifier: "octodetail") as! InfantCardsViewController
+        
+        let category = categories[indexPath.section].key
+        let subCategory = categories[indexPath.section].subCategories![indexPath.row].key
+        
+        vc.category = category
+        vc.subCategory = subCategory
     
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let nav = appDelegate.window!.rootViewController as? UINavigationController
         {
-            nav.pushViewController(vc!, animated: true)
+            nav.pushViewController(vc, animated: true)
         }
 
     }

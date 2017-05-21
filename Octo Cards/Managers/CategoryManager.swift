@@ -18,6 +18,7 @@ class CategoryManager
         return categories
     }
     
+    
      fileprivate init()
     {
         loadCategoryContent()
@@ -39,8 +40,10 @@ class CategoryManager
                 for json  in jsonArray as! [[String:Any]] {
                     
                     let category = Category()
-                    category.key = json["key"] as? String
-                    category.title = json["title"] as? String
+                    
+                    
+                    category.key = json["key"] as! String
+                    category.title = json["title"] as! String
                     
                     let subCategoriesJSONArray = json["subcategories"]
                     var subCategories = [SubCategory]()
@@ -48,8 +51,8 @@ class CategoryManager
                     for subCatJson in subCategoriesJSONArray as! [[String:Any]] {
                         
                         let subCategory = SubCategory()
-                        subCategory.key = subCatJson["key"] as? String
-                        subCategory.title = subCatJson["title"] as? String
+                        subCategory.key = subCatJson["key"] as! String
+                        subCategory.title = subCatJson["title"] as! String
               
                         let itemsJSONArray = subCatJson["items"]
                         var items = [Item]()
@@ -82,6 +85,19 @@ class CategoryManager
             }
 
         }
+    }
+    
+    func getItems(forCategory category: String, forSubCategory subCategory: String) -> [Item]?
+    {
+        let filteredCategories = categories.filter { $0.key.localizedCaseInsensitiveContains(category) }
+        
+        guard filteredCategories.count == 1, filteredCategories.first!.subCategories != nil, filteredCategories.first!.subCategories!.count >= 1  else { return nil }
+        
+        let filteredSubCategories =  filteredCategories.first!.subCategories!.filter { $0.key.localizedCaseInsensitiveContains(subCategory) }
+        
+        guard filteredSubCategories.count == 1 else { return nil }
+
+        return filteredSubCategories.first!.items
     }
     
 }

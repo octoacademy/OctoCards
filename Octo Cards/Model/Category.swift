@@ -10,8 +10,8 @@ import Foundation
 
 
 class Category {
-    var key: String!
-    var title: String!
+    var key: String = ""
+    var title: String = ""
     var subCategories : [SubCategory]?
-    
+
 }

@@ -8,12 +8,18 @@
 
 import UIKit
 
-class OctoDetailViewController: UIViewController {
+class InfantCardsViewController: UIViewController {
 
+    var category: String = ""
+    var subCategory: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let items = CategoryManager.sharedInstance.getItems(forCategory: category, forSubCategory: subCategory)
         // Do any additional setup after loading the view.
+   
+        print ("Category = \(category)  SubCategory = \(subCategory) Item count = \(String(describing: items?.count)))")
     }
 
     override func didReceiveMemoryWarning() {
