@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xI9-vN-Aqv">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="IEO-f4-ca6"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -34,7 +34,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ITc-Ns-2zP">
             <objects>
-                <navigationController id="xI9-vN-Aqv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Main" id="xI9-vN-Aqv" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="31l-NP-wen">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -45,7 +45,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOV-Xd-Fh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="-275"/>
+            <point key="canvasLocation" x="-1082" y="-314"/>
         </scene>
         <!--MyOcto-->
         <scene sceneID="IpP-Ws-iz2">

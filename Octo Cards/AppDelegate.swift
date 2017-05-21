@@ -30,13 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = attributes
 
-       if let nav = self.window!.rootViewController as? UINavigationController
-       {
-            nav.navigationBar.topItem?.title = "Octo"
-       }
        
-        let tababarController = self.window!.rootViewController?.childViewControllers[0] as! UITabBarController
-        tababarController.selectedIndex = 1
 
         return true
     }

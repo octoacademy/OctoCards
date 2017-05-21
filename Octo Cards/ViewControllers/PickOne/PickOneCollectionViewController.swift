@@ -145,7 +145,7 @@ class PickOneCollectionViewController: UICollectionViewController {
         vc.subCategory = subCategory
     
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if let nav = appDelegate.window!.rootViewController as? UINavigationController
+        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
         {
             nav.pushViewController(vc, animated: true)
         }

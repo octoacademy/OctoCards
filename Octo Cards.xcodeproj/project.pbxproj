@@ -27,6 +27,12 @@
 		FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */; };
 		FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */; };
 		FA6A09751ED11869000457C2 /* InfantCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6A09741ED11869000457C2 /* InfantCard.storyboard */; };
+		FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09771ED158F4000457C2 /* SlideMenuController.swift */; };
+		FA6A097A1ED15A7A000457C2 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6A09791ED15A7A000457C2 /* Root.storyboard */; };
+		FA6A097C1ED15AAF000457C2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A097B1ED15AAF000457C2 /* RootViewController.swift */; };
+		FA6A097E1ED15B0A000457C2 /* LeftNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6A097D1ED15B0A000457C2 /* LeftNavigation.storyboard */; };
+		FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */; };
+		FA6A09841ED161B3000457C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09831ED161B3000457C2 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +59,12 @@
 		FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardsViewController.swift; path = ViewControllers/Detail/InfantCardsViewController.swift; sourceTree = "<group>"; };
 		FA6A09741ED11869000457C2 /* InfantCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = InfantCard.storyboard; path = Storyboards/InfantCard.storyboard; sourceTree = "<group>"; };
+		FA6A09771ED158F4000457C2 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		FA6A09791ED15A7A000457C2 /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		FA6A097B1ED15AAF000457C2 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ViewControllers/RootViewController.swift; sourceTree = "<group>"; };
+		FA6A097D1ED15B0A000457C2 /* LeftNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftNavigation.storyboard; sourceTree = "<group>"; };
+		FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftNavigationTableViewController.swift; path = ViewControllers/LeftNavigationTableViewController.swift; sourceTree = "<group>"; };
+		FA6A09831ED161B3000457C2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = ViewControllers/TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 		BF00691F1EC4EAD0004DC195 /* Octo Cards */ = {
 			isa = PBXGroup;
 			children = (
+				FA6A09761ED158F4000457C2 /* External */,
 				FA6A096E1ECF88D6000457C2 /* Extensions */,
 				FA09E9291ECBCC41003AF8CE /* ControllerCells */,
 				FA09E9261ECBCBCB003AF8CE /* ViewControllers */,
@@ -92,7 +105,9 @@
 				FA09E91C1ECBBF4B003AF8CE /* Model */,
 				FA09E90A1ECA5086003AF8CE /* Resources */,
 				BF0069201EC4EAD0004DC195 /* AppDelegate.swift */,
+				FA6A09791ED15A7A000457C2 /* Root.storyboard */,
 				BF0069261EC4EAD0004DC195 /* Main.storyboard */,
+				FA6A097D1ED15B0A000457C2 /* LeftNavigation.storyboard */,
 				FA09E9121ECB97DE003AF8CE /* Storyboards */,
 				BF0069291EC4EAD0004DC195 /* Assets.xcassets */,
 				BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */,
@@ -162,6 +177,9 @@
 				FA6A09711ECF9AD0000457C2 /* InfantCard */,
 				BFBB9E281ECF358700DA1C37 /* MyOcto */,
 				FA09E92B1ECBCCCF003AF8CE /* PickOne */,
+				FA6A097B1ED15AAF000457C2 /* RootViewController.swift */,
+				FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */,
+				FA6A09831ED161B3000457C2 /* TabBarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +216,14 @@
 				FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */,
 			);
 			name = InfantCard;
+			sourceTree = "<group>";
+		};
+		FA6A09761ED158F4000457C2 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A09771ED158F4000457C2 /* SlideMenuController.swift */,
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,12 +286,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6A097A1ED15A7A000457C2 /* Root.storyboard in Resources */,
 				FA09E9181ECB990B003AF8CE /* GotIt.storyboard in Resources */,
 				FA09E9161ECB98E7003AF8CE /* PickOne.storyboard in Resources */,
 				BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */,
 				BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */,
 				BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */,
 				FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */,
+				FA6A097E1ED15B0A000457C2 /* LeftNavigation.storyboard in Resources */,
 				FA6A09751ED11869000457C2 /* InfantCard.storyboard in Resources */,
 				FA09E90F1ECB968D003AF8CE /* Category.json in Resources */,
 			);
@@ -279,14 +307,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA09E92D1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift in Sources */,
+				FA6A09841ED161B3000457C2 /* TabBarController.swift in Sources */,
 				FA09E9201ECBC05B003AF8CE /* Item.swift in Sources */,
 				FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */,
+				FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */,
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */,
+				FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */,
 				BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */,
 				FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */,
+				FA6A097C1ED15AAF000457C2 /* RootViewController.swift in Sources */,
 				BFBB9E2C1ECF393800DA1C37 /* MyOctoItem.swift in Sources */,
 				BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */,
 				FA09E9251ECBC5B8003AF8CE /* CategoryManager.swift in Sources */,
