@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ww9-yV-2uZ">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n6w-43-mBK">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,41 +9,109 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pick One-->
+        <!--Pick One Collection View Controller-->
         <scene sceneID="aWU-Cg-ivL">
             <objects>
                 <collectionViewController id="ww9-yV-2uZ" customClass="PickOneCollectionViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Agi-0M-XGW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XRf-AY-9Nk">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="itemSize" width="96" height="129"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="7dy-f4-vJR" customClass="PickOneCollectionViewCell" customModule="Octo_Cards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="20" y="70" width="96" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="96" height="129"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-oH-NUT">
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="108"/>
+                                            <color key="backgroundColor" red="0.5002403017" green="0.79710388399999998" blue="0.9924670458" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On the bus or train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-dY-NM6">
+                                            <rect key="frame" x="0.0" y="116" width="96" height="13"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ebY-oH-NUT" secondAttribute="trailing" id="14o-vF-1Dt"/>
+                                    <constraint firstItem="ebY-oH-NUT" firstAttribute="leading" secondItem="7dy-f4-vJR" secondAttribute="leading" id="4pi-7r-urV"/>
+                                    <constraint firstAttribute="trailing" secondItem="6JU-dY-NM6" secondAttribute="trailing" id="P5P-8O-a41"/>
+                                    <constraint firstAttribute="bottom" secondItem="6JU-dY-NM6" secondAttribute="bottom" id="fCH-CM-TpS"/>
+                                    <constraint firstItem="ebY-oH-NUT" firstAttribute="top" secondItem="7dy-f4-vJR" secondAttribute="top" id="shg-8P-qvu"/>
+                                    <constraint firstItem="6JU-dY-NM6" firstAttribute="top" secondItem="ebY-oH-NUT" secondAttribute="bottom" constant="8" symbolic="YES" id="ycb-ID-6xY"/>
+                                    <constraint firstItem="6JU-dY-NM6" firstAttribute="leading" secondItem="7dy-f4-vJR" secondAttribute="leading" id="yzU-N2-ACs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image" destination="ebY-oH-NUT" id="sbH-Mg-v8m"/>
+                                    <outlet property="label" destination="6JU-dY-NM6" id="SI5-iL-XIf"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PickOneHeader" id="3b3-2r-L8x" customClass="PickOneCollectionReusableView" customModule="Octo_Cards" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-xL-Ndx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                    <color key="textColor" red="1" green="0.4939713167" blue="0.47242588769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6Ov-xL-Ndx" firstAttribute="leading" secondItem="3b3-2r-L8x" secondAttribute="leading" id="LAH-W2-zk3"/>
+                                <constraint firstItem="6Ov-xL-Ndx" firstAttribute="top" secondItem="3b3-2r-L8x" secondAttribute="top" id="LhY-cP-Rtq"/>
+                                <constraint firstAttribute="trailing" secondItem="6Ov-xL-Ndx" secondAttribute="trailing" id="fLn-9C-UhQ"/>
+                                <constraint firstAttribute="bottom" secondItem="6Ov-xL-Ndx" secondAttribute="bottom" id="r6n-95-dUt"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="HeaderLabel" destination="6Ov-xL-Ndx" id="IX0-DO-602"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="ww9-yV-2uZ" id="npx-Jc-IYX"/>
                             <outlet property="delegate" destination="ww9-yV-2uZ" id="gWG-ud-jps"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Pick One" image="first" id="4Y5-9e-HGg"/>
+                    <navigationItem key="navigationItem" id="f4o-vg-16U"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuW-ey-Yce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="141"/>
+            <point key="canvasLocation" x="1307.2463768115942" y="12.228260869565219"/>
+        </scene>
+        <!--Pick One-->
+        <scene sceneID="gNe-2l-eEd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n6w-43-mBK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pick One" image="first" id="4Y5-9e-HGg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hBr-64-Pmn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ww9-yV-2uZ" kind="relationship" relationship="rootViewController" id="oWF-5n-3Uf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oq8-xz-hiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.00000000000006" y="12.228260869565219"/>
         </scene>
     </scenes>
     <resources>
