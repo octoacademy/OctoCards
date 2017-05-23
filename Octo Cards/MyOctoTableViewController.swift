@@ -1,15 +1,16 @@
 //
-//  MyOctoViewController.swift
+//  MyOctoTableViewController.swift
 //  Octo Cards
 //
-//  Created by Linda Ho on 5/19/17.
+//  Created by Macbook on 5/23/17.
 //  Copyright © 2017 OctoAcademy. All rights reserved.
 //
 
 import UIKit
 
-class MyOctoViewController: UITableViewController {
-   /*** Sample Data ***/
+class MyOctoTableViewController: UITableViewController {
+
+    /*** Sample Data ***/
     var items: [MyOctoItem]
     
     required init?(coder aDecoder: NSCoder) {
@@ -32,7 +33,7 @@ class MyOctoViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func configureText(for cell: UITableViewCell, with item: MyOctoItem) {
         let labelPY = cell.viewWithTag(1000) as! UILabel
         let labelPhrase = cell.viewWithTag(2000) as! UILabel
@@ -40,7 +41,7 @@ class MyOctoViewController: UITableViewController {
         labelPY.text = item.PingYing
         labelPhrase.text = item.Phrase
     }
- 
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -57,5 +58,5 @@ class MyOctoViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             didSelectRowAt indexPath: IndexPath) {
     }
-    
+
 }
