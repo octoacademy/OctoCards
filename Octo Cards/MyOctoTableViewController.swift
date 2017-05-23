@@ -15,14 +15,20 @@ class MyOctoTableViewController: UITableViewController {
     
     required init?(coder aDecoder: NSCoder) {
         items = [MyOctoItem]()
-        
         let row0item = MyOctoItem()
+        let row1item = MyOctoItem()
+    
         row0item.PingYing = "Chī xiāngjiāo"
         row0item.Phrase = "Eat a banana"
         items.append(row0item)
         
+        row1item.PingYing = "Fàngxià nǐ"
+        row1item.Phrase = "Lay you down"
+        items.append(row1item)
+
         super.init(coder: aDecoder)
     }
+    /************************************/
     
     override func viewDidLoad() {
         super.viewDidLoad()
