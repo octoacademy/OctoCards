@@ -33,6 +33,7 @@
 		FA6A097E1ED15B0A000457C2 /* LeftNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6A097D1ED15B0A000457C2 /* LeftNavigation.storyboard */; };
 		FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */; };
 		FA6A09841ED161B3000457C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09831ED161B3000457C2 /* TabBarController.swift */; };
+		FA6A09861ED48C73000457C2 /* MyOctoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,6 @@
 		BF00692C1EC4EAD0004DC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF00692E1EC4EAD0004DC195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF0069341EC4F3AA004DC195 /* MyOctoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoViewCell.swift; sourceTree = "<group>"; };
-		BFBB9E291ECF364B00DA1C37 /* MyOctoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoViewController.swift; sourceTree = "<group>"; };
 		BFBB9E2B1ECF393800DA1C37 /* MyOctoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoItem.swift; sourceTree = "<group>"; };
 		FA09E90E1ECB968D003AF8CE /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
 		FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyOcto.storyboard; path = Storyboards/MyOcto.storyboard; sourceTree = "<group>"; };
@@ -65,6 +65,7 @@
 		FA6A097D1ED15B0A000457C2 /* LeftNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftNavigation.storyboard; sourceTree = "<group>"; };
 		FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftNavigationTableViewController.swift; path = ViewControllers/LeftNavigationTableViewController.swift; sourceTree = "<group>"; };
 		FA6A09831ED161B3000457C2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = ViewControllers/TabBarController.swift; sourceTree = "<group>"; };
+		FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +120,9 @@
 		BFBB9E281ECF358700DA1C37 /* MyOcto */ = {
 			isa = PBXGroup;
 			children = (
-				BFBB9E291ECF364B00DA1C37 /* MyOctoViewController.swift */,
 				BFBB9E2B1ECF393800DA1C37 /* MyOctoItem.swift */,
 				BF0069341EC4F3AA004DC195 /* MyOctoViewCell.swift */,
+				FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */,
 			);
 			name = MyOcto;
 			sourceTree = "<group>";
@@ -306,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6A09861ED48C73000457C2 /* MyOctoTableViewController.swift in Sources */,
 				FA09E92D1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift in Sources */,
 				FA6A09841ED161B3000457C2 /* TabBarController.swift in Sources */,
 				FA09E9201ECBC05B003AF8CE /* Item.swift in Sources */,
