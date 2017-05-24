@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,57 +13,37 @@
         <scene sceneID="Cg1-S5-Lad">
             <objects>
                 <tableViewController id="wVn-cZ-VFZ" customClass="MyOctoTableViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="YwU-75-eHQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="77" sectionHeaderHeight="18" sectionFooterHeight="18" id="YwU-75-eHQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyOctoItem" rowHeight="70" id="YTo-Cg-LhA" userLabel="MyOctoItemCell" customClass="MyOctoViewCell" customModule="Octo_Cards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyOctoItem" textLabel="k6c-rX-Uoh" detailTextLabel="BXI-X8-5k3" imageView="jh8-qm-ymp" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="YTo-Cg-LhA" userLabel="MyOctoItemCell" customClass="MyOctoViewCell" customModule="Octo_Cards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTo-Cg-LhA" id="ye4-0a-Nvu">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chī xiāngjiāo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzE-ZU-E0e">
-                                            <rect key="frame" x="83" y="15" width="249" height="28"/>
-                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
-                                            <color key="textColor" red="0.011764705882352941" green="0.396078431372549" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k6c-rX-Uoh">
+                                            <rect key="frame" x="60" y="13" width="48" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" red="0.01176470588" green="0.39607843139999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSJ-4H-Rip">
-                                            <rect key="frame" x="83" y="42" width="257" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BXI-X8-5k3">
+                                            <rect key="frame" x="60" y="43" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________________________" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7V-d1-WfR">
-                                            <rect key="frame" x="80" y="51" width="297" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="EB0-m5-zis">
-                                            <rect key="frame" x="13" y="10" width="50" height="50"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="EB0-m5-zis" secondAttribute="height" multiplier="1:1" id="MjN-Qj-BAe"/>
-                                            </constraints>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="first" id="jh8-qm-ymp">
+                                            <rect key="frame" x="15" y="19" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="EB0-m5-zis" secondAttribute="bottom" constant="2" id="80X-xX-zLA"/>
-                                        <constraint firstItem="YzE-ZU-E0e" firstAttribute="leading" secondItem="EB0-m5-zis" secondAttribute="trailing" constant="20" id="877-Cu-kNl"/>
-                                        <constraint firstItem="EB0-m5-zis" firstAttribute="top" secondItem="ye4-0a-Nvu" secondAttribute="topMargin" constant="2" id="CKk-gJ-Diz"/>
-                                        <constraint firstAttribute="trailing" secondItem="c7V-d1-WfR" secondAttribute="trailing" constant="-35" id="N55-uD-h1I"/>
-                                        <constraint firstItem="c7V-d1-WfR" firstAttribute="leading" secondItem="ye4-0a-Nvu" secondAttribute="leading" constant="80" id="UFv-o5-qSO"/>
-                                        <constraint firstAttribute="bottom" secondItem="eSJ-4H-Rip" secondAttribute="bottom" constant="7" id="VH4-DP-jMO"/>
-                                        <constraint firstItem="eSJ-4H-Rip" firstAttribute="leading" secondItem="EB0-m5-zis" secondAttribute="trailing" constant="20" id="XyM-U1-6C2"/>
-                                        <constraint firstAttribute="trailing" secondItem="eSJ-4H-Rip" secondAttribute="trailing" constant="2" id="YSK-ms-NSQ"/>
-                                        <constraint firstItem="EB0-m5-zis" firstAttribute="leading" secondItem="ye4-0a-Nvu" secondAttribute="leadingMargin" constant="5" id="gtd-Re-FT2"/>
-                                        <constraint firstItem="YzE-ZU-E0e" firstAttribute="top" secondItem="ye4-0a-Nvu" secondAttribute="topMargin" constant="7" id="hDK-cR-kR8"/>
-                                        <constraint firstAttribute="bottom" secondItem="c7V-d1-WfR" secondAttribute="bottom" constant="-2" id="kxi-BJ-DUs"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="YzE-ZU-E0e" secondAttribute="trailing" constant="2" id="oa4-vW-o41"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
