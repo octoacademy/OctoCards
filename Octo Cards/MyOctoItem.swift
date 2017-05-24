@@ -9,6 +9,7 @@
 import Foundation
 
 class MyOctoItem {
-    var PingYing = ""
-    var Phrase = ""
+    var pingYin = ""
+    var phrase = ""
+    var imageName = ""
 }

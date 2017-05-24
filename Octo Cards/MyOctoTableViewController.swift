@@ -18,12 +18,12 @@ class MyOctoTableViewController: UITableViewController {
         let row0item = MyOctoItem()
         let row1item = MyOctoItem()
     
-        row0item.PingYing = "Chī xiāngjiāo"
-        row0item.Phrase = "Eat a banana"
+        row0item.pingYin = "Chī xiāngjiāo"
+        row0item.phrase = "Eat a banana"
         items.append(row0item)
         
-        row1item.PingYing = "Fàngxià nǐ"
-        row1item.Phrase = "Lay you down"
+        row1item.pingYin = "Fàngxià nǐ"
+        row1item.phrase = "Lay you down"
         items.append(row1item)
 
         super.init(coder: aDecoder)
@@ -75,8 +75,8 @@ class MyOctoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyOctoItem", for: indexPath)
         let item = items[indexPath.row]
         
-        cell.textLabel?.text = item.PingYing
-        cell.detailTextLabel?.text = item.Phrase
+        cell.textLabel?.text = item.pingYin
+        cell.detailTextLabel?.text = item.phrase
         cell.imageView?.image = UIImage(named: "first")
         
         return cell
