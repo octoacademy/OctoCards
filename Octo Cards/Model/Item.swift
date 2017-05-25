@@ -14,4 +14,5 @@ class Item {
     var phrase_trans : String?
     var phrase_py: String?
     var scenario: String?
+    var tip: String?
 }

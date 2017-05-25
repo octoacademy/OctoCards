@@ -36,6 +36,8 @@
 		FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */; };
 		FA6A09841ED161B3000457C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09831ED161B3000457C2 /* TabBarController.swift */; };
 		FA6A09861ED48C73000457C2 /* MyOctoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */; };
+		FA6A09881ED6A95B000457C2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09871ED6A95B000457C2 /* FileManager.swift */; };
+		FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftNavigationTableViewController.swift; path = ViewControllers/LeftNavigationTableViewController.swift; sourceTree = "<group>"; };
 		FA6A09831ED161B3000457C2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = ViewControllers/TabBarController.swift; sourceTree = "<group>"; };
 		FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoTableViewController.swift; sourceTree = "<group>"; };
+		FA6A09871ED6A95B000457C2 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileManager.swift; path = Managers/FileManager.swift; sourceTree = "<group>"; };
+		FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardsPageViewController.swift; path = ViewControllers/Detail/InfantCardsPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				FA09E9241ECBC5B8003AF8CE /* CategoryManager.swift */,
+				FA6A09871ED6A95B000457C2 /* FileManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */,
+				FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */,
 			);
 			name = InfantCard;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 				FA09E9201ECBC05B003AF8CE /* Item.swift in Sources */,
 				FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */,
 				FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */,
+				FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */,
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
@@ -336,6 +343,7 @@
 				FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */,
 				FA6A097C1ED15AAF000457C2 /* RootViewController.swift in Sources */,
 				BFE07D261ED5F837003FA4BA /* GotItCategoryTableViewController.swift in Sources */,
+				FA6A09881ED6A95B000457C2 /* FileManager.swift in Sources */,
 				BFBB9E2C1ECF393800DA1C37 /* MyOctoItem.swift in Sources */,
 				BFE07D241ED5F14D003FA4BA /* GotItTableViewController.swift in Sources */,
 				BF0069211EC4EAD0004DC195 /* AppDelegate.swift in Sources */,

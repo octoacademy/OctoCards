@@ -12,12 +12,18 @@ class CategoryManager
 {
     static let sharedInstance: CategoryManager = CategoryManager()
     fileprivate var categories = [Category]()
+    fileprivate var myOctoItems = [MyOctoItem]()
+
     
     var categoryList: [Category]
     {
         return categories
     }
     
+    var myOctoList : [MyOctoItem]
+    {
+        return myOctoItems
+    }
     
      fileprivate init()
     {
@@ -27,7 +33,7 @@ class CategoryManager
     fileprivate func loadCategoryContent()
     {
         if let filepath = Bundle.main.path(forResource: "Category", ofType: "json"),
-            let data = FileManager.default.contents(atPath: filepath)
+            let data = Foundation.FileManager.default.contents(atPath: filepath)
         {
             do{
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
@@ -65,6 +71,7 @@ class CategoryManager
                             item.phrase_trans = itemJson["phrase_trans"] as? String
                             item.phrase_py = itemJson["phrase_py"] as? String
                             item.scenario = itemJson["scenario"] as? String
+                            item.tip = itemJson["tip"] as? String
                             items.append(item)
                         }
                         
@@ -100,12 +107,48 @@ class CategoryManager
         return filteredSubCategories.first!.items
     }
     
-    func getMyOcto()
+    private func getMyOcto()
     {
+        let myOctoPath = FileManager.documentsPathForFileName("MyOcto")
+        
+        print(myOctoPath)
+        
+        let fileMgr = Foundation.FileManager.default
+        
+        if fileMgr.fileExists(atPath: myOctoPath)
+        {
+            guard let array = NSArray(contentsOfFile: myOctoPath) as? [String] else { return }
+            
+            for  category in array
+            {
+                let stringArray = category.components(separatedBy: "|")
+                    
+                if stringArray.count == 3
+                {
+                        let category = stringArray[0]
+                        let subCategory = stringArray[1]
+                        let itemName = stringArray[2]
+                    
+                        let items = getItems(forCategory: category, forSubCategory: subCategory)
+                    
+                        if let item = (items?.filter{ $0.itemName == itemName}.first)
+                        {
+                            let myOctoItem = MyOctoItem()
+                            myOctoItem.imageName = item.itemName!
+                            myOctoItem.phrase = item.phrase!
+                            myOctoItem.pingYin = item.phrase_py!
+                            myOctoItems.append(myOctoItem)
+                        }
+                    
+                }
+                
+                
+            }
+        }
         
     }
     
-    func getGotIt()
+    private func getGotIt()
     {
         
     }

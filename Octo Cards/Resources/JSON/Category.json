@@ -10,17 +10,19 @@
                             "items" : [
                                      {
                                        "itemName": "",
-                                       "phrase": "Lay you down",
-                                       "phrase_trans": "放下你",
-                                       "phrase_py" : "",
-                                       "scenario":"When laying baby down to change"
-                                     },
-                                       {
-                                       "itemName": "",
                                        "phrase": "Foot",
                                        "phrase_trans": "腳丫子",
                                        "phrase_py" : "Jiǎoyāzi",
-                                       "scenario":"When putting on clothes, point to baby's feet"
+                                       "scenario":"When putting on clothes, point to baby's feet",
+                                       "tip": ""
+                                     },
+                                       {
+                                       "itemName": "",
+                                       "phrase": "Toes",
+                                       "phrase_trans": "腳趾",
+                                       "phrase_py" : "Jiǎozhǐ",
+                                       "scenario":"When pointing to baby's toes",
+                                       "tip": ""
                                        }
                                      ]
                         },
@@ -33,14 +35,16 @@
                                         "phrase": "Put away",
                                         "phrase_trans": "收起來",
                                         "phrase_py" : "Shōu qǐlái",
-                                        "scenario":"When putting away dirty clothes"
+                                        "scenario":"When putting away dirty clothes",
+                                        "tip": ""
                                         },
                                         {
                                         "itemName": "",
                                         "phrase": "Put on socks ",
                                         "phrase_trans": "穿襪子",
                                         "phrase_py" : "Chuān wàzi",
-                                        "scenario":"When putting socks on baby"
+                                        "scenario":"When putting socks on baby",
+                                        "tip": ""
                                         }
                            ]
                         }
@@ -59,14 +63,18 @@
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                         },
                                         {
                                        "itemName": "",
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                         }
                             ]
 
@@ -80,14 +88,18 @@
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                         },
                                         {
                                         "itemName": "",
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                         }
                             ]
 
@@ -101,14 +113,18 @@
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                        "scenario":"",
+                                        "tip": ""
+
                                         },
                                         {
                                         "itemName": "",
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                        "scenario":"",
+                                        "tip": ""
+
                                         }
                              ]
 
@@ -128,14 +144,18 @@
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                        "scenario":"",
+                                        "tip": ""
+
                                         },
                                         {
                                         "itemName": "",
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                        "scenario":"",
+                                        "tip": ""
+
                                         }
                             ]
 
@@ -149,14 +169,18 @@
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                        "scenario":"",
+                                        "tip": ""
+
                                         },
                                         {
                                         "itemName": "",
                                         "phrase": "",
                                         "phrase_trans": "",
                                         "phrase_py" : "",
-                                        "scenario":""
+                                        "scenario":"",
+                                        "tip": ""
+
                                         }
                              ]
 
@@ -177,14 +201,18 @@
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",
-                                    "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                     },
                                     {
                                     "iconName": "",
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",
-                                    "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                     }
                             ]
 
@@ -198,14 +226,18 @@
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",
-                                    "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                     },
                                     {
                                     "iconName": "",
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",
-                                    "scenario":""
+                                       "scenario":"",
+                                       "tip": ""
+
                                     }
                             ]
 
