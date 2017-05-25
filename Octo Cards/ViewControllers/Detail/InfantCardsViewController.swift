@@ -13,6 +13,12 @@ class InfantCardsViewController: UIViewController {
     var category: String = ""
     var subCategory: String = ""
     
+    @IBOutlet weak var subCategoryImage: UIImageView!
+    @IBOutlet weak var scenarioText: UILabel!
+    
+    @IBOutlet weak var chineseTranslation: UILabel!
+    @IBOutlet weak var englishPhrase: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +33,20 @@ class InfantCardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func addToMyOcto(_ sender: UIButton) {
+    }
 
+    
+    @IBAction func addToGotIt(_ sender: UIButton) {
+    }
+    
+    @IBAction func next(_ sender: UIButton) {
+    }
+    
+    @IBAction func flip(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
