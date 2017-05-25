@@ -38,6 +38,7 @@
 		FA6A09861ED48C73000457C2 /* MyOctoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */; };
 		FA6A09881ED6A95B000457C2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09871ED6A95B000457C2 /* FileManager.swift */; };
 		FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */; };
+		FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoTableViewController.swift; sourceTree = "<group>"; };
 		FA6A09871ED6A95B000457C2 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileManager.swift; path = Managers/FileManager.swift; sourceTree = "<group>"; };
 		FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardsPageViewController.swift; path = ViewControllers/Detail/InfantCardsPageViewController.swift; sourceTree = "<group>"; };
+		FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantContainerViewController.swift; path = ViewControllers/Detail/InfantContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			children = (
 				FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */,
 				FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */,
+				FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */,
 			);
 			name = InfantCard;
 			sourceTree = "<group>";
@@ -279,7 +282,7 @@
 				TargetAttributes = {
 					BF00691C1EC4EAD0004DC195 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6TWE9F9E5G;
+						DevelopmentTeam = 69799356B7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -335,6 +338,7 @@
 				FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */,
 				FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */,
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
+				FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */,
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */,
@@ -472,11 +476,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6TWE9F9E5G;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 69799356B7;
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -485,11 +492,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6TWE9F9E5G;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 69799356B7;
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

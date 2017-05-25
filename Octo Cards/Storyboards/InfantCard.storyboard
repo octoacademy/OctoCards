@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F1x-3g-GCY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j0c-Kd-AEh">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Infant Container View Controller-->
+        <scene sceneID="FR5-Au-Egc">
+            <objects>
+                <viewController storyboardIdentifier="infantcontainer" id="RCx-wF-OuY" customClass="InfantContainerViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qbu-Os-oxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="QUN-Hv-szM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NUO-Ot-wjB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-xW-79N">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <connections>
+                                    <segue destination="ag7-Iy-xVE" kind="embed" id="y1d-3a-KQ6"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s7P-xW-79N" firstAttribute="top" secondItem="qbu-Os-oxo" secondAttribute="bottom" id="PTJ-pb-xTc"/>
+                            <constraint firstItem="s7P-xW-79N" firstAttribute="leading" secondItem="NUO-Ot-wjB" secondAttribute="leading" id="QJR-4A-9vw"/>
+                            <constraint firstAttribute="trailing" secondItem="s7P-xW-79N" secondAttribute="trailing" id="aZg-1F-yYf"/>
+                            <constraint firstItem="QUN-Hv-szM" firstAttribute="top" secondItem="s7P-xW-79N" secondAttribute="bottom" id="yPB-px-uka"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Ge-rp-iZE"/>
+                    <connections>
+                        <outlet property="container" destination="s7P-xW-79N" id="9ln-bw-5Mi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avu-R3-PiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2234.7826086956525" y="-132.88043478260872"/>
+        </scene>
         <!--Infant Cards Page View Controller-->
         <scene sceneID="nc2-OX-QD1">
             <objects>
@@ -17,7 +53,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbm-nb-BwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2420" y="-104"/>
+            <point key="canvasLocation" x="2957.971014492754" y="-126.35869565217392"/>
         </scene>
         <!--Infant Cards View Controller-->
         <scene sceneID="F93-ip-2bd">
@@ -199,12 +235,16 @@
                         <constraints>
                             <constraint firstItem="t78-7v-skP" firstAttribute="top" secondItem="yxD-V2-1uC" secondAttribute="bottom" constant="30" id="1wt-QF-lHL"/>
                             <constraint firstItem="yxD-V2-1uC" firstAttribute="top" secondItem="dfS-LR-AQs" secondAttribute="bottom" constant="20" id="2kV-JC-JUL"/>
-                            <constraint firstAttribute="trailing" secondItem="t78-7v-skP" secondAttribute="trailing" constant="50" id="94g-FO-I3z"/>
+                            <constraint firstAttribute="trailing" secondItem="t78-7v-skP" secondAttribute="trailing" constant="50" id="94g-FO-I3z">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
                             <constraint firstItem="mtC-JZ-xDE" firstAttribute="leading" secondItem="t78-7v-skP" secondAttribute="leading" id="A6r-GQ-D7v"/>
                             <constraint firstItem="zfn-PY-skU" firstAttribute="top" secondItem="t78-7v-skP" secondAttribute="bottom" constant="8" id="Asy-oy-tTO"/>
                             <constraint firstItem="9Fp-Z0-vJM" firstAttribute="centerY" secondItem="t78-7v-skP" secondAttribute="centerY" id="Cpc-BM-4pB"/>
                             <constraint firstItem="zfn-PY-skU" firstAttribute="trailing" secondItem="t78-7v-skP" secondAttribute="trailing" id="I36-Rr-3NX"/>
-                            <constraint firstItem="t78-7v-skP" firstAttribute="leading" secondItem="1SD-7e-aqZ" secondAttribute="leading" constant="50" id="IqS-4d-vCX"/>
+                            <constraint firstItem="t78-7v-skP" firstAttribute="leading" secondItem="1SD-7e-aqZ" secondAttribute="leading" constant="50" id="IqS-4d-vCX">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
                             <constraint firstItem="hKS-aU-rk2" firstAttribute="top" secondItem="yxD-V2-1uC" secondAttribute="top" id="KgX-4c-9D5"/>
                             <constraint firstItem="mtC-JZ-xDE" firstAttribute="height" secondItem="t78-7v-skP" secondAttribute="height" id="Kik-yp-BLi"/>
                             <constraint firstItem="mtC-JZ-xDE" firstAttribute="top" secondItem="t78-7v-skP" secondAttribute="top" id="MWR-nT-fcT"/>
@@ -212,10 +252,13 @@
                             <constraint firstItem="mtC-JZ-xDE" firstAttribute="width" secondItem="t78-7v-skP" secondAttribute="width" id="Uq3-ks-Mj4"/>
                             <constraint firstItem="hKS-aU-rk2" firstAttribute="leading" secondItem="yxD-V2-1uC" secondAttribute="trailing" constant="8" symbolic="YES" id="Xd2-zU-T8Y"/>
                             <constraint firstItem="yxD-V2-1uC" firstAttribute="leading" secondItem="1SD-7e-aqZ" secondAttribute="leading" constant="20" symbolic="YES" id="Xk4-cr-COO"/>
-                            <constraint firstItem="FjF-Wv-HCA" firstAttribute="leading" secondItem="t78-7v-skP" secondAttribute="trailing" id="dkj-aR-rtG"/>
-                            <constraint firstItem="9Fp-Z0-vJM" firstAttribute="leading" secondItem="1SD-7e-aqZ" secondAttribute="leading" id="gKU-nb-Sd3"/>
+                            <constraint firstItem="FjF-Wv-HCA" firstAttribute="leading" secondItem="t78-7v-skP" secondAttribute="trailing" id="dkj-aR-rtG">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="hKS-aU-rk2" secondAttribute="trailing" constant="20" symbolic="YES" id="ncI-7m-yua"/>
-                            <constraint firstItem="t78-7v-skP" firstAttribute="leading" secondItem="9Fp-Z0-vJM" secondAttribute="trailing" id="qfI-Mt-nLs"/>
+                            <constraint firstItem="t78-7v-skP" firstAttribute="leading" secondItem="9Fp-Z0-vJM" secondAttribute="trailing" id="qfI-Mt-nLs">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <connections>
@@ -234,25 +277,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Tj-Pt-96a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3102.898550724638" y="-104.34782608695653"/>
+            <point key="canvasLocation" x="3686.9565217391305" y="-120.65217391304348"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="MtR-El-sFG">
+        <scene sceneID="Lis-LH-CO9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F1x-3g-GCY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j0c-Kd-AEh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fek-M9-Ya2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fqE-87-7Le">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ag7-Iy-xVE" kind="relationship" relationship="rootViewController" id="Aa4-hM-DcT"/>
+                        <segue destination="RCx-wF-OuY" kind="relationship" relationship="rootViewController" id="KuQ-G0-LzL"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xvY-MU-VoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Z7-dg-z0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="-104"/>
+            <point key="canvasLocation" x="1328.985507246377" y="-133.69565217391306"/>
         </scene>
     </scenes>
     <resources>

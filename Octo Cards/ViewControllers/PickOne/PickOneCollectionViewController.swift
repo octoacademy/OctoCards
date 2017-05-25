@@ -136,7 +136,8 @@ class PickOneCollectionViewController: UICollectionViewController {
     {
        
         let infantCardStoryboard: UIStoryboard = UIStoryboard(name: "InfantCard", bundle: nil)
-        let vc = infantCardStoryboard.instantiateViewController(withIdentifier: "infantcardpageviewcontroller") as! InfantCardsPageViewController
+         
+        let vc = infantCardStoryboard.instantiateViewController(withIdentifier: "infantcontainer") as! InfantContainerViewController
         
         vc.subCategory = categories[indexPath.section].subCategories![indexPath.row].title
         vc.categoryKey = categories[indexPath.section].key

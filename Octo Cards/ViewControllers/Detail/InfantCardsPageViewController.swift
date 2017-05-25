@@ -23,15 +23,7 @@ class InfantCardsPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = subCategory
-        if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
-        {
-            items = catItems
-        }
-        
         dataSource = self
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +35,7 @@ class InfantCardsPageViewController: UIPageViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+
         controllers = [UIViewController]()
         loadControllers()
         
