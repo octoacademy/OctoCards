@@ -18,12 +18,12 @@ class MyOctoTableViewController: UITableViewController {
         let row0item = MyOctoItem()
         let row1item = MyOctoItem()
     
-        row0item.PingYing = "Chī xiāngjiāo"
-        row0item.Phrase = "Eat a banana"
+        row0item.pingYin = "Chī xiāngjiāo"
+        row0item.phrase = "Eat a banana"
         items.append(row0item)
         
-        row1item.PingYing = "Fàngxià nǐ"
-        row1item.Phrase = "Lay you down"
+        row1item.pingYin = "Fàngxià nǐ"
+        row1item.phrase = "Lay you down"
         items.append(row1item)
 
         super.init(coder: aDecoder)
@@ -40,6 +40,8 @@ class MyOctoTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+   
+    /****** Using Custom TableViewCell using viewWithTag
     func configureText(for cell: UITableViewCell, with item: MyOctoItem) {
         let labelPY = cell.viewWithTag(1000) as! UILabel
         let labelPhrase = cell.viewWithTag(2000) as! UILabel
@@ -47,11 +49,13 @@ class MyOctoTableViewController: UITableViewController {
         labelPY.text = item.PingYing
         labelPhrase.text = item.Phrase
     }
+    *************/
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
+   /*********** Using Custom TableViewCell and Configure Text method
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: "MyOctoItem", for: indexPath)
@@ -64,5 +68,17 @@ class MyOctoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             didSelectRowAt indexPath: IndexPath) {
     }
+    *****************/
 
+    /************* Using Subtitle TableViewCell style **********/
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyOctoItem", for: indexPath)
+        let item = items[indexPath.row]
+        
+        cell.textLabel?.text = item.pingYin
+        cell.detailTextLabel?.text = item.phrase
+        cell.imageView?.image = UIImage(named: "first")
+        
+        return cell
+    }
 }
