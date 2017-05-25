@@ -100,5 +100,14 @@ class CategoryManager
         return filteredSubCategories.first!.items
     }
     
+    func getMyOcto()
+    {
+        
+    }
+    
+    func getGotIt()
+    {
+        
+    }
 }
 
