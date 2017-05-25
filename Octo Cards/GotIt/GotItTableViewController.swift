@@ -8,27 +8,53 @@
 
 import UIKit
 
-var catItems: [MyOctoItem]?
-
 class GotItTableViewController: UITableViewController {
     
     var catLabels = ["At Home", "On the Go", "Out and About"]
+    var AtHomeCards: [OctoCard]?
+    var OntheGoCards: [OctoCard]?
+    var OutandAboutCards: [OctoCard]?
     
     required init?(coder aDecoder: NSCoder) {
-        catItems = [MyOctoItem]()
-        let row0item = MyOctoItem()
-        let row1item = MyOctoItem()
+        AtHomeCards = [OctoCard]()
+        let row0itemA = OctoCard()
+        let row1itemA = OctoCard()
+        let row2itemA = OctoCard()
         
-        row0item.pingYin = "Xǐshǒu"
-        row0item.phrase = "Washing hands"
-        catItems?.append(row0item)
+        row0itemA.pingYin = "Xǐshǒu"
+        row0itemA.phrase = "Washing hands"
+        AtHomeCards?.append(row0itemA)
         
-        row1item.pingYin = "Shǒuzhǐ"
-        row1item.phrase = "Fingers"
-        catItems?.append(row1item)
+        row1itemA.pingYin = "Shǒuzhǐ"
+        row1itemA.phrase = "Fingers"
+        AtHomeCards?.append(row1itemA)
+        
+        row2itemA.pingYin = "PY3"
+        row2itemA.phrase = "Phrase 3"
+        AtHomeCards?.append(row2itemA)
+        
+        OntheGoCards = [OctoCard]()
+        let row0itemB = OctoCard()
+        let row1itemB = OctoCard()
+        
+        row0itemB.pingYin = "On the Go PY1"
+        row0itemB.phrase = "On the Go Phrase1"
+        OntheGoCards?.append(row0itemB)
+        
+        row1itemB.pingYin = "On the Go PY2"
+        row1itemB.phrase = "On the Go Phrase2"
+        OntheGoCards?.append(row1itemB)
+
+        OutandAboutCards = [OctoCard]()
+        let row0itemC = OctoCard()
+        
+        row0itemC.pingYin = "Out and About PY1"
+        row0itemC.phrase = "Out and About Phrase1"
+        OutandAboutCards?.append(row0itemC)
         
         super.init(coder: aDecoder)
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,12 +87,21 @@ class GotItTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CatLabel", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AtHomeLabel", for: indexPath)
         let itemName = catLabels[indexPath.row]
         
         cell.textLabel?.text = itemName
-        cell.detailTextLabel?.text = "(\(catItems!.count))"
         cell.imageView?.image = UIImage(named: "first")
+
+        if itemName == "At Home" {
+            cell.detailTextLabel?.text = "(\(AtHomeCards!.count))"
+        }
+        else if itemName == "On the Go" {
+            cell.detailTextLabel?.text = "(\(OntheGoCards!.count))"
+        }
+        else if itemName == "Out and About" {
+            cell.detailTextLabel?.text = "(\(OutandAboutCards!.count))"
+        }
         return cell
     }
     
@@ -109,13 +144,24 @@ class GotItTableViewController: UITableViewController {
     
     // MARK: - Navigation
 
-    /*
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let catVC = segue.destination as? GotItCategoryTableViewController {
+            if let catCell = sender as? UITableViewCell {
+                if catCell.textLabel?.text == "At Home" {
+                    catVC.catCards = AtHomeCards
+                }
+                else if catCell.textLabel?.text == "On the Go" {
+                    catVC.catCards = OntheGoCards
+                }
+                else if catCell.textLabel?.text == "Out and About" {
+                    catVC.catCards = OutandAboutCards
+                }
+            }
+        }
         
-    }*/
-    
-
+    }
 }

@@ -11,12 +11,12 @@ import UIKit
 class MyOctoTableViewController: UITableViewController {
 
     /*** Sample Data ***/
-    var items: [MyOctoItem]
+    var items: [OctoCard]
     
     required init?(coder aDecoder: NSCoder) {
-        items = [MyOctoItem]()
-        let row0item = MyOctoItem()
-        let row1item = MyOctoItem()
+        items = [OctoCard]()
+        let row0item = OctoCard()
+        let row1item = OctoCard()
     
         row0item.pingYin = "Chī xiāngjiāo"
         row0item.phrase = "Eat a banana"

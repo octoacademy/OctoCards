@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CatLabel" textLabel="hBt-sO-Usb" detailTextLabel="xDk-wg-0kq" imageView="e2d-pf-Hxx" style="IBUITableViewCellStyleValue1" id="xfa-9e-X5N">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AtHomeLabel" textLabel="hBt-sO-Usb" detailTextLabel="xDk-wg-0kq" imageView="e2d-pf-Hxx" style="IBUITableViewCellStyleValue1" id="xfa-9e-X5N">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xfa-9e-X5N" id="mxB-uP-t7s">
@@ -46,10 +46,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="sK1-CI-NqL" kind="show" identifier="AtHome" id="Dng-h7-fvV"/>
+                                    <segue destination="sK1-CI-NqL" kind="show" identifier="Category" id="SMo-Sc-M9w"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="urG-7K-k3N" detailTextLabel="0fs-ZE-nHI" imageView="R62-rj-gTM" style="IBUITableViewCellStyleValue1" id="LLH-1u-XIK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="OntheGoLabel" textLabel="urG-7K-k3N" detailTextLabel="0fs-ZE-nHI" imageView="R62-rj-gTM" style="IBUITableViewCellStyleValue1" id="LLH-1u-XIK">
                                 <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LLH-1u-XIK" id="DFB-vm-UGW">
@@ -76,11 +76,8 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="sK1-CI-NqL" kind="show" identifier="OntheGo" id="6gA-dZ-d1t"/>
-                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="cVA-ex-Ozq" detailTextLabel="11v-Ul-6NW" imageView="JTD-UI-onu" style="IBUITableViewCellStyleValue1" id="qmq-Kz-5Oa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="OutandAboutLabel" textLabel="cVA-ex-Ozq" detailTextLabel="11v-Ul-6NW" imageView="JTD-UI-onu" style="IBUITableViewCellStyleValue1" id="qmq-Kz-5Oa">
                                 <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qmq-Kz-5Oa" id="Ket-DI-8q0">
@@ -107,9 +104,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="sK1-CI-NqL" kind="show" identifier="OutandAbout" id="z4t-Hd-rA8"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -202,7 +196,4 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="z4t-Hd-rA8"/>
-    </inferredMetricsTieBreakers>
 </document>

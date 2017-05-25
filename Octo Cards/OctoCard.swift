@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MyOctoItem {
+class OctoCard {
     var pingYin = ""
     var phrase = ""
     var imageName = ""

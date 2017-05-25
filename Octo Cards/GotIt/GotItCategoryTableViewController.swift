@@ -10,6 +10,8 @@ import UIKit
 
 class GotItCategoryTableViewController: UITableViewController {
 
+    var catCards: [OctoCard]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,14 +37,14 @@ class GotItCategoryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return catItems!.count
+        return catCards!.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "GotItItem", for: indexPath)
-        let catItem = catItems?[indexPath.row]
+        let catItem = catCards?[indexPath.row]
      
         cell.textLabel?.text = catItem?.pingYin
         cell.detailTextLabel?.text = catItem?.phrase
