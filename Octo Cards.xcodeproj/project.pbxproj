@@ -36,9 +36,9 @@
 		FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A097F1ED15B47000457C2 /* LeftNavigationTableViewController.swift */; };
 		FA6A09841ED161B3000457C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09831ED161B3000457C2 /* TabBarController.swift */; };
 		FA6A09861ED48C73000457C2 /* MyOctoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09851ED48C73000457C2 /* MyOctoTableViewController.swift */; };
-		FA6A09881ED6A95B000457C2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09871ED6A95B000457C2 /* FileManager.swift */; };
 		FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */; };
 		FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */; };
+		FA6A098D1ED8ACBC000457C2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09871ED6A95B000457C2 /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -337,6 +337,7 @@
 				FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */,
 				FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */,
 				FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */,
+				FA6A098D1ED8ACBC000457C2 /* FileManager.swift in Sources */,
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
 				FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */,
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
