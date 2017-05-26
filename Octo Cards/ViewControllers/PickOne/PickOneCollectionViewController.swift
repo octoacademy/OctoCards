@@ -136,13 +136,12 @@ class PickOneCollectionViewController: UICollectionViewController {
     {
        
         let infantCardStoryboard: UIStoryboard = UIStoryboard(name: "InfantCard", bundle: nil)
-        let vc = infantCardStoryboard.instantiateViewController(withIdentifier: "octodetail") as! InfantCardsViewController
+         
+        let vc = infantCardStoryboard.instantiateViewController(withIdentifier: "infantcontainer") as! InfantContainerViewController
         
-        let category = categories[indexPath.section].key
-        let subCategory = categories[indexPath.section].subCategories![indexPath.row].key
-        
-        vc.category = category
-        vc.subCategory = subCategory
+        vc.subCategory = categories[indexPath.section].subCategories![indexPath.row].title
+        vc.categoryKey = categories[indexPath.section].key
+        vc.subCategoryKey = categories[indexPath.section].subCategories![indexPath.row].key
     
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController

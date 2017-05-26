@@ -27,14 +27,22 @@ class MyOctoTableViewController: UITableViewController {
         items.append(row1item)
 
         super.init(coder: aDecoder)
-    }
+    }*/
     /************************************/
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        items = CategoryManager.sharedInstance.myOctoList
+        self.tableView.reloadData()
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

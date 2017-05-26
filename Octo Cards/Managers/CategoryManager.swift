@@ -12,22 +12,56 @@ class CategoryManager
 {
     static let sharedInstance: CategoryManager = CategoryManager()
     fileprivate var categories = [Category]()
+    fileprivate var categoryDictionary = [String:Item]()
+    fileprivate var myOctoItems = [String]()
     
     var categoryList: [Category]
     {
         return categories
     }
     
+    var myOctoStrings : [String]
+    {
+            return myOctoItems
+    }
+    
+    var myOctoList: [MyOctoItem]
+    {
+        var items = [MyOctoItem]()
+        for string in myOctoItems
+        {
+            let stringArray = string.components(separatedBy: "||")
+            
+            if stringArray.count == 3
+            {
+                let category = stringArray[0]
+                let subCategory = stringArray[1]
+                let itemName = stringArray[2]
+                
+                if let item = categoryDictionary[string]
+                {
+                    let myOctoItem = MyOctoItem()
+                    myOctoItem.imageName = subCategory
+                    myOctoItem.phrase = item.phrase!
+                    myOctoItem.pingYin = item.phrase_py!
+                    items.append(myOctoItem)
+                }
+                
+            }
+        }
+        return items
+    }
     
      fileprivate init()
     {
         loadCategoryContent()
+        loadMyOcto()
     }
     
     fileprivate func loadCategoryContent()
     {
         if let filepath = Bundle.main.path(forResource: "Category", ofType: "json"),
-            let data = FileManager.default.contents(atPath: filepath)
+            let data = Foundation.FileManager.default.contents(atPath: filepath)
         {
             do{
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
@@ -65,7 +99,10 @@ class CategoryManager
                             item.phrase_trans = itemJson["phrase_trans"] as? String
                             item.phrase_py = itemJson["phrase_py"] as? String
                             item.scenario = itemJson["scenario"] as? String
+                            item.tip = itemJson["tip"] as? String
                             items.append(item)
+                            
+                            categoryDictionary[category.key + "||" + subCategory.key + "||"  + item.itemName!] = item
                         }
                         
                         subCategory.items = items
@@ -100,12 +137,61 @@ class CategoryManager
         return filteredSubCategories.first!.items
     }
     
-    func getMyOcto()
+    private func loadMyOcto()
     {
+        let myOctoPath = FileManager.documentsPathForFileName("MyOcto")
+        
+        print(myOctoPath)
+        
+        let fileMgr = Foundation.FileManager.default
+        
+        if fileMgr.fileExists(atPath: myOctoPath)
+        {
+            
+            guard let array = NSArray(contentsOfFile: myOctoPath) as? [String] else { return }
+            
+            for  string in array
+            {
+                myOctoItems.append(string)
+            }
+        }
+     }
+    
+    func removeMyOcto(category: String, subCategory: String,  item: String)
+    {
+        let key = category + "||" + subCategory + "||" + item
+        if let index = myOctoItems.index(of: key)
+        {
+            print ("Remove myOcto at \(index)")
+            myOctoItems.remove(at: index)
+            saveMyOcto()
+        }
+    }
+    
+    func addMyOcto (category: String, subCategory: String,  item: String)
+    {
+        let key = category + "||" + subCategory + "||" + item
+        let index = myOctoItems.index(of: key)
+        
+        if index == nil
+        {
+            print ("Add to myOcto - \(item)")
+         
+            myOctoItems.append(key)
+            saveMyOcto()
+        }
+    }
+    
+    private func saveMyOcto()
+    {
+        
+        let success = NSArray(array: myOctoItems).write(toFile: FileManager.documentsPathForFileName("MyOcto"), atomically: true)
+        
+        print ("Writing to MyOcto = \(success)")
         
     }
     
-    func getGotIt()
+    private func getGotIt()
     {
         
     }
