@@ -15,7 +15,7 @@ class InfantCardsPageViewController: UIPageViewController {
     var subCategoryKey: String = ""
 
     var items : [Item] = [Item]()
-    var myOcto: [MyOctoItem] = [MyOctoItem]()
+    var myOcto: [OctoCard] = [OctoCard]()
     var looping = false
     
    var controllers = [UIViewController]()

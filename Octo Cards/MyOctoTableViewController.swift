@@ -27,7 +27,7 @@ class MyOctoTableViewController: UITableViewController {
         items.append(row1item)
 
         super.init(coder: aDecoder)
-    }*/
+    }
     /************************************/
     
     override func viewDidLoad() {

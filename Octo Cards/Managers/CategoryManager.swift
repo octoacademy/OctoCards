@@ -25,9 +25,9 @@ class CategoryManager
             return myOctoItems
     }
     
-    var myOctoList: [MyOctoItem]
+    var myOctoList: [OctoCard]
     {
-        var items = [MyOctoItem]()
+        var items = [OctoCard]()
         for string in myOctoItems
         {
             let stringArray = string.components(separatedBy: "||")
@@ -40,7 +40,7 @@ class CategoryManager
                 
                 if let item = categoryDictionary[string]
                 {
-                    let myOctoItem = MyOctoItem()
+                    let myOctoItem = OctoCard()
                     myOctoItem.imageName = subCategory
                     myOctoItem.phrase = item.phrase!
                     myOctoItem.pingYin = item.phrase_py!
