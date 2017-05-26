@@ -268,7 +268,9 @@
                         <outlet property="chineseTranslation" destination="1Tq-lF-vNZ" id="T9s-kI-GPJ"/>
                         <outlet property="directTranslation" destination="hD0-24-WzG" id="jsn-VO-R0N"/>
                         <outlet property="englishPhrase" destination="cPg-Uc-BZw" id="jAs-fS-f2r"/>
+                        <outlet property="gotItButton" destination="lPV-so-h9d" id="pUr-vN-6vx"/>
                         <outlet property="leftButton" destination="9Fp-Z0-vJM" id="7ed-5Q-9Dr"/>
+                        <outlet property="myOctoButton" destination="fSp-UZ-b78" id="hWm-6d-8Q5"/>
                         <outlet property="rightButton" destination="FjF-Wv-HCA" id="myr-2U-6cg"/>
                         <outlet property="scenarioText" destination="hKS-aU-rk2" id="3nl-nf-gbm"/>
                         <outlet property="subCategoryImage" destination="yxD-V2-1uC" id="NiF-fm-ZSI"/>

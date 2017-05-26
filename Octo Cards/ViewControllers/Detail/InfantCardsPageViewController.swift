@@ -15,7 +15,7 @@ class InfantCardsPageViewController: UIPageViewController {
     var subCategoryKey: String = ""
 
     var items : [Item] = [Item]()
-    
+    var myOcto: [MyOctoItem] = [MyOctoItem]()
     var looping = false
     
    var controllers = [UIViewController]()
@@ -24,6 +24,8 @@ class InfantCardsPageViewController: UIPageViewController {
         super.viewDidLoad()
 
         dataSource = self
+        
+        myOcto = CategoryManager.sharedInstance.myOctoList
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,9 +59,11 @@ class InfantCardsPageViewController: UIPageViewController {
             let vc = storyboard.instantiateViewController(withIdentifier: "infantcard") as! InfantCardsViewController
             vc.item = item
             vc.subCategoryKey = subCategoryKey
+            vc.categoryKey = categoryKey
             vc.delegate = self
             vc.index = index
             vc.totalCount = items.count
+
             controllers.append(vc)
         }
         

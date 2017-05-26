@@ -9,7 +9,7 @@
                             "title": "Changing Diapers",
                             "items" : [
                                      {
-                                       "itemName": "",
+                                       "itemName": "ChangingDiaper_Foot",
                                        "phrase": "Foot",
                                        "phrase_trans": "腳丫子",
                                        "phrase_py" : "Jiǎoyāzi",
@@ -17,7 +17,7 @@
                                        "tip": ""
                                      },
                                        {
-                                       "itemName": "",
+                                       "itemName": "ChangingDiaper_Toes",
                                        "phrase": "Toes",
                                        "phrase_trans": "腳趾",
                                        "phrase_py" : "Jiǎozhǐ",
@@ -197,7 +197,7 @@
                             "title": "",
                             "items" : [
                                     {
-                                    "iconName": "",
+                                    "itemName": "",
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",
@@ -206,7 +206,7 @@
 
                                     },
                                     {
-                                    "iconName": "",
+                                    "itemName": "",
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",
@@ -222,7 +222,7 @@
                             "title": "",
                             "items" : [
                                     {
-                                    "iconName": "",
+                                    "itemName": "",
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",
@@ -231,7 +231,7 @@
 
                                     },
                                     {
-                                    "iconName": "",
+                                    "itemName": "",
                                     "phrase": "",
                                     "phrase_trans": "",
                                     "phrase_py" : "",

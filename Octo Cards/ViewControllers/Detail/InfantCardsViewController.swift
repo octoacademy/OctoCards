@@ -11,7 +11,8 @@ import UIKit
 class InfantCardsViewController: UIViewController {
 
     var item : Item!
-    var subCategoryKey: String = ""
+    var categoryKey = ""
+    var subCategoryKey = ""
     var index = 0
     var totalCount = 0
     
@@ -29,6 +30,8 @@ class InfantCardsViewController: UIViewController {
     @IBOutlet weak var directTranslation: UILabel!
     @IBOutlet weak var tips: UILabel!
     @IBOutlet weak var chineseText: UILabel!
+    @IBOutlet weak var myOctoButton: UIButton!
+    @IBOutlet weak var gotItButton: UIButton!
     
     
     weak var delegate : InfantCardsPageViewController!
@@ -54,6 +57,11 @@ class InfantCardsViewController: UIViewController {
         chineseText.text = item.phrase_trans
         directTranslation.text = "Direct Translation : \(item.phrase ?? "")"
         tips.text = item.tip
+        
+        if let _ =  CategoryManager.sharedInstance.myOctoStrings.index(of: categoryKey + "||" + subCategoryKey + "||" + item.itemName!)
+        {
+            myOctoButton.isSelected = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,12 +80,29 @@ class InfantCardsViewController: UIViewController {
         leftButton.tintColor = UIColor(red: 195.0/255, green: 195.0/255, blue: 195.0/255, alpha: 1.0)
         rightButton.isHidden = index == totalCount - 1 ? true : false
         leftButton.isHidden =  index == 0 ? true : false
-        
     }
 
     
     
     @IBAction func addToMyOcto(_ sender: UIButton) {
+       
+        
+        
+        if myOctoButton.isSelected
+        {
+            myOctoButton.isSelected = false
+            CategoryManager.sharedInstance.removeMyOcto(category: categoryKey,
+                                                        subCategory: subCategoryKey,
+                                                        item: self.item.itemName!)
+        }
+        else
+        {
+            myOctoButton.isSelected = true
+            CategoryManager.sharedInstance.addMyOcto(category: categoryKey,
+                                                     subCategory: subCategoryKey,
+                                                     item: self.item.itemName!)
+        }
+
     }
 
     

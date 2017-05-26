@@ -21,14 +21,36 @@ class InfantContainerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
         
         self.navigationItem.title = subCategory
         
+        
         if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
         {
-            items = catItems
+            let octoCardList = CategoryManager.sharedInstance.myOctoStrings
+            if octoCardList.count > 0
+            {
+                self.items = catItems.filter({
+                    let key = categoryKey + "||" + subCategoryKey + "||" + $0.itemName!
+                    print (key)
+                    if octoCardList.index(of: (key)) != nil
+                    {
+                        return false
+                    }
+                    else
+                    {
+                        return true
+                    }
+                })
+            }
+            else
+            {
+                self.items = catItems
+            }
+            
             let pageViewController = childViewControllers[0] as! InfantCardsPageViewController
-            pageViewController.items = items
+            pageViewController.items = self.items
             pageViewController.subCategory = subCategory
             pageViewController.categoryKey = categoryKey
             pageViewController.subCategoryKey = subCategoryKey
