@@ -17,6 +17,38 @@ class InfantContainerViewController: UIViewController {
     @IBOutlet weak var container: UIView!
     var items : [Item] = [Item]()
     
+    func getCards() -> [Item]
+    {
+        let filtered = CategoryManager.sharedInstance.categoryDictionary.filter({ print ($0.key)
+            return $0.key.hasPrefix(self.categoryKey + "||" + self.subCategoryKey)
+        })
+        
+        var newData = [String:Item]()
+        for result in filtered {
+            newData[result.0] = result.1
+        }
+        
+         var myOctoCards = [Item]()
+         var finalCards = [Item]()
+        // remove myOcto cards
+        for myOctoKey in CategoryManager.sharedInstance.myOctoStrings
+        {
+            if let value = newData[myOctoKey]
+            {
+                myOctoCards.append(value)
+                newData.removeValue(forKey: myOctoKey)
+            }
+        }
+        
+        // final iteration to find the unshared cards
+        finalCards.append(contentsOf: newData.values)
+        finalCards.append(contentsOf: myOctoCards)
+
+        
+        
+        return finalCards
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,36 +57,14 @@ class InfantContainerViewController: UIViewController {
         
         self.navigationItem.title = subCategory
         
-        
-        if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
-        {
-            let octoCardList = CategoryManager.sharedInstance.myOctoStrings
-            if octoCardList.count > 0
-            {
-                self.items = catItems.filter({
-                    let key = categoryKey + "||" + subCategoryKey + "||" + $0.itemName!
-                    print (key)
-                    if octoCardList.index(of: (key)) != nil
-                    {
-                        return false
-                    }
-                    else
-                    {
-                        return true
-                    }
-                })
-            }
-            else
-            {
-                self.items = catItems
-            }
-            
-            let pageViewController = childViewControllers[0] as! InfantCardsPageViewController
-            pageViewController.items = self.items
-            pageViewController.subCategory = subCategory
-            pageViewController.categoryKey = categoryKey
-            pageViewController.subCategoryKey = subCategoryKey
-        }
+         
+        //if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
+     
+        let pageViewController = childViewControllers[0] as! InfantCardsPageViewController
+        pageViewController.items = self.getCards()
+        pageViewController.subCategory = subCategory
+        pageViewController.categoryKey = categoryKey
+        pageViewController.subCategoryKey = subCategoryKey
     }
 
     override func didReceiveMemoryWarning() {

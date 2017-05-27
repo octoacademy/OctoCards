@@ -12,12 +12,17 @@ class CategoryManager
 {
     static let sharedInstance: CategoryManager = CategoryManager()
     fileprivate var categories = [Category]()
-    fileprivate var categoryDictionary = [String:Item]()
+    fileprivate var categoryInternalDictionary = [String:Item]()
     fileprivate var myOctoItems = [String]()
     
     var categoryList: [Category]
     {
         return categories
+    }
+    
+    var categoryDictionary : [String: Item]
+    {
+        return categoryInternalDictionary
     }
     
     var myOctoStrings : [String]
@@ -38,7 +43,7 @@ class CategoryManager
                 let subCategory = stringArray[1]
                 let itemName = stringArray[2]
                 
-                if let item = categoryDictionary[string]
+                if let item = categoryInternalDictionary[string]
                 {
                     let myOctoItem = OctoCard()
                     myOctoItem.imageName = subCategory
@@ -102,7 +107,8 @@ class CategoryManager
                             item.tip = itemJson["tip"] as? String
                             items.append(item)
                             
-                            categoryDictionary[category.key + "||" + subCategory.key + "||"  + item.itemName!] = item
+                            print (category.key + "||" + subCategory.key + "||"  + item.itemName!)
+                            categoryInternalDictionary[category.key + "||" + subCategory.key + "||"  + item.itemName!] = item
                         }
                         
                         subCategory.items = items
