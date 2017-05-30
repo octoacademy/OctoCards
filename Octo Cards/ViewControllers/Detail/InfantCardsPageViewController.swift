@@ -15,7 +15,6 @@ class InfantCardsPageViewController: UIPageViewController {
     var subCategoryKey: String = ""
 
     var items : [Item] = [Item]()
-    var myOcto: [OctoCard] = [OctoCard]()
     var looping = false
     
    var controllers = [UIViewController]()
@@ -25,7 +24,6 @@ class InfantCardsPageViewController: UIPageViewController {
 
         dataSource = self
         
-        myOcto = CategoryManager.sharedInstance.myOctoList
     }
 
     override func didReceiveMemoryWarning() {

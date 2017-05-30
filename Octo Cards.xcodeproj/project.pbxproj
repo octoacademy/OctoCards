@@ -39,6 +39,8 @@
 		FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */; };
 		FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */; };
 		FA6A098D1ED8ACBC000457C2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09871ED6A95B000457C2 /* FileManager.swift */; };
+		FA6A09AF1EDDF474000457C2 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09AE1EDDF474000457C2 /* CollectionExtension.swift */; };
+		FA6A09B11EDE00BE000457C2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09B01EDE00BE000457C2 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		FA6A09871ED6A95B000457C2 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileManager.swift; path = Managers/FileManager.swift; sourceTree = "<group>"; };
 		FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardsPageViewController.swift; path = ViewControllers/Detail/InfantCardsPageViewController.swift; sourceTree = "<group>"; };
 		FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantContainerViewController.swift; path = ViewControllers/Detail/InfantContainerViewController.swift; sourceTree = "<group>"; };
+		FA6A09AE1EDDF474000457C2 /* CollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		FA6A09B01EDE00BE000457C2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 				FA09E9211ECBC21A003AF8CE /* Category.swift */,
 				FA09E91D1ECBBF89003AF8CE /* SubCategory.swift */,
 				FA09E91F1ECBC05B003AF8CE /* Item.swift */,
+				FA6A09B01EDE00BE000457C2 /* Card.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */,
+				FA6A09AE1EDDF474000457C2 /* CollectionExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -338,8 +344,10 @@
 				FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */,
 				FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */,
 				FA6A098D1ED8ACBC000457C2 /* FileManager.swift in Sources */,
+				FA6A09B11EDE00BE000457C2 /* Card.swift in Sources */,
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
 				FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */,
+				FA6A09AF1EDDF474000457C2 /* CollectionExtension.swift in Sources */,
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */,

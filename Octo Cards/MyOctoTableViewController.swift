@@ -11,9 +11,9 @@ import UIKit
 class MyOctoTableViewController: UITableViewController {
 
     /*** Sample Data ***/
-    var items: [OctoCard]
+    var items: [Card] = [Card]()
     
-    required init?(coder aDecoder: NSCoder) {
+    /*required init?(coder aDecoder: NSCoder) {
         items = [OctoCard]()
         let row0item = OctoCard()
         let row1item = OctoCard()
@@ -27,7 +27,7 @@ class MyOctoTableViewController: UITableViewController {
         items.append(row1item)
 
         super.init(coder: aDecoder)
-    }
+    }*/
     /************************************/
     
     override func viewDidLoad() {
@@ -83,10 +83,29 @@ class MyOctoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyOctoItem", for: indexPath)
         let item = items[indexPath.row]
         
-        cell.textLabel?.text = item.pingYin
-        cell.detailTextLabel?.text = item.phrase
+        cell.textLabel?.text = item.item.phrase_py
+        cell.detailTextLabel?.text = item.item.phrase
         cell.imageView?.image = UIImage(named: "first")
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let infantCardStoryboard: UIStoryboard = UIStoryboard(name: "InfantCard", bundle: nil)
+        
+        let vc = infantCardStoryboard.instantiateViewController(withIdentifier: "infantcontainer") as! InfantContainerViewController
+        
+        vc.subCategory = items[indexPath.row].subCategoryName
+        vc.categoryKey = items[indexPath.row].categoryKey
+        vc.subCategoryKey = items[indexPath.row].subCategoryKey
+        vc.items = [items[indexPath.row].item]
+        vc.singleCard = true
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
+        {
+            nav.pushViewController(vc, animated: true)
+        }
+
     }
 }

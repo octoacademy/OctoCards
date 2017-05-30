@@ -13,7 +13,8 @@ class InfantContainerViewController: UIViewController {
     var subCategory: String = ""
     var categoryKey: String = ""
     var subCategoryKey: String = ""
-
+    var singleCard = false
+    
     @IBOutlet weak var container: UIView!
     var items : [Item] = [Item]()
     
@@ -25,11 +26,13 @@ class InfantContainerViewController: UIViewController {
         
         var newData = [String:Item]()
         for result in filtered {
-            newData[result.0] = result.1
+            newData[result.0] = result.1.item
         }
         
          var myOctoCards = [Item]()
+         var gotItCards = [Item]()
          var finalCards = [Item]()
+        
         // remove myOcto cards
         for myOctoKey in CategoryManager.sharedInstance.myOctoStrings
         {
@@ -40,12 +43,21 @@ class InfantContainerViewController: UIViewController {
             }
         }
         
+        for gotItKey in CategoryManager.sharedInstance.gotItStrings
+        {
+            if let value = newData[gotItKey]
+            {
+                gotItCards.append(value)
+                newData.removeValue(forKey: gotItKey)
+            }
+        }
+        
+        
         // final iteration to find the unshared cards
-        finalCards.append(contentsOf: newData.values)
-        finalCards.append(contentsOf: myOctoCards)
+        finalCards.append(contentsOf: newData.values.shuffled())
+        finalCards.append(contentsOf: myOctoCards.shuffled())
+        finalCards.append(contentsOf: gotItCards.shuffled())
 
-        
-        
         return finalCards
     }
     
@@ -61,7 +73,8 @@ class InfantContainerViewController: UIViewController {
         //if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
      
         let pageViewController = childViewControllers[0] as! InfantCardsPageViewController
-        pageViewController.items = self.getCards()
+        
+        pageViewController.items = singleCard ? self.items : self.getCards()
         pageViewController.subCategory = subCategory
         pageViewController.categoryKey = categoryKey
         pageViewController.subCategoryKey = subCategoryKey

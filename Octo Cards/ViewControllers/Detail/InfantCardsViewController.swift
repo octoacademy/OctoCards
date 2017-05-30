@@ -58,9 +58,18 @@ class InfantCardsViewController: UIViewController {
         directTranslation.text = "Direct Translation : \(item.phrase ?? "")"
         tips.text = item.tip
         
-        if let _ =  CategoryManager.sharedInstance.myOctoStrings.index(of: categoryKey + "||" + subCategoryKey + "||" + item.itemName!)
+        myOctoButton.isSelected = false
+        gotItButton.isSelected = false
+        
+        let key = categoryKey + "||" + subCategoryKey + "||" + item.itemName!
+        if let _ =  CategoryManager.sharedInstance.myOctoStrings.index(of: key)
         {
             myOctoButton.isSelected = true
+        }
+        
+        if let _ =  CategoryManager.sharedInstance.gotItStrings.index(of: key)
+        {
+            gotItButton.isSelected = true
         }
     }
 
@@ -91,22 +100,50 @@ class InfantCardsViewController: UIViewController {
         if myOctoButton.isSelected
         {
             myOctoButton.isSelected = false
-            CategoryManager.sharedInstance.removeMyOcto(category: categoryKey,
+            CategoryManager.sharedInstance.removeItem(category: categoryKey,
                                                         subCategory: subCategoryKey,
-                                                        item: self.item.itemName!)
+                                                        item: self.item.itemName!, type: .myOcto)
         }
         else
         {
+            gotItButton.isSelected = false
             myOctoButton.isSelected = true
-            CategoryManager.sharedInstance.addMyOcto(category: categoryKey,
+            
+            CategoryManager.sharedInstance.removeItem(category: categoryKey,
+                                                      subCategory: subCategoryKey,
+                                                      item: self.item.itemName!, type: .gotIt)
+
+            CategoryManager.sharedInstance.addItem(category: categoryKey,
                                                      subCategory: subCategoryKey,
-                                                     item: self.item.itemName!)
+                                                     item: self.item.itemName!, type: .myOcto)
         }
 
     }
 
     
     @IBAction func addToGotIt(_ sender: UIButton) {
+        
+        if gotItButton.isSelected
+        {
+            gotItButton.isSelected = false
+            CategoryManager.sharedInstance.removeItem(category: categoryKey,
+                                                        subCategory: subCategoryKey,
+                                                        item: self.item.itemName!, type: .gotIt)
+        }
+        else
+        {
+            gotItButton.isSelected = true
+            myOctoButton.isSelected = false
+            
+            CategoryManager.sharedInstance.removeItem(category: categoryKey,
+                                                      subCategory: subCategoryKey,
+                                                      item: self.item.itemName!, type: .myOcto)
+
+            CategoryManager.sharedInstance.addItem(category: categoryKey,
+                                                     subCategory: subCategoryKey,
+                                                     item: self.item.itemName!, type: .gotIt)
+        }
+
     }
     
     @IBAction func goScreen(_ sender: UIButton) {
