@@ -55,7 +55,11 @@ class InfantCardsViewController: UIViewController {
         englishPhrase.text = item.phrase
         
         chineseText.text = item.phrase_trans
+        
+        directTranslation.adjustsFontSizeToFitWidth = true
+        directTranslation.numberOfLines  = 0
         directTranslation.text = "Direct Translation : \(item.phrase ?? "")"
+        
         tips.text = item.tip
         
         myOctoButton.isSelected = false
