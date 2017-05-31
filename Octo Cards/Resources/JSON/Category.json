@@ -31,7 +31,7 @@
                             "title": "Getting Dressed",
                              "items" : [
                                         {
-                                        "itemName": "",
+                                        "itemName": "GettingDressed_Put_away",
                                         "phrase": "Put away",
                                         "phrase_trans": "收起來",
                                         "phrase_py" : "Shōu qǐlái",
@@ -39,7 +39,7 @@
                                         "tip": ""
                                         },
                                         {
-                                        "itemName": "",
+                                        "itemName": "GettingDressed_Put_on_Socks",
                                         "phrase": "Put on socks ",
                                         "phrase_trans": "穿襪子",
                                         "phrase_py" : "Chuān wàzi",
