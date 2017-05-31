@@ -84,7 +84,7 @@ class MyOctoTableViewController: UITableViewController {
         let item = items[indexPath.row]
         
         cell.textLabel?.text = item.item.phrase_py
-        cell.detailTextLabel?.text = "\(item.item.phrase!) \(item.subCategoryName)"
+        cell.detailTextLabel?.text = item.item.phrase
         cell.imageView?.image = UIImage(named: "first")
         
         return cell
