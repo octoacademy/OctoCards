@@ -24,6 +24,31 @@
                                        "scenario":"When pointing to baby's toes",
                                        "tip": ""
                                        }
+                                       ,
+                                       {
+                                       "itemName": "ChangingDiaper_Laydown",
+                                       "phrase": "Lay you down",
+                                       "phrase_trans": "放下你",
+                                       "phrase_py" : "Fàngxià nǐ",
+                                       "scenario":"When laying baby down to change",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "ChangingDiaper_fingers",
+                                       "phrase": "Fingers",
+                                       "phrase_trans": "手指",
+                                       "phrase_py" : "Shǒuzhǐ",
+                                       "scenario":"When you are putting lotion into between the fingers",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "ChangingDiaper_washhands",
+                                       "phrase": "Wash hands",
+                                       "phrase_trans": "洗手",
+                                       "phrase_py" : "Xǐshǒu",
+                                       "scenario":"When washing baby's hands",
+                                       "tip": ""
+                                       }
                                      ]
                         },
                         {
@@ -59,19 +84,19 @@
                             "title": "At the Store",
                             "items" : [
                                         {
-                                       "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
+                                       "itemName": "AtTheStore_lookbread",
+                                        "phrase": "Look at the bread",
+                                        "phrase_trans": "看麵包",
+                                        "phrase_py" : "kàn miànbāo",
                                        "scenario":"",
                                        "tip": ""
 
                                         },
                                         {
-                                       "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
+                                       "itemName": "AtTheStore_lookmelon",
+                                        "phrase": "Look at the melon",
+                                        "phrase_trans": "看瓜子",
+                                        "phrase_py" : "Kàn guāzǐ",
                                        "scenario":"",
                                        "tip": ""
 

@@ -15,8 +15,10 @@ class GotItTableViewController: UITableViewController {
     var OntheGoCards: [OctoCard]?
     var OutandAboutCards: [OctoCard]?
     
+    
     required init?(coder aDecoder: NSCoder) {
-        AtHomeCards = [OctoCard]()
+        
+         AtHomeCards = [OctoCard]()
         let row0itemA = OctoCard()
         let row1itemA = OctoCard()
         let row2itemA = OctoCard()
@@ -64,6 +66,9 @@ class GotItTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let cards = gotItCards()
+        print (cards.count)
 
     }
 
@@ -163,5 +168,85 @@ class GotItTableViewController: UITableViewController {
             }
         }
         
+    }
+    
+    func gotItCards() -> [Category]
+    {
+        var categoryDic = [String : Category]()
+        
+        for string in CategoryManager.sharedInstance.gotItStrings
+        {
+            let stringArray = string.components(separatedBy: "||")
+            
+            if stringArray.count == 3
+            {
+                let category = stringArray[0]
+                let subCategory = stringArray[1]
+                
+                if let card = CategoryManager.sharedInstance.categoryDictionary[string]
+                {
+                    let item = card.item
+                    let categoryName = card.categoryName
+                    let subCategoryName = card.subCategoryName
+                    
+                    print ("CategoryName = \(categoryName) SubCategoryName = \(subCategoryName)")
+                    
+                    if let cat = categoryDic[category]
+                    {
+                        if let subCat = cat.subCategories
+                        {
+                            let filteredSubCategory = subCat.filter { $0.key == subCategory }
+                            
+                            if filteredSubCategory.count > 0
+                            {
+                                let filterFirst = filteredSubCategory.first!
+                                if filterFirst.items == nil
+                                {
+                                    filterFirst.items = [item]
+                                }
+                                else
+                                {
+                                    filterFirst.items?.append(item)
+                                }
+                            }
+                            else
+                            {
+                                let tempSubCategory = SubCategory()
+                                tempSubCategory.items = [item]
+                                tempSubCategory.key = subCategory
+                                tempSubCategory.title = subCategoryName
+                                categoryDic[category]?.subCategories?.append(tempSubCategory)
+                            }
+                        }
+                        else
+                        {
+                            let tempSubCategory = SubCategory()
+                            tempSubCategory.items = [item]
+                            tempSubCategory.key = subCategory
+                            tempSubCategory.title = subCategoryName
+                            categoryDic[category]?.subCategories = [tempSubCategory]
+                        }
+                    }
+                    else
+                    {
+                        let tempCategory = Category()
+                        tempCategory.key = category
+                        tempCategory.title = categoryName
+                        
+                        let tempSubCategory = SubCategory()
+                        tempSubCategory.items = [item]
+                        tempSubCategory.key = subCategory
+                        tempSubCategory.title = subCategoryName
+                        tempCategory.subCategories = [tempSubCategory]
+                        
+                        categoryDic[category] = tempCategory
+                    }
+                    
+                }
+                
+            }
+        }
+        
+        return Array(categoryDic.values)
     }
 }

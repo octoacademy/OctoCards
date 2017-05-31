@@ -8,19 +8,28 @@
 
 import Foundation
 
+enum OctoType
+{
+    case myOcto
+    case gotIt
+}
+
 class CategoryManager
 {
     static let sharedInstance: CategoryManager = CategoryManager()
+    static let MyOctoFileName = "MyOcto"
+    static let GotItFileName = "GotIt"
     fileprivate var categories = [Category]()
-    fileprivate var categoryInternalDictionary = [String:Item]()
+    fileprivate var categoryInternalDictionary = [String:Card]()
     fileprivate var myOctoItems = [String]()
+    fileprivate var gotItItems = [String]()
     
     var categoryList: [Category]
     {
         return categories
     }
     
-    var categoryDictionary : [String: Item]
+    var categoryDictionary : [String: Card]
     {
         return categoryInternalDictionary
     }
@@ -30,37 +39,16 @@ class CategoryManager
             return myOctoItems
     }
     
-    var myOctoList: [OctoCard]
+    var gotItStrings : [String]
     {
-        var items = [OctoCard]()
-        for string in myOctoItems
-        {
-            let stringArray = string.components(separatedBy: "||")
-            
-            if stringArray.count == 3
-            {
-                let category = stringArray[0]
-                let subCategory = stringArray[1]
-                let itemName = stringArray[2]
-                
-                if let item = categoryInternalDictionary[string]
-                {
-                    let myOctoItem = OctoCard()
-                    myOctoItem.imageName = subCategory
-                    myOctoItem.phrase = item.phrase!
-                    myOctoItem.pingYin = item.phrase_py!
-                    items.append(myOctoItem)
-                }
-                
-            }
-        }
-        return items
+        return gotItItems 
     }
     
-     fileprivate init()
+    fileprivate init()
     {
         loadCategoryContent()
-        loadMyOcto()
+        myOctoItems = loadFile(file: CategoryManager.MyOctoFileName)
+        gotItItems = loadFile(file: CategoryManager.GotItFileName)
     }
     
     fileprivate func loadCategoryContent()
@@ -107,8 +95,15 @@ class CategoryManager
                             item.tip = itemJson["tip"] as? String
                             items.append(item)
                             
+                            let card = Card()
+                            card.item = item
+                            card.categoryName = category.title
+                            card.categoryKey = category.key
+                            card.subCategoryName = subCategory.title
+                            card.subCategoryKey = subCategory.key
+                            
                             print (category.key + "||" + subCategory.key + "||"  + item.itemName!)
-                            categoryInternalDictionary[category.key + "||" + subCategory.key + "||"  + item.itemName!] = item
+                            categoryInternalDictionary[category.key + "||" + subCategory.key + "||"  + item.itemName!] = card
                         }
                         
                         subCategory.items = items
@@ -143,57 +138,85 @@ class CategoryManager
         return filteredSubCategories.first!.items
     }
     
-    private func loadMyOcto()
+    private func loadFile(file : String) -> [String]
     {
-        let myOctoPath = FileManager.documentsPathForFileName("MyOcto")
+        var items = [String]()
+        let path = FileManager.documentsPathForFileName(file)
         
-        print(myOctoPath)
+        print(path)
         
         let fileMgr = Foundation.FileManager.default
         
-        if fileMgr.fileExists(atPath: myOctoPath)
+        if fileMgr.fileExists(atPath: path)
         {
             
-            guard let array = NSArray(contentsOfFile: myOctoPath) as? [String] else { return }
+            guard let array = NSArray(contentsOfFile: path) as? [String] else { return items}
             
             for  string in array
             {
-                myOctoItems.append(string)
+                items.append(string)
             }
         }
+        
+        return items
      }
     
-    func removeMyOcto(category: String, subCategory: String,  item: String)
+    func removeItem(category: String, subCategory: String,  item: String, type: OctoType)
     {
         let key = category + "||" + subCategory + "||" + item
-        if let index = myOctoItems.index(of: key)
-        {
-            print ("Remove myOcto at \(index)")
-            myOctoItems.remove(at: index)
-            saveMyOcto()
+        
+        switch type {
+            case .myOcto:
+                if let index = myOctoItems.index(of: key)
+                {
+                    print ("Remove myOcto at \(index)")
+                    myOctoItems.remove(at: index)
+                 }
+            case .gotIt :
+                if let index = gotItItems.index(of: key)
+                {
+                    print ("Remove gotIt at \(index)")
+                    gotItItems.remove(at: index)
+            }
         }
+        
+        saveItem(type: type)
     }
     
-    func addMyOcto (category: String, subCategory: String,  item: String)
+    func addItem (category: String, subCategory: String,  item: String, type: OctoType)
     {
         let key = category + "||" + subCategory + "||" + item
-        let index = myOctoItems.index(of: key)
         
-        if index == nil
-        {
-            print ("Add to myOcto - \(item)")
-         
-            myOctoItems.append(key)
-            saveMyOcto()
+        switch type {
+            case .myOcto:
+                let index = myOctoItems.index(of: key)
+                
+                if index == nil
+                {
+                    print ("Add to myOcto - \(item)")
+                    
+                    myOctoItems.append(key)
+                }
+            case .gotIt :
+                let index = gotItItems.index(of: key)
+                
+                if index == nil
+                {
+                    print ("Add to GotIt - \(item)")
+                    
+                    gotItItems.append(key)
+            }
         }
-    }
+
+        saveItem(type: type)
+     }
     
-    private func saveMyOcto()
+    private func saveItem(type: OctoType)
     {
         
-        let success = NSArray(array: myOctoItems).write(toFile: FileManager.documentsPathForFileName("MyOcto"), atomically: true)
+        let success = NSArray(array: type == .myOcto ? myOctoItems : gotItItems).write(toFile: FileManager.documentsPathForFileName(type == .myOcto ? CategoryManager.MyOctoFileName : CategoryManager.GotItFileName), atomically: true)
         
-        print ("Writing to MyOcto = \(success)")
+        print ("Writing to \(type) = \(success)")
         
     }
     
