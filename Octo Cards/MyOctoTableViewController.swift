@@ -39,7 +39,7 @@ class MyOctoTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        items = CategoryManager.sharedInstance.myOctoList
+        items = myOctoList()
         self.tableView.reloadData()
 
     }
@@ -84,7 +84,7 @@ class MyOctoTableViewController: UITableViewController {
         let item = items[indexPath.row]
         
         cell.textLabel?.text = item.item.phrase_py
-        cell.detailTextLabel?.text = item.item.phrase
+        cell.detailTextLabel?.text = "\(item.item.phrase!) \(item.subCategoryName)"
         cell.imageView?.image = UIImage(named: "first")
         
         return cell
@@ -108,4 +108,34 @@ class MyOctoTableViewController: UITableViewController {
         }
 
     }
+    
+    func myOctoList() -> [Card]
+    {
+        var items = [Card]()
+        for string in CategoryManager.sharedInstance.myOctoStrings
+        {
+            let stringArray = string.components(separatedBy: "||")
+            
+            if stringArray.count == 3
+            {
+                if let card = CategoryManager.sharedInstance.categoryDictionary[string]
+                {
+                    
+                    items.append(card)
+                }
+            }
+        }
+
+        let sorted = items.sorted(by: {
+            
+            if $0.subCategoryName != $1.subCategoryName {
+                return $0.subCategoryName < $1.subCategoryName
+            }
+             else {
+                return $0.item.phrase_py! < $1.item.phrase_py!
+            }
+        })
+        return sorted
+    }
+
 }

@@ -44,27 +44,7 @@ class CategoryManager
         return gotItItems 
     }
     
-    var myOctoList: [Card]
-    {
-        var items = [Card]()
-        for string in myOctoItems
-        {
-            let stringArray = string.components(separatedBy: "||")
-            
-            if stringArray.count == 3
-            {
-                if let card = categoryInternalDictionary[string]
-                {
-                    
-                    items.append(card)
-                }
-                
-            }
-        }
-        return items
-    }
-    
-     fileprivate init()
+    fileprivate init()
     {
         loadCategoryContent()
         myOctoItems = loadFile(file: CategoryManager.MyOctoFileName)
