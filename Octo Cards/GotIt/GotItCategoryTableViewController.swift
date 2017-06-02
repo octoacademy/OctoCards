@@ -10,7 +10,7 @@ import UIKit
 
 class GotItCategoryTableViewController: UITableViewController {
 
-    var catCards: [OctoCard]?
+    var GotItCards: [Card]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class GotItCategoryTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
       
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -37,23 +37,42 @@ class GotItCategoryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return catCards!.count
+        return GotItCards!.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "GotItItem", for: indexPath)
-        let catItem = catCards?[indexPath.row]
-     
-        cell.textLabel?.text = catItem?.pingYin
-        cell.detailTextLabel?.text = catItem?.phrase
+       
+        let item = GotItCards?[indexPath.row]
+        
+        cell.textLabel?.text = item?.item.phrase_py
+        cell.detailTextLabel?.text = item?.item.phrase
         cell.imageView?.image = UIImage(named: "first")
-     
-        return cell
+    
+    return cell
     }
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let infantCardStoryboard: UIStoryboard = UIStoryboard(name: "InfantCard", bundle: nil)
+        
+        let vc = infantCardStoryboard.instantiateViewController(withIdentifier: "infantcontainer") as! InfantContainerViewController
+        
+        vc.subCategory = (GotItCards?[indexPath.row].subCategoryName)!
+        vc.categoryKey = (GotItCards?[indexPath.row].categoryKey)!
+        vc.subCategoryKey = (GotItCards?[indexPath.row].subCategoryKey)!
+        vc.items = [(GotItCards?[indexPath.row].item)!]
+        vc.singleCard = true
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
+        {
+            nav.pushViewController(vc, animated: true)
+        }
+        
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

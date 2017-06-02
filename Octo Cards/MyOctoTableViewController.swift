@@ -48,37 +48,10 @@ class MyOctoTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   
-    /****** Using Custom TableViewCell using viewWithTag
-    func configureText(for cell: UITableViewCell, with item: MyOctoItem) {
-        let labelPY = cell.viewWithTag(1000) as! UILabel
-        let labelPhrase = cell.viewWithTag(2000) as! UILabel
-        
-        labelPY.text = item.PingYing
-        labelPhrase.text = item.Phrase
-    }
-    *************/
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
-   /*********** Using Custom TableViewCell and Configure Text method
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: "MyOctoItem", for: indexPath)
-        let item = items[indexPath.row]
-        
-        configureText(for: cell, with: item)
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView,
-                            didSelectRowAt indexPath: IndexPath) {
-    }
-    *****************/
-
-    /************* Using Subtitle TableViewCell style **********/
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyOctoItem", for: indexPath)
         let item = items[indexPath.row]

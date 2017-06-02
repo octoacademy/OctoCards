@@ -68,7 +68,6 @@ class InfantContainerViewController: UIViewController {
 
         
         self.navigationItem.title = subCategory
-        
          
         //if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
      

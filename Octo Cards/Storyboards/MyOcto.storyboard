@@ -64,6 +64,7 @@
         <!--My Octo-->
         <scene sceneID="W9Y-sk-jrn">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKt-q5-7zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hPc-Ic-1dm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Octo" image="first" id="mc5-ts-Spf"/>
                     <toolbarItems/>
@@ -76,7 +77,6 @@
                         <segue destination="wVn-cZ-VFZ" kind="relationship" relationship="rootViewController" id="62t-Qq-K9j"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tKt-q5-7zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="970" y="-478"/>
         </scene>

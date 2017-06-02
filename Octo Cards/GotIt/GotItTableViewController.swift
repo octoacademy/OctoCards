@@ -10,12 +10,16 @@ import UIKit
 
 class GotItTableViewController: UITableViewController {
     
-    var catLabels = ["At Home", "On the Go", "Out and About"]
+    var catLabels = ["At Home", "Out and About", "On the Go"]
+    var cards: [Category]?
+    
+    var catCards: [Card]?
+    
     var AtHomeCards: [OctoCard]?
     var OntheGoCards: [OctoCard]?
     var OutandAboutCards: [OctoCard]?
     
-    
+   /*
     required init?(coder aDecoder: NSCoder) {
         
          AtHomeCards = [OctoCard]()
@@ -56,7 +60,7 @@ class GotItTableViewController: UITableViewController {
         
         super.init(coder: aDecoder)
     }
-
+*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,11 +71,16 @@ class GotItTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let cards = gotItCards()
-        print (cards.count)
-
+        cards = gotItCards()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        cards = gotItCards()
+        self.tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -86,27 +95,28 @@ class GotItTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return catLabels.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AtHomeLabel", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CatLabel", for: indexPath)
         let itemName = catLabels[indexPath.row]
+        var itemCount = 0
         
         cell.textLabel?.text = itemName
         cell.imageView?.image = UIImage(named: "first")
+        
+        if (indexPath.row < (cards?.count)!) {
+            if let subCatCards = cards?[indexPath.row].subCategories {
+                for subCategory in subCatCards {
+                    itemCount+=(subCategory.items?.count)!
+                }
+            }
+        }
+        cell.detailTextLabel?.text = "(\(itemCount))"
 
-        if itemName == "At Home" {
-            cell.detailTextLabel?.text = "(\(AtHomeCards!.count))"
-        }
-        else if itemName == "On the Go" {
-            cell.detailTextLabel?.text = "(\(OntheGoCards!.count))"
-        }
-        else if itemName == "Out and About" {
-            cell.detailTextLabel?.text = "(\(OutandAboutCards!.count))"
-        }
         return cell
     }
     
@@ -154,20 +164,40 @@ class GotItTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        var catString = ""
+        
+        /******* setting up Back button*******/
+       // let GotItStoryboard: UIStoryboard = UIStoryboard(name: "GotIt", bundle: nil)
+        
+       // let vc = GotItStoryboard.instantiateViewController(withIdentifier: "GotIt") as! GotItTableViewController
+        /***************************************/
+        
         if let catVC = segue.destination as? GotItCategoryTableViewController {
             if let catCell = sender as? UITableViewCell {
+    
                 if catCell.textLabel?.text == "At Home" {
-                    catVC.catCards = AtHomeCards
+                    catString = "AtHome"
                 }
                 else if catCell.textLabel?.text == "On the Go" {
-                    catVC.catCards = OntheGoCards
+                    catString = "OnTheGo"
                 }
                 else if catCell.textLabel?.text == "Out and About" {
-                    catVC.catCards = OutandAboutCards
+                    catString = "OutAndAbout"
                 }
+            
+            catCards = GotItList(category: catString)
+            catVC.GotItCards = catCards
             }
+        /******* putting Back button in **********
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
+        {
+            nav.pushViewController(catVC, animated: true)
         }
-        
+    }
+        ***************************************/
+        }
     }
     
     func gotItCards() -> [Category]
@@ -249,4 +279,37 @@ class GotItTableViewController: UITableViewController {
         
         return Array(categoryDic.values)
     }
+    
+    func GotItList(category: String) -> [Card]
+    {
+        var items = [Card]()
+        for string in CategoryManager.sharedInstance.gotItStrings
+        {
+            let stringArray = string.components(separatedBy: "||")
+            print("stringArray: \(stringArray)")
+            if stringArray.count == 3
+            {
+                print("string array: \(stringArray[0])")
+                if (stringArray[0] == category) {
+                    if let card = CategoryManager.sharedInstance.categoryDictionary[string]
+                    {
+                        items.append(card)
+                    }
+                }
+            }
+        }
+        
+        let sorted = items.sorted(by: {
+            
+            if $0.subCategoryName != $1.subCategoryName {
+                return $0.subCategoryName < $1.subCategoryName
+            }
+            else {
+                return $0.item.phrase_py! < $1.item.phrase_py!
+            }
+        })
+        return sorted
+    }
+
+    
 }
