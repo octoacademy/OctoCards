@@ -143,11 +143,8 @@ class PickOneCollectionViewController: UICollectionViewController {
         vc.categoryKey = categories[indexPath.section].key
         vc.subCategoryKey = categories[indexPath.section].subCategories![indexPath.row].key
     
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
-        {
-            nav.pushViewController(vc, animated: true)
-        }
+        self.navigationController?.pushViewController(vc, animated: true)
+
 
     }
 }

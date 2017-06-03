@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dva-Vc-JNR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vsi-xJ-Zkm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -45,6 +45,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="sK1-CI-NqL" kind="show" id="Xkm-g1-bZe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -53,6 +56,7 @@
                             <outlet property="delegate" destination="vsi-xJ-Zkm" id="hYX-xK-RV5"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Got It!" image="first" id="vVe-Yu-dPD"/>
                     <navigationItem key="navigationItem" title="Got It!" id="spb-o8-Ggn">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ni8-90-ZHy"/>
                     </navigationItem>
@@ -109,25 +113,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="av3-tO-y8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2650" y="597"/>
-        </scene>
-        <!--Got It!-->
-        <scene sceneID="WI2-yT-O5b">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dva-Vc-JNR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Got It!" image="first" id="vVe-Yu-dPD"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4gh-vj-epf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vsi-xJ-Zkm" kind="relationship" relationship="rootViewController" id="oFP-y9-4Vk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L20-ma-0Rq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="901.60000000000002" y="596.85157421289364"/>
         </scene>
     </scenes>
     <resources>

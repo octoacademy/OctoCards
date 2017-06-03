@@ -120,42 +120,10 @@ class GotItTableViewController: UITableViewController {
         return cell
     }
     
-
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
-        {
-            var catString = ""
-            
-            let GotItStoryboard: UIStoryboard = UIStoryboard(name: "GotIt", bundle: nil)
-            
-            let vc = GotItStoryboard.instantiateViewController(withIdentifier: "gotItSubCategory") as! GotItCategoryTableViewController
-            
-            
-            let catCell = tableView.cellForRow(at: indexPath)
-            
-            if catCell?.textLabel?.text == "At Home" {
-                catString = "AtHome"
-            }
-            else if catCell?.textLabel?.text == "On the Go" {
-                catString = "OnTheGo"
-            }
-            else if catCell?.textLabel?.text == "Out and About" {
-                catString = "OutAndAbout"
-            }
-            
-            catCards = GotItList(category: catString)
-            vc.GotItCards = catCards
-            
-            nav.pushViewController(vc, animated: true)
-        }
-
-    }
-
     
     // MARK: - Navigation
 
-    /*
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -180,7 +148,7 @@ class GotItTableViewController: UITableViewController {
             catVC.GotItCards = catCards
             }
          }
-    }*/
+    }
     
     func gotItCards() -> [Category]
     {

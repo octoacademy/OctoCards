@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hPc-Ic-1dm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wVn-cZ-VFZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyOctoItem" textLabel="k6c-rX-Uoh" detailTextLabel="BXI-X8-5k3" imageView="jh8-qm-ymp" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="YTo-Cg-LhA" userLabel="MyOctoItemCell" customClass="MyOctoViewCell" customModule="Octo_Cards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTo-Cg-LhA" id="ye4-0a-Nvu">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
@@ -52,6 +52,7 @@
                             <outlet property="delegate" destination="wVn-cZ-VFZ" id="5rc-nz-aP8"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="My Octo" image="first" id="mc5-ts-Spf"/>
                     <navigationItem key="navigationItem" title="My Octo" id="mDi-2z-wBk">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="r6u-RG-J0c"/>
                     </navigationItem>
@@ -59,26 +60,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brS-LB-Cl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="-466.41679160419795"/>
-        </scene>
-        <!--My Octo-->
-        <scene sceneID="W9Y-sk-jrn">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tKt-q5-7zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hPc-Ic-1dm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Octo" image="first" id="mc5-ts-Spf"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qOf-88-Qcs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="wVn-cZ-VFZ" kind="relationship" relationship="rootViewController" id="62t-Qq-K9j"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="970" y="-478"/>
+            <point key="canvasLocation" x="937" y="-461"/>
         </scene>
     </scenes>
     <resources>

@@ -74,11 +74,7 @@ class MyOctoTableViewController: UITableViewController {
         vc.items = [items[indexPath.row].item]
         vc.singleCard = true
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
-        {
-            nav.pushViewController(vc, animated: true)
-        }
+       self.navigationController?.pushViewController(vc, animated: true)
 
     }
     
