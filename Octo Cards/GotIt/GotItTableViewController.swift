@@ -121,57 +121,47 @@ class GotItTableViewController: UITableViewController {
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
+        {
+            var catString = ""
+            
+            let GotItStoryboard: UIStoryboard = UIStoryboard(name: "GotIt", bundle: nil)
+            
+            let vc = GotItStoryboard.instantiateViewController(withIdentifier: "gotItSubCategory") as! GotItCategoryTableViewController
+            
+            
+            let catCell = tableView.cellForRow(at: indexPath)
+            
+            if catCell?.textLabel?.text == "At Home" {
+                catString = "AtHome"
+            }
+            else if catCell?.textLabel?.text == "On the Go" {
+                catString = "OnTheGo"
+            }
+            else if catCell?.textLabel?.text == "Out and About" {
+                catString = "OutAndAbout"
+            }
+            
+            catCards = GotItList(category: catString)
+            vc.GotItCards = catCards
+            
+            nav.pushViewController(vc, animated: true)
+        }
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
     // MARK: - Navigation
 
-    
+    /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
         var catString = ""
-        
-        /******* setting up Back button*******/
-       // let GotItStoryboard: UIStoryboard = UIStoryboard(name: "GotIt", bundle: nil)
-        
-       // let vc = GotItStoryboard.instantiateViewController(withIdentifier: "GotIt") as! GotItTableViewController
-        /***************************************/
         
         if let catVC = segue.destination as? GotItCategoryTableViewController {
             if let catCell = sender as? UITableViewCell {
@@ -189,16 +179,8 @@ class GotItTableViewController: UITableViewController {
             catCards = GotItList(category: catString)
             catVC.GotItCards = catCards
             }
-        /******* putting Back button in **********
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
-        {
-            nav.pushViewController(catVC, animated: true)
-        }
-    }
-        ***************************************/
-        }
-    }
+         }
+    }*/
     
     func gotItCards() -> [Category]
     {
