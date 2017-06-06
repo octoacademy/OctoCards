@@ -288,7 +288,7 @@
 				TargetAttributes = {
 					BF00691C1EC4EAD0004DC195 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 69799356B7;
+						DevelopmentTeam = 6TWE9F9E5G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -486,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 69799356B7;
+				DEVELOPMENT_TEAM = 6TWE9F9E5G;
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";
@@ -501,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 69799356B7;
+				DEVELOPMENT_TEAM = 6TWE9F9E5G;
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";

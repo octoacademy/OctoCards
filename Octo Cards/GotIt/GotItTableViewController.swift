@@ -19,49 +19,6 @@ class GotItTableViewController: UITableViewController {
     var OntheGoCards: [OctoCard]?
     var OutandAboutCards: [OctoCard]?
     
-   /*
-    required init?(coder aDecoder: NSCoder) {
-        
-         AtHomeCards = [OctoCard]()
-        let row0itemA = OctoCard()
-        let row1itemA = OctoCard()
-        let row2itemA = OctoCard()
-        
-        row0itemA.pingYin = "Xǐshǒu"
-        row0itemA.phrase = "Washing hands"
-        AtHomeCards?.append(row0itemA)
-        
-        row1itemA.pingYin = "Shǒuzhǐ"
-        row1itemA.phrase = "Fingers"
-        AtHomeCards?.append(row1itemA)
-        
-        row2itemA.pingYin = "PY3"
-        row2itemA.phrase = "Phrase 3"
-        AtHomeCards?.append(row2itemA)
-        
-        OntheGoCards = [OctoCard]()
-        let row0itemB = OctoCard()
-        let row1itemB = OctoCard()
-        
-        row0itemB.pingYin = "On the Go PY1"
-        row0itemB.phrase = "On the Go Phrase1"
-        OntheGoCards?.append(row0itemB)
-        
-        row1itemB.pingYin = "On the Go PY2"
-        row1itemB.phrase = "On the Go Phrase2"
-        OntheGoCards?.append(row1itemB)
-
-        OutandAboutCards = [OctoCard]()
-        let row0itemC = OctoCard()
-        
-        row0itemC.pingYin = "Out and About PY1"
-        row0itemC.phrase = "Out and About Phrase1"
-        OutandAboutCards?.append(row0itemC)
-        
-        super.init(coder: aDecoder)
-    }
-*/
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
