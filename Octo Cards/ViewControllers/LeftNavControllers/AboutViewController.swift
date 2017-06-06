@@ -1,41 +1,38 @@
 //
-//  LeftNavigationTableViewController.swift
+//  AboutViewController.swift
 //  Octo Cards
 //
-//  Created by Macbook on 5/20/17.
+//  Created by Macbook on 6/6/17.
 //  Copyright © 2017 OctoAcademy. All rights reserved.
 //
 
 import UIKit
 
-class LeftNavigationTableViewController: UITableViewController {
+class AboutViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-          }
+        // Do any additional setup after loading the view.
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
+    @IBAction func Done(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        slideMenuController()?.closeLeft()
     }
-    
+    */
 
 }

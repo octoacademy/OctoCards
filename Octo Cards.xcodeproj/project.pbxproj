@@ -25,6 +25,7 @@
 		FA09E9251ECBC5B8003AF8CE /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E9241ECBC5B8003AF8CE /* CategoryManager.swift */; };
 		FA09E92D1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E92C1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift */; };
 		FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */; };
+		FA4D3D4D1EE70CFB00B7CBE6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D3D4C1EE70CFB00B7CBE6 /* AboutViewController.swift */; };
 		FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A096A1ECF6829000457C2 /* PickOneCollectionReusableView.swift */; };
 		FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */; };
 		FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */; };
@@ -64,6 +65,7 @@
 		FA09E9241ECBC5B8003AF8CE /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryManager.swift; path = Managers/CategoryManager.swift; sourceTree = "<group>"; };
 		FA09E92C1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionViewController.swift; sourceTree = "<group>"; };
 		FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA4D3D4C1EE70CFB00B7CBE6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		FA6A096A1ECF6829000457C2 /* PickOneCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionReusableView.swift; sourceTree = "<group>"; };
 		FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardsViewController.swift; path = ViewControllers/Detail/InfantCardsViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		FA09E9261ECBCBCB003AF8CE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA4D3D4B1EE70CFB00B7CBE6 /* LeftNavControllers */,
 				FA6A09711ECF9AD0000457C2 /* InfantCard */,
 				BFBB9E281ECF358700DA1C37 /* MyOcto */,
 				FA09E92B1ECBCCCF003AF8CE /* PickOne */,
@@ -227,6 +230,15 @@
 			);
 			name = PickOne;
 			path = ViewControllers/PickOne;
+			sourceTree = "<group>";
+		};
+		FA4D3D4B1EE70CFB00B7CBE6 /* LeftNavControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D3D4C1EE70CFB00B7CBE6 /* AboutViewController.swift */,
+			);
+			name = LeftNavControllers;
+			path = ViewControllers/LeftNavControllers;
 			sourceTree = "<group>";
 		};
 		FA6A096E1ECF88D6000457C2 /* Extensions */ = {
@@ -354,6 +366,7 @@
 				FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */,
 				BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */,
 				FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */,
+				FA4D3D4D1EE70CFB00B7CBE6 /* AboutViewController.swift in Sources */,
 				FA6A097C1ED15AAF000457C2 /* RootViewController.swift in Sources */,
 				BFE07D261ED5F837003FA4BA /* GotItCategoryTableViewController.swift in Sources */,
 				BFBB9E2C1ECF393800DA1C37 /* OctoCard.swift in Sources */,

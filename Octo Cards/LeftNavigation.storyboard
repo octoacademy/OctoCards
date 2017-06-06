@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hhQ-eQ-mIJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hhQ-eQ-mIJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -59,7 +59,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="LLa-Q4-uF5" kind="show" id="lcz-7I-2YD"/>
+                                            <segue destination="tTc-vU-jSU" kind="presentation" id="ZL7-xb-vFK"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" textLabel="Ae2-Gz-RTt" style="IBUITableViewCellStyleDefault" id="6ge-oK-Avd">
@@ -135,7 +135,7 @@
         <!--About View Controller-->
         <scene sceneID="39n-p5-s67">
             <objects>
-                <viewController storyboardIdentifier="About" id="LLa-Q4-uF5" userLabel="About View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="About" id="LLa-Q4-uF5" userLabel="About View Controller" customClass="AboutViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rNa-KP-Lgc"/>
                         <viewControllerLayoutGuide type="bottom" id="rWn-3Q-Yks"/>
@@ -175,10 +175,17 @@
                             <constraint firstItem="Rua-r5-gh4" firstAttribute="top" secondItem="rNa-KP-Lgc" secondAttribute="bottom" constant="20" id="lPG-qW-6lx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sLz-Pc-4qM">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="9g8-Mb-KTa">
+                            <connections>
+                                <action selector="Done:" destination="LLa-Q4-uF5" id="E1j-l4-tdm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4K-oX-aNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="103.89805097451276"/>
+            <point key="canvasLocation" x="3694" y="104"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="tsC-dG-ykp">
@@ -196,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLs-LA-3X9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2816.8000000000002" y="511.39430284857576"/>
+            <point key="canvasLocation" x="2804" y="854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H6E-gl-Gcn">
@@ -215,6 +222,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ4-eR-iKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="103.89805097451276"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LIi-vk-QBQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tTc-vU-jSU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Men-OT-cqd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LLa-Q4-uF5" kind="relationship" relationship="rootViewController" id="dBq-TW-znf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icx-3b-0rW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2804" y="103.89805097451276"/>
         </scene>
     </scenes>
 </document>
