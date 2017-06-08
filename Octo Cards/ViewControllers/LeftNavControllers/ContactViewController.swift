@@ -1,14 +1,14 @@
 //
-//  AboutViewController.swift
+//  ContactViewController.swift
 //  Octo Cards
 //
-//  Created by Macbook on 6/6/17.
+//  Created by Linda Ho on 6/6/17.
 //  Copyright © 2017 OctoAcademy. All rights reserved.
 //
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class ContactViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

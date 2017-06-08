@@ -15,6 +15,8 @@
 		BFBB9E2C1ECF393800DA1C37 /* OctoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */; };
 		BFE07D241ED5F14D003FA4BA /* GotItTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07D231ED5F14D003FA4BA /* GotItTableViewController.swift */; };
 		BFE07D261ED5F837003FA4BA /* GotItCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07D251ED5F837003FA4BA /* GotItCategoryTableViewController.swift */; };
+		BFE2C7E41EE74A18004F20F0 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2C7E31EE74A18004F20F0 /* ContactViewController.swift */; };
+		BFE2C7E81EE99789004F20F0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2C7E71EE99789004F20F0 /* SettingsTableViewController.swift */; };
 		FA09E90F1ECB968D003AF8CE /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = FA09E90E1ECB968D003AF8CE /* Category.json */; };
 		FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */; };
 		FA09E9161ECB98E7003AF8CE /* PickOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */; };
@@ -55,6 +57,8 @@
 		BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoCard.swift; sourceTree = "<group>"; };
 		BFE07D231ED5F14D003FA4BA /* GotItTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotItTableViewController.swift; path = GotIt/GotItTableViewController.swift; sourceTree = "<group>"; };
 		BFE07D251ED5F837003FA4BA /* GotItCategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotItCategoryTableViewController.swift; path = GotIt/GotItCategoryTableViewController.swift; sourceTree = "<group>"; };
+		BFE2C7E31EE74A18004F20F0 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		BFE2C7E71EE99789004F20F0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FA09E90E1ECB968D003AF8CE /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
 		FA09E9131ECB989A003AF8CE /* MyOcto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyOcto.storyboard; path = Storyboards/MyOcto.storyboard; sourceTree = "<group>"; };
 		FA09E9151ECB98E7003AF8CE /* PickOne.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PickOne.storyboard; path = Storyboards/PickOne.storyboard; sourceTree = "<group>"; };
@@ -235,7 +239,9 @@
 		FA4D3D4B1EE70CFB00B7CBE6 /* LeftNavControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2C7E71EE99789004F20F0 /* SettingsTableViewController.swift */,
 				FA4D3D4C1EE70CFB00B7CBE6 /* AboutViewController.swift */,
+				BFE2C7E31EE74A18004F20F0 /* ContactViewController.swift */,
 			);
 			name = LeftNavControllers;
 			path = ViewControllers/LeftNavControllers;
@@ -363,7 +369,9 @@
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */,
+				BFE2C7E41EE74A18004F20F0 /* ContactViewController.swift in Sources */,
 				FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */,
+				BFE2C7E81EE99789004F20F0 /* SettingsTableViewController.swift in Sources */,
 				BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */,
 				FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */,
 				FA4D3D4D1EE70CFB00B7CBE6 /* AboutViewController.swift in Sources */,
