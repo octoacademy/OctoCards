@@ -50,9 +50,11 @@ class CustomInfantCardViewController: UIViewController, UIGestureRecognizerDeleg
                 
                 vc.didMove(toParentViewController: self)
                 
-                
-                let gesture = UIPanGestureRecognizer(target: self, action: #selector(CustomInfantCardViewController.userDragged(_:)))
-                cardView.addGestureRecognizer(gesture)
+                if items.count > 1
+                {
+                    let gesture = UIPanGestureRecognizer(target: self, action: #selector(CustomInfantCardViewController.userDragged(_:)))
+                    cardView.addGestureRecognizer(gesture)
+                }
                 
                 if UIDevice.current.userInterfaceIdiom == .pad
                 {
