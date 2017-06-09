@@ -61,16 +61,17 @@ class CustomInfantCardViewController: UIViewController, UIGestureRecognizerDeleg
                     view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .top, multiplier: 1, constant: 30))
                     view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .bottom, relatedBy: .equal, toItem: self.bottomLayoutGuide, attribute:.bottom, multiplier: 1, constant: -200))
                     
-                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 100))
+                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: CGFloat(100 + CGFloat(i) * 2.5)))
                     view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: -100))
                 }
                 else
                 {
-                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .top, multiplier: 1, constant: 10))
+                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .top, multiplier: 1, constant: 20))
                     view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .bottom, relatedBy: .equal, toItem: self.bottomLayoutGuide, attribute:.bottom, multiplier: 1, constant: -150))
                     
-                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 30))
-                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: -30))
+                   /* view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: CGFloat(20 + CGFloat(i * i) * 1.5)))*/
+                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: CGFloat(20 + CGFloat(i) * 2.5)))
+                    view.addConstraint(NSLayoutConstraint(item: cardView, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: -20))
                 }
                 
             }
@@ -78,6 +79,7 @@ class CustomInfantCardViewController: UIViewController, UIGestureRecognizerDeleg
         }
     }
     
+    var pointsKey = [Int: CGPoint]()
     var initialPoint = CGPoint()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,10 +96,15 @@ class CustomInfantCardViewController: UIViewController, UIGestureRecognizerDeleg
         
         for v in self.view.subviews
         {
-            if v.tag > 0
+            /*if v.tag > 0
             {
                 initialPoint = v.frame.origin
                 break
+            }*/
+            
+            if v.tag > 0
+            {
+                pointsKey[v.tag] = v.frame.origin
             }
         }
     }
@@ -183,7 +190,8 @@ class CustomInfantCardViewController: UIViewController, UIGestureRecognizerDeleg
                     UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
                         let v = self.view.subviews.filter({ $0.tag == self.lastCard.first }).first
                         self.lastCard.removeFirst()
-                        v?.frame.origin = self.initialPoint
+                        //v?.frame.origin = self.initialPoint
+                        v?.frame.origin = self.pointsKey[v!.tag]!
                         v?.layer.borderColor = UIColor.lightGray.cgColor
                         v?.layer.borderWidth = 1
                         v?.alpha = 1
