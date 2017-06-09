@@ -28,6 +28,7 @@
 		FA09E92D1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E92C1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift */; };
 		FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */; };
 		FA4D3D4D1EE70CFB00B7CBE6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D3D4C1EE70CFB00B7CBE6 /* AboutViewController.swift */; };
+		FA4D3D751EEA1B7900B7CBE6 /* CustomInfantCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D3D741EEA1B7900B7CBE6 /* CustomInfantCardViewController.swift */; };
 		FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A096A1ECF6829000457C2 /* PickOneCollectionReusableView.swift */; };
 		FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */; };
 		FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */; };
@@ -70,6 +71,7 @@
 		FA09E92C1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionViewController.swift; sourceTree = "<group>"; };
 		FA09E92E1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA4D3D4C1EE70CFB00B7CBE6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		FA4D3D741EEA1B7900B7CBE6 /* CustomInfantCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomInfantCardViewController.swift; path = ViewControllers/Detail/CustomInfantCardViewController.swift; sourceTree = "<group>"; };
 		FA6A096A1ECF6829000457C2 /* PickOneCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOneCollectionReusableView.swift; sourceTree = "<group>"; };
 		FA6A096F1ECF88D6000457C2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardsViewController.swift; path = ViewControllers/Detail/InfantCardsViewController.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				FA6A09721ECF9AFA000457C2 /* InfantCardsViewController.swift */,
 				FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */,
 				FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */,
+				FA4D3D741EEA1B7900B7CBE6 /* CustomInfantCardViewController.swift */,
 			);
 			name = InfantCard;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				FA6A09861ED48C73000457C2 /* MyOctoTableViewController.swift in Sources */,
 				FA09E92D1ECBCCCF003AF8CE /* PickOneCollectionViewController.swift in Sources */,
 				FA6A09841ED161B3000457C2 /* TabBarController.swift in Sources */,
+				FA4D3D751EEA1B7900B7CBE6 /* CustomInfantCardViewController.swift in Sources */,
 				FA09E9201ECBC05B003AF8CE /* Item.swift in Sources */,
 				FA6A09701ECF88D6000457C2 /* UIViewControllerExtension.swift in Sources */,
 				FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */,

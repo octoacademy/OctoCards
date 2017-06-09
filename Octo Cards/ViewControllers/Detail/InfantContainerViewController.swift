@@ -54,10 +54,12 @@ class InfantContainerViewController: UIViewController {
         
         
         // final iteration to find the unshared cards
-        finalCards.append(contentsOf: newData.values.shuffled())
-        finalCards.append(contentsOf: myOctoCards.shuffled())
         finalCards.append(contentsOf: gotItCards.shuffled())
-
+        finalCards.append(contentsOf: myOctoCards.shuffled())
+        finalCards.append(contentsOf: newData.values.shuffled())
+        
+        
+        
         return finalCards
     }
     
@@ -71,12 +73,13 @@ class InfantContainerViewController: UIViewController {
          
         //if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
      
-        let pageViewController = childViewControllers[0] as! InfantCardsPageViewController
+        let pageViewController = childViewControllers[0] as! CustomInfantCardViewController
         
-        pageViewController.items = singleCard ? self.items : self.getCards()
         pageViewController.subCategory = subCategory
         pageViewController.categoryKey = categoryKey
         pageViewController.subCategoryKey = subCategoryKey
+        pageViewController.items = singleCard ? self.items : self.getCards()
+
     }
 
     override func didReceiveMemoryWarning() {
