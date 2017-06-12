@@ -54,9 +54,11 @@ class InfantContainerViewController: UIViewController {
         
         
         // final iteration to find the unshared cards
-        finalCards.append(contentsOf: gotItCards.shuffled())
-        finalCards.append(contentsOf: myOctoCards.shuffled())
         finalCards.append(contentsOf: newData.values.shuffled())
+        finalCards.append(contentsOf: myOctoCards.shuffled())
+        finalCards.append(contentsOf: gotItCards.shuffled())
+       
+        
         
         
         
@@ -73,7 +75,7 @@ class InfantContainerViewController: UIViewController {
          
         //if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
      
-        let pageViewController = childViewControllers[0] as! CustomInfantCardViewController
+        let pageViewController = childViewControllers[0] as! InfantCardsPageViewController
         
         pageViewController.subCategory = subCategory
         pageViewController.categoryKey = categoryKey

@@ -45,7 +45,7 @@ class InfantCardsViewController: UIViewController {
         self.backCardArea.layer.cornerRadius = 10
         self.backCardArea.clipsToBounds = true
         
-        //setupPreviousNextScreen()
+        setupPreviousNextScreen()
         
         scenarioText.adjustsFontSizeToFitWidth = true
         scenarioText.numberOfLines  = 0
