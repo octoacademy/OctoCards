@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import UserNotifications
 
-class InfantCardsViewController: UIViewController {
+class InfantCardsViewController: UIViewController{
 
     var item : Item!
     var categoryKey = ""
@@ -33,19 +34,23 @@ class InfantCardsViewController: UIViewController {
     @IBOutlet weak var myOctoButton: UIButton!
     @IBOutlet weak var gotItButton: UIButton!
     
+    @IBOutlet weak var remindMeLabel: UILabel!
+    @IBOutlet weak var reminderPickerView: UIView!
+    @IBOutlet weak var reminderAuthorizationView: UIView!
+    @IBOutlet weak var goToSettingButton: UIButton!
     
+    @IBOutlet weak var authorizeNotificationSwitch: UISwitch!
     weak var delegate : InfantCardsPageViewController!
+    var pickerView: UIDatePicker = UIDatePicker()
     
+    var alertView = UIAlertController()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.cardArea.layer.cornerRadius = 10
-        self.cardArea.clipsToBounds = true
-        
-        self.backCardArea.layer.cornerRadius = 10
-        self.backCardArea.clipsToBounds = true
-        
+        setupRoundedCorner()
         setupPreviousNextScreen()
+        setupPickerView()
         
         scenarioText.adjustsFontSizeToFitWidth = true
         scenarioText.numberOfLines  = 0
@@ -76,10 +81,26 @@ class InfantCardsViewController: UIViewController {
             gotItButton.isSelected = true
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupAuthorizationToUseNSNotifications()
+
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setupRoundedCorner()
+    {
+        self.cardArea.layer.cornerRadius = 10
+        self.cardArea.clipsToBounds = true
+        
+        self.backCardArea.layer.cornerRadius = 10
+        self.backCardArea.clipsToBounds = true
     }
     
     func setupPreviousNextScreen()
@@ -95,13 +116,100 @@ class InfantCardsViewController: UIViewController {
         leftButton.isHidden =  index == 0 ? true : false
     }
 
+    func setupPickerView()
+    {
+        let done = UIButton(frame: CGRect(x: self.view.bounds.width - 100, y: 0, width: 100, height: 50))
+        done.setTitle("Done", for: .normal)
+        done.setTitleColor(UIColor.darkGray, for: .normal)
+        done.addTarget(self, action: #selector(pressDone(button:)), for: .touchUpInside)
+        
+        pickerView.datePickerMode = .time
+        pickerView.backgroundColor = UIColor.clear
+        pickerView.frame = CGRect(x: 0, y: 25, width: self.view.bounds.width - 20 , height: 200)
+        
+        alertView = UIAlertController(title: "", message: "\n\n\n\n\n\n\n\n\n", preferredStyle: UIAlertControllerStyle.actionSheet);
+        alertView.isModalInPopover = true;
+        alertView.view.addSubview(self.pickerView)
+        alertView.view.addSubview(done)
+        //alertView.view.backgroundColor = UIColor.white
+        
+        if let presenter = alertView.popoverPresentationController {
+            presenter.permittedArrowDirections = .up
+            presenter.sourceView = self.remindMeLabel
+            presenter.sourceRect = self.remindMeLabel.bounds
+            presenter.sourceRect.origin.y = presenter.sourceRect.origin.y + 10
+            pickerView.frame.size.width = 200
+        }
+    }
     
+    func setupAuthorizationToUseNSNotifications()
+    {
+        let center = UNUserNotificationCenter.current()
+        
+        center.getNotificationSettings { (settings) in
+            if settings.authorizationStatus.rawValue == 0 //undetermined
+            {
+                self.authorizeNotificationSwitch.isOn = false
+                self.reminderPickerView.isHidden = true
+                self.goToSettingButton.isHidden =  true
+            }
+            else if settings.authorizationStatus.rawValue == 2//authorized
+            {
+                self.authorizeNotificationSwitch.isOn = true
+                self.reminderPickerView.isHidden = false
+                self.goToSettingButton.isHidden =  true
+            }
+            else
+            {
+                self.reminderPickerView.isHidden = true
+                self.reminderAuthorizationView .isHidden = true
+                self.goToSettingButton.isHidden =  false
+            }
+        }
+    }
+    
+    func getPermissionFromUser()
+    {
+        // TODO : might want to show spinner as it take more than a sec for the requestAuthorization to complete
+        
+        let center = UNUserNotificationCenter.current()
+        let options: UNAuthorizationOptions = [.alert, .sound];
+        center.requestAuthorization(options: options) {
+            (granted, error) in
+            if !granted {
+                 self.authorizeNotificationSwitch.isOn = false
+                self.reminderAuthorizationView.isHidden = true
+                self.reminderPickerView.isHidden = true
+                self.goToSettingButton.isHidden = false
+            }
+            else
+            {
+                self.reminderPickerView.isHidden = false
+                self.goToSettingButton.isHidden = true
+            }
+            
+        }
+    }
+
+    func tap(_ gesture: UITapGestureRecognizer)
+    {
+        alertView.dismiss(animated: true, completion: nil)
+    }
+    
+    func pressDone(button: UIButton) {
+        alertView.dismiss(animated: true, completion: nil)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        formatter.amSymbol = "AM"
+        formatter.pmSymbol = "PM"
+        
+        let dateString = formatter.string(from: pickerView.date)
+        self.remindMeLabel.text = dateString
+    }
     
     @IBAction func addToMyOcto(_ sender: UIButton) {
        
-        
-        
-        if myOctoButton.isSelected
+          if myOctoButton.isSelected
         {
             myOctoButton.isSelected = false
             CategoryManager.sharedInstance.removeItem(category: categoryKey,
@@ -123,7 +231,7 @@ class InfantCardsViewController: UIViewController {
         }
 
     }
-
+    
     
     @IBAction func addToGotIt(_ sender: UIButton) {
         
@@ -190,14 +298,44 @@ class InfantCardsViewController: UIViewController {
 
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func remind(_ sender: Any) {
+        present(alertView, animated: true, completion :{
+            for v in (self.alertView.view.superview?.subviews)!
+            {
+                if !v.isUserInteractionEnabled
+                {
+                    v.isUserInteractionEnabled = true
+                    v.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tap(_:))))
+                    break
+                }
+            }
+             })
     }
-    */
-
+    
+    @IBAction func changeNotification(_ sender: UISwitch) {
+        
+        if sender.isOn
+        {
+            getPermissionFromUser()
+        }
+        else
+        {
+            reminderPickerView.isHidden = true
+            
+            //TODO: Delete the notifications
+        }
+    }
+    
+    @IBAction func goToSettings(_ sender: UIButton) {
+        guard let settingsUrl = URL(string: UIApplicationOpenSettingsURLString) else {
+            return
+        }
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                print("Settings opened: \(success)") // Prints true
+            })
+        }
+        
+    }
 }
+
