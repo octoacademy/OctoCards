@@ -12,6 +12,8 @@
 		BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0069291EC4EAD0004DC195 /* Assets.xcassets */; };
 		BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */; };
 		BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069341EC4F3AA004DC195 /* MyOctoViewCell.swift */; };
+		BF6D13C01EEF14280061B441 /* ChangingDiaper_fingers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF6D13BE1EEF14280061B441 /* ChangingDiaper_fingers.mp3 */; };
+		BF6D13C11EEF14280061B441 /* ChangingDiaper_washhands.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF6D13BF1EEF14280061B441 /* ChangingDiaper_washhands.mp3 */; };
 		BFBB9E2C1ECF393800DA1C37 /* OctoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */; };
 		BFE07D241ED5F14D003FA4BA /* GotItTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07D231ED5F14D003FA4BA /* GotItTableViewController.swift */; };
 		BFE07D261ED5F837003FA4BA /* GotItCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07D251ED5F837003FA4BA /* GotItCategoryTableViewController.swift */; };
@@ -55,6 +57,9 @@
 		BF00692C1EC4EAD0004DC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF00692E1EC4EAD0004DC195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF0069341EC4F3AA004DC195 /* MyOctoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoViewCell.swift; sourceTree = "<group>"; };
+		BF6D13BE1EEF14280061B441 /* ChangingDiaper_fingers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ChangingDiaper_fingers.mp3; path = "Octo Cards/ChangingDiaper_fingers.mp3"; sourceTree = "<group>"; };
+		BF6D13BF1EEF14280061B441 /* ChangingDiaper_washhands.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ChangingDiaper_washhands.mp3; path = "Octo Cards/ChangingDiaper_washhands.mp3"; sourceTree = "<group>"; };
+		BF6D13C41EEF16190061B441 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoCard.swift; sourceTree = "<group>"; };
 		BFE07D231ED5F14D003FA4BA /* GotItTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotItTableViewController.swift; path = GotIt/GotItTableViewController.swift; sourceTree = "<group>"; };
 		BFE07D251ED5F837003FA4BA /* GotItCategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotItCategoryTableViewController.swift; path = GotIt/GotItCategoryTableViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +111,7 @@
 			children = (
 				BF00691F1EC4EAD0004DC195 /* Octo Cards */,
 				BF00691E1EC4EAD0004DC195 /* Products */,
+				BF6D13C31EEF16180061B441 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,10 +139,29 @@
 				FA6A097D1ED15B0A000457C2 /* LeftNavigation.storyboard */,
 				FA09E9121ECB97DE003AF8CE /* Storyboards */,
 				BF0069291EC4EAD0004DC195 /* Assets.xcassets */,
+				BF6D13C21EEF14610061B441 /* Audio */,
 				BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */,
 				BF00692E1EC4EAD0004DC195 /* Info.plist */,
 			);
 			path = "Octo Cards";
+			sourceTree = "<group>";
+		};
+		BF6D13C21EEF14610061B441 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D13BF1EEF14280061B441 /* ChangingDiaper_washhands.mp3 */,
+				BF6D13BE1EEF14280061B441 /* ChangingDiaper_fingers.mp3 */,
+			);
+			name = Audio;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BF6D13C31EEF16180061B441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D13C41EEF16190061B441 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BFBB9E281ECF358700DA1C37 /* MyOcto */ = {
@@ -343,8 +368,10 @@
 				BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */,
 				BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */,
 				BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */,
+				BF6D13C11EEF14280061B441 /* ChangingDiaper_washhands.mp3 in Resources */,
 				FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */,
 				FA6A097E1ED15B0A000457C2 /* LeftNavigation.storyboard in Resources */,
+				BF6D13C01EEF14280061B441 /* ChangingDiaper_fingers.mp3 in Resources */,
 				FA6A09751ED11869000457C2 /* InfantCard.storyboard in Resources */,
 				FA09E90F1ECB968D003AF8CE /* Category.json in Resources */,
 			);
@@ -514,7 +541,7 @@
 				DEVELOPMENT_TEAM = 6TWE9F9E5G;
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -529,7 +556,7 @@
 				DEVELOPMENT_TEAM = 6TWE9F9E5G;
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
