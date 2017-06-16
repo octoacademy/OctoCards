@@ -72,10 +72,10 @@ class InfantContainerViewController: UIViewController {
 
         
         self.navigationItem.title = subCategory
-         
+        
         //if let catItems = CategoryManager.sharedInstance.getItems(forCategory: categoryKey, forSubCategory: subCategoryKey)
      
-        let pageViewController = childViewControllers[0] as! InfantCardsPageViewController
+        let pageViewController = childViewControllers[0] as! InfantCardCollectionViewController
         
         pageViewController.subCategory = subCategory
         pageViewController.categoryKey = categoryKey

@@ -45,6 +45,9 @@
 		FA6A098D1ED8ACBC000457C2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09871ED6A95B000457C2 /* FileManager.swift */; };
 		FA6A09AF1EDDF474000457C2 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09AE1EDDF474000457C2 /* CollectionExtension.swift */; };
 		FA6A09B11EDE00BE000457C2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A09B01EDE00BE000457C2 /* Card.swift */; };
+		FAE45A931EF3449300DA515A /* InfantCardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE45A921EF3449300DA515A /* InfantCardCollectionViewController.swift */; };
+		FAE45A951EF344A800DA515A /* InfantCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE45A941EF344A800DA515A /* InfantCardCollectionViewCell.swift */; };
+		FAE45A971EF344CC00DA515A /* InfantCardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE45A961EF344CC00DA515A /* InfantCardLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantContainerViewController.swift; path = ViewControllers/Detail/InfantContainerViewController.swift; sourceTree = "<group>"; };
 		FA6A09AE1EDDF474000457C2 /* CollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		FA6A09B01EDE00BE000457C2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
+		FAE45A921EF3449300DA515A /* InfantCardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardCollectionViewController.swift; path = ViewControllers/Detail/InfantCardCollectionViewController.swift; sourceTree = "<group>"; };
+		FAE45A941EF344A800DA515A /* InfantCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardCollectionViewCell.swift; path = ViewControllers/Detail/InfantCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAE45A961EF344CC00DA515A /* InfantCardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfantCardLayout.swift; path = ViewControllers/Detail/InfantCardLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +271,9 @@
 				FA6A09891ED73F31000457C2 /* InfantCardsPageViewController.swift */,
 				FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */,
 				FA4D3D741EEA1B7900B7CBE6 /* CustomInfantCardViewController.swift */,
+				FAE45A921EF3449300DA515A /* InfantCardCollectionViewController.swift */,
+				FAE45A941EF344A800DA515A /* InfantCardCollectionViewCell.swift */,
+				FAE45A961EF344CC00DA515A /* InfantCardLayout.swift */,
 			);
 			name = InfantCard;
 			sourceTree = "<group>";
@@ -366,6 +375,7 @@
 				FA6A09781ED158F4000457C2 /* SlideMenuController.swift in Sources */,
 				FA6A098A1ED73F31000457C2 /* InfantCardsPageViewController.swift in Sources */,
 				FA6A098D1ED8ACBC000457C2 /* FileManager.swift in Sources */,
+				FAE45A931EF3449300DA515A /* InfantCardCollectionViewController.swift in Sources */,
 				FA6A09B11EDE00BE000457C2 /* Card.swift in Sources */,
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
 				FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */,
@@ -373,9 +383,11 @@
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */,
+				FAE45A971EF344CC00DA515A /* InfantCardLayout.swift in Sources */,
 				BFE2C7E41EE74A18004F20F0 /* ContactViewController.swift in Sources */,
 				FA6A09801ED15B47000457C2 /* LeftNavigationTableViewController.swift in Sources */,
 				BFE2C7E81EE99789004F20F0 /* SettingsTableViewController.swift in Sources */,
+				FAE45A951EF344A800DA515A /* InfantCardCollectionViewCell.swift in Sources */,
 				BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */,
 				FA09E91E1ECBBF89003AF8CE /* SubCategory.swift in Sources */,
 				FA4D3D4D1EE70CFB00B7CBE6 /* AboutViewController.swift in Sources */,
