@@ -17,28 +17,47 @@ class InfantCardCollectionViewController: UICollectionViewController {
     var subCategoryKey: String = ""
     
     var items : [Item] = [Item]()
+    {
+        didSet
+        {
+            setCellSize()
+            
+            if items.count > 0
+            {
+                (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset  = UIEdgeInsets.zero
+                
+                var insets = self.collectionView!.contentInset
+                
+                let value = UIScreen.main.bounds.width / 2 - (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).itemSize.width / 2
+                insets.left = value
+                insets.right = value
+                insets.top = -70
+                self.collectionView!.contentInset = insets
+                self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setCellSize()
-        
-        (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset  = UIEdgeInsets.zero
-        
-        var insets = self.collectionView!.contentInset
-        
-        let value = self.collectionView!.bounds.size.width / 2 - (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).itemSize.width / 2
-        insets.left = value
-        insets.right = value
-        insets.top = -70
-        self.collectionView!.contentInset = insets
-        self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if !self.collectionView!.visibleCells.isEmpty {
+            playSound()
+        }
+    }
 
      override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        playSound()
     }
 
      // MARK: UICollectionViewDataSource
@@ -82,7 +101,21 @@ class InfantCardCollectionViewController: UICollectionViewController {
             let cellSize = CGSize(width: UIScreen.main.bounds.width * widthPercentage , height: UIScreen.main.bounds.height * 0.8)
             layout.itemSize = cellSize
         }
-
+    }
+    
+    func playSound()
+    {
+        let layout = (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout)
+        let index = round(abs(self.collectionView!.contentOffset.x / (layout.itemSize.width + layout.minimumInteritemSpacing)))
+        
+        print ("index \(index)")
+        
+        self.playSound(index: Int(index))
+    }
+    
+    func playSound(index: Int)
+    {
         
     }
+    
 }
