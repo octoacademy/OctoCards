@@ -20,36 +20,23 @@ class InfantCardCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
+        setCellSize()
         
         (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset  = UIEdgeInsets.zero
         
         var insets = self.collectionView!.contentInset
-        //let value : CGFloat = (self.view.frame.size.width - (self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout).itemSize.width) * 0.5
         
         let value = self.collectionView!.bounds.size.width / 2 - (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).itemSize.width / 2
         insets.left = value
         insets.right = value
         insets.top = -70
         self.collectionView!.contentInset = insets
-        self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast;
-
-        // Do any additional setup after loading the view.
+        self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setCellSize()
-        
-    }
 
-    override func didReceiveMemoryWarning() {
+     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -83,7 +70,7 @@ class InfantCardCollectionViewController: UICollectionViewController {
      {
         let layout = (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout)
         
-        let widthPercentage : CGFloat = items.count == 1 ? 0.9 : 0.73
+        let widthPercentage : CGFloat = items.count == 1 ? 0.8 : 0.73
         
         if UIDevice.current.userInterfaceIdiom == .pad
         {
