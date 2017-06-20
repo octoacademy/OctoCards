@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 private let reuseIdentifier = "Cell"
 
@@ -15,6 +16,7 @@ class InfantCardCollectionViewController: UICollectionViewController {
     var subCategory: String = ""
     var categoryKey: String = ""
     var subCategoryKey: String = ""
+    var audioPlayer : AVAudioPlayer = AVAudioPlayer()
     
     var items : [Item] = [Item]()
     {
@@ -36,6 +38,13 @@ class InfantCardCollectionViewController: UICollectionViewController {
                 self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
             }
         }
+    }
+    
+    @IBAction func playSoundButton(_ sender: Any) {
+        if !self.collectionView!.visibleCells.isEmpty {
+            playSound()
+        }
+
     }
     
     override func viewDidLoad() {
@@ -115,7 +124,20 @@ class InfantCardCollectionViewController: UICollectionViewController {
     
     func playSound(index: Int)
     {
-        
+        var audioName = ""
+        do {
+            audioName = "\(items[index].itemName ?? "")"
+            print("audioName: \(audioName)")
+            guard let audioPath = Bundle.main.path(forResource: "\(audioName)", ofType: "mp3") else {
+                print("audio path is not found")
+                return
+            }
+            
+            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: (audioPath)) as URL)
+        }
+        catch {
+        }
+        audioPlayer.play()
     }
     
 }

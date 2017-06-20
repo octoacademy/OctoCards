@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j0c-Kd-AEh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j0c-Kd-AEh">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -156,6 +156,13 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDs-0M-n3i">
                                                     <rect key="frame" x="20" y="125" width="239" height="233"/>
                                                     <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcJ-cy-bne">
+                                                            <rect key="frame" x="-9" y="-9.5" width="257" height="252"/>
+                                                            <state key="normal" title="Sound" image="Sound v2"/>
+                                                            <connections>
+                                                                <action selector="playSoundButton:" destination="x1R-fN-OjG" eventType="touchUpInside" id="tQd-Xj-x2q"/>
+                                                            </connections>
+                                                        </button>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7p-Cw-2Sm">
                                                             <rect key="frame" x="0.0" y="175" width="52" height="38"/>
                                                             <constraints>
@@ -216,14 +223,18 @@
                                                         <constraint firstAttribute="bottom" secondItem="RWe-d7-m3v" secondAttribute="bottom" constant="20" symbolic="YES" id="ECK-jA-YU4"/>
                                                         <constraint firstItem="4Z5-MP-or8" firstAttribute="bottom" secondItem="t7p-Cw-2Sm" secondAttribute="bottom" id="FnN-dS-hG2"/>
                                                         <constraint firstAttribute="trailing" secondItem="Q3p-gm-CEv" secondAttribute="trailing" constant="20" symbolic="YES" id="GXv-6z-aqE"/>
+                                                        <constraint firstItem="OcJ-cy-bne" firstAttribute="leading" secondItem="mDs-0M-n3i" secondAttribute="leading" constant="-9" id="OQO-Za-HPS"/>
                                                         <constraint firstItem="4Z5-MP-or8" firstAttribute="top" secondItem="t7p-Cw-2Sm" secondAttribute="top" id="Ofr-wC-xbE"/>
                                                         <constraint firstAttribute="bottom" secondItem="s2O-1l-2C3" secondAttribute="bottom" constant="20" symbolic="YES" id="Ske-Ea-NO4"/>
                                                         <constraint firstItem="Q3p-gm-CEv" firstAttribute="leading" secondItem="mDs-0M-n3i" secondAttribute="leading" constant="20" symbolic="YES" id="W4w-F9-vvX"/>
                                                         <constraint firstItem="t7p-Cw-2Sm" firstAttribute="leading" secondItem="mDs-0M-n3i" secondAttribute="leading" id="XyV-DW-9xD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="OcJ-cy-bne" secondAttribute="bottom" constant="-9.5" id="bEd-TU-AJT"/>
                                                         <constraint firstAttribute="bottom" secondItem="t7p-Cw-2Sm" secondAttribute="bottom" constant="20" symbolic="YES" id="c0c-rK-7ya"/>
                                                         <constraint firstItem="Y9r-fn-pKC" firstAttribute="top" secondItem="mDs-0M-n3i" secondAttribute="top" constant="20" symbolic="YES" id="c8P-WX-C7f"/>
                                                         <constraint firstAttribute="height" constant="233" id="cj4-1e-XFZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OcJ-cy-bne" secondAttribute="trailing" constant="-9" id="hDj-bG-hAg"/>
                                                         <constraint firstItem="4Z5-MP-or8" firstAttribute="width" secondItem="t7p-Cw-2Sm" secondAttribute="width" id="jkP-v4-gzP"/>
+                                                        <constraint firstItem="OcJ-cy-bne" firstAttribute="top" secondItem="mDs-0M-n3i" secondAttribute="top" constant="-9.5" id="kGX-9f-STL"/>
                                                         <constraint firstItem="4Z5-MP-or8" firstAttribute="leading" secondItem="s2O-1l-2C3" secondAttribute="trailing" constant="8" symbolic="YES" id="rsj-MK-jdE"/>
                                                         <constraint firstItem="Q3p-gm-CEv" firstAttribute="top" secondItem="Y9r-fn-pKC" secondAttribute="bottom" constant="20" id="tMq-72-eBb"/>
                                                     </constraints>
@@ -296,7 +307,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeI-kS-gIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2801" y="517"/>
+            <point key="canvasLocation" x="2800.78125" y="516.796875"/>
         </scene>
         <!--Infant Cards Page View Controller-->
         <scene sceneID="nc2-OX-QD1">
@@ -637,6 +648,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Sound v2" width="500" height="475"/>
         <image name="leftarrow" width="30" height="43"/>
         <image name="rightarrow" width="30" height="43"/>
     </resources>

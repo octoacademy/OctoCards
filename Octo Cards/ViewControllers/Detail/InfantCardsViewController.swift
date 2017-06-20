@@ -18,7 +18,7 @@ class InfantCardsViewController: UIViewController{
     var index = 0
     var totalCount = 0
     
-    var audioPlayer : AVAudioPlayer = AVAudioPlayer()
+    //var audioPlayer : AVAudioPlayer = AVAudioPlayer()
     
     @IBOutlet weak var backCardArea: UIView!
     @IBOutlet weak var cardArea: UIView!
@@ -57,7 +57,7 @@ class InfantCardsViewController: UIViewController{
         self.backCardArea.layer.cornerRadius = 10
         self.backCardArea.clipsToBounds = true
         
-        /******** play audio ************/
+        /******** play audio ************
         do {
             let audioPath = Bundle.main.path(forResource: "ChangingDiaper_washhands", ofType: "mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
@@ -65,7 +65,7 @@ class InfantCardsViewController: UIViewController{
         catch {
         }
         audioPlayer.play()
-        /*********************************/
+        *********************************/
         
         
         //setupPreviousNextScreen()
