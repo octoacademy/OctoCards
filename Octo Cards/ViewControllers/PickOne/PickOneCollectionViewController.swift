@@ -21,6 +21,9 @@ class PickOneCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(Array(UserDefaults.standard.dictionaryRepresentation()))
+        
+        
         //self.navigationController?.navigationBar.topItem?.title = "Title here"
         
         // Uncomment the following line to preserve selection between presentations

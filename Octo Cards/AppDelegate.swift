@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
-
+        let initialized = UserDefaults.standard.bool(forKey: "initialized")
         
         let color = UIColor(red: 128.0/255.0, green: 203.0/255.0, blue: 253.0/255.0, alpha: 1.0)
         let font = UIFont(name: "Helvetica-bold", size: 24)!
@@ -30,8 +31,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = attributes
 
-       
-
+        // Request permission to show notifications
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+            (granted, error) in
+            
+            if (initialized != true) {
+                if (granted) {
+                    UserDefaults.standard.set(true, forKey: "notificationsAllow")
+                }
+                else {
+                    UserDefaults.standard.set(false, forKey: "notificationsAllow")
+                }
+                UserDefaults.standard.set(Date(), forKey: "reminderTime")
+            }
+            else {
+                UserDefaults.standard.set(true, forKey: "initialized")
+            }
+        }
         return true
     }
 

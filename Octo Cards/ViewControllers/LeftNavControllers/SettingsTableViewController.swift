@@ -12,6 +12,7 @@ class SettingsTableViewController: UITableViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var dateButton: UIButton!
+    @IBOutlet weak var reminderAllow: UISwitch!
     
     @IBAction func updateDate(_ sender: Any) {
         if datePicker.isHidden == true {
@@ -21,13 +22,42 @@ class SettingsTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func updateTimeLabel(_ sender: Any) {
+        let reminderTimeString = DateFormatter.localizedString(from: userDefaultsReminderTime, dateStyle: .none, timeStyle: .short)
+        
+        if (reminderAllow.isOn == false) {
+            dateButton.setTitle("None",for: UIControlState.normal)
+        }
+        else {
+            dateButton.setTitle("\(reminderTimeString)",for: UIControlState.normal)
+        }
+    }
+    
+    var userDefaultsNotificationAllow = UserDefaults.standard.bool(forKey: "notificationsAllow")
+    var userDefaultsReminderTime = UserDefaults.standard.object(forKey: "reminderTime") as! Date
+    var userDefaultsInitiated = UserDefaults.standard.bool(forKey: "initialized")
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        datePicker.isHidden = true
         
-        dateButton.setTitle("None",for: UIControlState.normal)
+        let reminderTimeString = DateFormatter.localizedString(from: userDefaultsReminderTime, dateStyle: .none, timeStyle: .short)
+        
+        datePicker.isHidden = true
+        datePicker.date = userDefaultsReminderTime
+        dateButton.setTitle("\(reminderTimeString)",for: UIControlState.normal)
         datePicker.addTarget(self, action: #selector(dateFormatter), for: UIControlEvents.valueChanged)
-
+        
+        if (userDefaultsNotificationAllow == true) {
+            self.reminderAllow.isOn = true
+        }
+        else {
+            self.reminderAllow.isOn = false
+            dateButton.setTitle("None",for: UIControlState.normal)
+        }
+        
+       
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -118,6 +148,13 @@ class SettingsTableViewController: UITableViewController {
     }
     */
     @IBAction func Close(_ sender: Any) {
+        UserDefaults.standard.set(datePicker.date, forKey: "reminderTime")
+        if (reminderAllow.isOn) {
+            UserDefaults.standard.set(true, forKey: "notificationsAllow")
+        }
+        else {
+            UserDefaults.standard.set(false, forKey: "notificationsAllow")
+        }
         dismiss(animated: true, completion: nil)
     }
     
