@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import UserNotifications
 
 private let reuseIdentifier = "Cell"
 
@@ -49,6 +50,7 @@ class InfantCardCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -139,5 +141,4 @@ class InfantCardCollectionViewController: UICollectionViewController {
         }
         audioPlayer.play()
     }
-    
 }

@@ -21,8 +21,9 @@ class PickOneCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // For Notifications
+       
         print(Array(UserDefaults.standard.dictionaryRepresentation()))
-        
         
         //self.navigationController?.navigationBar.topItem?.title = "Title here"
         
@@ -150,4 +151,5 @@ class PickOneCollectionViewController: UICollectionViewController {
 
 
     }
+    
 }

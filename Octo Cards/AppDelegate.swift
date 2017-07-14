@@ -36,15 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             (granted, error) in
             
             if (initialized != true) {
+                UserDefaults.standard.set(Date(), forKey: "reminderTime")
+                
                 if (granted) {
                     UserDefaults.standard.set(true, forKey: "notificationsAllow")
+                    self.scheduleLocalNotification()
                 }
                 else {
                     UserDefaults.standard.set(false, forKey: "notificationsAllow")
                 }
-                UserDefaults.standard.set(Date(), forKey: "reminderTime")
-            }
-            else {
                 UserDefaults.standard.set(true, forKey: "initialized")
             }
         }
@@ -72,7 +72,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func scheduleLocalNotification() {
+        print("********** APP DEL: scheduleLocalNotificationcalled ************")
+        let center = UNUserNotificationCenter.current()
+        
+        let reminderDateTime = UserDefaults.standard.object(forKey: "reminderTime") as! Date
+        let calendar = Calendar.current
+        let reminderHour = calendar.component(.hour, from: reminderDateTime)
+        let reminderMinutes = calendar.component(.minute, from: reminderDateTime)
+        
+        print("reminder Time = \(reminderHour):\(reminderMinutes)")
+        
+        // Cancel any prior notifications
+        center.removeAllPendingNotificationRequests()
+        
+        // Create Notification Content
+        let notificationContent = UNMutableNotificationContent()
+        
+        // Configure Notification Content
+        notificationContent.title = "Octo Reminder"
+        notificationContent.subtitle = "Remember to practice your words!"
+        notificationContent.body = "Your most recent Octo word is XXXXX."
+        
+        // Add Trigger
+        var dateComponents = DateComponents()
+        //dateComponents.hour = reminderHour
+        //dateComponents.minute = reminderMinutes
+        dateComponents.hour = 15
+        dateComponents.minute = 39
+        
+        
+        let notificationTrigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        //let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 120, repeats: true)
+        
+        // Create Notification Request
+        let notificationRequest = UNNotificationRequest(identifier: "octo_local_notification", content: notificationContent, trigger: notificationTrigger)
+        
+        // Add Request to User Notification Center
+        center.add(notificationRequest) { (error) in
+            if let error = error {
+                print("Unable to Add Notification Request (\(error), \(error.localizedDescription))")
+            }
+        }
 
-
+    }
 }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class SettingsTableViewController: UITableViewController {
 
@@ -64,7 +65,9 @@ class SettingsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         //DatePicker.addTarget(self, action: Selector(("dataPickerChanged:")), for: UIControlEvents.valueChanged)
+        
        
+     
     }
     
     func dateFormatter(sender: UIDatePicker) {
@@ -151,11 +154,59 @@ class SettingsTableViewController: UITableViewController {
         UserDefaults.standard.set(datePicker.date, forKey: "reminderTime")
         if (reminderAllow.isOn) {
             UserDefaults.standard.set(true, forKey: "notificationsAllow")
+            self.scheduleLocalNotification()
         }
         else {
             UserDefaults.standard.set(false, forKey: "notificationsAllow")
+            UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         }
         dismiss(animated: true, completion: nil)
+        
+        
+    }
+    
+    func scheduleLocalNotification() {
+        print("********** scheduleLocalNotificationcalled ************")
+        let center = UNUserNotificationCenter.current()
+        
+        let reminderDateTime = UserDefaults.standard.object(forKey: "reminderTime") as! Date
+        let calendar = Calendar.current
+        let reminderHour = calendar.component(.hour, from: reminderDateTime)
+        let reminderMinutes = calendar.component(.minute, from: reminderDateTime)
+        
+        print("reminder Time = \(reminderHour):\(reminderMinutes)")
+        
+        // Cancel any prior notifications
+        center.removeAllPendingNotificationRequests()
+        
+        // Create Notification Content
+        let notificationContent = UNMutableNotificationContent()
+        
+        // Configure Notification Content
+        notificationContent.title = "Octo Reminder"
+        notificationContent.subtitle = "Remember to practice your words!"
+        notificationContent.body = "Your most recent Octo word is XXXXX."
+        
+        // Add Trigger
+        var dateComponents = DateComponents()
+        dateComponents.hour = reminderHour
+        dateComponents.minute = reminderMinutes
+        //dateComponents.hour = 12
+        //dateComponents.minute = 32
+        
+        
+        let notificationTrigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        //let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 120, repeats: true)
+        
+        // Create Notification Request
+        let notificationRequest = UNNotificationRequest(identifier: "octo_local_notification", content: notificationContent, trigger: notificationTrigger)
+        
+        // Add Request to User Notification Center
+        center.add(notificationRequest) { (error) in
+            if let error = error {
+                print("Unable to Add Notification Request (\(error), \(error.localizedDescription))")
+            }
+        }
     }
     
 }
