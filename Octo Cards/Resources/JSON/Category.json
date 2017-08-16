@@ -2,11 +2,11 @@
     "categories": [
                    {
                    "key": "AtHome",
-                   "title": "At Home",
+                   "title": "",
                    "subcategories": [
                         {
-                            "key": "ChangingDiapers",
-                            "title": "Changing Diapers",
+                            "key": "SelfCare",
+                            "title": "Self Care",
                             "items" : [
                                      {
                                        "itemName": "ChangingDiaper_Foot",
@@ -52,8 +52,8 @@
                                      ]
                         },
                         {
-                            "key": "GettingDressed",
-                            "title": "Getting Dressed",
+                            "key": "Mealtime",
+                            "title": "Mealtime",
                              "items" : [
                                         {
                                         "itemName": "GettingDressed_Put_away",
@@ -71,7 +71,35 @@
                                         "scenario":"When putting socks on baby",
                                         "tip": ""
                                         }
-                           ]
+                                    ]
+                        },
+                        {
+                            "key": "Bedtime",
+                            "title": "Bedtime",
+                            "items" : [
+                                        {
+                                        "itemName": "GettingDressed_Put_away",
+                                        "phrase": "Put away",
+                                        "phrase_trans": "收起來",
+                                        "phrase_py" : "Shōu qǐlái",
+                                        "scenario":"When putting away dirty clothes",
+                                        "tip": ""
+                                        }
+                                       ]
+                        },
+                        {
+                            "key": "Playtime",
+                            "title": "Playtime",
+                            "items" : [
+                                        {
+                                        "itemName": "GettingDressed_Put_away",
+                                        "phrase": "Put away",
+                                        "phrase_trans": "收起來",
+                                        "phrase_py" : "Shōu qǐlái",
+                                        "scenario":"When putting away dirty clothes",
+                                        "tip": ""
+                                        }
+                                    ]
                         }
                    ]
                    },
@@ -80,8 +108,8 @@
                    "title": "Out and About",
                    "subcategories": [
                        {
-                            "key": "AtTheStore",
-                            "title": "At the Store",
+                            "key": "Outdoors",
+                            "title": "Outdoors",
                             "items" : [
                                         {
                                        "itemName": "AtTheStore_lookbread",
@@ -105,14 +133,14 @@
 
                        },
                        {
-                            "key": "AtThePark",
-                            "title": "At the Park or Play Area",
+                            "key": "Shopping",
+                            "title": "Shopping",
                             "items" : [
                                         {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
+                                       "itemName": "AtTheStore_lookmelon",
+                                       "phrase": "Look at the melon",
+                                       "phrase_trans": "看瓜子",
+                                       "phrase_py" : "Kàn guāzǐ",
                                        "scenario":"",
                                        "tip": ""
 
@@ -126,148 +154,10 @@
                                        "tip": ""
 
                                         }
-                            ]
-
-                       },
-                       {
-                            "key": "AtAnAppointment",
-                             "title": "At an Appointment",
-                             "items" : [
-                                        {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
-                                        "scenario":"",
-                                        "tip": ""
-
-                                        },
-                                        {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
-                                        "scenario":"",
-                                        "tip": ""
-
-                                        }
-                             ]
-
-                       }
-                   ]
-                   },
-                   {
-                   "key": "OnTheGo",
-                   "title": "On the Go",
-                   "subcategories": [
-                       {
-                            "key": "OnADrive",
-                             "title": "On a Drive",
-                             "items" : [
-                                        {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
-                                        "scenario":"",
-                                        "tip": ""
-
-                                        },
-                                        {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
-                                        "scenario":"",
-                                        "tip": ""
-
-                                        }
-                            ]
-
-                       },
-                       {
-                            "key": "OnAWalk",
-                             "title": "On a Walk",
-                             "items" : [
-                                        {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
-                                        "scenario":"",
-                                        "tip": ""
-
-                                        },
-                                        {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
-                                        "scenario":"",
-                                        "tip": ""
-
-                                        }
-                             ]
-
-                                
-                       }
-                   ]
-                   },
-                   {
-                   "key": "Other",
-                   "title": "Other",
-                   "subcategories": [
-                       {
-                            "key": "key1",
-                            "title": "",
-                            "items" : [
-                                    {
-                                    "itemName": "",
-                                    "phrase": "",
-                                    "phrase_trans": "",
-                                    "phrase_py" : "",
-                                       "scenario":"",
-                                       "tip": ""
-
-                                    },
-                                    {
-                                    "itemName": "",
-                                    "phrase": "",
-                                    "phrase_trans": "",
-                                    "phrase_py" : "",
-                                       "scenario":"",
-                                       "tip": ""
-
-                                    }
-                            ]
-
-                       },
-                       {
-                            "key": "key2",
-                            "title": "",
-                            "items" : [
-                                    {
-                                    "itemName": "",
-                                    "phrase": "",
-                                    "phrase_trans": "",
-                                    "phrase_py" : "",
-                                       "scenario":"",
-                                       "tip": ""
-
-                                    },
-                                    {
-                                    "itemName": "",
-                                    "phrase": "",
-                                    "phrase_trans": "",
-                                    "phrase_py" : "",
-                                       "scenario":"",
-                                       "tip": ""
-
-                                    }
                             ]
 
                        }
                    ]
-                   }
-                   ]
+                }
+            ]
 }

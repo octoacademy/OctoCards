@@ -23,6 +23,7 @@ class InfantCardCollectionViewController: UICollectionViewController {
     {
         didSet
         {
+           /***** no calling our own cell size func to test out copied code *****/
             setCellSize()
             
             if items.count > 0
@@ -66,10 +67,25 @@ class InfantCardCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /********* only for sample code *********
+    fileprivate var pageSize: CGSize {
+        let layout = self.collectionView?.collectionViewLayout as! UPCarouselFlowLayout
+        var pageSize = layout.itemSize
+        pageSize.width += layout.minimumLineSpacing
+        return pageSize
+    }
+    fileprivate var currentPage: Int = 0*/
     
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         playSound()
+        
+        /**** trying out sample copied code for card scrolling ******
+        let layout = self.collectionView?.collectionViewLayout as! UPCarouselFlowLayout
+        let pageSide = (layout.scrollDirection == .horizontal) ? self.pageSize.width : self.pageSize.height
+        let offset = (layout.scrollDirection == .horizontal) ? scrollView.contentOffset.x : scrollView.contentOffset.y
+        currentPage = Int(floor((offset - pageSide / 2) / pageSide) + 1)*/
     }
+    /*************/
 
      // MARK: UICollectionViewDataSource
 
@@ -96,9 +112,9 @@ class InfantCardCollectionViewController: UICollectionViewController {
         return cell
     }
     
-     func setCellSize()
+    func setCellSize()
      {
-        let layout = (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout)
+        let layout = (self.collectionView!.collectionViewLayout as! /*UPCarouselFlowLayout*/UICollectionViewFlowLayout)
         
         let widthPercentage : CGFloat = items.count == 1 ? 0.8 : 0.73
         
@@ -109,9 +125,10 @@ class InfantCardCollectionViewController: UICollectionViewController {
         }
         else
         {
-            let cellSize = CGSize(width: UIScreen.main.bounds.width * widthPercentage , height: UIScreen.main.bounds.height * 0.8)
+            let cellSize = CGSize(width: UIScreen.main.bounds.width * widthPercentage , height: UIScreen.main.bounds.height * 0.65)
             layout.itemSize = cellSize
         }
+        
     }
     
     func playSound()

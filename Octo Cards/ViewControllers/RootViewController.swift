@@ -34,11 +34,21 @@ class RootViewController: SlideMenuController {
         super.viewDidAppear(animated)
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
+       
         if let nav = appDelegate.window!.rootViewController?.childViewControllers[0] as? UINavigationController
         {
+            /******* This sets Title to Octo text - replacing with image *********
             nav.navigationBar.topItem?.title = "Octo"
+             **********************/
+            
+            let title = UIImage(named: "OctoTitleLogo.png")
+            let imageView = UIImageView(image: title)
+
+            imageView.frame.size.height = imageView.frame.size.height * 0.60;
+
+            imageView.contentMode = .scaleAspectFit
+            nav.navigationBar.topItem?.titleView = imageView
         }
-        
     }
 
     override func didReceiveMemoryWarning() {

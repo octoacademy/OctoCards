@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ww9-yV-2uZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ww9-yV-2uZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <scene sceneID="aWU-Cg-ivL">
             <objects>
                 <collectionViewController id="ww9-yV-2uZ" customClass="PickOneCollectionViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Agi-0M-XGW">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="Agi-0M-XGW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,14 +31,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="96" height="129"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-oH-NUT">
-                                            <rect key="frame" x="0.0" y="0.0" width="96" height="108"/>
-                                            <color key="backgroundColor" red="0.5002403017" green="0.79710388399999998" blue="0.9924670458" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="GreenPickOne" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-oH-NUT">
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="105.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On the bus or train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-dY-NM6">
-                                            <rect key="frame" x="0.0" y="116" width="96" height="13"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pick One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-dY-NM6">
+                                            <rect key="frame" x="0.0" y="101" width="96" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                            <color key="textColor" red="0.043137254901960784" green="0.011764705882352941" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="heightClass=regular-widthClass=regular">
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
@@ -50,7 +50,7 @@
                                     <constraint firstAttribute="trailing" secondItem="ebY-oH-NUT" secondAttribute="trailing" id="14o-vF-1Dt"/>
                                     <constraint firstItem="ebY-oH-NUT" firstAttribute="leading" secondItem="7dy-f4-vJR" secondAttribute="leading" id="4pi-7r-urV"/>
                                     <constraint firstAttribute="trailing" secondItem="6JU-dY-NM6" secondAttribute="trailing" id="P5P-8O-a41"/>
-                                    <constraint firstAttribute="bottom" secondItem="6JU-dY-NM6" secondAttribute="bottom" id="fCH-CM-TpS"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6JU-dY-NM6" secondAttribute="bottom" id="fCH-CM-TpS"/>
                                     <constraint firstItem="ebY-oH-NUT" firstAttribute="top" secondItem="7dy-f4-vJR" secondAttribute="top" id="shg-8P-qvu"/>
                                     <constraint firstItem="6JU-dY-NM6" firstAttribute="top" secondItem="ebY-oH-NUT" secondAttribute="bottom" constant="8" symbolic="YES" id="ycb-ID-6xY"/>
                                     <constraint firstItem="6JU-dY-NM6" firstAttribute="leading" secondItem="7dy-f4-vJR" secondAttribute="leading" id="yzU-N2-ACs"/>
@@ -61,17 +61,18 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PickOneHeader" id="3b3-2r-L8x" customClass="PickOneCollectionReusableView" customModule="Octo_Cards" customModuleProvider="target">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="PickOneHeader" id="3b3-2r-L8x" customClass="PickOneCollectionReusableView" customModule="Octo_Cards" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-xL-Ndx">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-xL-Ndx">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                    <color key="textColor" red="1" green="0.4939713167" blue="0.47242588769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="textColor" red="1" green="0.73725490199999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="6Ov-xL-Ndx" firstAttribute="leading" secondItem="3b3-2r-L8x" secondAttribute="leading" id="LAH-W2-zk3"/>
                                 <constraint firstItem="6Ov-xL-Ndx" firstAttribute="top" secondItem="3b3-2r-L8x" secondAttribute="top" id="LhY-cP-Rtq"/>
@@ -93,10 +94,11 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuW-ey-Yce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="-72"/>
+            <point key="canvasLocation" x="636" y="-72.413793103448285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="GreenPickOne" width="272" height="272"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>

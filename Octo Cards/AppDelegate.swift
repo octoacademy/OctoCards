@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         let initialized = UserDefaults.standard.bool(forKey: "initialized")
         
-        let color = UIColor(red: 128.0/255.0, green: 203.0/255.0, blue: 253.0/255.0, alpha: 1.0)
+        let color = UIColor(red: 11.0/255.0, green: 3.0/255.0, blue: 212.0/255.0, alpha: 1.0)
         let font = UIFont(name: "Helvetica-bold", size: 24)!
         
         let attributes: [String: AnyObject] = [

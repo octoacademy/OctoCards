@@ -12,9 +12,9 @@ private let reuseIdentifier = "Cell"
 
 class PickOneCollectionViewController: UICollectionViewController {
 
-    let sectionInsets = UIEdgeInsets(top: 18.0, left: 18.0, bottom: 18.0, right: 18.0)
-    let maxItem: CGFloat  = 3.0
-    var spacing: CGFloat = 0.0
+   // let sectionInsets = UIEdgeInsets(top: 0.0 /*18.0*/, left: (collectionView.frame.width * 0.15) /*18.0*/, bottom: 18.0 /*18.0*/, right: (collectionView.frame.width * 0.15) /*18.0*/)
+    let maxItem: CGFloat  = 2.0
+    var spacing: CGFloat = 12.0 /*0.0*/
     
     var categories = [Category]()
     
@@ -23,6 +23,7 @@ class PickOneCollectionViewController: UICollectionViewController {
 
         // For Notifications
        
+
         print(Array(UserDefaults.standard.dictionaryRepresentation()))
         
         //self.navigationController?.navigationBar.topItem?.title = "Title here"
@@ -64,10 +65,10 @@ class PickOneCollectionViewController: UICollectionViewController {
     
      // MARK: UICollectionViewDelegateFlowLayout
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+   /* func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
        return CGSize( width: self.view.frame.size.width, height: 40)
-    }
+    }*/
 
 
     // MARK: UICollectionViewDataSource
@@ -98,8 +99,16 @@ class PickOneCollectionViewController: UICollectionViewController {
                                                                 withReuseIdentifier: "PickOneHeader", for: indexPath)
                 as? PickOneCollectionReusableView
             
-            header?.HeaderLabel.text = self.categories[indexPath.section].title
-            
+          /*********** WANT TO HIDE 1st HEADER *******************/
+            if (self.categories[indexPath.section].title == "") {
+                header?.HeaderLabel.text = ""
+                header?.HeaderLabel.frame.size.height = 0
+                print("Empty header")
+            }
+        /**********************************************************/
+            else {
+                header?.HeaderLabel.text = self.categories[indexPath.section].title
+            }
         }
         return header!
     }
@@ -110,6 +119,10 @@ class PickOneCollectionViewController: UICollectionViewController {
         // Configure the cell
     
         cell.label.text = categories[indexPath.section].subCategories?[indexPath.row].title
+        
+        /**** Specify image by expanding on below code ******/
+        //cell.image.image = UIImage(named: "first")
+       
         return cell
     }
     
@@ -123,8 +136,12 @@ class PickOneCollectionViewController: UICollectionViewController {
         }
         else
         {
-            let width = (collectionView.frame.width - sectionInsets.left - sectionInsets.right - (spacing * maxItem)) / maxItem
-            return CGSize(width: width - 10.0, height:width + 30.0)
+            //let width = (collectionView.frame.width - sectionInsets.left - sectionInsets.right - (spacing * maxItem)) / maxItem
+            
+            let width = (collectionView.frame.width * 0.3)
+            print("width: \(width)")
+
+            return CGSize(width: width, height: width)//+ 30.0)
         }
     }
     
@@ -133,6 +150,20 @@ class PickOneCollectionViewController: UICollectionViewController {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+       
+        /* Trying to vertically align all sections */
+        let sectionInsetBottom = (collectionView.frame.height/12)
+        let sectionInsetTop = sectionInsetBottom - 20
+    
+      //let sectionInsets = UIEdgeInsets(top: sectionInsetTop, left: (collectionView.frame.width * 0.16), bottom: sectionInsetBottom, right: (collectionView.frame.width * 0.16))
+        
+        print("frame height: \(collectionView.frame.height)")
+   //     print("itemWidth: \(itemWidth)")
+        print("sectioninsetBottom: \(sectionInsetBottom)")
+        print("sectionInsetTop: \(sectionInsetTop)")
+        let sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.16), bottom: 30, right: (collectionView.frame.width * 0.16))
+        
+        
         return sectionInsets
     }
     

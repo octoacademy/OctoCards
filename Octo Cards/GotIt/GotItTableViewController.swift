@@ -10,14 +10,24 @@ import UIKit
 
 class GotItTableViewController: UITableViewController {
     
-    var catLabels = ["At Home", "Out and About", "On the Go"]
+    //var catLabels = ["At Home", "Out and About", "On the Go"]
+    var subCatLabels = ["Self Care", "Mealtime", "Bedtime", "Playtime", "Outdoors", "Shopping"]
     var cards: [Category]?
     
-    var catCards: [Card]?
+    //var catCards: [Card]?
+    var subCatCards: [Card]?
     
-    var AtHomeCards: [OctoCard]?
-    var OntheGoCards: [OctoCard]?
-    var OutandAboutCards: [OctoCard]?
+    //var AtHomeCards: [OctoCard]?
+    //var OntheGoCards: [OctoCard]?
+    //var OutandAboutCards: [OctoCard]?
+    
+    var selfCareCards: [OctoCard]?
+    var mealtimeCards: [OctoCard]?
+    var bedtimeCards: [OctoCard]?
+    var playtimeCards: [OctoCard]?
+    var outdoorsCards: [OctoCard]?
+    var shoppingCards: [OctoCard]?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,25 +62,42 @@ class GotItTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return catLabels.count
+        return subCatLabels.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CatLabel", for: indexPath)
-        let itemName = catLabels[indexPath.row]
+        let itemName = subCatLabels[indexPath.row]
         var itemCount = 0
+        //let itemCount = subCatCards?.count
         
         cell.textLabel?.text = itemName
         cell.imageView?.image = UIImage(named: "first")
         
-        if (indexPath.row < (cards?.count)!) {
+        /*if (indexPath.row < (cards?.count)!) {
             if let subCatCards = cards?[indexPath.row].subCategories {
                 for subCategory in subCatCards {
-                    itemCount+=(subCategory.items?.count)!
+                    itemCount += (subCategory.items?.count)!
                 }
             }
+        }*/
+        print("\nindexPath.row = \(indexPath.row)")
+        print("itemName is = \(itemName)")
+        
+        for Category in cards! {
+            print("Category is = \(Category.title)")
+            if let subCatCards = Category.subCategories {
+                for subCategory in subCatCards {
+                    if (itemName == subCategory.title) {
+                        print("subCategory.title = \(subCategory.title)")
+                        print("subCategory items = \((subCategory.items?.count)!)")
+                        itemCount = (subCategory.items?.count)!
+                    }
+                }
+            }
+            
         }
         cell.detailTextLabel?.text = "(\(itemCount))"
 
@@ -86,23 +113,32 @@ class GotItTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        var catString = ""
+        var subCatString = ""
         
-        if let catVC = segue.destination as? GotItCategoryTableViewController {
-            if let catCell = sender as? UITableViewCell {
+        if let subCatVC = segue.destination as? GotItCategoryTableViewController {
+            if let subCatCell = sender as? UITableViewCell {
     
-                if catCell.textLabel?.text == "At Home" {
-                    catString = "AtHome"
+                if subCatCell.textLabel?.text == "Self Care" {
+                    subCatString = "SelfCare"
                 }
-                else if catCell.textLabel?.text == "On the Go" {
-                    catString = "OnTheGo"
+                else if subCatCell.textLabel?.text == "Mealtime" {
+                    subCatString = "Mealtime"
                 }
-                else if catCell.textLabel?.text == "Out and About" {
-                    catString = "OutAndAbout"
+                else if subCatCell.textLabel?.text == "Bedtime" {
+                    subCatString = "Bedtime"
+                }
+                else if subCatCell.textLabel?.text == "Playtime" {
+                    subCatString = "Playtime"
+                }
+                else if subCatCell.textLabel?.text == "Outdoors" {
+                    subCatString = "Outdoors"
+                }
+                else if subCatCell.textLabel?.text == "Shopping" {
+                    subCatString = "Shopping"
                 }
             
-            catCards = GotItList(category: catString)
-            catVC.GotItCards = catCards
+            subCatCards = GotItList(subCategory: subCatString)
+            subCatVC.GotItCards = subCatCards
             }
          }
     }
@@ -187,7 +223,7 @@ class GotItTableViewController: UITableViewController {
         return Array(categoryDic.values)
     }
     
-    func GotItList(category: String) -> [Card]
+    func GotItList(subCategory: String) -> [Card]
     {
         var items = [Card]()
         for string in CategoryManager.sharedInstance.gotItStrings
@@ -197,7 +233,7 @@ class GotItTableViewController: UITableViewController {
             if stringArray.count == 3
             {
                 print("string array: \(stringArray[0])")
-                if (stringArray[0] == category) {
+                if (stringArray[1] == subCategory) {
                     if let card = CategoryManager.sharedInstance.categoryDictionary[string]
                     {
                         items.append(card)

@@ -15,6 +15,7 @@
 		BF6D13C01EEF14280061B441 /* ChangingDiaper_fingers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF6D13BE1EEF14280061B441 /* ChangingDiaper_fingers.mp3 */; };
 		BF6D13C11EEF14280061B441 /* ChangingDiaper_washhands.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF6D13BF1EEF14280061B441 /* ChangingDiaper_washhands.mp3 */; };
 		BFBB9E2C1ECF393800DA1C37 /* OctoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */; };
+		BFD1C7971F44FD9D00B50984 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1C7961F44FD9D00B50984 /* UPCarouselFlowLayout.swift */; };
 		BFE07D241ED5F14D003FA4BA /* GotItTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07D231ED5F14D003FA4BA /* GotItTableViewController.swift */; };
 		BFE07D261ED5F837003FA4BA /* GotItCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07D251ED5F837003FA4BA /* GotItCategoryTableViewController.swift */; };
 		BFE2C7E41EE74A18004F20F0 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2C7E31EE74A18004F20F0 /* ContactViewController.swift */; };
@@ -64,6 +65,7 @@
 		BF6D13BF1EEF14280061B441 /* ChangingDiaper_washhands.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ChangingDiaper_washhands.mp3; path = "Octo Cards/ChangingDiaper_washhands.mp3"; sourceTree = "<group>"; };
 		BF6D13C41EEF16190061B441 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoCard.swift; sourceTree = "<group>"; };
+		BFD1C7961F44FD9D00B50984 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		BFE07D231ED5F14D003FA4BA /* GotItTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotItTableViewController.swift; path = GotIt/GotItTableViewController.swift; sourceTree = "<group>"; };
 		BFE07D251ED5F837003FA4BA /* GotItCategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotItCategoryTableViewController.swift; path = GotIt/GotItCategoryTableViewController.swift; sourceTree = "<group>"; };
 		BFE2C7E31EE74A18004F20F0 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				FA6A098B1ED7767F000457C2 /* InfantContainerViewController.swift */,
 				FA4D3D741EEA1B7900B7CBE6 /* CustomInfantCardViewController.swift */,
 				FAE45A921EF3449300DA515A /* InfantCardCollectionViewController.swift */,
+				BFD1C7961F44FD9D00B50984 /* UPCarouselFlowLayout.swift */,
 				FAE45A941EF344A800DA515A /* InfantCardCollectionViewCell.swift */,
 				FAE45A961EF344CC00DA515A /* InfantCardLayout.swift */,
 			);
@@ -407,6 +410,7 @@
 				FA09E92F1ECBCCE4003AF8CE /* PickOneCollectionViewCell.swift in Sources */,
 				FA6A098C1ED7767F000457C2 /* InfantContainerViewController.swift in Sources */,
 				FA6A09AF1EDDF474000457C2 /* CollectionExtension.swift in Sources */,
+				BFD1C7971F44FD9D00B50984 /* UPCarouselFlowLayout.swift in Sources */,
 				FA6A09731ECF9AFA000457C2 /* InfantCardsViewController.swift in Sources */,
 				FA09E9221ECBC21A003AF8CE /* Category.swift in Sources */,
 				FA6A096B1ECF6829000457C2 /* PickOneCollectionReusableView.swift in Sources */,
