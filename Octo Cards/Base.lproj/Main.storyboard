@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xI9-vN-Aqv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xI9-vN-Aqv">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,8 +19,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="tintColor" red="0.83921568629999999" green="0.0" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" red="0.83921568627450982" green="0.0" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.050980392156862744" green="0.011764705882352941" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.050980392159999999" green="0.01176470588" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="J3p-fb-q0G" kind="relationship" relationship="viewControllers" id="EI3-a2-Z3m"/>
@@ -36,9 +36,10 @@
         <scene sceneID="ITc-Ns-2zP">
             <objects>
                 <navigationController storyboardIdentifier="Main" id="xI9-vN-Aqv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" misplaced="YES" id="31l-NP-wen">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" id="31l-NP-wen">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.050980392159999999" green="0.01176470588" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="relationship" relationship="rootViewController" id="Ifa-4C-aLj"/>

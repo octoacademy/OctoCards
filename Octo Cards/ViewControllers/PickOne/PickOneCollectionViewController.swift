@@ -161,7 +161,7 @@ class PickOneCollectionViewController: UICollectionViewController {
    //     print("itemWidth: \(itemWidth)")
         print("sectioninsetBottom: \(sectionInsetBottom)")
         print("sectionInsetTop: \(sectionInsetTop)")
-        let sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.16), bottom: 30, right: (collectionView.frame.width * 0.16))
+        let sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.16), bottom: 10, right: (collectionView.frame.width * 0.16))
         
         
         return sectionInsets

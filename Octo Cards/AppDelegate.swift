@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let initialized = UserDefaults.standard.bool(forKey: "initialized")
         
         let color = UIColor(red: 11.0/255.0, green: 3.0/255.0, blue: 212.0/255.0, alpha: 1.0)
-        let font = UIFont(name: "Helvetica-bold", size: 24)!
+        let font = UIFont(name: "ChalkboardSE-Bold"/*"Helvetica-bold"*/, size: 22)!
         
         let attributes: [String: AnyObject] = [
             NSFontAttributeName: font,

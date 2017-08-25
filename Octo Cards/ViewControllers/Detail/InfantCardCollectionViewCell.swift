@@ -33,14 +33,17 @@ class InfantCardCollectionViewCell: UICollectionViewCell {
     
     
     override func awakeFromNib() {
+        
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
         self.layer.borderColor = UIColor.lightGray.cgColor
         self.layer.borderWidth = 1.0
+        
     }
     
     func setupCell()
     {
+        
         setupRoundedCorner()
         
         scenarioText.adjustsFontSizeToFitWidth = true
