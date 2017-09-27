@@ -55,7 +55,8 @@ class GotItCategoryTableViewController: UITableViewController {
         
         cell.textLabel?.text = item?.item.phrase_py
         cell.detailTextLabel?.text = item?.item.phrase
-        cell.imageView?.image = UIImage(named: "first")
+        //cell.imageView?.image = UIImage(named: "first")
+        //cell.imageView?.frame.size.height = 1
     
     return cell
     }

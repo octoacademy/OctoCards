@@ -35,16 +35,16 @@ class InfantCardCollectionViewController: UICollectionViewController {
             setCellSize()
             if items.count > 0
             {
-                (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset  = UIEdgeInsets.zero
+                //(self.collectionView!.collectionViewLayout as! UPCarouselFlowLayout/*UICollectionViewFlowLayout*/).sectionInset  = UIEdgeInsets.zero
                 
-                var insets = self.collectionView!.contentInset
+                //var insets = self.collectionView!.contentInset
                 
-                let value = UIScreen.main.bounds.width / 2 - (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout).itemSize.width / 2
-                insets.left = value
-                insets.right = value
-                insets.top = -70
-                self.collectionView!.contentInset = insets
-                self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
+                //let value = UIScreen.main.bounds.width / 2 - (self.collectionView!.collectionViewLayout as! UPCarouselFlowLayout/*UICollectionViewFlowLayout*/).itemSize.width / 2
+                //insets.left = value
+                //insets.right = value
+                //insets.top = -70
+                //self.collectionView!.contentInset = insets
+                //self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
                 
             }
         }
@@ -59,7 +59,7 @@ class InfantCardCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupLayout()
+        //self.setupLayout()
 
         /*** contents from addCollectionView ****
         print("***************** 1 *****************")
@@ -144,13 +144,16 @@ class InfantCardCollectionViewController: UICollectionViewController {
         }
         else
         {
-            let cellSize = CGSize(width: UIScreen.main.bounds.width * widthPercentage , height: UIScreen.main.bounds.height * 0.65)
+            let cellSize = CGSize(width: UIScreen.main.bounds.width * widthPercentage , height: UIScreen.main.bounds.height * 0.75)
             layout.itemSize = cellSize
         }
-
+        
+        layout.scrollDirection = .horizontal
         layout.spacingMode = UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: 20)
-        //self.setupLayout()
-       
+        
+        if ((subCategory == "Shopping") || (subCategory == "Outdoors")) {
+            self.collectionView?.backgroundColor = UIColor.init(red: 255.0/255.0, green: 195.0/255.0, blue: 0.0, alpha: 1.0)
+        }
     }
     
     func playSound()

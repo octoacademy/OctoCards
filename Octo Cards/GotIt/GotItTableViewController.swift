@@ -74,15 +74,15 @@ class GotItTableViewController: UITableViewController {
         //let itemCount = subCatCards?.count
         
         cell.textLabel?.text = itemName
-        cell.imageView?.image = UIImage(named: "first")
+        //cell.imageView?.image = UIImage(named: "first")
         
-        /*if (indexPath.row < (cards?.count)!) {
-            if let subCatCards = cards?[indexPath.row].subCategories {
-                for subCategory in subCatCards {
-                    itemCount += (subCategory.items?.count)!
-                }
-            }
-        }*/
+        if (itemName == "Self Care") {
+            cell.imageView?.image = UIImage(named: "SelfCareSm")
+        }
+        else {
+            cell.imageView?.image = UIImage(named: "\(itemName)Sm")
+        }
+        
         print("\nindexPath.row = \(indexPath.row)")
         print("itemName is = \(itemName)")
         

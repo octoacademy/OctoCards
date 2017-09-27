@@ -44,8 +44,8 @@ class RootViewController: SlideMenuController {
             let title = UIImage(named: "OctoTitleLogo.png")
             let imageView = UIImageView(image: title)
 
-            imageView.frame.size.height = imageView.frame.size.height * 0.60;
-
+            imageView.frame.size.height = nav.navigationBar.frame.height * 0.5;
+            
             imageView.contentMode = .scaleAspectFit
             nav.navigationBar.topItem?.titleView = imageView
         }

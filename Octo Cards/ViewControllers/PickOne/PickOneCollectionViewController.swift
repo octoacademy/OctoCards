@@ -65,10 +65,23 @@ class PickOneCollectionViewController: UICollectionViewController {
     
      // MARK: UICollectionViewDelegateFlowLayout
     
-   /* func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        
-       return CGSize( width: self.view.frame.size.width, height: 40)
-    }*/
+   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    
+        let pageHeight = self.view.frame.size.height
+        let cellHeight = collectionView.frame.width * 0.34 + 15 /* label font */
+        let headerHeight = (pageHeight - (cellHeight * 3 /* num rows*/ + 50 /* header height */))/2
+    
+    print("page height is: \(pageHeight)")
+    print("cell height is: \(cellHeight)")
+    print("headerHeight is: \(headerHeight)")
+    
+        if (section == 0) {
+            return CGSize (width: self.view.frame.size.width, height: headerHeight);
+        }
+        else {
+            return CGSize( width: self.view.frame.size.width, height: headerHeight+15)
+        }
+    }
 
 
     // MARK: UICollectionViewDataSource
@@ -99,16 +112,7 @@ class PickOneCollectionViewController: UICollectionViewController {
                                                                 withReuseIdentifier: "PickOneHeader", for: indexPath)
                 as? PickOneCollectionReusableView
             
-          /*********** WANT TO HIDE 1st HEADER *******************/
-            if (self.categories[indexPath.section].title == "") {
-                header?.HeaderLabel.text = ""
-                header?.HeaderLabel.frame.size.height = 0
-                print("Empty header")
-            }
-        /**********************************************************/
-            else {
                 header?.HeaderLabel.text = self.categories[indexPath.section].title
-            }
         }
         return header!
     }
@@ -121,7 +125,7 @@ class PickOneCollectionViewController: UICollectionViewController {
         cell.label.text = categories[indexPath.section].subCategories?[indexPath.row].title
         
         /**** Specify image by expanding on below code ******/
-        //cell.image.image = UIImage(named: "first")
+        cell.image.image = UIImage(named: (categories[indexPath.section].subCategories?[indexPath.row].key)!)
        
         return cell
     }
@@ -138,7 +142,7 @@ class PickOneCollectionViewController: UICollectionViewController {
         {
             //let width = (collectionView.frame.width - sectionInsets.left - sectionInsets.right - (spacing * maxItem)) / maxItem
             
-            let width = (collectionView.frame.width * 0.3)
+            let width = (collectionView.frame.width * 0.33)
             print("width: \(width)")
 
             return CGSize(width: width, height: width)//+ 30.0)
@@ -152,7 +156,7 @@ class PickOneCollectionViewController: UICollectionViewController {
                         insetForSectionAtIndex section: Int) -> UIEdgeInsets {
        
         /* Trying to vertically align all sections */
-        let sectionInsetBottom = (collectionView.frame.height/12)
+        let sectionInsetBottom = (collectionView.frame.height/15)
         let sectionInsetTop = sectionInsetBottom - 20
     
       //let sectionInsets = UIEdgeInsets(top: sectionInsetTop, left: (collectionView.frame.width * 0.16), bottom: sectionInsetBottom, right: (collectionView.frame.width * 0.16))
@@ -161,7 +165,7 @@ class PickOneCollectionViewController: UICollectionViewController {
    //     print("itemWidth: \(itemWidth)")
         print("sectioninsetBottom: \(sectionInsetBottom)")
         print("sectionInsetTop: \(sectionInsetTop)")
-        let sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.16), bottom: 10, right: (collectionView.frame.width * 0.16))
+        let sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.12), bottom: 15, right: (collectionView.frame.width * 0.12))
         
         
         return sectionInsets

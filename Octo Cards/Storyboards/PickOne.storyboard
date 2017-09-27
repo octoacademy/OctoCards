@@ -13,7 +13,7 @@
         <scene sceneID="aWU-Cg-ivL">
             <objects>
                 <collectionViewController id="ww9-yV-2uZ" customClass="PickOneCollectionViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="Agi-0M-XGW">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" dataMode="prototypes" id="Agi-0M-XGW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,17 +32,15 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="GreenPickOne" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-oH-NUT">
-                                            <rect key="frame" x="0.0" y="0.0" width="96" height="105.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="129"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pick One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-dY-NM6">
-                                            <rect key="frame" x="0.0" y="99" width="96" height="28"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pick One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-dY-NM6">
+                                            <rect key="frame" x="0.0" y="99" width="96" height="49"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                             <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=regular">
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                            </variation>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                     </subviews>
                                 </view>
@@ -50,9 +48,9 @@
                                     <constraint firstAttribute="trailing" secondItem="ebY-oH-NUT" secondAttribute="trailing" id="14o-vF-1Dt"/>
                                     <constraint firstItem="ebY-oH-NUT" firstAttribute="leading" secondItem="7dy-f4-vJR" secondAttribute="leading" id="4pi-7r-urV"/>
                                     <constraint firstAttribute="trailing" secondItem="6JU-dY-NM6" secondAttribute="trailing" id="P5P-8O-a41"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6JU-dY-NM6" secondAttribute="bottom" id="fCH-CM-TpS"/>
+                                    <constraint firstAttribute="bottom" secondItem="6JU-dY-NM6" secondAttribute="bottom" constant="3" id="fCH-CM-TpS"/>
                                     <constraint firstItem="ebY-oH-NUT" firstAttribute="top" secondItem="7dy-f4-vJR" secondAttribute="top" id="shg-8P-qvu"/>
-                                    <constraint firstItem="6JU-dY-NM6" firstAttribute="top" secondItem="ebY-oH-NUT" secondAttribute="bottom" constant="8" symbolic="YES" id="ycb-ID-6xY"/>
+                                    <constraint firstItem="6JU-dY-NM6" firstAttribute="top" secondItem="ebY-oH-NUT" secondAttribute="bottom" constant="2" id="ycb-ID-6xY"/>
                                     <constraint firstItem="6JU-dY-NM6" firstAttribute="leading" secondItem="7dy-f4-vJR" secondAttribute="leading" id="yzU-N2-ACs"/>
                                 </constraints>
                                 <connections>
@@ -65,10 +63,10 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-xL-Ndx">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-xL-Ndx">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
-                                    <color key="textColor" red="0.050980392159999999" green="0.01176470588" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                    <color key="textColor" red="0.086274509803921567" green="0.035294117647058823" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>

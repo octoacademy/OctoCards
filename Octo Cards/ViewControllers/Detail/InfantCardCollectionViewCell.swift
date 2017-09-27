@@ -46,6 +46,7 @@ class InfantCardCollectionViewCell: UICollectionViewCell {
         
         setupRoundedCorner()
         
+        subCategoryImage.image = UIImage(named: subCategoryKey)
         scenarioText.adjustsFontSizeToFitWidth = true
         scenarioText.numberOfLines  = 0
         // Do any additional setup after loading the view.

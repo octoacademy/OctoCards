@@ -13,7 +13,7 @@
                                        "phrase": "Foot",
                                        "phrase_trans": "腳丫子",
                                        "phrase_py" : "Jiǎoyāzi",
-                                       "scenario":"When putting on clothes, point to baby's feet",
+                                       "scenario":"When bathing or changing your baby, play with their feet and say:",
                                        "tip": ""
                                      },
                                        {
@@ -21,16 +21,16 @@
                                        "phrase": "Toes",
                                        "phrase_trans": "腳趾",
                                        "phrase_py" : "Jiǎozhǐ",
-                                       "scenario":"When pointing to baby's toes",
+                                       "scenario":"When bathing or changing your kiddo, play with their toes and say:",
                                        "tip": ""
                                        }
                                        ,
                                        {
                                        "itemName": "ChangingDiaper_Laydown",
                                        "phrase": "Lay you down",
-                                       "phrase_trans": "放下你",
-                                       "phrase_py" : "Fàngxià nǐ",
-                                       "scenario":"When laying baby down to change",
+                                       "phrase_trans": "把你放下",
+                                       "phrase_py" : "Bǎ nǐ fàngxià",
+                                       "scenario":"When laying your kiddo down to change a diaper or their clothes, say:",
                                        "tip": ""
                                        },
                                        {
@@ -38,7 +38,7 @@
                                        "phrase": "Fingers",
                                        "phrase_trans": "手指",
                                        "phrase_py" : "Shǒuzhǐ",
-                                       "scenario":"When you are putting lotion into between the fingers",
+                                       "scenario":"When bathing or changing your kiddo, play with their fingers and say:",
                                        "tip": ""
                                        },
                                        {
@@ -46,7 +46,7 @@
                                        "phrase": "Wash hands",
                                        "phrase_trans": "洗手",
                                        "phrase_py" : "Xǐshǒu",
-                                       "scenario":"When washing baby's hands",
+                                       "scenario":"When washing your kiddo's hands, say:",
                                        "tip": ""
                                        }
                                      ]

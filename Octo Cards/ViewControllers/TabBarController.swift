@@ -13,6 +13,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addLeftBarButtonWithImage(UIImage(named: "ic_menu_black_24dp")!)
+        self.addRightBarButtonWithImage(UIImage(named: "blankBarButton")!)
         self.selectedIndex = 1
 
         // Do any additional setup after loading the view.
