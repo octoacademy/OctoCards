@@ -24,6 +24,10 @@ class CategoryManager
     fileprivate var myOctoItems = [String]()
     fileprivate var gotItItems = [String]()
     
+    var positionCounter = 0
+   
+    var cardArray = [Card]()
+    
     var categoryList: [Category]
     {
         return categories
@@ -43,7 +47,7 @@ class CategoryManager
     {
         return gotItItems 
     }
-    
+
     fileprivate init()
     {
         loadCategoryContent()
@@ -83,6 +87,7 @@ class CategoryManager
               
                         let itemsJSONArray = subCatJson["items"]
                         var items = [Item]()
+                        print("CATEGORY MANAGER - loadCategoryContent func")
                         
                         for itemJson in itemsJSONArray as! [[String:Any]] {
                             
@@ -93,6 +98,7 @@ class CategoryManager
                             item.phrase_py = itemJson["phrase_py"] as? String
                             item.scenario = itemJson["scenario"] as? String
                             item.tip = itemJson["tip"] as? String
+                            item.position = positionCounter
                             items.append(item)
                             
                             let card = Card()
@@ -101,10 +107,16 @@ class CategoryManager
                             card.categoryKey = category.key
                             card.subCategoryName = subCategory.title
                             card.subCategoryKey = subCategory.key
+                            card.positionNum = positionCounter
+                            
+                            positionCounter+=1
                             
                             print (category.key + "||" + subCategory.key + "||"  + item.itemName!)
                             categoryInternalDictionary[category.key + "||" + subCategory.key + "||"  + item.itemName!] = card
-                        }
+                            
+                            //setting up a cardArray instead of using Dictionary
+                            cardArray.append(card)
+                            }
                         
                         subCategory.items = items
                         
@@ -121,10 +133,11 @@ class CategoryManager
             {
                 fatalError("error upload sightwords content \(error.localizedDescription)")
             }
-
+            
         }
     }
-    
+
+    /**** Don't think below function is ever called ***/
     func getItems(forCategory category: String, forSubCategory subCategory: String) -> [Item]?
     {
         let filteredCategories = categories.filter { $0.key.localizedCaseInsensitiveContains(category) }
@@ -134,7 +147,7 @@ class CategoryManager
         let filteredSubCategories =  filteredCategories.first!.subCategories!.filter { $0.key.localizedCaseInsensitiveContains(subCategory) }
         
         guard filteredSubCategories.count == 1 else { return nil }
-
+        print("getItems: return of filteredSubCategories.first.items is: \(String(describing: filteredSubCategories.first!.items))")
         return filteredSubCategories.first!.items
     }
     

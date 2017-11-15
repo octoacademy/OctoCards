@@ -57,16 +57,6 @@ class InfantCardsViewController: UIViewController{
         self.backCardArea.layer.cornerRadius = 10
         self.backCardArea.clipsToBounds = true
         
-        /******** play audio ************
-        do {
-            let audioPath = Bundle.main.path(forResource: "ChangingDiaper_washhands", ofType: "mp3")
-            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
-        }
-        catch {
-        }
-        audioPlayer.play()
-        *********************************/
-        
         
         //setupPreviousNextScreen()
         

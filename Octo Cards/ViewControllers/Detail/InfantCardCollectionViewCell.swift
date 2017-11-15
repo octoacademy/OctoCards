@@ -58,6 +58,15 @@ class InfantCardCollectionViewCell: UICollectionViewCell {
         
         directTranslation.adjustsFontSizeToFitWidth = true
         directTranslation.numberOfLines  = 0
+        
+      /*  let translationLabel = "Direct Translation:\n"
+        var translationText = "\(item.phrase ?? "")"
+        
+        var attr = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 15)]
+        var boldLabel = NSMutableAttributedString(string: translationLabel, attributes:attr)
+        
+        var attributedString = NSMutableAttributedString(string:translationLabel)
+        attributedString.append(translationText)*/
         directTranslation.text = "Direct Translation : \(item.phrase ?? "")"
         
         tips.text = item.tip
@@ -66,6 +75,7 @@ class InfantCardCollectionViewCell: UICollectionViewCell {
         gotItButton.isSelected = false
         
         let key = categoryKey + "||" + subCategoryKey + "||" + item.itemName!
+        
         if let _ =  CategoryManager.sharedInstance.myOctoStrings.index(of: key)
         {
             myOctoButton.isSelected = true
@@ -138,7 +148,6 @@ class InfantCardCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func flip(_ sender: UIButton) {
-        
         
         if !cardArea.isHidden
         {

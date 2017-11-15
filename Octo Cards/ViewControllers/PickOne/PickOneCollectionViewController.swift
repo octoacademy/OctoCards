@@ -71,10 +71,6 @@ class PickOneCollectionViewController: UICollectionViewController {
         let cellHeight = collectionView.frame.width * 0.34 + 15 /* label font */
         let headerHeight = (pageHeight - (cellHeight * 3 /* num rows*/ + 50 /* header height */))/2
     
-    print("page height is: \(pageHeight)")
-    print("cell height is: \(cellHeight)")
-    print("headerHeight is: \(headerHeight)")
-    
         if (section == 0) {
             return CGSize (width: self.view.frame.size.width, height: headerHeight);
         }

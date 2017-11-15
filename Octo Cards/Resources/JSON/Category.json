@@ -78,13 +78,85 @@
                             "title": "Bedtime",
                             "items" : [
                                         {
-                                        "itemName": "GettingDressed_Put_away",
-                                        "phrase": "Put away",
-                                        "phrase_trans": "收起來",
-                                        "phrase_py" : "Shōu qǐlái",
-                                        "scenario":"When putting away dirty clothes",
+                                        "itemName": "Bedtime_BrushYourTeeth",
+                                        "phrase": "Brush your teeth",
+                                        "phrase_trans": "刷牙",
+                                        "phrase_py" : "Shuāyá",
+                                        "scenario":"When brushing your kiddo's teeth, say:",
                                         "tip": ""
-                                        }
+                                        },
+                                       {
+                                       "itemName": "Bedtime_ReadABook",
+                                       "phrase": "Read a book",
+                                       "phrase_trans": "讀書",
+                                       "phrase_py" : "Dúshū",
+                                       "scenario":"When taking out a book to read to your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Bedtime_PutAwayBook",
+                                       "phrase": "Put away book(s)",
+                                       "phrase_trans": "把書收好",
+                                       "phrase_py" : "Bǎ shū shōu hǎo",
+                                       "scenario":"When putting away book(s), say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Bedtime_ChangeIntoPajamas",
+                                       "phrase": "Change into pajamas",
+                                       "phrase_trans": "換睡衣",
+                                       "phrase_py" : "Huàn shuìyī",
+                                       "scenario":"When changing your kiddo's pajamas, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Bedtime_AreYouWarm",
+                                       "phrase": "Are you warm?",
+                                       "phrase_trans": "你溫暖嗎",
+                                       "phrase_py" : "Nǐ wēnnuǎn ma",
+                                       "scenario":"When asking your kiddo if they are warm, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Bedtime_LookTheMoon",
+                                       "phrase": "Look, the moon",
+                                       "phrase_trans": "看看月亮",
+                                       "phrase_py" : "Kàn kàn yuèliàng",
+                                       "scenario":"When it's nighttime, point up at the moon and say:",
+                                       "tip": "The word 'kan' is repeated as parentese."
+                                       },
+                                       {
+                                       "itemName": "Bedtime_Quiet",
+                                       "phrase": "Quiet",
+                                       "phrase_trans": "安靜",
+                                       "phrase_py" : "Ānjìng",
+                                       "scenario":"When telling your kiddo that it's quiet, put your finger to your mouth and say:",
+                                       "tip": "This phrase can be incorporated into different scenarios, give it a try!"
+                                       },
+                                       {
+                                       "itemName": "Bedtime_Goodnight",
+                                       "phrase": "Goodnight",
+                                       "phrase_trans": "晚安",
+                                       "phrase_py" : "Wǎn'ān",
+                                       "scenario":"When it's time to say goodnight to your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Bedtime_TimeToSleep",
+                                       "phrase": "It's time to sleep",
+                                       "phrase_trans": "睡覺了",
+                                       "phrase_py" : "Shuìjiàole",
+                                       "scenario":"When it's time for your kiddo to sleep, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Bedtime_TurnOffLights",
+                                       "phrase": "Turn off the lights",
+                                       "phrase_trans": "關燈",
+                                       "phrase_py" : "Guān dēng",
+                                       "scenario":"When turning off the lights, say:",
+                                       "tip": ""
+                                       }
                                        ]
                         },
                         {
@@ -92,13 +164,157 @@
                             "title": "Playtime",
                             "items" : [
                                         {
-                                        "itemName": "GettingDressed_Put_away",
-                                        "phrase": "Put away",
-                                        "phrase_trans": "收起來",
-                                        "phrase_py" : "Shōu qǐlái",
-                                        "scenario":"When putting away dirty clothes",
+                                        "itemName": "Playtime_ClapHands",
+                                        "phrase": "Clap your hands",
+                                        "phrase_trans": "拍拍手",
+                                        "phrase_py" : "Pāi pāishǒu",
+                                        "scenario":"When playing with your kiddo, clap your hands and say:",
                                         "tip": ""
-                                        }
+                                        },
+                                       {
+                                       "itemName": "Playtime_ComeOver",
+                                       "phrase": "Come over",
+                                       "phrase_trans": "過來",
+                                       "phrase_py" : "Guòlái",
+                                       "scenario":"When asking your kiddo to come over to you, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_CrawlOver",
+                                       "phrase": "Crawl over here",
+                                       "phrase_trans": "爬過來",
+                                       "phrase_py" : "Pá guòlái",
+                                       "scenario":"When asking your kiddos to crawl over, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_GoodJob",
+                                       "phrase": "Good job!",
+                                       "phrase_trans": "很好",
+                                       "phrase_py" : "Hěn hǎo",
+                                       "scenario":"When your kiddo does something good, say:",
+                                       "tip": "This phrase can be incorporated into different scenarios, give it a try!"
+                                       },
+                                       {
+                                       "itemName": "Playtime_StandUp",
+                                       "phrase": "Stand up",
+                                       "phrase_trans": "站起來",
+                                       "phrase_py" : "Zhàn qǐlái",
+                                       "scenario":"When telling your kiddo to stand up, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_OneMoreStep",
+                                       "phrase": "One more step",
+                                       "phrase_trans": "再一步",
+                                       "phrase_py" : "Zài yībù",
+                                       "scenario":"When your kiddo is walking and you want them to take another step, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_Jump",
+                                       "phrase": "Jump",
+                                       "phrase_trans": "跳",
+                                       "phrase_py" : "Tiào",
+                                       "scenario":"When holding your kiddo, lift them up and down and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WantToJump",
+                                       "phrase": "Do you want to jump?",
+                                       "phrase_trans": "你想跳嗎?",
+                                       "phrase_py" : "Nǐ xiǎng tiào ma",
+                                       "scenario":"When asking your kiddo if they want to jump, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_Fly",
+                                       "phrase": "Fly",
+                                       "phrase_trans": "飛",
+                                       "phrase_py" : "Fēi",
+                                       "scenario":"When playing with kiddo, pretend they are an airplane flying around and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_GiveMeToy",
+                                       "phrase": "Give me the toy",
+                                       "phrase_trans": "給我玩具",
+                                       "phrase_py" : "Gěi wǒ wánjù",
+                                       "scenario":"When asking your kiddo to give you the toy they are holding, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_Dancing",
+                                       "phrase": "We're dancing",
+                                       "phrase_trans": "我們跳舞",
+                                       "phrase_py" : "Wǒmen tiàowǔ",
+                                       "scenario":"When dancing with your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_Singing",
+                                       "phrase": "We're singing",
+                                       "phrase_trans": "我們跳舞",
+                                       "phrase_py" : "Wǒmen chànggē",
+                                       "scenario":"When singing with your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_TakeOutToys",
+                                       "phrase": "Take out toy(s)",
+                                       "phrase_trans": "拿出玩具",
+                                       "phrase_py" : "Ná chū wánjù",
+                                       "scenario":"When taking out toys for your kiddo to play, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_PlayBall",
+                                       "phrase": "Play ball",
+                                       "phrase_trans": "玩球",
+                                       "phrase_py" : "Wán qiú",
+                                       "scenario":"When playing ball with your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_ThrowBall",
+                                       "phrase": "Throw ball",
+                                       "phrase_trans": "丟球",
+                                       "phrase_py" : "Diū qiú",
+                                       "scenario":"When throwing a ball, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_CatchBall",
+                                       "phrase": "Catch the ball",
+                                       "phrase_trans": "接球",
+                                       "phrase_py" : "Jiē qiú",
+                                       "scenario":"When rolling a ball to your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_PushToy",
+                                       "phrase": "Push toy",
+                                       "phrase_trans": "推玩具",
+                                       "phrase_py" : "Tuī wánjù",
+                                       "scenario":"When helping your kiddo push a toy, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_PutAwayToys",
+                                       "phrase": "Put away toys",
+                                       "phrase_trans": "收玩具",
+                                       "phrase_py" : "Shōu Wánjù",
+                                       "scenario":"When it's time to clean up toys, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WhatsYourName",
+                                       "phrase": "What's your name?",
+                                       "phrase_trans": "你叫什麼名字?",
+                                       "phrase_py" : "Nǐ jiào shénme míngzì?",
+                                       "scenario":"When asking your kiddo what their name is, say:",
+                                       "tip": ""
+                                       }
                                     ]
                         }
                    ]

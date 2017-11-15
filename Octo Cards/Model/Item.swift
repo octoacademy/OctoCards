@@ -15,4 +15,6 @@ class Item {
     var phrase_py: String?
     var scenario: String?
     var tip: String?
+    
+    var position: Int = 0
 }

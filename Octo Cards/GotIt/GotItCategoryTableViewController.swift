@@ -57,6 +57,13 @@ class GotItCategoryTableViewController: UITableViewController {
         cell.detailTextLabel?.text = item?.item.phrase
         //cell.imageView?.image = UIImage(named: "first")
         //cell.imageView?.frame.size.height = 1
+        print("&&&&&&&&&&&&& sub cat is: \(item?.subCategoryKey ?? "")")
+        /*if (itemName == "Self Care") {
+            cell.imageView?.image = UIImage(named: "SelfCareSm")
+        }
+        else {*/
+            cell.imageView?.image = UIImage(named: "\(item?.subCategoryKey ?? "")Sm")
+       // }
     
     return cell
     }

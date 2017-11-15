@@ -31,8 +31,9 @@ class InfantCardCollectionViewController: UICollectionViewController {
     var items : [Item] = [Item]()
     {
         didSet
-        {
+        {            
             setCellSize()
+            
             if items.count > 0
             {
                 //(self.collectionView!.collectionViewLayout as! UPCarouselFlowLayout/*UICollectionViewFlowLayout*/).sectionInset  = UIEdgeInsets.zero
@@ -49,6 +50,7 @@ class InfantCardCollectionViewController: UICollectionViewController {
             }
         }
     }
+    
     
     @IBAction func playSoundButton(_ sender: Any) {
         if !self.collectionView!.visibleCells.isEmpty {
@@ -111,7 +113,6 @@ class InfantCardCollectionViewController: UICollectionViewController {
         
         cell.setupCell()
         //self.setupLayout()
-
         
         return cell
     }
@@ -158,8 +159,9 @@ class InfantCardCollectionViewController: UICollectionViewController {
     
     func playSound()
     {
-        let layout = (self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout)
-        let index = round(abs(self.collectionView!.contentOffset.x / (layout.itemSize.width + layout.minimumInteritemSpacing)))
+        let layout = (self.collectionView!.collectionViewLayout as! UPCarouselFlowLayout/*UICollectionViewFlowLayout*/)
+        //let index = round(abs(self.collectionView!.contentOffset.x / (layout.itemSize.width + layout.minimumInteritemSpacing)))
+        let index = round(abs(self.collectionView!.contentOffset.x / (layout.itemSize.width - 10.0)))
         
         print ("index \(index)")
         

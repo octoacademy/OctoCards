@@ -15,5 +15,6 @@ class Card
     var subCategoryName : String = ""
     var subCategoryKey : String = ""
     
+    var positionNum : Int = 0
     var item : Item = Item()
 }

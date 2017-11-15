@@ -21,10 +21,13 @@ class InfantContainerViewController: UIViewController {
     func getCards() -> [Item]
     {
         let filtered = CategoryManager.sharedInstance.categoryDictionary.filter({ print ($0.key)
-            return $0.key.hasPrefix(self.categoryKey + "||" + self.subCategoryKey)
+           return $0.key.hasPrefix(self.categoryKey + "||" + self.subCategoryKey)
         })
         
+       /* let filtered = CategoryManager.sharedInstance.cardArray.filter{$0.subCategoryKey == self.subCategoryKey}*/
+        
         var newData = [String:Item]()
+        
         for result in filtered {
             newData[result.0] = result.1.item
         }
@@ -54,13 +57,18 @@ class InfantContainerViewController: UIViewController {
         
         
         // final iteration to find the unshared cards
-        finalCards.append(contentsOf: newData.values.shuffled())
+        /*finalCards.append(contentsOf: newData.values.shuffled())
         finalCards.append(contentsOf: myOctoCards.shuffled())
         finalCards.append(contentsOf: gotItCards.shuffled())
+       */
+        
+        //final iterination if cards are UNSHUFFLED
+        let sortedNewData = newData.values.sorted{$0.0.position < $0.1.position}
        
-        
-        
-        
+        //finalCards.append(contentsOf: newData.values)
+        finalCards.append(contentsOf: sortedNewData)
+        finalCards.append(contentsOf: myOctoCards)
+        finalCards.append(contentsOf: gotItCards)
         
         return finalCards
     }

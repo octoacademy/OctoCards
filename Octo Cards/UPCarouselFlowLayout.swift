@@ -87,13 +87,13 @@ open class UPCarouselFlowLayout: UICollectionViewFlowLayout {
             let isHorizontal = (self.scrollDirection == .horizontal)
             
             let collectionCenter = isHorizontal ? collectionView.frame.size.width/2 : collectionView.frame.size.height/2
-        print("frame.size.width: \(collectionView.frame.size.width)\n frame.size.height: \(collectionView.frame.size.height)")
+       //print("frame.size.width: \(collectionView.frame.size.width)\n frame.size.height: \(collectionView.frame.size.height)")
         
             let offset = isHorizontal ? collectionView.contentOffset.x : collectionView.contentOffset.y
-        print("contentoffset.x: \(collectionView.contentOffset.x) \n contentoffset.y: \(collectionView.contentOffset.y)")
+        //print("contentoffset.x: \(collectionView.contentOffset.x) \n contentoffset.y: \(collectionView.contentOffset.y)")
         
             let normalizedCenter = (isHorizontal ? attributes.center.x : attributes.center.y) - offset
-        print("center.x: \(attributes.center.x) \n center.y: \(attributes.center.y)")
+        //print("center.x: \(attributes.center.x) \n center.y: \(attributes.center.y)")
         
             let maxDistance = (isHorizontal ? self.itemSize.width : self.itemSize.height) + self.minimumLineSpacing
             let distance = min(abs(collectionCenter - normalizedCenter), maxDistance)
