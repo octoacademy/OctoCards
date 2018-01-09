@@ -23,6 +23,10 @@ class PickOneCollectionViewController: UICollectionViewController {
 
         // For Notifications
        
+        if UIDevice.current.model == "iPad" {
+            print("******** USING IPAD *********")
+            
+        }
 
         print(Array(UserDefaults.standard.dictionaryRepresentation()))
         
@@ -120,6 +124,10 @@ class PickOneCollectionViewController: UICollectionViewController {
     
         cell.label.text = categories[indexPath.section].subCategories?[indexPath.row].title
         
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            cell.label.adjustsFontSizeToFitWidth = true
+        }
+        
         /**** Specify image by expanding on below code ******/
         cell.image.image = UIImage(named: (categories[indexPath.section].subCategories?[indexPath.row].key)!)
        
@@ -132,14 +140,20 @@ class PickOneCollectionViewController: UICollectionViewController {
         
         if UIDevice.current.userInterfaceIdiom == .pad
         {
-            return CGSize(width: 120, height:120)
+            //return CGSize(width: 120, height:120)
+            let width = UIScreen.main.bounds.width/3.5
+            
+            return CGSize(width: width, height: width)
+
         }
         else
         {
             //let width = (collectionView.frame.width - sectionInsets.left - sectionInsets.right - (spacing * maxItem)) / maxItem
             
-            let width = (collectionView.frame.width * 0.33)
-            print("width: \(width)")
+            /* this one works
+            let width = (collectionView.frame.width * 0.33)*/
+            
+            let width = UIScreen.main.bounds.width/3
 
             return CGSize(width: width, height: width)//+ 30.0)
         }
@@ -154,15 +168,20 @@ class PickOneCollectionViewController: UICollectionViewController {
         /* Trying to vertically align all sections */
         let sectionInsetBottom = (collectionView.frame.height/15)
         let sectionInsetTop = sectionInsetBottom - 20
+        var sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right:0)
     
-      //let sectionInsets = UIEdgeInsets(top: sectionInsetTop, left: (collectionView.frame.width * 0.16), bottom: sectionInsetBottom, right: (collectionView.frame.width * 0.16))
-        
+      /*** original
+        let sectionInsets = UIEdgeInsets(top: sectionInsetTop, left: (collectionView.frame.width * 0.16), bottom: sectionInsetBottom, right: (collectionView.frame.width * 0.16))
+        **********/
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            sectionInsets = UIEdgeInsets(top: collectionView.frame.height * 0.04, left: collectionView.frame.width * 0.12, bottom: collectionView.frame.height * 0.05, right: collectionView.frame.width * 0.12)
+        }
+        else {
         print("frame height: \(collectionView.frame.height)")
-   //     print("itemWidth: \(itemWidth)")
         print("sectioninsetBottom: \(sectionInsetBottom)")
         print("sectionInsetTop: \(sectionInsetTop)")
-        let sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.12), bottom: 15, right: (collectionView.frame.width * 0.12))
-        
+        sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.12), bottom: 15, right: (collectionView.frame.width * 0.12))
+        }
         
         return sectionInsets
     }

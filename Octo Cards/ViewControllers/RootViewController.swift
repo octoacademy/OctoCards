@@ -43,10 +43,17 @@ class RootViewController: SlideMenuController {
             
             let title = UIImage(named: "OctoTitleLogo.png")
             let imageView = UIImageView(image: title)
-
+            let height = nav.navigationBar.frame.height * 0.5;
+            
+            print("PHONE MODEL is a \(UIDevice.accessibilityContainerType().rawValue)")
+            print ("SCREEN SIZE IS: \(UIScreen.main.nativeBounds.height)")
+            if (UIDevice.current.userInterfaceIdiom == .phone) && (UIScreen.main.nativeBounds.height <= 568.0) {
+                print("********** IPHONE 5 OR BELOW!!!!")
+                print("phone is a \(UIDevice.current.model)")
+            }
             //imageView.frame.size.height = nav.navigationBar.frame.height * 0.5;
             
-            let height = nav.navigationBar.frame.height * 0.5;
+            
             let heightConstraint = imageView.heightAnchor.constraint(equalToConstant: height)
             
             heightConstraint.isActive = true            

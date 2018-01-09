@@ -8,67 +8,835 @@
                             "key": "SelfCare",
                             "title": "Self Care",
                             "items" : [
-                                     {
-                                       "itemName": "ChangingDiaper_Foot",
-                                       "phrase": "Foot",
-                                       "phrase_trans": "腳丫子",
-                                       "phrase_py" : "Jiǎoyāzi",
-                                       "scenario":"When bathing or changing your baby, play with their feet and say:",
-                                       "tip": ""
-                                     },
                                        {
-                                       "itemName": "ChangingDiaper_Toes",
-                                       "phrase": "Toes",
-                                       "phrase_trans": "腳趾",
-                                       "phrase_py" : "Jiǎozhǐ",
-                                       "scenario":"When bathing or changing your kiddo, play with their toes and say:",
-                                       "tip": ""
-                                       }
-                                       ,
+                                        "itemName": "SelfCare_PutOnPJs",
+                                        "phrase": "Put on pajamas",
+                                        "phrase_trans": "穿睡衣",
+                                        "phrase_py" : "Chuān shuìyī",
+                                        "scenario":"When putting on your kiddo's pajamas, say:",
+                                        "tip": ""
+                                       },
                                        {
-                                       "itemName": "ChangingDiaper_Laydown",
-                                       "phrase": "Lay you down",
-                                       "phrase_trans": "把你放下",
-                                       "phrase_py" : "Bǎ nǐ fàngxià",
-                                       "scenario":"When laying your kiddo down to change a diaper or their clothes, say:",
+                                        "itemName": "SelfCare_Awesome",
+                                        "phrase": "Awesome!",
+                                        "phrase_trans": "很棒!",
+                                        "phrase_py" : "Hěn bàng!",
+                                        "scenario":"When your kiddo does a good job, clap and say:",
+                                        "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_AllClean",
+                                       "phrase": "All Clean",
+                                       "phrase_trans": "乾淨了",
+                                       "phrase_py" : "Gānjìngle",
+                                       "scenario":"When your kiddo is clean, say:",
                                        "tip": ""
                                        },
                                        {
-                                       "itemName": "ChangingDiaper_fingers",
+                                       "itemName": "SelfCare_ChangeClothes",
+                                       "phrase": "Change clothes",
+                                       "phrase_trans": "換衣服",
+                                       "phrase_py" : "Huàn yīfú",
+                                       "scenario":"When it's time to change your kiddo's clothes, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_ChangePants",
+                                       "phrase": "Change pants",
+                                       "phrase_trans": "換褲子",
+                                       "phrase_py" : "Huàn kùzi",
+                                       "scenario":"When it's time to change your kiddo's pants, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_ChangeShirt",
+                                       "phrase": "Change shirt",
+                                       "phrase_trans": "換襯衫",
+                                       "phrase_py" : "Huàn chènshān",
+                                       "scenario":"When it's time to change your kiddo's shirt, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_NeedBath",
+                                       "phrase": "Do you need a bath?",
+                                       "phrase_trans": "你要洗澡嗎?",
+                                       "phrase_py" : "Nǐ yào xǐzǎo ma?",
+                                       "scenario":"When asking your kiddo if they need a bath, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_DiaperChange",
+                                       "phrase": "Do you need a diaper change?",
+                                       "phrase_trans": "你要換尿布嗎?",
+                                       "phrase_py" : "Nǐ yào huàn niàobù ma?",
+                                       "scenario":"When asking your kiddo if they need a diaper change, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_GoBathroom",
+                                       "phrase": "Do you need to go to the bathroom?",
+                                       "phrase_trans": "你要去廁所嗎?",
+                                       "phrase_py" : "Nǐ yào qù cèsuǒ ma?",
+                                       "scenario":"When asking your kiddo if they need to go to the bathroom, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_WhiteSocks",
+                                       "phrase": "White socks",
+                                       "phrase_trans": "白襪子",
+                                       "phrase_py" : "Bái wàzi",
+                                       "scenario":"When holding up a white sock, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_SeeYourself",
+                                       "phrase": "Do you see yourself?",
+                                       "phrase_trans": "你看到自己嗎?",
+                                       "phrase_py" : "Nǐ kàn dào zìjǐ ma?",
+                                       "scenario":"When your kiddo is in front of a mirror, point to them and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_AllDry",
+                                       "phrase": "All dry",
+                                       "phrase_trans": "乾了",
+                                       "phrase_py" : "Gān le",
+                                       "scenario":"When your kiddo is dry, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_FoldClothes",
+                                       "phrase": "Folding clothes",
+                                       "phrase_trans": "摺衣服",
+                                       "phrase_py" : "Zhé yīfú",
+                                       "scenario":"When your kiddo sees you folding clothes, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_GoodMorning",
+                                       "phrase": "Good morning",
+                                       "phrase_trans": "早安",
+                                       "phrase_py" : "Zǎo ān",
+                                       "scenario":"When you see your kiddo in the morning, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_TooTight",
+                                       "phrase": "Is this too tight?",
+                                       "phrase_trans": "太緊嗎?",
+                                       "phrase_py" : "Tài jǐn ma?",
+                                       "scenario":"When putting clothing on your kiddo and it seems tight, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_DiaperComfy",
+                                       "phrase": "Is your diaper comfortable?",
+                                       "phrase_trans": "尿布舒服嗎?",
+                                       "phrase_py" : "Niàobù shūfú ma?",
+                                       "scenario":"When checking to see if your kiddo's diaper is comfortable, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_TrimNails",
+                                       "phrase": "It's time to trim your nails",
+                                       "phrase_trans": "該剪指甲了",
+                                       "phrase_py" : "Gāi jiǎn zhǐjiǎle",
+                                       "scenario":"When you are ready to trim your kiddo's nails, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_Knees",
+                                       "phrase": "Knees",
+                                       "phrase_trans": "膝蓋",
+                                       "phrase_py" : "Xīgài",
+                                       "scenario":"When dressing your kiddo, point to their knee and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_CountClothing",
+                                       "phrase": "Let's count clothing, 1, 2, 3",
+                                       "phrase_trans": "我們來數一數衣服, 一, 二, 三",
+                                       "phrase_py" : "Wǒmen lái shǔ yī shǔ yīfú, yī, èr, sān",
+                                       "scenario":"When folding clothes, pick out 3 pieces and count:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_Bathtime",
+                                       "phrase": "Bathtime",
+                                       "phrase_trans": "洗澡了",
+                                       "phrase_py" : "Xǐzǎole",
+                                       "scenario":"When you're about to give your kiddo a bath, say: ",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_TakeBath",
+                                       "phrase": "Let's go take a bath",
+                                       "phrase_trans": "我們去洗澡",
+                                       "phrase_py" : "Wǒmen qù xǐzǎo",
+                                       "scenario":"When you're going to give your kiddo a bath, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_LookAtMirror",
+                                       "phrase": "Look at the mirror",
+                                       "phrase_trans": "看鏡子",
+                                       "phrase_py" : "Kàn jìngzi",
+                                       "scenario":"When standing in front of a mirror with your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_PutAway",
+                                       "phrase": "Put away",
+                                       "phrase_trans": "收起來",
+                                       "phrase_py" : "Shōu qǐlái",
+                                       "scenario":"When putting something away, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_PutAwayClothes",
+                                       "phrase": "Put away clothes",
+                                       "phrase_trans": "把衣服收起來",
+                                       "phrase_py" : "Bǎ yīfú shōu qǐlái",
+                                       "scenario":"When putting away clothes, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_ClothesInWasher",
+                                       "phrase": "Put clothes in washer",
+                                       "phrase_trans": "把衣服放在洗衣機裡",
+                                       "phrase_py" : "Bǎ yīfú fàng zài xǐyījī lǐ",
+                                       "scenario":"When putting clothes in the washer, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_InBathtub",
+                                       "phrase": "Put in bathtub",
+                                       "phrase_trans": "放在浴缸",
+                                       "phrase_py" : "Fàng zài yùgāng",
+                                       "scenario":"When putting your kiddo in the bathtub, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_PutOnBib",
+                                       "phrase": "Put on bib",
+                                       "phrase_trans": "穿上圍兜",
+                                       "phrase_py" : "Chuān shàng wéi dōu",
+                                       "scenario":"When putting a bib on your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_PutOnMittens",
+                                       "phrase": "Put on mittens",
+                                       "phrase_trans": "戴上手套",
+                                       "phrase_py" : "Dài shàng shǒutào",
+                                       "scenario":"When putting mittens on your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_PutOnSocks",
+                                       "phrase": "Put on socks",
+                                       "phrase_trans": "穿襪子",
+                                       "phrase_py" : "Chuān wàzi",
+                                       "scenario":"When putting socks on your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_UseSoap",
+                                       "phrase": "Using soap",
+                                       "phrase_trans": "用肥皂",
+                                       "phrase_py" : "Yòng féizào",
+                                       "scenario":"When grabbing the soap, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_UseTowel",
+                                       "phrase": "Using a towel",
+                                       "phrase_trans": "用毛巾",
+                                       "phrase_py" : "Yòng máojīn",
+                                       "scenario":"When using a towel to dry your kiddo off, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_UseWater",
+                                       "phrase": "Using water",
+                                       "phrase_trans": "用水",
+                                       "phrase_py" : "Yòngshuǐ",
+                                       "scenario":"When your kiddo is in the bath, pour water on them and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_Wash",
+                                       "phrase": "Wash",
+                                       "phrase_trans": "洗一洗",
+                                       "phrase_py" : "Xǐyixǐ",
+                                       "scenario":"When washing your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_WashHair",
+                                       "phrase": "Wash hair",
+                                       "phrase_trans": "洗頭髮",
+                                       "phrase_py" : "Xǐ tóufà",
+                                       "scenario":"When washing your kiddo's hair, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_WhatWear",
+                                       "phrase": "What do you want to wear?",
+                                       "phrase_trans": "你想穿什麼?",
+                                       "phrase_py" : "Nǐ xiǎng chuān shénme?",
+                                       "scenario":"When asking your kiddo what they want to wear, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_WhatEat",
+                                       "phrase": "What do you want to eat?",
+                                       "phrase_trans": "你想吃什麼?",
+                                       "phrase_py" : "Nǐ xiǎng chī shénme?",
+                                       "scenario":"When asking your kiddo what they want to eat, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_AllWet",
+                                       "phrase": "You are all wet",
+                                       "phrase_trans": "你都濕了",
+                                       "phrase_py" : "Nǐ dōu shīle",
+                                       "scenario":"When your kiddo is all wet, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_SkinSoft",
+                                       "phrase": "Your skin is so soft",
+                                       "phrase_trans": "你的皮膚很柔軟",
+                                       "phrase_py" : "Nǐ de pífū hěn róuruǎn",
+                                       "scenario":"When holding your kiddo's hand, gently rub it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_AllDressed",
+                                       "phrase": "All dressed",
+                                       "phrase_trans": "完成了",
+                                       "phrase_py" : "Chuān hǎole",
+                                       "scenario":"When your kiddo is finished getting dressed, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_DiaperStinky",
+                                       "phrase": "Diaper is stinky",
+                                       "phrase_trans": "尿布臭臭",
+                                       "phrase_py" : "Niàobù chòu chòu",
+                                       "scenario":"When changing your kiddo's diaper, make a stinky face and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_Fingers",
                                        "phrase": "Fingers",
                                        "phrase_trans": "手指",
                                        "phrase_py" : "Shǒuzhǐ",
-                                       "scenario":"When bathing or changing your kiddo, play with their fingers and say:",
+                                       "scenario":"When putting lotion on your kiddo's hands, play with their fingers and say:",
                                        "tip": ""
                                        },
                                        {
-                                       "itemName": "ChangingDiaper_washhands",
+                                       "itemName": "SelfCare_Foot",
+                                       "phrase": "Foot",
+                                       "phrase_trans": "腳",
+                                       "phrase_py" : "Jiǎo",
+                                       "scenario":"When putting on clothes, play with your kiddo's feet and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_PickupClothes",
+                                       "phrase": "Pick up clothes",
+                                       "phrase_trans": "拿起衣服",
+                                       "phrase_py" : "Ná qǐ yīfú",
+                                       "scenario":"When your kiddo sees you pick up clothes, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_PlaceYouDown",
+                                       "phrase": "Place you down",
+                                       "phrase_trans": "把你放下",
+                                       "phrase_py" : "Bǎ nǐ fàngxià",
+                                       "scenario":"When placing your kiddo down to change their diaper, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_RubLotion",
+                                       "phrase": "Rub on lotion",
+                                       "phrase_trans": "擦乳液",
+                                       "phrase_py" : "Cā rǔyè",
+                                       "scenario":"When rubbing lotion onto your kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_TossGarbage",
+                                       "phrase": "Throw away garbage",
+                                       "phrase_trans": "丟垃圾",
+                                       "phrase_py" : "Diū Lèsè",
+                                       "scenario":"When your kiddo is watching you throw away garbage, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_Toes",
+                                       "phrase": "Toes",
+                                       "phrase_trans": "腳趾",
+                                       "phrase_py" : "Jiǎozhǐ",
+                                       "scenario":"When pointing to your kiddo's toes, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "SelfCare_WashHands",
                                        "phrase": "Wash hands",
                                        "phrase_trans": "洗手",
                                        "phrase_py" : "Xǐshǒu",
-                                       "scenario":"When washing your kiddo's hands, say:",
+                                       "scenario":"When helping your kiddo wash their hands, say:",
                                        "tip": ""
                                        }
+                                       
                                      ]
                         },
                         {
                             "key": "Mealtime",
                             "title": "Mealtime",
                              "items" : [
-                                        {
-                                        "itemName": "GettingDressed_Put_away",
-                                        "phrase": "Put away",
-                                        "phrase_trans": "收起來",
-                                        "phrase_py" : "Shōu qǐlái",
-                                        "scenario":"When putting away dirty clothes",
+                                       {
+                                        "itemName": "Mealtime_AreYouHungry",
+                                        "phrase": "Are you hungry?",
+                                        "phrase_trans": "你餓嗎?",
+                                        "phrase_py" : "Nǐ è ma?",
+                                        "scenario":"When asking your kiddo if they are hungry, say:",
                                         "tip": ""
                                         },
                                         {
-                                        "itemName": "GettingDressed_Put_on_Socks",
-                                        "phrase": "Put on socks ",
-                                        "phrase_trans": "穿襪子",
-                                        "phrase_py" : "Chuān wàzi",
-                                        "scenario":"When putting socks on baby",
+                                        "itemName": "Mealtime_WaitAMinute",
+                                        "phrase": "Wait a minute",
+                                        "phrase_trans": "等一下",
+                                        "phrase_py" : "Děng yīxià",
+                                        "scenario":"When you want your kiddo to wait before giving them another bite of food, say:",
+                                        "tip": "This phrase can be incorporated into other phrases and scenarios."
+                                        },
+                                        {
+                                        "itemName": "Mealtime_SitDown",
+                                        "phrase": "Sit down",
+                                        "phrase_trans": "坐下",
+                                        "phrase_py" : "Zuò xià",
+                                        "scenario":"When you are putting your kiddo in a high chair, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_DadIsGoingToEat",
+                                        "phrase": "Daddy is going to eat",
+                                        "phrase_trans": "爸爸吃飯",
+                                        "phrase_py" : "Bàba chīfàn",
+                                        "scenario":"When it's time to eat with your kiddo, daddy should point to himself and say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_MomIsGoingToEat",
+                                        "phrase": "Mommy is going to eat",
+                                        "phrase_trans": "媽媽吃飯",
+                                        "phrase_py" : "Māmā chīfàn",
+                                        "scenario":"When it's time to eat with your kiddo, mommy should point to herself and say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_DrinkMilk",
+                                        "phrase": "Drink milk",
+                                        "phrase_trans": "喝牛奶",
+                                        "phrase_py" : "Hē niúnǎi",
+                                        "scenario":"When offering/giving your kiddo milk, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatOatmeal",
+                                        "phrase": "Eat oatmeal",
+                                        "phrase_trans": "吃麥片",
+                                        "phrase_py" : "Chī màipiàn",
+                                        "scenario":"When offering/giving your kiddo oatmeal, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_ItsHot",
+                                        "phrase": "It's hot",
+                                        "phrase_trans": "燙燙",
+                                        "phrase_py" : "Tàng tàng",
+                                        "scenario":"When feeding your kiddo something that's hot, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_UseCup",
+                                        "phrase": "Use a cup",
+                                        "phrase_trans": "用杯子",
+                                        "phrase_py" : "Yòng bēizi",
+                                        "scenario":"When offering/handing your kiddo a cup, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_DrinkJuice",
+                                        "phrase": "Drink juice",
+                                        "phrase_trans": "喝果汁",
+                                        "phrase_py" : "Hē guǒzhī",
+                                        "scenario":"When offering/giving your kiddo juice, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_DrinkWater",
+                                        "phrase": "Drink water",
+                                        "phrase_trans": "喝水",
+                                        "phrase_py" : "Hē shuǐ",
+                                        "scenario":"When offering/giving your kiddo water, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatBread",
+                                        "phrase": "Eat bread",
+                                        "phrase_trans": "吃麵包",
+                                        "phrase_py" : "Chī miànbāo",
+                                        "scenario":"When offering/giving your kiddo bread, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatMore",
+                                        "phrase": "Eat a little more",
+                                        "phrase_trans": "多吃一點",
+                                        "phrase_py" : "Duō chī yīdiǎn",
+                                        "scenario":"When you want your kiddo to eat a little more, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_DoYouLikeBanana",
+                                        "phrase": "Do you like bananas?",
+                                        "phrase_trans": "你喜歡香蕉嗎?",
+                                        "phrase_py" : "Nǐ xǐhuān xiāngjiāo ma?",
+                                        "scenario":"When feeding your kiddo a banana, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatBanana",
+                                        "phrase": "Eat banana",
+                                        "phrase_trans": "吃香蕉",
+                                        "phrase_py" : "Chī xiāngjiāo",
+                                        "scenario":"When offering your kiddo a banana, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_LikeYogurt",
+                                        "phrase": "Do you like the yogurt?",
+                                        "phrase_trans": "你喜歡酸奶嗎?",
+                                        "phrase_py" : "Nǐ xǐhuān suānnǎi ma?",
+                                        "scenario":"When feeding your kiddo yogurt, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_IsItGood",
+                                        "phrase": "Is it good?",
+                                        "phrase_trans": "好吃嗎?",
+                                        "phrase_py" : "Hào chī ma?",
+                                        "scenario":"After giving your kiddo a bite of food, say:",
+                                        "tip": "This is asking specifically if something is good to eat."
+                                        },
+                                        {
+                                        "itemName": "Mealtime_MomHelpYouGetFruit",
+                                        "phrase": "Mommy will help you get the fruit",
+                                        "phrase_trans": "媽媽幫你拿水果",
+                                        "phrase_py" : "Māmā bāng nǐ ná shuǐguǒ",
+                                        "scenario":"When you are getting fruit for your kiddo, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_LetsCount123",
+                                        "phrase": "Let's count food, 1, 2, 3",
+                                        "phrase_trans": "我們來數一數食物, 一二三",
+                                        "phrase_py" : "Wǒmen lái shǔ yī shǔ shíwù, yī'èrsān",
+                                        "scenario":"Put three bites of food in front of your kiddo and say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_WantMore",
+                                        "phrase": "Do you want more?",
+                                        "phrase_trans": "你還要嗎?",
+                                        "phrase_py" : "Nǐ hái yào ma?",
+                                        "scenario":"When feeding your kiddo and you ask if they want more, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_TheresNoMore",
+                                        "phrase": "There's no more",
+                                        "phrase_trans": "沒有了",
+                                        "phrase_py" : "Méiyǒule",
+                                        "scenario":"When there is no more food say to your kiddo, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatSlowly",
+                                        "phrase": "Eat slowly",
+                                        "phrase_trans": "慢慢吃",
+                                        "phrase_py" : "Màn man chī",
+                                        "scenario":"When feeding your kiddo and you want them to eat slowly, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_SpitItOut",
+                                        "phrase": "Spit it out",
+                                        "phrase_trans": "吐出來",
+                                        "phrase_py" : "Tǔchū lái",
+                                        "scenario":"When your kiddo needs to spit something out, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_NoMore",
+                                        "phrase": "No more?",
+                                        "phrase_trans": "不要?",
+                                        "phrase_py" : "Bùyào?",
+                                        "scenario":"When your kiddo indicates that they do not want anymore food, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_DoneEating",
+                                        "phrase": "Are you all done eating?",
+                                        "phrase_trans": "你吃完了嗎?",
+                                        "phrase_py" : "Nǐ chī wánliǎo ma?",
+                                        "scenario":"When asking your kiddo if they are done eating, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_CookieIsSweet",
+                                        "phrase": "This cookie is sweet",
+                                        "phrase_trans": "餅乾甜甜",
+                                        "phrase_py" : "Bǐnggān tián tián",
+                                        "scenario":"When your kiddo needs to spit something out, say:",
+                                        "tip": "The word 'Bǐnggān' can be used to mean cookies or crackers"
+                                        },
+                                        {
+                                        "itemName": "Mealtime_CrackerCrunchy",
+                                        "phrase": "This cracker is crunchy",
+                                        "phrase_trans": "餅乾脆脆",
+                                        "phrase_py" : "Bǐnggān cuì cuì",
+                                        "scenario":"When feeding your kiddo a crunchy cracker, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_FeedMe",
+                                        "phrase": "Feed me",
+                                        "phrase_trans": "餵我",
+                                        "phrase_py" : "Wèi wǒ",
+                                        "scenario":"When you want your kiddo to feed you, say:",
+                                        "tip": "The word 'Bǐnggān' can be used to mean cookies or crackers"
+                                        },
+                                        {
+                                        "itemName": "Mealtime_YourWelcome",
+                                        "phrase": "You're welcome",
+                                        "phrase_trans": "不客氣",
+                                        "phrase_py" : "Bù kèqì",
+                                        "scenario":"When telling your kiddo, you're welcome, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_TimeToEatBreakfast",
+                                        "phrase": "Time to eat breakfast",
+                                        "phrase_trans": "吃早餐了",
+                                        "phrase_py" : "Chī zǎocānle",
+                                        "scenario":"When telling your kiddo it's time to eat breakfast, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_LikeSomeApplesauce",
+                                        "phrase": "Would you like some apple sauce?",
+                                        "phrase_trans": "要蘋果江嗎?",
+                                        "phrase_py" : "Yào píngguǒ jiāng ma?",
+                                        "scenario":"When offering your kiddo apple sauce, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_LikeSomeWater",
+                                        "phrase": "Would you like some water?",
+                                        "phrase_trans": "你要水嗎?",
+                                        "phrase_py" : "Nǐ yào shuǐ ma?",
+                                        "scenario":"When asking your kiddo if they want water, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_YouCanTakeThis",
+                                        "phrase": "You can take this",
+                                        "phrase_trans": "你可以拿這個",
+                                        "phrase_py" : "Nǐ kěyǐ ná zhège",
+                                        "scenario":"When handing something to your kiddo, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_YouCannotEatThis",
+                                        "phrase": "You cannot eat this",
+                                        "phrase_trans": "你不可以吃",
+                                        "phrase_py" : "Nǐ bù kěyǐ chī zhège",
+                                        "scenario":"When your kiddo puts something in their mouth that they should not eat, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_TimeToEatLunch",
+                                        "phrase": "Time to eat lunch",
+                                        "phrase_trans": "吃午餐了",
+                                        "phrase_py" : "Chī wǔcānle",
+                                        "scenario":"When it's time for lunch, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_OpenFridge",
+                                        "phrase": "Open the refridgerator",
+                                        "phrase_trans": "開冰箱",
+                                        "phrase_py" : "Kāi bīngxiāng",
+                                        "scenario":"When opening the refrigerator, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_TimeToEatDinner",
+                                        "phrase": "Time to eat dinner",
+                                        "phrase_trans": "吃晚餐了",
+                                        "phrase_py" : "Chī wǎncānle",
+                                        "scenario":"When it's dinner time, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_OpenMouth",
+                                        "phrase": "Open mouth",
+                                        "phrase_trans": "嘴巴開開",
+                                        "phrase_py" : "Zuǐba kāi kāi",
+                                        "scenario":"When you want your kiddo to open their mouth for food, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_PutInBowl",
+                                        "phrase": "Put in a bowl",
+                                        "phrase_trans": "放在碗裡",
+                                        "phrase_py" : "Fàng zài wǎn lǐ",
+                                        "scenario":"When putting food into a bowl, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_UseSpoon",
+                                        "phrase": "Use a spoon",
+                                        "phrase_trans": "用湯匙",
+                                        "phrase_py" : "Yòng tāngchí",
+                                        "scenario":"When offering your kiddo a spoon, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatRice",
+                                        "phrase": "Eat rice",
+                                        "phrase_trans": "吃飯",
+                                        "phrase_py" : "Chī fàn",
+                                        "scenario":"When offering your kiddo rice, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_ThisIsHot",
+                                        "phrase": "This is hot",
+                                        "phrase_trans": "這很熱",
+                                        "phrase_py" : "Zhè hěn rè",
+                                        "scenario":"When your kiddo sees you with hot food, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_DrinkSoup",
+                                        "phrase": "Drink soup",
+                                        "phrase_trans": "喝湯",
+                                        "phrase_py" : "Hē tāng",
+                                        "scenario":"When giving your kiddo soup, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_BlowFood",
+                                        "phrase": "Blow on the food",
+                                        "phrase_trans": "吹吹",
+                                        "phrase_py" : "Chuī chuī",
+                                        "scenario":"When food is too hot, blow on your kiddo's food, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_ItsCooled",
+                                        "phrase": "It's cooled down",
+                                        "phrase_trans": "冷了",
+                                        "phrase_py" : "Lěngle",
+                                        "scenario":"When feeding your kiddo something that's cooled down, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatChicken",
+                                        "phrase": "Eat chicken",
+                                        "phrase_trans": "吃雞肉",
+                                        "phrase_py" : "Chī jīròu",
+                                        "scenario":"When offering your kiddo chicken, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatFish",
+                                        "phrase": "Eat fish",
+                                        "phrase_trans": "吃魚",
+                                        "phrase_py" : "Chī yú",
+                                        "scenario":"When offering your kiddo fish, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_UseFork",
+                                        "phrase": "Use a fork",
+                                        "phrase_trans": "用叉子",
+                                        "phrase_py" : "Yòng chāzi",
+                                        "scenario":"When offering your kiddo a fork, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_PutOnPlate",
+                                        "phrase": "Put on a plate",
+                                        "phrase_trans": "放在盤子",
+                                        "phrase_py" : "Fàng zài pánzi",
+                                        "scenario":"When putting food onto a plate, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatNoodle",
+                                        "phrase": "Eat noodle",
+                                        "phrase_trans": "吃麵",
+                                        "phrase_py" : "Chī miàn",
+                                        "scenario":"When offering your kiddo noodles, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_EatSpinach",
+                                        "phrase": "Eat spinach",
+                                        "phrase_trans": "吃菠菜",
+                                        "phrase_py" : "Chī bōcài",
+                                        "scenario":"When offering your kiddo spinach, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_UseNapkin",
+                                        "phrase": "Use a napkin",
+                                        "phrase_trans": "用餐巾",
+                                        "phrase_py" : "Yòng cānjīn",
+                                        "scenario":"When offering your kiddo a napkin, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_WipeMouth",
+                                        "phrase": "Wipe Mouth",
+                                        "phrase_trans": "擦擦嘴巴",
+                                        "phrase_py" : "Cā cā zuǐbā",
+                                        "scenario":"When wiping your kiddo's mouth after eating, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_AllDoneEating",
+                                        "phrase": "All done eating",
+                                        "phrase_trans": "吃完了",
+                                        "phrase_py" : "Chī wánle",
+                                        "scenario":"When your kiddo is done eating, say:",
+                                        "tip": ""
+                                        },
+                                        {
+                                        "itemName": "Mealtime_WashDishes",
+                                        "phrase": "Wash dishes",
+                                        "phrase_trans": "洗碗",
+                                        "phrase_py" : "Xǐ wǎn",
+                                        "scenario":"When your kiddo sees you washing dishes, say:",
                                         "tip": ""
                                         }
                                     ]
@@ -303,7 +1071,7 @@
                                        "itemName": "Playtime_PutAwayToys",
                                        "phrase": "Put away toys",
                                        "phrase_trans": "收玩具",
-                                       "phrase_py" : "Shōu Wánjù",
+                                       "phrase_py" : "Shōu wánjù",
                                        "scenario":"When it's time to clean up toys, say:",
                                        "tip": ""
                                        },
@@ -313,6 +1081,134 @@
                                        "phrase_trans": "你叫什麼名字?",
                                        "phrase_py" : "Nǐ jiào shénme míngzì?",
                                        "scenario":"When asking your kiddo what their name is, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_Let'sTakeTurns",
+                                       "phrase": "Let's take turns",
+                                       "phrase_trans": "我們輪流",
+                                       "phrase_py" : "Wǒmen lúnliú",
+                                       "scenario":"When showing your kiddo to take turns, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_CanNot",
+                                       "phrase": "Can not",
+                                       "phrase_trans": "不可以",
+                                       "phrase_py" : "Bù kěyǐ",
+                                       "scenario":"When telling your kiddo they cannot do something, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WhyCrying",
+                                       "phrase": "Why are you crying?",
+                                       "phrase_trans": "你哭什麼?",
+                                       "phrase_py" : "Nǐ kū shénme?",
+                                       "scenario":"When your kiddo is crying and you ask them why, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WhereAreYou",
+                                       "phrase": "Where are you?",
+                                       "phrase_trans": "你在哪裡?",
+                                       "phrase_py" : "Nǐ zài nǎlǐ?",
+                                       "scenario":"When playing hide and seek with your kiddo and they are hiding, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WheresDad",
+                                       "phrase": "Where is Daddy?",
+                                       "phrase_trans": "爸爸在哪裡?",
+                                       "phrase_py" : "Bàba zài nǎlǐ?",
+                                       "scenario":"When dad is playing hide and seek with kiddo, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WheresEye",
+                                       "phrase": "Where is your eye?",
+                                       "phrase_trans": "你的眼睛在哪裡?",
+                                       "phrase_py" : "Nǐ de yǎnjīng zài nǎlǐ?",
+                                       "scenario":"When asking your kiddo where their eye is, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_YourEyeHere",
+                                       "phrase": "Your eye is here",
+                                       "phrase_trans": "你的眼睛在這裡",
+                                       "phrase_py" : "Nǐ de yǎnjīng zài zhèlǐ",
+                                       "scenario":"When pointing to your kiddo's eye, say:",
+                                       "tip": "The plural form of 'eye' is the same as the singular form. So this phrase can be used for 'eye' or 'eyes'."
+                                       },
+                                       {
+                                       "itemName": "Playtime_WheresHead",
+                                       "phrase": "Where is your head?",
+                                       "phrase_trans": "你的頭在哪裡?",
+                                       "phrase_py" : "Nǐ de tóu zài nǎlǐ?",
+                                       "scenario":"When asking your kiddo where their head is, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_YourHeadHere",
+                                       "phrase": "Your head is here",
+                                       "phrase_trans": "你的頭在這裡",
+                                       "phrase_py" : "Nǐ de tóu zài zhèlǐ",
+                                       "scenario":"When pointing to your kiddo's head, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WheresMouth",
+                                       "phrase": "Where is your mouth?",
+                                       "phrase_trans": "你的嘴巴在哪裡?",
+                                       "phrase_py" : "Nǐ de zuǐbā zài nǎlǐ?",
+                                       "scenario":"When asking your kiddo where their mouth is, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_YourMouthHere",
+                                       "phrase": "Your mouth is here",
+                                       "phrase_trans": "你的嘴巴在這裡",
+                                       "phrase_py" : "Nǐ de zuǐbā zài zhèlǐ",
+                                       "scenario":"When pointing to your kiddo's mouth, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_WheresNose",
+                                       "phrase": "Where is your nose?",
+                                       "phrase_trans": "你的鼻子在哪裡?",
+                                       "phrase_py" : "Nǐ de bízi zài nǎlǐ?",
+                                       "scenario":"When asking your kiddo where their nose is, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_YourNoseHere",
+                                       "phrase": "Your nose is here",
+                                       "phrase_trans": "你的鼻子在這裡",
+                                       "phrase_py" : "Nǐ de bízi zài zhèlǐ",
+                                       "scenario":"When pointing to your kiddo's nose, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_YouAreDrooling",
+                                       "phrase": "You are drooling",
+                                       "phrase_trans": "你流口水了",
+                                       "phrase_py" : "Nǐ liú kǒushuǐ le",
+                                       "scenario":"When your kiddo is drooling, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Playtime_ScissorRockCloth",
+                                       "phrase": "Scissor, rock, cloth",
+                                       "phrase_trans": "剪刀，石頭 , 布",
+                                       "phrase_py" : "Jiǎndāo, shítou, bù",
+                                       "scenario":"When playing rock, paper, scissors, say:",
+                                       "tip": "This is the Chinese name of the rock, paper, scissors game."
+                                       },
+                                       {
+                                       "itemName": "Playtime_WheresMom",
+                                       "phrase": "Where is Mommy?",
+                                       "phrase_trans": "媽媽在哪裡?",
+                                       "phrase_py" : "Māmā zài nǎlǐ?",
+                                       "scenario":"When mom is playing hide and seek with kiddo, say:",
                                        "tip": ""
                                        }
                                     ]
@@ -328,23 +1224,342 @@
                             "title": "Outdoors",
                             "items" : [
                                         {
-                                       "itemName": "AtTheStore_lookbread",
-                                        "phrase": "Look at the bread",
-                                        "phrase_trans": "看麵包",
-                                        "phrase_py" : "kàn miànbāo",
-                                       "scenario":"",
+                                       "itemName": "Outdoors_WeatherIsGreat",
+                                        "phrase": "Weather is great!",
+                                        "phrase_trans": "天氣很好!",
+                                        "phrase_py" : "Tiānqì hěn hǎo!",
+                                       "scenario":"When it's a nice day, say:",
                                        "tip": ""
 
                                         },
                                         {
-                                       "itemName": "AtTheStore_lookmelon",
-                                        "phrase": "Look at the melon",
-                                        "phrase_trans": "看瓜子",
-                                        "phrase_py" : "Kàn guāzǐ",
-                                       "scenario":"",
+                                       "itemName": "Outdoors_LetsGoToParkPlay",
+                                        "phrase": "Let's go to the park to play",
+                                        "phrase_trans": "我們去公園玩",
+                                        "phrase_py" : "Wǒmen qù gōngyuán wán",
+                                       "scenario":"When telling your kiddo that you will be going to the park to play, say:",
                                        "tip": ""
-
-                                        }
+                                       },
+                                       {
+                                       "itemName": "Outdoors_PutOnShoes",
+                                       "phrase": "Put on your shoes",
+                                       "phrase_trans": "穿上你的鞋子",
+                                       "phrase_py" : "Chuān shàng nǐ de xiézi",
+                                       "scenario":"When helping your kiddo put on their shoes, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_LetsLockDoor",
+                                       "phrase": "Let's lock the door",
+                                       "phrase_trans": "我們鎖門",
+                                       "phrase_py" : "Wǒmen suǒ mén",
+                                       "scenario":"When locking the door, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_ThisIsKey",
+                                       "phrase": "This is a key",
+                                       "phrase_trans": "這是關鍵",
+                                       "phrase_py" : "Zhè shì guānjiàn",
+                                       "scenario":"When locking the door with a key, point to the key and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_SeeTheBicycles",
+                                       "phrase": "Do you see the bicycles?",
+                                       "phrase_trans": "看到腳踏車嗎?",
+                                       "phrase_py" : "Kàn dào jiǎotàchē ma?",
+                                       "scenario":"When you see a bicycle outside, point to the bicycle and ask:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_SeeTheGrass",
+                                       "phrase": "Do you see the grass?",
+                                       "phrase_trans": "看到草地嗎?",
+                                       "phrase_py" : "Kàn dào cǎo dì ma?",
+                                       "scenario":"When outside with your kiddo, point out the grass and ask:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_LikeTheGrass",
+                                       "phrase": "Do you like the grass?",
+                                       "phrase_trans": "你喜歡草嗎?",
+                                       "phrase_py" : "Nǐ xǐhuān cǎo ma?",
+                                       "scenario":"When your kiddo is feeling the grass outside, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_ItsHot",
+                                       "phrase": "It's hot",
+                                       "phrase_trans": "很熱",
+                                       "phrase_py" : "Hěn rè",
+                                       "scenario":"When it's hot outside, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_WantToGoOnSwings",
+                                       "phrase": "Do you want to go on the swings?",
+                                       "phrase_trans": "你要玩秋千嗎?",
+                                       "phrase_py" : "Nǐ yào wán qiūqiān ma?",
+                                       "scenario":"When you're at the park near the swings, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_WasThatFun",
+                                       "phrase": "Was that fun?",
+                                       "phrase_trans": "好玩嗎?",
+                                       "phrase_py" : "Hǎowán ma?",
+                                       "scenario":"When asking your kiddo if it's fun, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_LookAtHouse",
+                                       "phrase": "Look at that house",
+                                       "phrase_trans": "看那房子",
+                                       "phrase_py" : "Kàn nà fángzi!",
+                                       "scenario":"When walking around your neighborhood, point to a house and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_ClimbUp",
+                                       "phrase": "Climb up",
+                                       "phrase_trans": "爬上",
+                                       "phrase_py" : "Pá shàng",
+                                       "scenario":"When encouraging your kiddo to climb up onto the jungle gym (or onto anything else), say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_BeCareful",
+                                       "phrase": "Be careful",
+                                       "phrase_trans": "小心",
+                                       "phrase_py" : "Xiǎoxīn",
+                                       "scenario":"When reminding your kiddo to be careful, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_GoodJob",
+                                       "phrase": "Good job!",
+                                       "phrase_trans": "很好!",
+                                       "phrase_py" : "Hěn hǎo!",
+                                       "scenario":"When your kiddo successfully climbs up (or does something well), say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_HelloAuntie",
+                                       "phrase": "Hello Auntie",
+                                       "phrase_trans": "阿姨好",
+                                       "phrase_py" : "Āyí hǎo",
+                                       "scenario":"When your kiddo greets an aunt, say:",
+                                       "tip": "Auntie is used for any female adult."
+                                       },
+                                       {
+                                       "itemName": "Outdoors_LookAtTree",
+                                       "phrase": "Look at the tree",
+                                       "phrase_trans": "看樹",
+                                       "phrase_py" : "Kàn shù",
+                                       "scenario":"When outside with your kiddo, point to a tree and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_SeeTheLadybug",
+                                       "phrase": "Do you see the ladybug?",
+                                       "phrase_trans": "你看到瓢蟲嗎?",
+                                       "phrase_py" : "Nǐ kàn dào piáo chóng ma?",
+                                       "scenario":"When asking your kiddo if they see a ladybug, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_TodayIsCloudy",
+                                       "phrase": "Today is cloudy",
+                                       "phrase_trans": "今天是陰天",
+                                       "phrase_py" : "Jīntiān shì yīn tiān",
+                                       "scenario":"When walking outside and it's cloudy, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_LookAtClouds",
+                                       "phrase": "Look at the clouds",
+                                       "phrase_trans": "看雲朵",
+                                       "phrase_py" : "Kàn yúnduǒ",
+                                       "scenario":"When outside, point up at the clouds and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_SeeTheLeaves",
+                                       "phrase": "Do you see the leaves?",
+                                       "phrase_trans": "你看到葉子嗎?",
+                                       "phrase_py" : "Nǐ kàn dào yèzi ma?",
+                                       "scenario":"When you see leaves, point to them and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_HearThatSound",
+                                       "phrase": "Do you hear that sound?",
+                                       "phrase_trans": "你聽到聲音嗎?",
+                                       "phrase_py" : "Nǐ tīngdào shēngyīn ma?",
+                                       "scenario":"When you and your kiddo hear a sound(s), say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_HearTheAirplane",
+                                       "phrase": "Do you hear the airplane?",
+                                       "phrase_trans": "你有聽到飛機嗎?",
+                                       "phrase_py" : "Nǐ yǒu tīngdào fēijī ma?",
+                                       "scenario":"When you hear an airplane, ask your kiddo if they heard it too, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_LookAtCar",
+                                       "phrase": "Look at the car",
+                                       "phrase_trans": "看車",
+                                       "phrase_py" : "Kàn chē",
+                                       "scenario":"When you see cars with your baby, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_SeeBlackCar",
+                                       "phrase": "Do you see the black car?",
+                                       "phrase_trans": "看到黑色的車嗎?",
+                                       "phrase_py" : "Kàn dào hēisè de chē ma?",
+                                       "scenario":"When you spot a black car, ask your kiddo if they a black car, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_OpenCarDoor",
+                                       "phrase": "Open the car door",
+                                       "phrase_trans": "打開車門",
+                                       "phrase_py" : "Dǎkāi chēmén",
+                                       "scenario":"When opening the car door, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_SeeBlueCar",
+                                       "phrase": "Do you see the blue car?",
+                                       "phrase_trans": "看到藍色的車嗎?",
+                                       "phrase_py" : "Kàn dào lán sè de chē ma?",
+                                       "scenario":"When asking your kiddo if they see a blue car, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_WeAreInCar",
+                                       "phrase": "We are in the car",
+                                       "phrase_trans": "我們在車裡",
+                                       "phrase_py" : "Wǒmen zài chē lǐ",
+                                       "scenario":"When you and your kiddo are in the car, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_TodayIsWindy",
+                                       "phrase": "Today is windy",
+                                       "phrase_trans": "今天風好大",
+                                       "phrase_py" : "Jīntiān fēng hǎo dà",
+                                       "scenario":"When walking outside and it's windy, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_WhatDidYouFind",
+                                       "phrase": "What did you find?",
+                                       "phrase_trans": "你找到什麼了?",
+                                       "phrase_py" : "Nǐ zhǎodào shénme le?",
+                                       "scenario":"When you are asking your kiddo what they have found, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_ThisIsDog",
+                                       "phrase": "This is a dog",
+                                       "phrase_trans": "這是一隻狗",
+                                       "phrase_py" : "Zhè shì yī zhī gǒu",
+                                       "scenario":"When your kiddo sees a dog, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_LookAtFlower",
+                                       "phrase": "Look at the flower",
+                                       "phrase_trans": "看花",
+                                       "phrase_py" : "Kàn huā",
+                                       "scenario":"When outside, point at the flowers and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_DoesThisHurt",
+                                       "phrase": "Does it hurt?",
+                                       "phrase_trans": "痛嗎?",
+                                       "phrase_py" : "Tòng ma?",
+                                       "scenario":"When asking your kiddo if it hurts, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_GiveMeAHug",
+                                       "phrase": "Give me a hug",
+                                       "phrase_trans": "抱抱我",
+                                       "phrase_py" : "Bào bào wǒ",
+                                       "scenario":"When asking your kiddo to give you a hug, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_WantToGoToStore",
+                                       "phrase": "Do you want to go to the store?",
+                                       "phrase_trans": "你想去商店嗎?",
+                                       "phrase_py" : "Nǐ xiǎng qù shāngdiàn ma?",
+                                       "scenario":"When asking your kiddo if they want to go to the store, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_KeepQuietHere",
+                                       "phrase": "Keep quiet in here",
+                                       "phrase_trans": "在這裡安靜",
+                                       "phrase_py" : "Zài zhèlǐ ānjìng",
+                                       "scenario":"When your kiddo is in a quiet area, make a shh sound and say: ",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_HelloUncle",
+                                       "phrase": "Hello Uncle",
+                                       "phrase_trans": "叔叔好",
+                                       "phrase_py" : "Shūshu hǎo",
+                                       "scenario":"When your kiddo greets an uncle, say:",
+                                       "tip": "Uncle is used for any male adult"
+                                       },
+                                       {
+                                       "itemName": "Outdoors_ThisIsBaby",
+                                       "phrase": "That is a baby",
+                                       "phrase_trans": "那是一個寶寶",
+                                       "phrase_py" : "Nà shì yīgè bǎobǎo",
+                                       "scenario":"When you and your kiddo see a baby, point to the baby and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_BirdFlewAway",
+                                       "phrase": "The bird flew away",
+                                       "phrase_trans": "鳥飛走了",
+                                       "phrase_py" : "Niǎo fēi zǒule",
+                                       "scenario":"When you and your kiddo see birds flying, say: ",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_SeeTheCat",
+                                       "phrase": "Do you see the cat?",
+                                       "phrase_trans": "你有看到貓嗎?",
+                                       "phrase_py" : "Nǐ yǒu kàn dào māo ma?",
+                                       "scenario":"When asking your kiddo if they see a cat, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_ItsRaining",
+                                       "phrase": "It's raining",
+                                       "phrase_trans": "下雨了",
+                                       "phrase_py" : "Xià yǔ le",
+                                       "scenario":"When it is raining, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Outdoors_ItsSnowing",
+                                       "phrase": "It's snowing",
+                                       "phrase_trans": "下雪了",
+                                       "phrase_py" : "Xià xuě le",
+                                       "scenario":"When it is snowing, say:",
+                                       "tip": ""
+                                       }
                             ]
 
                        },
@@ -352,24 +1567,142 @@
                             "key": "Shopping",
                             "title": "Shopping",
                             "items" : [
-                                        {
-                                       "itemName": "AtTheStore_lookmelon",
-                                       "phrase": "Look at the melon",
-                                       "phrase_trans": "看瓜子",
-                                       "phrase_py" : "Kàn guāzǐ",
-                                       "scenario":"",
+                                       {
+                                       "itemName": "Shopping_LookAtApples",
+                                       "phrase": "Look at the apples",
+                                       "phrase_trans": "看蘋果",
+                                       "phrase_py" : "Kàn píngguǒ",
+                                       "scenario":"When you see an apple, point to it and say:",
                                        "tip": ""
-
-                                        },
-                                        {
-                                        "itemName": "",
-                                        "phrase": "",
-                                        "phrase_trans": "",
-                                        "phrase_py" : "",
-                                       "scenario":"",
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookAtBananas",
+                                       "phrase": "Look at the bananas",
+                                       "phrase_trans": "看香蕉",
+                                       "phrase_py" : "Kàn xiāngjiāo",
+                                       "scenario":"When you see a bananas, point to it and say:",
                                        "tip": ""
-
-                                        }
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookAtCarrot",
+                                       "phrase": "Look at the carrot",
+                                       "phrase_trans": "看紅蘿蔔",
+                                       "phrase_py" : "Kàn hóng luóbo",
+                                       "scenario":"When you see a carrot, point to it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookAtCorn",
+                                       "phrase": "Look at the corn",
+                                       "phrase_trans": "看玉米",
+                                       "phrase_py" : "Kàn yùmǐ",
+                                       "scenario":"When you see corn, point to it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookAtFish",
+                                       "phrase": "Look at the fish",
+                                       "phrase_trans": "看魚",
+                                       "phrase_py" : "Kàn yú",
+                                       "scenario":"When you see fish, point to it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookJuice",
+                                       "phrase": "Look at the juice",
+                                       "phrase_trans": "看果汁",
+                                       "phrase_py" : "Kàn guǒzhī",
+                                       "scenario":"When you see juice, point to it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookMilk",
+                                       "phrase": "Look at the milk",
+                                       "phrase_trans": "看牛奶",
+                                       "phrase_py" : "Kàn niúnǎi",
+                                       "scenario":"When you see milk, point to it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookPotato",
+                                       "phrase": "Look at the potato",
+                                       "phrase_trans": "看馬鈴薯",
+                                       "phrase_py" : "Kàn mǎlíngshǔ",
+                                       "scenario":"When you see a potato, point to it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LookStrawberries",
+                                       "phrase": "Look at the strawberries",
+                                       "phrase_trans": "看草莓",
+                                       "phrase_py" : "Kàn cǎoméi",
+                                       "scenario":"When you see strawberries, point to it and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LikeToEatThis",
+                                       "phrase": "Do you like to eat this?",
+                                       "phrase_trans": "你喜歡吃這個嗎?",
+                                       "phrase_py" : "Nǐ xǐhuān chī zhège ma?",
+                                       "scenario":"When picking up a fruit or vegetable, ask your kiddo:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_MakeForDinner",
+                                       "phrase": "What should we make for dinner?",
+                                       "phrase_trans": "我們晚餐應該吃什麼",
+                                       "phrase_py" : "Wǒmen wǎncān yīnggāi chī shénme",
+                                       "scenario":"When asking your kiddo what to have for dinner, say: ",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_DoesItSmellGood",
+                                       "phrase": "Does it smell good?",
+                                       "phrase_trans": "味道好嗎?",
+                                       "phrase_py" : "Wèidào hào ma?",
+                                       "scenario":"When you pick up something to smell, offer it to your kiddo to smell and say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_IAmSorry",
+                                       "phrase": "I am sorry",
+                                       "phrase_trans": "對不起",
+                                       "phrase_py" : "Duìbùqǐ",
+                                       "scenario":"When apologizing, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_LetsPay",
+                                       "phrase": "Let's pay",
+                                       "phrase_trans": "我們付錢",
+                                       "phrase_py" : "Wǒmen fù qián",
+                                       "scenario":"When you are ready to pay, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_HowAreYou",
+                                       "phrase": "How are you?",
+                                       "phrase_trans": "你好嗎?",
+                                       "phrase_py" : "Nǐ hǎo ma?",
+                                       "scenario":"When greeting someone and asking them how they are doing, say:",
+                                       "tip": ""
+                                       },
+                                       {
+                                       "itemName": "Shopping_ThankYou",
+                                       "phrase": "Thank you",
+                                       "phrase_trans": "謝謝",
+                                       "phrase_py" : "Xièxiè",
+                                       "scenario":"When someone helps you find something, say:",
+                                       "tip": "This phrase can be used in many scenarios."
+                                       },
+                                       {
+                                       "itemName": "Shopping_GoodBye",
+                                       "phrase": "Good bye",
+                                       "phrase_trans": "再見",
+                                       "phrase_py" : "Zàijiàn",
+                                       "scenario":"When waving good bye to someone, say:",
+                                       "tip": ""
+                                       }
                             ]
 
                        }
