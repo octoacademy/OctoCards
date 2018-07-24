@@ -10,6 +10,15 @@ import UIKit
 
 class LeftNavigationTableViewController: UITableViewController {
 
+    @IBAction func Terms(_ sender: Any) {
+        let url = URL(string: "http://www.google.com") //update with website url to Terms
+        UIApplication.shared.open(url!)
+    }
+    
+    @IBAction func Privacy(_ sender: Any) {
+        let url = URL(string: "http://www.google.com") //update with website url to Privacy
+        UIApplication.shared.open(url!)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

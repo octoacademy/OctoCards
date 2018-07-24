@@ -25,11 +25,13 @@ class InfantCardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var chineseTranslation: UILabel!
     @IBOutlet weak var englishPhrase: UILabel!
     
+    @IBOutlet weak var phraseImage: UIImageView!
     @IBOutlet weak var directTranslation: UILabel!
     @IBOutlet weak var tips: UILabel!
     @IBOutlet weak var chineseText: UILabel!
     @IBOutlet weak var myOctoButton: UIButton!
     @IBOutlet weak var gotItButton: UIButton!
+    @IBOutlet weak var refNum: UILabel!
     
     
     override func awakeFromNib() {
@@ -54,10 +56,13 @@ class InfantCardCollectionViewCell: UICollectionViewCell {
         chineseTranslation.text = item.phrase_py
         englishPhrase.text = item.phrase
         
+        phraseImage.image = UIImage(named: "\(item.itemName!).jpeg")
+        
         chineseText.text = item.phrase_trans
         
         directTranslation.adjustsFontSizeToFitWidth = true
         directTranslation.numberOfLines  = 0
+        refNum.text = "\(item.position)"
         
       /*  let translationLabel = "Direct Translation:\n"
         var translationText = "\(item.phrase ?? "")"

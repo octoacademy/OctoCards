@@ -12,6 +12,9 @@
 		BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0069291EC4EAD0004DC195 /* Assets.xcassets */; };
 		BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */; };
 		BF0069351EC4F3AA004DC195 /* MyOctoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0069341EC4F3AA004DC195 /* MyOctoViewCell.swift */; };
+		BF06D9C02045EB33008D8AF1 /* Bedtime_TimeToSleep.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF06D9BD2045EB33008D8AF1 /* Bedtime_TimeToSleep.jpeg */; };
+		BF06D9E32045EBB2008D8AF1 /* SelfCare_TrimNails.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF06D9DC2045EBB2008D8AF1 /* SelfCare_TrimNails.jpeg */; };
+		BF06D9EA2045ED8A008D8AF1 /* SelfCare_GoodMorning.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF06D9E82045ED89008D8AF1 /* SelfCare_GoodMorning.jpeg */; };
 		BF0D2D142004157F00174EFF /* Outdoors_LetsGoToParkPlay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2CEA2004157900174EFF /* Outdoors_LetsGoToParkPlay.mp3 */; };
 		BF0D2D152004157F00174EFF /* Outdoors_TodayIsCloudy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2CEB2004157A00174EFF /* Outdoors_TodayIsCloudy.mp3 */; };
 		BF0D2D162004157F00174EFF /* Outdoors_SeeBlueCar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2CEC2004157A00174EFF /* Outdoors_SeeBlueCar.mp3 */; };
@@ -37,7 +40,6 @@
 		BF0D2D2A2004157F00174EFF /* Outdoors_ItsRaining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D002004157C00174EFF /* Outdoors_ItsRaining.mp3 */; };
 		BF0D2D2B2004157F00174EFF /* Outdoors_ItsHot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D012004157C00174EFF /* Outdoors_ItsHot.mp3 */; };
 		BF0D2D2C2004157F00174EFF /* Outdoors_SeeTheLadybug.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D022004157D00174EFF /* Outdoors_SeeTheLadybug.mp3 */; };
-		BF0D2D2D2004157F00174EFF /* Outdoors_KeepQuietHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D032004157D00174EFF /* Outdoors_KeepQuietHere.mp3 */; };
 		BF0D2D2E2004157F00174EFF /* Outdoors_ThisIsKey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D042004157D00174EFF /* Outdoors_ThisIsKey.mp3 */; };
 		BF0D2D2F2004157F00174EFF /* Outdoors_WhatDidYouFind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D052004157D00174EFF /* Outdoors_WhatDidYouFind.mp3 */; };
 		BF0D2D302004157F00174EFF /* Outdoors_LookAtTree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D062004157D00174EFF /* Outdoors_LookAtTree.mp3 */; };
@@ -54,6 +56,120 @@
 		BF0D2D3B2004157F00174EFF /* Outdoors_PutOnShoes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D112004157F00174EFF /* Outdoors_PutOnShoes.mp3 */; };
 		BF0D2D3C2004157F00174EFF /* Outdoors_ClimbUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D122004157F00174EFF /* Outdoors_ClimbUp.mp3 */; };
 		BF0D2D3D2004157F00174EFF /* Outdoors_LetsLockDoor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D132004157F00174EFF /* Outdoors_LetsLockDoor.mp3 */; };
+		BF0D2D3F2011511F00174EFF /* SelfCare_AllDry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D3E2011511F00174EFF /* SelfCare_AllDry.mp3 */; };
+		BF0D2D432011558500174EFF /* SelfCare_LookAtMirror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF0D2D422011558500174EFF /* SelfCare_LookAtMirror.mp3 */; };
+		BF284E6920F7D4490064852A /* SelfCare_NeedBath.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4720F7D4460064852A /* SelfCare_NeedBath.jpeg */; };
+		BF284E6A20F7D4490064852A /* SelfCare_PlaceYouDown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4820F7D4460064852A /* SelfCare_PlaceYouDown.jpeg */; };
+		BF284E6B20F7D4490064852A /* SelfCare_SeeYourself.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4920F7D4460064852A /* SelfCare_SeeYourself.jpeg */; };
+		BF284E6C20F7D4490064852A /* SelfCare_ChangeShirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4A20F7D4460064852A /* SelfCare_ChangeShirt.jpeg */; };
+		BF284E6D20F7D4490064852A /* SelfCare_PutOnSocks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4B20F7D4460064852A /* SelfCare_PutOnSocks.jpeg */; };
+		BF284E6E20F7D4490064852A /* SelfCare_WashHair.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4C20F7D4460064852A /* SelfCare_WashHair.jpeg */; };
+		BF284E6F20F7D4490064852A /* SelfCare_DiaperStinky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4D20F7D4470064852A /* SelfCare_DiaperStinky.jpeg */; };
+		BF284E7020F7D4490064852A /* SelfCare_DiaperComfy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4E20F7D4470064852A /* SelfCare_DiaperComfy.jpeg */; };
+		BF284E7120F7D4490064852A /* SelfCare_Fingers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E4F20F7D4470064852A /* SelfCare_Fingers.jpeg */; };
+		BF284E7220F7D4490064852A /* SelfCare_InBathtub.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5020F7D4470064852A /* SelfCare_InBathtub.jpeg */; };
+		BF284E7320F7D4490064852A /* SelfCare_FoldClothes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5120F7D4470064852A /* SelfCare_FoldClothes.jpeg */; };
+		BF284E7420F7D4490064852A /* SelfCare_Knees.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5220F7D4470064852A /* SelfCare_Knees.jpeg */; };
+		BF284E7520F7D4490064852A /* SelfCare_AllClean.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5320F7D4470064852A /* SelfCare_AllClean.jpeg */; };
+		BF284E7620F7D4490064852A /* SelfCare_DiaperChange.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5420F7D4470064852A /* SelfCare_DiaperChange.jpeg */; };
+		BF284E7720F7D4490064852A /* SelfCare_PutOnMittens.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5520F7D4470064852A /* SelfCare_PutOnMittens.jpeg */; };
+		BF284E7820F7D4490064852A /* SelfCare_UseWater.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5620F7D4470064852A /* SelfCare_UseWater.jpeg */; };
+		BF284E7920F7D4490064852A /* SelfCare_WhiteSocks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5720F7D4470064852A /* SelfCare_WhiteSocks.jpeg */; };
+		BF284E7A20F7D4490064852A /* SelfCare_UseSoap.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5820F7D4470064852A /* SelfCare_UseSoap.jpeg */; };
+		BF284E7B20F7D4490064852A /* SelfCare_AllClothed.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5920F7D4480064852A /* SelfCare_AllClothed.jpeg */; };
+		BF284E7C20F7D4490064852A /* SelfCare_WhatEat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5A20F7D4480064852A /* SelfCare_WhatEat.jpeg */; };
+		BF284E7E20F7D4490064852A /* SelfCare_Foot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5C20F7D4480064852A /* SelfCare_Foot.jpeg */; };
+		BF284E7F20F7D4490064852A /* SelfCare_Bathtime.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5D20F7D4480064852A /* SelfCare_Bathtime.jpeg */; };
+		BF284E8020F7D4490064852A /* SelfCare_UseTowel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5E20F7D4480064852A /* SelfCare_UseTowel.jpeg */; };
+		BF284E8120F7D4490064852A /* SelfCare_ClothesInWasher.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E5F20F7D4480064852A /* SelfCare_ClothesInWasher.jpeg */; };
+		BF284E8220F7D4490064852A /* SelfCare_PickupClothes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6020F7D4480064852A /* SelfCare_PickupClothes.jpeg */; };
+		BF284E8320F7D4490064852A /* SelfCare_ChangeClothes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6120F7D4480064852A /* SelfCare_ChangeClothes.jpeg */; };
+		BF284E8420F7D4490064852A /* SelfCare_PutAway.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6220F7D4480064852A /* SelfCare_PutAway.jpeg */; };
+		BF284E8520F7D4490064852A /* SelfCare_WhatWear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6320F7D4480064852A /* SelfCare_WhatWear.jpeg */; };
+		BF284E8620F7D4490064852A /* SelfCare_AllWet.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6420F7D4480064852A /* SelfCare_AllWet.jpeg */; };
+		BF284E8720F7D4490064852A /* SelfCare_CountClothing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6520F7D4490064852A /* SelfCare_CountClothing.jpeg */; };
+		BF284E8820F7D4490064852A /* SelfCare_AllDry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6620F7D4490064852A /* SelfCare_AllDry.jpeg */; };
+		BF284E8920F7D4490064852A /* SelfCare_GoBathroom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6720F7D4490064852A /* SelfCare_GoBathroom.jpeg */; };
+		BF284E8A20F7D4490064852A /* SelfCare_Toes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E6820F7D4490064852A /* SelfCare_Toes.jpeg */; };
+		BF284E8C20F7D5770064852A /* SelfCare_WashHands.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF284E8B20F7D5760064852A /* SelfCare_WashHands.jpeg */; };
+		BF3BA46320F9578100535DF9 /* SelfCare_TakeBath.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA45B20F9578000535DF9 /* SelfCare_TakeBath.jpeg */; };
+		BF3BA46420F9578100535DF9 /* SelfCare_PutOnBib.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA45C20F9578000535DF9 /* SelfCare_PutOnBib.jpeg */; };
+		BF3BA46520F9578100535DF9 /* SelfCare_SkinSoft.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA45D20F9578100535DF9 /* SelfCare_SkinSoft.jpeg */; };
+		BF3BA46620F9578100535DF9 /* SelfCare_RubLotion.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA45E20F9578100535DF9 /* SelfCare_RubLotion.jpeg */; };
+		BF3BA46720F9578100535DF9 /* SelfCare_Wash.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA45F20F9578100535DF9 /* SelfCare_Wash.jpeg */; };
+		BF3BA46820F9578100535DF9 /* SelfCare_TooTight.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA46020F9578100535DF9 /* SelfCare_TooTight.jpeg */; };
+		BF3BA46920F9578100535DF9 /* SelfCare_LookAtMirror.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA46120F9578100535DF9 /* SelfCare_LookAtMirror.jpeg */; };
+		BF3BA46A20F9578100535DF9 /* SelfCare_PutAwayClothes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA46220F9578100535DF9 /* SelfCare_PutAwayClothes.jpeg */; };
+		BF3BA47520F957A500535DF9 /* Shopping_LookAtCorn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA46B20F957A300535DF9 /* Shopping_LookAtCorn.jpeg */; };
+		BF3BA47620F957A500535DF9 /* Shopping_LookMilk.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA46C20F957A300535DF9 /* Shopping_LookMilk.jpeg */; };
+		BF3BA47720F957A500535DF9 /* Shopping_LikeToEatThis.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA46D20F957A300535DF9 /* Shopping_LikeToEatThis.jpeg */; };
+		BF3BA47820F957A500535DF9 /* Shopping_LookAtBananas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA46E20F957A400535DF9 /* Shopping_LookAtBananas.jpeg */; };
+		BF3BA47A20F957A500535DF9 /* Shopping_LookAtApples.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA47020F957A400535DF9 /* Shopping_LookAtApples.jpeg */; };
+		BF3BA47C20F957A500535DF9 /* Shopping_LookAtFish.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA47220F957A400535DF9 /* Shopping_LookAtFish.jpeg */; };
+		BF3BA47D20F957A500535DF9 /* Shopping_LookPotato.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA47320F957A400535DF9 /* Shopping_LookPotato.jpeg */; };
+		BF3BA47E20F957A500535DF9 /* Shopping_LookStrawberries.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA47420F957A500535DF9 /* Shopping_LookStrawberries.jpeg */; };
+		BF3BA48620FE5AF400535DF9 /* Shopping_HowAreYou.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA47F20FE5AF300535DF9 /* Shopping_HowAreYou.jpeg */; };
+		BF3BA48720FE5AF400535DF9 /* Shopping_LetsPay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48020FE5AF400535DF9 /* Shopping_LetsPay.jpeg */; };
+		BF3BA48820FE5AF400535DF9 /* Shopping_MakeForDinner.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48120FE5AF400535DF9 /* Shopping_MakeForDinner.jpeg */; };
+		BF3BA48920FE5AF400535DF9 /* Shopping_ThankYou.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48220FE5AF400535DF9 /* Shopping_ThankYou.jpeg */; };
+		BF3BA48A20FE5AF400535DF9 /* Shopping_IAmSorry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48320FE5AF400535DF9 /* Shopping_IAmSorry.jpeg */; };
+		BF3BA48B20FE5AF400535DF9 /* Shopping_DoesItSmellGood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48420FE5AF400535DF9 /* Shopping_DoesItSmellGood.jpeg */; };
+		BF3BA48C20FE5AF400535DF9 /* Shopping_GoodBye.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48520FE5AF400535DF9 /* Shopping_GoodBye.jpeg */; };
+		BF3BA48E20FE5B1F00535DF9 /* Bedtime_Quiet.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48D20FE5B1F00535DF9 /* Bedtime_Quiet.jpeg */; };
+		BF3BA49120FE5B5F00535DF9 /* Outdoors_GoodJob.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA48F20FE5B5F00535DF9 /* Outdoors_GoodJob.jpeg */; };
+		BF3BA49220FE5B5F00535DF9 /* Outdoors_KeepQuietHere.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA49020FE5B5F00535DF9 /* Outdoors_KeepQuietHere.jpeg */; };
+		BF3BA49520FE5CBD00535DF9 /* Shopping_LookJuice.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA49320FE5CBD00535DF9 /* Shopping_LookJuice.jpeg */; };
+		BF3BA49620FE5CBD00535DF9 /* Shopping_LookAtCarrot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA49420FE5CBD00535DF9 /* Shopping_LookAtCarrot.jpeg */; };
+		BF3BA49820FE5DB100535DF9 /* SelfCare_PutOnPJs.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF3BA49720FE5DB100535DF9 /* SelfCare_PutOnPJs.jpeg */; };
+		BF585AC9202CEDC90055DB36 /* Shopping_LookAtCarrot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF585AC8202CEDC90055DB36 /* Shopping_LookAtCarrot.mp3 */; };
+		BF5AACA9208A82B100A71FE3 /* Bedtime_Goodnight.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACA7208A82B100A71FE3 /* Bedtime_Goodnight.jpeg */; };
+		BF5AACAA208A82B100A71FE3 /* Bedtime_AreYouWarm.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACA8208A82B100A71FE3 /* Bedtime_AreYouWarm.jpeg */; };
+		BF5AACAC209262BD00A71FE3 /* SelfCare_TossGarbage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACAB209262BD00A71FE3 /* SelfCare_TossGarbage.jpeg */; };
+		BF5AACB12092631C00A71FE3 /* Mealtime_DadIsGoingToEat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACAD2092631C00A71FE3 /* Mealtime_DadIsGoingToEat.jpeg */; };
+		BF5AACB22092631C00A71FE3 /* Mealtime_DrinkMilk.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACAE2092631C00A71FE3 /* Mealtime_DrinkMilk.jpeg */; };
+		BF5AACB32092631C00A71FE3 /* Mealtime_SitDown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACAF2092631C00A71FE3 /* Mealtime_SitDown.jpeg */; };
+		BF5AACB42092631C00A71FE3 /* Mealtime_AreYouHungry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACB02092631C00A71FE3 /* Mealtime_AreYouHungry.jpeg */; };
+		BF5AACB92092ED5300A71FE3 /* Bedtime_ChangeIntoPajamas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACB72092ED5300A71FE3 /* Bedtime_ChangeIntoPajamas.jpeg */; };
+		BF5AACBD2092EDA500A71FE3 /* Mealtime_WaitAMinute.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACBB2092EDA500A71FE3 /* Mealtime_WaitAMinute.jpeg */; };
+		BF5AACBE2092EDA500A71FE3 /* Mealtime_DrinkJuice.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACBC2092EDA500A71FE3 /* Mealtime_DrinkJuice.jpeg */; };
+		BF5AACC02092EDD100A71FE3 /* SelfCare_ChangePants.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACBF2092EDD100A71FE3 /* SelfCare_ChangePants.jpeg */; };
+		BF5AACC22092EEFA00A71FE3 /* Mealtime_EatBread.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACC12092EEFA00A71FE3 /* Mealtime_EatBread.jpeg */; };
+		BF5AACC42092EF7700A71FE3 /* Mealtime_DoYouLikeBanana.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACC32092EF7700A71FE3 /* Mealtime_DoYouLikeBanana.jpeg */; };
+		BF5AACC62092F01C00A71FE3 /* Mealtime_LetsCount123.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACC52092F01C00A71FE3 /* Mealtime_LetsCount123.jpeg */; };
+		BF5AACC82092F12C00A71FE3 /* Mealtime_CrackerCrunchy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACC72092F12C00A71FE3 /* Mealtime_CrackerCrunchy.jpeg */; };
+		BF5AACCA2098AD9C00A71FE3 /* Mealtime_OpenFridge.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACC92098AD9C00A71FE3 /* Mealtime_OpenFridge.jpeg */; };
+		BF5AACCC2098ADEE00A71FE3 /* Mealtime_MomIsGoingToEat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACCB2098ADEE00A71FE3 /* Mealtime_MomIsGoingToEat.jpeg */; };
+		BF5AACCF2098AE0F00A71FE3 /* Playtime_ClapHands.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACCD2098AE0F00A71FE3 /* Playtime_ClapHands.jpeg */; };
+		BF5AACD02098AE0F00A71FE3 /* Playtime_Jump.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACCE2098AE0F00A71FE3 /* Playtime_Jump.jpeg */; };
+		BF5AACD32098AE2E00A71FE3 /* SelfCare_Awesome.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACD12098AE2E00A71FE3 /* SelfCare_Awesome.jpeg */; };
+		BF5AACD820A20F5B00A71FE3 /* Mealtime_ItsHot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACD720A20F5B00A71FE3 /* Mealtime_ItsHot.jpeg */; };
+		BF5AACDB20A2100E00A71FE3 /* Mealtime_IsItGood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACD920A2100E00A71FE3 /* Mealtime_IsItGood.jpeg */; };
+		BF5AACDC20A2100E00A71FE3 /* Mealtime_WantMore.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACDA20A2100E00A71FE3 /* Mealtime_WantMore.jpeg */; };
+		BF5AACDE20A210C700A71FE3 /* Mealtime_TheresNoMore.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACDD20A210C700A71FE3 /* Mealtime_TheresNoMore.jpeg */; };
+		BF5AACE020A232FA00A71FE3 /* Mealtime_DoneEating.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACDF20A232FA00A71FE3 /* Mealtime_DoneEating.jpeg */; };
+		BF5AACE220A2334D00A71FE3 /* Mealtime_LikeSomeWater.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACE120A2334D00A71FE3 /* Mealtime_LikeSomeWater.jpeg */; };
+		BF5AACE420A2342600A71FE3 /* Mealtime_PutInBowl.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACE320A2342500A71FE3 /* Mealtime_PutInBowl.jpeg */; };
+		BF5AACE720A234D200A71FE3 /* Mealtime_BlowFood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACE520A234D200A71FE3 /* Mealtime_BlowFood.jpeg */; };
+		BF5AACE820A234D200A71FE3 /* Mealtime_ThisIsHot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACE620A234D200A71FE3 /* Mealtime_ThisIsHot.jpeg */; };
+		BF5AACED20A3FFB900A71FE3 /* Mealtime_UseSpoon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACEB20A3FFB800A71FE3 /* Mealtime_UseSpoon.jpeg */; };
+		BF5AACEE20A3FFB900A71FE3 /* Mealtime_UseFork.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACEC20A3FFB900A71FE3 /* Mealtime_UseFork.jpeg */; };
+		BF5AACF220A400C500A71FE3 /* Mealtime_WashDishes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACEF20A400C500A71FE3 /* Mealtime_WashDishes.jpeg */; };
+		BF5AACF320A400C500A71FE3 /* Mealtime_UseNapkin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACF020A400C500A71FE3 /* Mealtime_UseNapkin.jpeg */; };
+		BF5AACF420A400C500A71FE3 /* Mealtime_PutOnPlate.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACF120A400C500A71FE3 /* Mealtime_PutOnPlate.jpeg */; };
+		BF5AACF620A40A3800A71FE3 /* Mealtime_YourWelcome.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF5AACF520A40A3800A71FE3 /* Mealtime_YourWelcome.jpeg */; };
+		BF73E850201A7F5500F2A5D2 /* SelfCare_AllClothed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF73E84F201A7F5500F2A5D2 /* SelfCare_AllClothed.mp3 */; };
+		BF73E852201A84CF00F2A5D2 /* Mealtime_MomHelpYouGetFruit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF73E851201A84CF00F2A5D2 /* Mealtime_MomHelpYouGetFruit.mp3 */; };
+		BF73E854201A875900F2A5D2 /* Mealtime_NoMore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF73E853201A875800F2A5D2 /* Mealtime_NoMore.mp3 */; };
+		BF73E856201A892700F2A5D2 /* Mealtime_CookieIsSweet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF73E855201A892700F2A5D2 /* Mealtime_CookieIsSweet.mp3 */; };
+		BF73E858201A8B9F00F2A5D2 /* Mealtime_LetsCount123.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF73E857201A8B9F00F2A5D2 /* Mealtime_LetsCount123.mp3 */; };
+		BF73E85A201A928E00F2A5D2 /* Playtime_WheresMouth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF73E859201A928E00F2A5D2 /* Playtime_WheresMouth.mp3 */; };
+		BF73E85C201A938800F2A5D2 /* Playtime_YourMouthHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF73E85B201A938800F2A5D2 /* Playtime_YourMouthHere.mp3 */; };
+		BF7BAC9F20CF1DC9008B1631 /* Mealtime_EatOatmeal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF7BAC9E20CF1DC9008B1631 /* Mealtime_EatOatmeal.jpeg */; };
+		BF7BACA120CF8B24008B1631 /* Mealtime_EatMore.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF7BACA020CF8B23008B1631 /* Mealtime_EatMore.jpeg */; };
+		BF7BACA520CF9006008B1631 /* Mealtime_EatSlowly.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF7BACA220CF9005008B1631 /* Mealtime_EatSlowly.jpeg */; };
+		BF7BACA620CF9006008B1631 /* Mealtime_SpitItOut.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF7BACA320CF9006008B1631 /* Mealtime_SpitItOut.jpeg */; };
+		BF7BACA720CF9006008B1631 /* Mealtime_NoMore.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF7BACA420CF9006008B1631 /* Mealtime_NoMore.jpeg */; };
+		BF7BACA920CF9097008B1631 /* Mealtime_FeedMe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF7BACA820CF9097008B1631 /* Mealtime_FeedMe.jpeg */; };
 		BF867A811FDB5EE300252D63 /* Playtime_WhatsYourName.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A5E1FDB5EE100252D63 /* Playtime_WhatsYourName.mp3 */; };
 		BF867A821FDB5EE300252D63 /* Playtime_ComeOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A5F1FDB5EE100252D63 /* Playtime_ComeOver.mp3 */; };
 		BF867A831FDB5EE300252D63 /* Playtime_Singing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A601FDB5EE100252D63 /* Playtime_Singing.mp3 */; };
@@ -62,14 +178,12 @@
 		BF867A861FDB5EE300252D63 /* Playtime_ScissorRockCloth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A631FDB5EE100252D63 /* Playtime_ScissorRockCloth.mp3 */; };
 		BF867A871FDB5EE300252D63 /* Playtime_WheresNose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A641FDB5EE100252D63 /* Playtime_WheresNose.mp3 */; };
 		BF867A881FDB5EE300252D63 /* Playtime_YourHeadHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A651FDB5EE100252D63 /* Playtime_YourHeadHere.mp3 */; };
-		BF867A891FDB5EE300252D63 /* Playtime_WheresMouth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A661FDB5EE100252D63 /* Playtime_WheresMouth.mp3 */; };
 		BF867A8A1FDB5EE300252D63 /* Playtime_CatchBall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A671FDB5EE100252D63 /* Playtime_CatchBall.mp3 */; };
 		BF867A8B1FDB5EE300252D63 /* Playtime_GiveMeToy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A681FDB5EE100252D63 /* Playtime_GiveMeToy.mp3 */; };
 		BF867A8C1FDB5EE300252D63 /* Playtime_WantToJump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A691FDB5EE100252D63 /* Playtime_WantToJump.mp3 */; };
 		BF867A8D1FDB5EE300252D63 /* Playtime_PutAwayToys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A6A1FDB5EE100252D63 /* Playtime_PutAwayToys.mp3 */; };
 		BF867A8E1FDB5EE300252D63 /* Playtime_Let'sTakeTurns.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A6B1FDB5EE100252D63 /* Playtime_Let'sTakeTurns.mp3 */; };
 		BF867A8F1FDB5EE300252D63 /* Playtime_WheresEye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A6C1FDB5EE100252D63 /* Playtime_WheresEye.mp3 */; };
-		BF867A901FDB5EE300252D63 /* Playtime_YourMouthHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A6D1FDB5EE200252D63 /* Playtime_YourMouthHere.mp3 */; };
 		BF867A911FDB5EE300252D63 /* Playtime_YourNoseHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A6E1FDB5EE200252D63 /* Playtime_YourNoseHere.mp3 */; };
 		BF867A921FDB5EE300252D63 /* Playtime_ClapHands.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A6F1FDB5EE200252D63 /* Playtime_ClapHands.mp3 */; };
 		BF867A931FDB5EE300252D63 /* Playtime_Dancing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867A701FDB5EE200252D63 /* Playtime_Dancing.mp3 */; };
@@ -99,6 +213,7 @@
 		BF867AB51FDB5F0000252D63 /* Bedtime_BrushYourTeeth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867AAB1FDB5F0000252D63 /* Bedtime_BrushYourTeeth.mp3 */; };
 		BF867AB61FDB5F0000252D63 /* Bedtime_LookTheMoon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867AAC1FDB5F0000252D63 /* Bedtime_LookTheMoon.mp3 */; };
 		BF867AB71FDB5F0000252D63 /* Bedtime_TurnOffLights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF867AAD1FDB5F0000252D63 /* Bedtime_TurnOffLights.mp3 */; };
+		BF8978C92023B4040093D3B3 /* Outdoors_KeepQuietHere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF8978C82023B4040093D3B3 /* Outdoors_KeepQuietHere.mp3 */; };
 		BF9792781FE8EFA700D1BC28 /* SelfCare_PutOnMittens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792491FE8EFA300D1BC28 /* SelfCare_PutOnMittens.mp3 */; };
 		BF9792791FE8EFA700D1BC28 /* SelfCare_Wash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF97924A1FE8EFA300D1BC28 /* SelfCare_Wash.mp3 */; };
 		BF97927A1FE8EFA700D1BC28 /* SelfCare_SkinSoft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF97924B1FE8EFA300D1BC28 /* SelfCare_SkinSoft.mp3 */; };
@@ -113,7 +228,6 @@
 		BF9792831FE8EFA700D1BC28 /* SelfCare_ChangeShirt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792541FE8EFA400D1BC28 /* SelfCare_ChangeShirt.mp3 */; };
 		BF9792841FE8EFA700D1BC28 /* SelfCare_Fingers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792551FE8EFA400D1BC28 /* SelfCare_Fingers.mp3 */; };
 		BF9792851FE8EFA700D1BC28 /* SelfCare_DiaperChange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792561FE8EFA400D1BC28 /* SelfCare_DiaperChange.mp3 */; };
-		BF9792861FE8EFA700D1BC28 /* SelfCare_AllDressed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792571FE8EFA400D1BC28 /* SelfCare_AllDressed.mp3 */; };
 		BF9792871FE8EFA700D1BC28 /* SelfCare_NeedBath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792581FE8EFA400D1BC28 /* SelfCare_NeedBath.mp3 */; };
 		BF9792881FE8EFA700D1BC28 /* SelfCare_PutOnPJs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792591FE8EFA400D1BC28 /* SelfCare_PutOnPJs.mp3 */; };
 		BF9792891FE8EFA700D1BC28 /* SelfCare_FoldClothes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF97925A1FE8EFA400D1BC28 /* SelfCare_FoldClothes.mp3 */; };
@@ -141,7 +255,6 @@
 		BF97929F1FE8EFA700D1BC28 /* SelfCare_UseSoap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792701FE8EFA600D1BC28 /* SelfCare_UseSoap.mp3 */; };
 		BF9792A01FE8EFA700D1BC28 /* SelfCare_TooTight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792711FE8EFA600D1BC28 /* SelfCare_TooTight.mp3 */; };
 		BF9792A11FE8EFA700D1BC28 /* SelfCare_WhiteSocks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792721FE8EFA600D1BC28 /* SelfCare_WhiteSocks.mp3 */; };
-		BF9792A21FE8EFA700D1BC28 /* SelfCare_AllDry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792731FE8EFA600D1BC28 /* SelfCare_AllDry.mp3 */; };
 		BF9792A31FE8EFA700D1BC28 /* SelfCare_DiaperComfy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792741FE8EFA600D1BC28 /* SelfCare_DiaperComfy.mp3 */; };
 		BF9792A41FE8EFA700D1BC28 /* SelfCare_PutOnSocks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792751FE8EFA600D1BC28 /* SelfCare_PutOnSocks.mp3 */; };
 		BF9792A51FE8EFA700D1BC28 /* SelfCare_TakeBath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792761FE8EFA600D1BC28 /* SelfCare_TakeBath.mp3 */; };
@@ -162,18 +275,115 @@
 		BF9792C41FE8F20F00D1BC28 /* Shopping_ThankYou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792B41FE8F20F00D1BC28 /* Shopping_ThankYou.mp3 */; };
 		BF9792C51FE8F20F00D1BC28 /* Shopping_LookStrawberries.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792B51FE8F20F00D1BC28 /* Shopping_LookStrawberries.mp3 */; };
 		BF9792C61FE8F20F00D1BC28 /* Shopping_LookPotato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF9792B61FE8F20F00D1BC28 /* Shopping_LookPotato.mp3 */; };
+		BFA52199207802F600CDA9A9 /* Bedtime_LookTheMoon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA52197207802F500CDA9A9 /* Bedtime_LookTheMoon.jpeg */; };
+		BFA5219A207802F600CDA9A9 /* Bedtime_PutAwayBook.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA52198207802F600CDA9A9 /* Bedtime_PutAwayBook.jpeg */; };
+		BFA5219D207803BA00CDA9A9 /* Bedtime_BrushYourTeeth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA5219B207803B900CDA9A9 /* Bedtime_BrushYourTeeth.jpeg */; };
+		BFA5219E207803BA00CDA9A9 /* Bedtime_ReadABook.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA5219C207803B900CDA9A9 /* Bedtime_ReadABook.jpeg */; };
+		BFA8C0B320DAF96C0026D881 /* Mealtime_TimeToEatBreakfast.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0AF20DAF96B0026D881 /* Mealtime_TimeToEatBreakfast.jpeg */; };
+		BFA8C0B420DAF96C0026D881 /* Mealtime_TimeToEatLunch.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0B020DAF96B0026D881 /* Mealtime_TimeToEatLunch.jpeg */; };
+		BFA8C0B520DAF96C0026D881 /* Mealtime_OpenMouth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0B120DAF96B0026D881 /* Mealtime_OpenMouth.jpeg */; };
+		BFA8C0B620DAF96C0026D881 /* Mealtime_TimeToEatDinner.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0B220DAF96C0026D881 /* Mealtime_TimeToEatDinner.jpeg */; };
+		BFA8C0BF20DAF9950026D881 /* Mealtime_EatSpinach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0B720DAF9930026D881 /* Mealtime_EatSpinach.jpeg */; };
+		BFA8C0C020DAF9950026D881 /* Mealtime_WipeMouth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0B820DAF9940026D881 /* Mealtime_WipeMouth.jpeg */; };
+		BFA8C0C120DAF9950026D881 /* Mealtime_EatChicken.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0B920DAF9940026D881 /* Mealtime_EatChicken.jpeg */; };
+		BFA8C0C220DAF9950026D881 /* Mealtime_CookieIsSweet.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0BA20DAF9940026D881 /* Mealtime_CookieIsSweet.jpeg */; };
+		BFA8C0C320DAF9950026D881 /* Mealtime_YouCannotEatThis.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0BB20DAF9940026D881 /* Mealtime_YouCannotEatThis.jpeg */; };
+		BFA8C0C420DAF9950026D881 /* Mealtime_AllDoneEating.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0BC20DAF9940026D881 /* Mealtime_AllDoneEating.jpeg */; };
+		BFA8C0C520DAF9950026D881 /* Mealtime_EatFish.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0BD20DAF9950026D881 /* Mealtime_EatFish.jpeg */; };
+		BFA8C0C620DAF9950026D881 /* Mealtime_EatNoodle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0BE20DAF9950026D881 /* Mealtime_EatNoodle.jpeg */; };
+		BFA8C0C820DB11F40026D881 /* Mealtime_EatRice.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0C720DB11F40026D881 /* Mealtime_EatRice.jpeg */; };
+		BFA8C0CA20E5299B0026D881 /* Mealtime_LikeYogurt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0C920E5299A0026D881 /* Mealtime_LikeYogurt.jpeg */; };
+		BFA8C0CC20E529B40026D881 /* Mealtime_DrinkSoup.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C0CB20E529B30026D881 /* Mealtime_DrinkSoup.jpeg */; };
+		BFA8C11E20E546D10026D881 /* Outdoors_LetsLockDoor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C11D20E546D10026D881 /* Outdoors_LetsLockDoor.jpeg */; };
+		BFA8C12F20E548E60026D881 /* Outdoors_PutOnShoes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C11F20E548E50026D881 /* Outdoors_PutOnShoes.jpeg */; };
+		BFA8C13020E548E60026D881 /* Outdoors_LookAtClouds.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12020E548E50026D881 /* Outdoors_LookAtClouds.jpeg */; };
+		BFA8C13120E548E60026D881 /* Outdoors_WantToGoOnSwings.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12120E548E50026D881 /* Outdoors_WantToGoOnSwings.jpeg */; };
+		BFA8C13220E548E60026D881 /* Outdoors_SeeBlueCar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12220E548E50026D881 /* Outdoors_SeeBlueCar.jpeg */; };
+		BFA8C13320E548E60026D881 /* Outdoors_SeeTheLadybug.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12320E548E50026D881 /* Outdoors_SeeTheLadybug.jpeg */; };
+		BFA8C13420E548E60026D881 /* Outdoors_LookAtCar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12420E548E50026D881 /* Outdoors_LookAtCar.jpeg */; };
+		BFA8C13520E548E60026D881 /* Outdoors_ThisIsKey.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12520E548E50026D881 /* Outdoors_ThisIsKey.jpeg */; };
+		BFA8C13620E548E60026D881 /* Outdoors_WeatherIsGreat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12620E548E50026D881 /* Outdoors_WeatherIsGreat.jpeg */; };
+		BFA8C13720E548E60026D881 /* Outdoors_LookAtHouse.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12720E548E50026D881 /* Outdoors_LookAtHouse.jpeg */; };
+		BFA8C13820E548E60026D881 /* Outdoors_SeeTheLeaves.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12820E548E50026D881 /* Outdoors_SeeTheLeaves.jpeg */; };
+		BFA8C13920E548E60026D881 /* Outdoors_TodayIsCloudy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12920E548E50026D881 /* Outdoors_TodayIsCloudy.jpeg */; };
+		BFA8C13A20E548E60026D881 /* Outdoors_SeeTheGrass.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12A20E548E60026D881 /* Outdoors_SeeTheGrass.jpeg */; };
+		BFA8C13B20E548E60026D881 /* Outdoors_LikeTheGrass.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12B20E548E60026D881 /* Outdoors_LikeTheGrass.jpeg */; };
+		BFA8C13C20E548E60026D881 /* Outdoors_LookAtTree.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12C20E548E60026D881 /* Outdoors_LookAtTree.jpeg */; };
+		BFA8C13D20E548E60026D881 /* Outdoors_SeeTheBicycles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12D20E548E60026D881 /* Outdoors_SeeTheBicycles.jpeg */; };
+		BFA8C13E20E548E60026D881 /* Outdoors_SeeBlackCar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C12E20E548E60026D881 /* Outdoors_SeeBlackCar.jpeg */; };
+		BFA8C14420E549000026D881 /* Outdoors_HearTheAirplane.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C13F20E548FF0026D881 /* Outdoors_HearTheAirplane.jpeg */; };
+		BFA8C14520E549000026D881 /* Outdoors_ItsHot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14020E548FF0026D881 /* Outdoors_ItsHot.jpeg */; };
+		BFA8C14620E549000026D881 /* Outdoors_LetsGoToParkPlay.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14120E548FF0026D881 /* Outdoors_LetsGoToParkPlay.jpeg */; };
+		BFA8C14720E549000026D881 /* Outdoors_ClimbUp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14220E548FF0026D881 /* Outdoors_ClimbUp.jpeg */; };
+		BFA8C14820E549000026D881 /* Outdoors_HearThatSound.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14320E549000026D881 /* Outdoors_HearThatSound.jpeg */; };
+		BFA8C15B20E584190026D881 /* Outdoors_HelloUncle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14920E584170026D881 /* Outdoors_HelloUncle.jpeg */; };
+		BFA8C15C20E584190026D881 /* Outdoors_TodayIsWindy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14A20E584170026D881 /* Outdoors_TodayIsWindy.jpeg */; };
+		BFA8C15D20E584190026D881 /* Outdoors_WeAreInCar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14B20E584180026D881 /* Outdoors_WeAreInCar.jpeg */; };
+		BFA8C15E20E584190026D881 /* Outdoors_LookAtFlower.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14C20E584180026D881 /* Outdoors_LookAtFlower.jpeg */; };
+		BFA8C15F20E584190026D881 /* Outdoors_SeeTheCat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14D20E584180026D881 /* Outdoors_SeeTheCat.jpeg */; };
+		BFA8C16020E584190026D881 /* Outdoors_ItsSnowing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14E20E584180026D881 /* Outdoors_ItsSnowing.jpeg */; };
+		BFA8C16120E584190026D881 /* Outdoors_WantToGoToStore.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C14F20E584180026D881 /* Outdoors_WantToGoToStore.jpeg */; };
+		BFA8C16220E584190026D881 /* Outdoors_HelloAuntie.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15020E584180026D881 /* Outdoors_HelloAuntie.jpeg */; };
+		BFA8C16320E584190026D881 /* Outdoors_DoesThisHurt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15120E584180026D881 /* Outdoors_DoesThisHurt.jpeg */; };
+		BFA8C16420E584190026D881 /* Outdoors_ItsRaining.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15220E584180026D881 /* Outdoors_ItsRaining.jpeg */; };
+		BFA8C16520E584190026D881 /* Outdoors_WasThatFun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15320E584180026D881 /* Outdoors_WasThatFun.jpeg */; };
+		BFA8C16720E584190026D881 /* Outdoors_ThisIsBaby.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15520E584180026D881 /* Outdoors_ThisIsBaby.jpeg */; };
+		BFA8C16820E584190026D881 /* Outdoors_ThisIsDog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15620E584180026D881 /* Outdoors_ThisIsDog.jpeg */; };
+		BFA8C16920E584190026D881 /* Outdoors_BeCareful.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15720E584180026D881 /* Outdoors_BeCareful.jpeg */; };
+		BFA8C16A20E584190026D881 /* Outdoors_BirdFlewAway.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15820E584180026D881 /* Outdoors_BirdFlewAway.jpeg */; };
+		BFA8C16B20E584190026D881 /* Outdoors_GiveMeAHug.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15920E584180026D881 /* Outdoors_GiveMeAHug.jpeg */; };
+		BFA8C16C20E584190026D881 /* Outdoors_OpenCarDoor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C15A20E584180026D881 /* Outdoors_OpenCarDoor.jpeg */; };
+		BFA8C16E20E587FE0026D881 /* Outdoors_WhatDidYouFind.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C16D20E587FD0026D881 /* Outdoors_WhatDidYouFind.jpeg */; };
+		BFA8C18F20EBCCB40026D881 /* Playtime_ScissorRockCloth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C16F20EBCCB00026D881 /* Playtime_ScissorRockCloth.jpeg */; };
+		BFA8C19020EBCCB40026D881 /* Playtime_WheresMouth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17020EBCCB00026D881 /* Playtime_WheresMouth.jpeg */; };
+		BFA8C19120EBCCB40026D881 /* Playtime_WheresDad.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17120EBCCB10026D881 /* Playtime_WheresDad.jpeg */; };
+		BFA8C19220EBCCB40026D881 /* Playtime_PushToy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17220EBCCB10026D881 /* Playtime_PushToy.jpeg */; };
+		BFA8C19420EBCCB40026D881 /* Playtime_WhereAreYou.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17420EBCCB10026D881 /* Playtime_WhereAreYou.jpeg */; };
+		BFA8C19520EBCCB40026D881 /* Playtime_YourHeadHere.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17520EBCCB10026D881 /* Playtime_YourHeadHere.jpeg */; };
+		BFA8C19620EBCCB40026D881 /* Playtime_YouAreDrooling.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17620EBCCB10026D881 /* Playtime_YouAreDrooling.jpeg */; };
+		BFA8C19720EBCCB40026D881 /* Playtime_WhatsYourName.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17720EBCCB10026D881 /* Playtime_WhatsYourName.jpeg */; };
+		BFA8C19820EBCCB40026D881 /* Playtime_ComeOver.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17820EBCCB20026D881 /* Playtime_ComeOver.jpeg */; };
+		BFA8C19920EBCCB40026D881 /* Playtime_ThrowBall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17920EBCCB20026D881 /* Playtime_ThrowBall.jpeg */; };
+		BFA8C19A20EBCCB40026D881 /* Playtime_WantToJump.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17A20EBCCB20026D881 /* Playtime_WantToJump.jpeg */; };
+		BFA8C19B20EBCCB40026D881 /* Playtime_CanNot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17B20EBCCB20026D881 /* Playtime_CanNot.jpeg */; };
+		BFA8C19C20EBCCB40026D881 /* Playtime_StandUp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17C20EBCCB20026D881 /* Playtime_StandUp.jpeg */; };
+		BFA8C19D20EBCCB40026D881 /* Playtime_CatchBall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17D20EBCCB20026D881 /* Playtime_CatchBall.jpeg */; };
+		BFA8C19E20EBCCB40026D881 /* Playtime_CrawlOver.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17E20EBCCB20026D881 /* Playtime_CrawlOver.jpeg */; };
+		BFA8C19F20EBCCB40026D881 /* Playtime_Let'sTakeTurns.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C17F20EBCCB20026D881 /* Playtime_Let'sTakeTurns.jpeg */; };
+		BFA8C1A020EBCCB40026D881 /* Playtime_GoodJob.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18020EBCCB20026D881 /* Playtime_GoodJob.jpeg */; };
+		BFA8C1A120EBCCB40026D881 /* Playtime_PutAwayToys.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18120EBCCB30026D881 /* Playtime_PutAwayToys.jpeg */; };
+		BFA8C1A220EBCCB40026D881 /* Playtime_WheresEye.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18220EBCCB30026D881 /* Playtime_WheresEye.jpeg */; };
+		BFA8C1A320EBCCB40026D881 /* Playtime_Singing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18320EBCCB30026D881 /* Playtime_Singing.jpeg */; };
+		BFA8C1A420EBCCB40026D881 /* Playtime_OneMoreStep.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18420EBCCB30026D881 /* Playtime_OneMoreStep.jpeg */; };
+		BFA8C1A520EBCCB40026D881 /* Playtime_PlayBall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18520EBCCB30026D881 /* Playtime_PlayBall.jpeg */; };
+		BFA8C1A620EBCCB40026D881 /* Playtime_TakeOutToys.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18620EBCCB30026D881 /* Playtime_TakeOutToys.jpeg */; };
+		BFA8C1A720EBCCB40026D881 /* Playtime_YourEyeHere.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18720EBCCB30026D881 /* Playtime_YourEyeHere.jpeg */; };
+		BFA8C1A820EBCCB40026D881 /* Playtime_Dancing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18820EBCCB30026D881 /* Playtime_Dancing.jpeg */; };
+		BFA8C1A920EBCCB40026D881 /* Playtime_WheresMom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18920EBCCB30026D881 /* Playtime_WheresMom.jpeg */; };
+		BFA8C1AA20EBCCB40026D881 /* Playtime_YourMouthHere.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18A20EBCCB40026D881 /* Playtime_YourMouthHere.jpeg */; };
+		BFA8C1AB20EBCCB40026D881 /* Playtime_WhyCrying.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18B20EBCCB40026D881 /* Playtime_WhyCrying.jpeg */; };
+		BFA8C1AC20EBCCB40026D881 /* Playtime_Fly.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18C20EBCCB40026D881 /* Playtime_Fly.jpeg */; };
+		BFA8C1AD20EBCCB40026D881 /* Playtime_WheresHead.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18D20EBCCB40026D881 /* Playtime_WheresHead.jpeg */; };
+		BFA8C1AE20EBCCB40026D881 /* Playtime_GiveMeToy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA8C18E20EBCCB40026D881 /* Playtime_GiveMeToy.jpeg */; };
+		BFA991132100FB8A0021742C /* Playtime_WheresNose.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA991112100FB8A0021742C /* Playtime_WheresNose.jpeg */; };
+		BFA991142100FB8A0021742C /* Playtime_YourNoseHere.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA991122100FB8A0021742C /* Playtime_YourNoseHere.jpeg */; };
+		BFA991172102950E0021742C /* Mealtime_ItsCooled.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA991152102950D0021742C /* Mealtime_ItsCooled.jpeg */; };
+		BFA991182102950E0021742C /* Mealtime_YouCanTakeThis.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFA991162102950E0021742C /* Mealtime_YouCanTakeThis.jpeg */; };
 		BFBB9E2C1ECF393800DA1C37 /* OctoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */; };
+		BFCA90E0206AD0400047EAB5 /* Mealtime_LikeSomeApplesauce.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFCA90D9206AD03F0047EAB5 /* Mealtime_LikeSomeApplesauce.jpeg */; };
+		BFCA90E5206AD0400047EAB5 /* Mealtime_MomHelpYouGetFruit.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFCA90DE206AD0400047EAB5 /* Mealtime_MomHelpYouGetFruit.jpeg */; };
+		BFCA90E8206AD8390047EAB5 /* Mealtime_UseCup.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFCA90E7206AD8390047EAB5 /* Mealtime_UseCup.jpeg */; };
+		BFCA90EC206AD9900047EAB5 /* Mealtime_EatBanana.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFCA90EB206AD9900047EAB5 /* Mealtime_EatBanana.jpeg */; };
+		BFCA90EE206ADA220047EAB5 /* Mealtime_DrinkWater.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFCA90ED206ADA220047EAB5 /* Mealtime_DrinkWater.jpeg */; };
+		BFCA90F0206C08C40047EAB5 /* Bedtime_TurnOffLights.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFCA90EF206C08C40047EAB5 /* Bedtime_TurnOffLights.jpeg */; };
 		BFD1C7971F44FD9D00B50984 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1C7961F44FD9D00B50984 /* UPCarouselFlowLayout.swift */; };
 		BFDB92441FE2CF5B001F3FFE /* Mealtime_WaitAMinute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB920D1FE2CF56001F3FFE /* Mealtime_WaitAMinute.mp3 */; };
 		BFDB92451FE2CF5B001F3FFE /* Mealtime_EatBanana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB920E1FE2CF56001F3FFE /* Mealtime_EatBanana.mp3 */; };
-		BFDB92461FE2CF5B001F3FFE /* Mealtime_LetsCount123.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB920F1FE2CF56001F3FFE /* Mealtime_LetsCount123.mp3 */; };
 		BFDB92471FE2CF5B001F3FFE /* Mealtime_UseCup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92101FE2CF56001F3FFE /* Mealtime_UseCup.mp3 */; };
-		BFDB92481FE2CF5B001F3FFE /* Mealtime_MomHelpYouGetFruit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92111FE2CF56001F3FFE /* Mealtime_MomHelpYouGetFruit.mp3 */; };
 		BFDB92491FE2CF5B001F3FFE /* Mealtime_ThisIsHot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92121FE2CF56001F3FFE /* Mealtime_ThisIsHot.mp3 */; };
 		BFDB924A1FE2CF5B001F3FFE /* Mealtime_WashDishes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92131FE2CF57001F3FFE /* Mealtime_WashDishes.mp3 */; };
 		BFDB924B1FE2CF5B001F3FFE /* Mealtime_LikeSomeWater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92141FE2CF57001F3FFE /* Mealtime_LikeSomeWater.mp3 */; };
 		BFDB924C1FE2CF5B001F3FFE /* Mealtime_DrinkWater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92151FE2CF57001F3FFE /* Mealtime_DrinkWater.mp3 */; };
-		BFDB924D1FE2CF5B001F3FFE /* Mealtime_NoMore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92161FE2CF57001F3FFE /* Mealtime_NoMore.mp3 */; };
 		BFDB924E1FE2CF5B001F3FFE /* Mealtime_DrinkMilk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92171FE2CF57001F3FFE /* Mealtime_DrinkMilk.mp3 */; };
 		BFDB924F1FE2CF5B001F3FFE /* Mealtime_WipeMouth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92181FE2CF57001F3FFE /* Mealtime_WipeMouth.mp3 */; };
 		BFDB92501FE2CF5B001F3FFE /* Mealtime_AreYouHungry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92191FE2CF57001F3FFE /* Mealtime_AreYouHungry.mp3 */; };
@@ -187,7 +397,6 @@
 		BFDB92581FE2CF5B001F3FFE /* Mealtime_CrackerCrunchy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92211FE2CF58001F3FFE /* Mealtime_CrackerCrunchy.mp3 */; };
 		BFDB92591FE2CF5B001F3FFE /* Mealtime_PutInBowl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92221FE2CF58001F3FFE /* Mealtime_PutInBowl.mp3 */; };
 		BFDB925A1FE2CF5B001F3FFE /* Mealtime_EatFish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92231FE2CF58001F3FFE /* Mealtime_EatFish.mp3 */; };
-		BFDB925B1FE2CF5B001F3FFE /* Mealtime_CookieIsSweet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92241FE2CF58001F3FFE /* Mealtime_CookieIsSweet.mp3 */; };
 		BFDB925C1FE2CF5B001F3FFE /* Mealtime_TimeToEatBreakfast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92251FE2CF58001F3FFE /* Mealtime_TimeToEatBreakfast.mp3 */; };
 		BFDB925D1FE2CF5B001F3FFE /* Mealtime_UseFork.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92261FE2CF58001F3FFE /* Mealtime_UseFork.mp3 */; };
 		BFDB925E1FE2CF5B001F3FFE /* Mealtime_PutOnPlate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFDB92271FE2CF58001F3FFE /* Mealtime_PutOnPlate.mp3 */; };
@@ -264,6 +473,9 @@
 		BF00692C1EC4EAD0004DC195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF00692E1EC4EAD0004DC195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF0069341EC4F3AA004DC195 /* MyOctoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOctoViewCell.swift; sourceTree = "<group>"; };
+		BF06D9BD2045EB33008D8AF1 /* Bedtime_TimeToSleep.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_TimeToSleep.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_TimeToSleep.jpeg"; sourceTree = "<group>"; };
+		BF06D9DC2045EBB2008D8AF1 /* SelfCare_TrimNails.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_TrimNails.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_TrimNails.jpeg"; sourceTree = "<group>"; };
+		BF06D9E82045ED89008D8AF1 /* SelfCare_GoodMorning.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_GoodMorning.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_GoodMorning.jpeg"; sourceTree = "<group>"; };
 		BF0D2CEA2004157900174EFF /* Outdoors_LetsGoToParkPlay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_LetsGoToParkPlay.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_LetsGoToParkPlay.mp3"; sourceTree = "<group>"; };
 		BF0D2CEB2004157A00174EFF /* Outdoors_TodayIsCloudy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_TodayIsCloudy.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_TodayIsCloudy.mp3"; sourceTree = "<group>"; };
 		BF0D2CEC2004157A00174EFF /* Outdoors_SeeBlueCar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_SeeBlueCar.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_SeeBlueCar.mp3"; sourceTree = "<group>"; };
@@ -289,7 +501,6 @@
 		BF0D2D002004157C00174EFF /* Outdoors_ItsRaining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_ItsRaining.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_ItsRaining.mp3"; sourceTree = "<group>"; };
 		BF0D2D012004157C00174EFF /* Outdoors_ItsHot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_ItsHot.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_ItsHot.mp3"; sourceTree = "<group>"; };
 		BF0D2D022004157D00174EFF /* Outdoors_SeeTheLadybug.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_SeeTheLadybug.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_SeeTheLadybug.mp3"; sourceTree = "<group>"; };
-		BF0D2D032004157D00174EFF /* Outdoors_KeepQuietHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_KeepQuietHere.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_KeepQuietHere.mp3"; sourceTree = "<group>"; };
 		BF0D2D042004157D00174EFF /* Outdoors_ThisIsKey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_ThisIsKey.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_ThisIsKey.mp3"; sourceTree = "<group>"; };
 		BF0D2D052004157D00174EFF /* Outdoors_WhatDidYouFind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_WhatDidYouFind.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_WhatDidYouFind.mp3"; sourceTree = "<group>"; };
 		BF0D2D062004157D00174EFF /* Outdoors_LookAtTree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_LookAtTree.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_LookAtTree.mp3"; sourceTree = "<group>"; };
@@ -306,7 +517,121 @@
 		BF0D2D112004157F00174EFF /* Outdoors_PutOnShoes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_PutOnShoes.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_PutOnShoes.mp3"; sourceTree = "<group>"; };
 		BF0D2D122004157F00174EFF /* Outdoors_ClimbUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_ClimbUp.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_ClimbUp.mp3"; sourceTree = "<group>"; };
 		BF0D2D132004157F00174EFF /* Outdoors_LetsLockDoor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_LetsLockDoor.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_LetsLockDoor.mp3"; sourceTree = "<group>"; };
+		BF0D2D3E2011511F00174EFF /* SelfCare_AllDry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_AllDry.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_AllDry.mp3"; sourceTree = "<group>"; };
+		BF0D2D422011558500174EFF /* SelfCare_LookAtMirror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_LookAtMirror.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_LookAtMirror.mp3"; sourceTree = "<group>"; };
+		BF284E4720F7D4460064852A /* SelfCare_NeedBath.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_NeedBath.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_NeedBath.jpeg"; sourceTree = "<group>"; };
+		BF284E4820F7D4460064852A /* SelfCare_PlaceYouDown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PlaceYouDown.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PlaceYouDown.jpeg"; sourceTree = "<group>"; };
+		BF284E4920F7D4460064852A /* SelfCare_SeeYourself.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_SeeYourself.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_SeeYourself.jpeg"; sourceTree = "<group>"; };
+		BF284E4A20F7D4460064852A /* SelfCare_ChangeShirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_ChangeShirt.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_ChangeShirt.jpeg"; sourceTree = "<group>"; };
+		BF284E4B20F7D4460064852A /* SelfCare_PutOnSocks.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PutOnSocks.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PutOnSocks.jpeg"; sourceTree = "<group>"; };
+		BF284E4C20F7D4460064852A /* SelfCare_WashHair.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_WashHair.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_WashHair.jpeg"; sourceTree = "<group>"; };
+		BF284E4D20F7D4470064852A /* SelfCare_DiaperStinky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_DiaperStinky.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_DiaperStinky.jpeg"; sourceTree = "<group>"; };
+		BF284E4E20F7D4470064852A /* SelfCare_DiaperComfy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_DiaperComfy.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_DiaperComfy.jpeg"; sourceTree = "<group>"; };
+		BF284E4F20F7D4470064852A /* SelfCare_Fingers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_Fingers.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_Fingers.jpeg"; sourceTree = "<group>"; };
+		BF284E5020F7D4470064852A /* SelfCare_InBathtub.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_InBathtub.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_InBathtub.jpeg"; sourceTree = "<group>"; };
+		BF284E5120F7D4470064852A /* SelfCare_FoldClothes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_FoldClothes.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_FoldClothes.jpeg"; sourceTree = "<group>"; };
+		BF284E5220F7D4470064852A /* SelfCare_Knees.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_Knees.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_Knees.jpeg"; sourceTree = "<group>"; };
+		BF284E5320F7D4470064852A /* SelfCare_AllClean.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_AllClean.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_AllClean.jpeg"; sourceTree = "<group>"; };
+		BF284E5420F7D4470064852A /* SelfCare_DiaperChange.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_DiaperChange.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_DiaperChange.jpeg"; sourceTree = "<group>"; };
+		BF284E5520F7D4470064852A /* SelfCare_PutOnMittens.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PutOnMittens.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PutOnMittens.jpeg"; sourceTree = "<group>"; };
+		BF284E5620F7D4470064852A /* SelfCare_UseWater.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_UseWater.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_UseWater.jpeg"; sourceTree = "<group>"; };
+		BF284E5720F7D4470064852A /* SelfCare_WhiteSocks.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_WhiteSocks.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_WhiteSocks.jpeg"; sourceTree = "<group>"; };
+		BF284E5820F7D4470064852A /* SelfCare_UseSoap.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_UseSoap.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_UseSoap.jpeg"; sourceTree = "<group>"; };
+		BF284E5920F7D4480064852A /* SelfCare_AllClothed.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_AllClothed.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_AllClothed.jpeg"; sourceTree = "<group>"; };
+		BF284E5A20F7D4480064852A /* SelfCare_WhatEat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_WhatEat.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_WhatEat.jpeg"; sourceTree = "<group>"; };
+		BF284E5C20F7D4480064852A /* SelfCare_Foot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_Foot.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_Foot.jpeg"; sourceTree = "<group>"; };
+		BF284E5D20F7D4480064852A /* SelfCare_Bathtime.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_Bathtime.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_Bathtime.jpeg"; sourceTree = "<group>"; };
+		BF284E5E20F7D4480064852A /* SelfCare_UseTowel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_UseTowel.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_UseTowel.jpeg"; sourceTree = "<group>"; };
+		BF284E5F20F7D4480064852A /* SelfCare_ClothesInWasher.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_ClothesInWasher.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_ClothesInWasher.jpeg"; sourceTree = "<group>"; };
+		BF284E6020F7D4480064852A /* SelfCare_PickupClothes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PickupClothes.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PickupClothes.jpeg"; sourceTree = "<group>"; };
+		BF284E6120F7D4480064852A /* SelfCare_ChangeClothes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_ChangeClothes.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_ChangeClothes.jpeg"; sourceTree = "<group>"; };
+		BF284E6220F7D4480064852A /* SelfCare_PutAway.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PutAway.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PutAway.jpeg"; sourceTree = "<group>"; };
+		BF284E6320F7D4480064852A /* SelfCare_WhatWear.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_WhatWear.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_WhatWear.jpeg"; sourceTree = "<group>"; };
+		BF284E6420F7D4480064852A /* SelfCare_AllWet.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_AllWet.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_AllWet.jpeg"; sourceTree = "<group>"; };
+		BF284E6520F7D4490064852A /* SelfCare_CountClothing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_CountClothing.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_CountClothing.jpeg"; sourceTree = "<group>"; };
+		BF284E6620F7D4490064852A /* SelfCare_AllDry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_AllDry.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_AllDry.jpeg"; sourceTree = "<group>"; };
+		BF284E6720F7D4490064852A /* SelfCare_GoBathroom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_GoBathroom.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_GoBathroom.jpeg"; sourceTree = "<group>"; };
+		BF284E6820F7D4490064852A /* SelfCare_Toes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_Toes.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_Toes.jpeg"; sourceTree = "<group>"; };
+		BF284E8B20F7D5760064852A /* SelfCare_WashHands.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_WashHands.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_WashHands.jpeg"; sourceTree = "<group>"; };
+		BF3BA45B20F9578000535DF9 /* SelfCare_TakeBath.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_TakeBath.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_TakeBath.jpeg"; sourceTree = "<group>"; };
+		BF3BA45C20F9578000535DF9 /* SelfCare_PutOnBib.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PutOnBib.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PutOnBib.jpeg"; sourceTree = "<group>"; };
+		BF3BA45D20F9578100535DF9 /* SelfCare_SkinSoft.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_SkinSoft.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_SkinSoft.jpeg"; sourceTree = "<group>"; };
+		BF3BA45E20F9578100535DF9 /* SelfCare_RubLotion.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_RubLotion.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_RubLotion.jpeg"; sourceTree = "<group>"; };
+		BF3BA45F20F9578100535DF9 /* SelfCare_Wash.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_Wash.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_Wash.jpeg"; sourceTree = "<group>"; };
+		BF3BA46020F9578100535DF9 /* SelfCare_TooTight.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_TooTight.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_TooTight.jpeg"; sourceTree = "<group>"; };
+		BF3BA46120F9578100535DF9 /* SelfCare_LookAtMirror.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_LookAtMirror.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_LookAtMirror.jpeg"; sourceTree = "<group>"; };
+		BF3BA46220F9578100535DF9 /* SelfCare_PutAwayClothes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PutAwayClothes.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PutAwayClothes.jpeg"; sourceTree = "<group>"; };
+		BF3BA46B20F957A300535DF9 /* Shopping_LookAtCorn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookAtCorn.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookAtCorn.jpeg"; sourceTree = "<group>"; };
+		BF3BA46C20F957A300535DF9 /* Shopping_LookMilk.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookMilk.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookMilk.jpeg"; sourceTree = "<group>"; };
+		BF3BA46D20F957A300535DF9 /* Shopping_LikeToEatThis.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LikeToEatThis.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LikeToEatThis.jpeg"; sourceTree = "<group>"; };
+		BF3BA46E20F957A400535DF9 /* Shopping_LookAtBananas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookAtBananas.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookAtBananas.jpeg"; sourceTree = "<group>"; };
+		BF3BA47020F957A400535DF9 /* Shopping_LookAtApples.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookAtApples.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookAtApples.jpeg"; sourceTree = "<group>"; };
+		BF3BA47220F957A400535DF9 /* Shopping_LookAtFish.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookAtFish.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookAtFish.jpeg"; sourceTree = "<group>"; };
+		BF3BA47320F957A400535DF9 /* Shopping_LookPotato.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookPotato.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookPotato.jpeg"; sourceTree = "<group>"; };
+		BF3BA47420F957A500535DF9 /* Shopping_LookStrawberries.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookStrawberries.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookStrawberries.jpeg"; sourceTree = "<group>"; };
+		BF3BA47F20FE5AF300535DF9 /* Shopping_HowAreYou.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_HowAreYou.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_HowAreYou.jpeg"; sourceTree = "<group>"; };
+		BF3BA48020FE5AF400535DF9 /* Shopping_LetsPay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LetsPay.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LetsPay.jpeg"; sourceTree = "<group>"; };
+		BF3BA48120FE5AF400535DF9 /* Shopping_MakeForDinner.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_MakeForDinner.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_MakeForDinner.jpeg"; sourceTree = "<group>"; };
+		BF3BA48220FE5AF400535DF9 /* Shopping_ThankYou.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_ThankYou.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_ThankYou.jpeg"; sourceTree = "<group>"; };
+		BF3BA48320FE5AF400535DF9 /* Shopping_IAmSorry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_IAmSorry.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_IAmSorry.jpeg"; sourceTree = "<group>"; };
+		BF3BA48420FE5AF400535DF9 /* Shopping_DoesItSmellGood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_DoesItSmellGood.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_DoesItSmellGood.jpeg"; sourceTree = "<group>"; };
+		BF3BA48520FE5AF400535DF9 /* Shopping_GoodBye.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_GoodBye.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_GoodBye.jpeg"; sourceTree = "<group>"; };
+		BF3BA48D20FE5B1F00535DF9 /* Bedtime_Quiet.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_Quiet.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_Quiet.jpeg"; sourceTree = "<group>"; };
+		BF3BA48F20FE5B5F00535DF9 /* Outdoors_GoodJob.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_GoodJob.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_GoodJob.jpeg"; sourceTree = "<group>"; };
+		BF3BA49020FE5B5F00535DF9 /* Outdoors_KeepQuietHere.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_KeepQuietHere.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_KeepQuietHere.jpeg"; sourceTree = "<group>"; };
+		BF3BA49320FE5CBD00535DF9 /* Shopping_LookJuice.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookJuice.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookJuice.jpeg"; sourceTree = "<group>"; };
+		BF3BA49420FE5CBD00535DF9 /* Shopping_LookAtCarrot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Shopping_LookAtCarrot.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Shopping/Shopping_LookAtCarrot.jpeg"; sourceTree = "<group>"; };
+		BF3BA49720FE5DB100535DF9 /* SelfCare_PutOnPJs.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_PutOnPJs.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_PutOnPJs.jpeg"; sourceTree = "<group>"; };
+		BF585AC8202CEDC90055DB36 /* Shopping_LookAtCarrot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Shopping_LookAtCarrot.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Shopping/Shopping_LookAtCarrot.mp3"; sourceTree = "<group>"; };
+		BF5AACA7208A82B100A71FE3 /* Bedtime_Goodnight.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_Goodnight.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_Goodnight.jpeg"; sourceTree = "<group>"; };
+		BF5AACA8208A82B100A71FE3 /* Bedtime_AreYouWarm.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_AreYouWarm.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_AreYouWarm.jpeg"; sourceTree = "<group>"; };
+		BF5AACAB209262BD00A71FE3 /* SelfCare_TossGarbage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_TossGarbage.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_TossGarbage.jpeg"; sourceTree = "<group>"; };
+		BF5AACAD2092631C00A71FE3 /* Mealtime_DadIsGoingToEat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_DadIsGoingToEat.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_DadIsGoingToEat.jpeg"; sourceTree = "<group>"; };
+		BF5AACAE2092631C00A71FE3 /* Mealtime_DrinkMilk.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_DrinkMilk.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_DrinkMilk.jpeg"; sourceTree = "<group>"; };
+		BF5AACAF2092631C00A71FE3 /* Mealtime_SitDown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_SitDown.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_SitDown.jpeg"; sourceTree = "<group>"; };
+		BF5AACB02092631C00A71FE3 /* Mealtime_AreYouHungry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_AreYouHungry.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_AreYouHungry.jpeg"; sourceTree = "<group>"; };
+		BF5AACB72092ED5300A71FE3 /* Bedtime_ChangeIntoPajamas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_ChangeIntoPajamas.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_ChangeIntoPajamas.jpeg"; sourceTree = "<group>"; };
+		BF5AACBB2092EDA500A71FE3 /* Mealtime_WaitAMinute.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_WaitAMinute.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_WaitAMinute.jpeg"; sourceTree = "<group>"; };
+		BF5AACBC2092EDA500A71FE3 /* Mealtime_DrinkJuice.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_DrinkJuice.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_DrinkJuice.jpeg"; sourceTree = "<group>"; };
+		BF5AACBF2092EDD100A71FE3 /* SelfCare_ChangePants.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_ChangePants.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_ChangePants.jpeg"; sourceTree = "<group>"; };
+		BF5AACC12092EEFA00A71FE3 /* Mealtime_EatBread.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatBread.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatBread.jpeg"; sourceTree = "<group>"; };
+		BF5AACC32092EF7700A71FE3 /* Mealtime_DoYouLikeBanana.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_DoYouLikeBanana.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_DoYouLikeBanana.jpeg"; sourceTree = "<group>"; };
+		BF5AACC52092F01C00A71FE3 /* Mealtime_LetsCount123.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_LetsCount123.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_LetsCount123.jpeg"; sourceTree = "<group>"; };
+		BF5AACC72092F12C00A71FE3 /* Mealtime_CrackerCrunchy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_CrackerCrunchy.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_CrackerCrunchy.jpeg"; sourceTree = "<group>"; };
+		BF5AACC92098AD9C00A71FE3 /* Mealtime_OpenFridge.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_OpenFridge.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_OpenFridge.jpeg"; sourceTree = "<group>"; };
+		BF5AACCB2098ADEE00A71FE3 /* Mealtime_MomIsGoingToEat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_MomIsGoingToEat.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_MomIsGoingToEat.jpeg"; sourceTree = "<group>"; };
+		BF5AACCD2098AE0F00A71FE3 /* Playtime_ClapHands.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_ClapHands.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_ClapHands.jpeg"; sourceTree = "<group>"; };
+		BF5AACCE2098AE0F00A71FE3 /* Playtime_Jump.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_Jump.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_Jump.jpeg"; sourceTree = "<group>"; };
+		BF5AACD12098AE2E00A71FE3 /* SelfCare_Awesome.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SelfCare_Awesome.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Selfcare/SelfCare_Awesome.jpeg"; sourceTree = "<group>"; };
+		BF5AACD720A20F5B00A71FE3 /* Mealtime_ItsHot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_ItsHot.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_ItsHot.jpeg"; sourceTree = "<group>"; };
+		BF5AACD920A2100E00A71FE3 /* Mealtime_IsItGood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_IsItGood.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_IsItGood.jpeg"; sourceTree = "<group>"; };
+		BF5AACDA20A2100E00A71FE3 /* Mealtime_WantMore.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_WantMore.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_WantMore.jpeg"; sourceTree = "<group>"; };
+		BF5AACDD20A210C700A71FE3 /* Mealtime_TheresNoMore.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_TheresNoMore.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_TheresNoMore.jpeg"; sourceTree = "<group>"; };
+		BF5AACDF20A232FA00A71FE3 /* Mealtime_DoneEating.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_DoneEating.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_DoneEating.jpeg"; sourceTree = "<group>"; };
+		BF5AACE120A2334D00A71FE3 /* Mealtime_LikeSomeWater.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_LikeSomeWater.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_LikeSomeWater.jpeg"; sourceTree = "<group>"; };
+		BF5AACE320A2342500A71FE3 /* Mealtime_PutInBowl.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_PutInBowl.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_PutInBowl.jpeg"; sourceTree = "<group>"; };
+		BF5AACE520A234D200A71FE3 /* Mealtime_BlowFood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_BlowFood.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_BlowFood.jpeg"; sourceTree = "<group>"; };
+		BF5AACE620A234D200A71FE3 /* Mealtime_ThisIsHot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_ThisIsHot.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_ThisIsHot.jpeg"; sourceTree = "<group>"; };
+		BF5AACEB20A3FFB800A71FE3 /* Mealtime_UseSpoon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_UseSpoon.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_UseSpoon.jpeg"; sourceTree = "<group>"; };
+		BF5AACEC20A3FFB900A71FE3 /* Mealtime_UseFork.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_UseFork.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_UseFork.jpeg"; sourceTree = "<group>"; };
+		BF5AACEF20A400C500A71FE3 /* Mealtime_WashDishes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_WashDishes.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_WashDishes.jpeg"; sourceTree = "<group>"; };
+		BF5AACF020A400C500A71FE3 /* Mealtime_UseNapkin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_UseNapkin.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_UseNapkin.jpeg"; sourceTree = "<group>"; };
+		BF5AACF120A400C500A71FE3 /* Mealtime_PutOnPlate.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_PutOnPlate.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_PutOnPlate.jpeg"; sourceTree = "<group>"; };
+		BF5AACF520A40A3800A71FE3 /* Mealtime_YourWelcome.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_YourWelcome.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_YourWelcome.jpeg"; sourceTree = "<group>"; };
 		BF6D13C41EEF16190061B441 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BF73E84F201A7F5500F2A5D2 /* SelfCare_AllClothed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_AllClothed.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_AllClothed.mp3"; sourceTree = "<group>"; };
+		BF73E851201A84CF00F2A5D2 /* Mealtime_MomHelpYouGetFruit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_MomHelpYouGetFruit.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_MomHelpYouGetFruit.mp3"; sourceTree = "<group>"; };
+		BF73E853201A875800F2A5D2 /* Mealtime_NoMore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_NoMore.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_NoMore.mp3"; sourceTree = "<group>"; };
+		BF73E855201A892700F2A5D2 /* Mealtime_CookieIsSweet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_CookieIsSweet.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_CookieIsSweet.mp3"; sourceTree = "<group>"; };
+		BF73E857201A8B9F00F2A5D2 /* Mealtime_LetsCount123.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_LetsCount123.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_LetsCount123.mp3"; sourceTree = "<group>"; };
+		BF73E859201A928E00F2A5D2 /* Playtime_WheresMouth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_WheresMouth.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_WheresMouth.mp3"; sourceTree = "<group>"; };
+		BF73E85B201A938800F2A5D2 /* Playtime_YourMouthHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_YourMouthHere.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_YourMouthHere.mp3"; sourceTree = "<group>"; };
+		BF7BAC9E20CF1DC9008B1631 /* Mealtime_EatOatmeal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatOatmeal.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatOatmeal.jpeg"; sourceTree = "<group>"; };
+		BF7BACA020CF8B23008B1631 /* Mealtime_EatMore.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatMore.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatMore.jpeg"; sourceTree = "<group>"; };
+		BF7BACA220CF9005008B1631 /* Mealtime_EatSlowly.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatSlowly.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatSlowly.jpeg"; sourceTree = "<group>"; };
+		BF7BACA320CF9006008B1631 /* Mealtime_SpitItOut.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_SpitItOut.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_SpitItOut.jpeg"; sourceTree = "<group>"; };
+		BF7BACA420CF9006008B1631 /* Mealtime_NoMore.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_NoMore.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_NoMore.jpeg"; sourceTree = "<group>"; };
+		BF7BACA820CF9097008B1631 /* Mealtime_FeedMe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_FeedMe.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_FeedMe.jpeg"; sourceTree = "<group>"; };
 		BF867A5E1FDB5EE100252D63 /* Playtime_WhatsYourName.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_WhatsYourName.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_WhatsYourName.mp3"; sourceTree = "<group>"; };
 		BF867A5F1FDB5EE100252D63 /* Playtime_ComeOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_ComeOver.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_ComeOver.mp3"; sourceTree = "<group>"; };
 		BF867A601FDB5EE100252D63 /* Playtime_Singing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_Singing.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_Singing.mp3"; sourceTree = "<group>"; };
@@ -315,14 +640,12 @@
 		BF867A631FDB5EE100252D63 /* Playtime_ScissorRockCloth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_ScissorRockCloth.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_ScissorRockCloth.mp3"; sourceTree = "<group>"; };
 		BF867A641FDB5EE100252D63 /* Playtime_WheresNose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_WheresNose.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_WheresNose.mp3"; sourceTree = "<group>"; };
 		BF867A651FDB5EE100252D63 /* Playtime_YourHeadHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_YourHeadHere.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_YourHeadHere.mp3"; sourceTree = "<group>"; };
-		BF867A661FDB5EE100252D63 /* Playtime_WheresMouth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_WheresMouth.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_WheresMouth.mp3"; sourceTree = "<group>"; };
 		BF867A671FDB5EE100252D63 /* Playtime_CatchBall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_CatchBall.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_CatchBall.mp3"; sourceTree = "<group>"; };
 		BF867A681FDB5EE100252D63 /* Playtime_GiveMeToy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_GiveMeToy.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_GiveMeToy.mp3"; sourceTree = "<group>"; };
 		BF867A691FDB5EE100252D63 /* Playtime_WantToJump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_WantToJump.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_WantToJump.mp3"; sourceTree = "<group>"; };
 		BF867A6A1FDB5EE100252D63 /* Playtime_PutAwayToys.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_PutAwayToys.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_PutAwayToys.mp3"; sourceTree = "<group>"; };
 		BF867A6B1FDB5EE100252D63 /* Playtime_Let'sTakeTurns.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Playtime_Let'sTakeTurns.mp3"; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_Let'sTakeTurns.mp3"; sourceTree = "<group>"; };
 		BF867A6C1FDB5EE100252D63 /* Playtime_WheresEye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_WheresEye.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_WheresEye.mp3"; sourceTree = "<group>"; };
-		BF867A6D1FDB5EE200252D63 /* Playtime_YourMouthHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_YourMouthHere.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_YourMouthHere.mp3"; sourceTree = "<group>"; };
 		BF867A6E1FDB5EE200252D63 /* Playtime_YourNoseHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_YourNoseHere.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_YourNoseHere.mp3"; sourceTree = "<group>"; };
 		BF867A6F1FDB5EE200252D63 /* Playtime_ClapHands.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_ClapHands.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_ClapHands.mp3"; sourceTree = "<group>"; };
 		BF867A701FDB5EE200252D63 /* Playtime_Dancing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Playtime_Dancing.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Playtime/Playtime_Dancing.mp3"; sourceTree = "<group>"; };
@@ -352,6 +675,7 @@
 		BF867AAB1FDB5F0000252D63 /* Bedtime_BrushYourTeeth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bedtime_BrushYourTeeth.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Bedtime /Bedtime_BrushYourTeeth.mp3"; sourceTree = "<group>"; };
 		BF867AAC1FDB5F0000252D63 /* Bedtime_LookTheMoon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bedtime_LookTheMoon.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Bedtime /Bedtime_LookTheMoon.mp3"; sourceTree = "<group>"; };
 		BF867AAD1FDB5F0000252D63 /* Bedtime_TurnOffLights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bedtime_TurnOffLights.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Bedtime /Bedtime_TurnOffLights.mp3"; sourceTree = "<group>"; };
+		BF8978C82023B4040093D3B3 /* Outdoors_KeepQuietHere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Outdoors_KeepQuietHere.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Outdoors/Outdoors_KeepQuietHere.mp3"; sourceTree = "<group>"; };
 		BF9792491FE8EFA300D1BC28 /* SelfCare_PutOnMittens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_PutOnMittens.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_PutOnMittens.mp3"; sourceTree = "<group>"; };
 		BF97924A1FE8EFA300D1BC28 /* SelfCare_Wash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_Wash.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_Wash.mp3"; sourceTree = "<group>"; };
 		BF97924B1FE8EFA300D1BC28 /* SelfCare_SkinSoft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_SkinSoft.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_SkinSoft.mp3"; sourceTree = "<group>"; };
@@ -366,7 +690,6 @@
 		BF9792541FE8EFA400D1BC28 /* SelfCare_ChangeShirt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_ChangeShirt.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_ChangeShirt.mp3"; sourceTree = "<group>"; };
 		BF9792551FE8EFA400D1BC28 /* SelfCare_Fingers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_Fingers.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_Fingers.mp3"; sourceTree = "<group>"; };
 		BF9792561FE8EFA400D1BC28 /* SelfCare_DiaperChange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_DiaperChange.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_DiaperChange.mp3"; sourceTree = "<group>"; };
-		BF9792571FE8EFA400D1BC28 /* SelfCare_AllDressed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_AllDressed.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_AllDressed.mp3"; sourceTree = "<group>"; };
 		BF9792581FE8EFA400D1BC28 /* SelfCare_NeedBath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_NeedBath.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_NeedBath.mp3"; sourceTree = "<group>"; };
 		BF9792591FE8EFA400D1BC28 /* SelfCare_PutOnPJs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_PutOnPJs.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_PutOnPJs.mp3"; sourceTree = "<group>"; };
 		BF97925A1FE8EFA400D1BC28 /* SelfCare_FoldClothes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_FoldClothes.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_FoldClothes.mp3"; sourceTree = "<group>"; };
@@ -394,7 +717,6 @@
 		BF9792701FE8EFA600D1BC28 /* SelfCare_UseSoap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_UseSoap.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_UseSoap.mp3"; sourceTree = "<group>"; };
 		BF9792711FE8EFA600D1BC28 /* SelfCare_TooTight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_TooTight.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_TooTight.mp3"; sourceTree = "<group>"; };
 		BF9792721FE8EFA600D1BC28 /* SelfCare_WhiteSocks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_WhiteSocks.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_WhiteSocks.mp3"; sourceTree = "<group>"; };
-		BF9792731FE8EFA600D1BC28 /* SelfCare_AllDry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_AllDry.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_AllDry.mp3"; sourceTree = "<group>"; };
 		BF9792741FE8EFA600D1BC28 /* SelfCare_DiaperComfy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_DiaperComfy.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_DiaperComfy.mp3"; sourceTree = "<group>"; };
 		BF9792751FE8EFA600D1BC28 /* SelfCare_PutOnSocks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_PutOnSocks.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_PutOnSocks.mp3"; sourceTree = "<group>"; };
 		BF9792761FE8EFA600D1BC28 /* SelfCare_TakeBath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SelfCare_TakeBath.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Selfcare/SelfCare_TakeBath.mp3"; sourceTree = "<group>"; };
@@ -415,18 +737,115 @@
 		BF9792B41FE8F20F00D1BC28 /* Shopping_ThankYou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Shopping_ThankYou.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Shopping/Shopping_ThankYou.mp3"; sourceTree = "<group>"; };
 		BF9792B51FE8F20F00D1BC28 /* Shopping_LookStrawberries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Shopping_LookStrawberries.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Shopping/Shopping_LookStrawberries.mp3"; sourceTree = "<group>"; };
 		BF9792B61FE8F20F00D1BC28 /* Shopping_LookPotato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Shopping_LookPotato.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Shopping/Shopping_LookPotato.mp3"; sourceTree = "<group>"; };
+		BFA52197207802F500CDA9A9 /* Bedtime_LookTheMoon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_LookTheMoon.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_LookTheMoon.jpeg"; sourceTree = "<group>"; };
+		BFA52198207802F600CDA9A9 /* Bedtime_PutAwayBook.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_PutAwayBook.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_PutAwayBook.jpeg"; sourceTree = "<group>"; };
+		BFA5219B207803B900CDA9A9 /* Bedtime_BrushYourTeeth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_BrushYourTeeth.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_BrushYourTeeth.jpeg"; sourceTree = "<group>"; };
+		BFA5219C207803B900CDA9A9 /* Bedtime_ReadABook.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_ReadABook.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_ReadABook.jpeg"; sourceTree = "<group>"; };
+		BFA8C0AF20DAF96B0026D881 /* Mealtime_TimeToEatBreakfast.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_TimeToEatBreakfast.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_TimeToEatBreakfast.jpeg"; sourceTree = "<group>"; };
+		BFA8C0B020DAF96B0026D881 /* Mealtime_TimeToEatLunch.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_TimeToEatLunch.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_TimeToEatLunch.jpeg"; sourceTree = "<group>"; };
+		BFA8C0B120DAF96B0026D881 /* Mealtime_OpenMouth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_OpenMouth.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_OpenMouth.jpeg"; sourceTree = "<group>"; };
+		BFA8C0B220DAF96C0026D881 /* Mealtime_TimeToEatDinner.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_TimeToEatDinner.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_TimeToEatDinner.jpeg"; sourceTree = "<group>"; };
+		BFA8C0B720DAF9930026D881 /* Mealtime_EatSpinach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatSpinach.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatSpinach.jpeg"; sourceTree = "<group>"; };
+		BFA8C0B820DAF9940026D881 /* Mealtime_WipeMouth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_WipeMouth.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_WipeMouth.jpeg"; sourceTree = "<group>"; };
+		BFA8C0B920DAF9940026D881 /* Mealtime_EatChicken.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatChicken.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatChicken.jpeg"; sourceTree = "<group>"; };
+		BFA8C0BA20DAF9940026D881 /* Mealtime_CookieIsSweet.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_CookieIsSweet.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_CookieIsSweet.jpeg"; sourceTree = "<group>"; };
+		BFA8C0BB20DAF9940026D881 /* Mealtime_YouCannotEatThis.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_YouCannotEatThis.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_YouCannotEatThis.jpeg"; sourceTree = "<group>"; };
+		BFA8C0BC20DAF9940026D881 /* Mealtime_AllDoneEating.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_AllDoneEating.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_AllDoneEating.jpeg"; sourceTree = "<group>"; };
+		BFA8C0BD20DAF9950026D881 /* Mealtime_EatFish.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatFish.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatFish.jpeg"; sourceTree = "<group>"; };
+		BFA8C0BE20DAF9950026D881 /* Mealtime_EatNoodle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatNoodle.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatNoodle.jpeg"; sourceTree = "<group>"; };
+		BFA8C0C720DB11F40026D881 /* Mealtime_EatRice.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatRice.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatRice.jpeg"; sourceTree = "<group>"; };
+		BFA8C0C920E5299A0026D881 /* Mealtime_LikeYogurt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_LikeYogurt.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_LikeYogurt.jpeg"; sourceTree = "<group>"; };
+		BFA8C0CB20E529B30026D881 /* Mealtime_DrinkSoup.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_DrinkSoup.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_DrinkSoup.jpeg"; sourceTree = "<group>"; };
+		BFA8C11D20E546D10026D881 /* Outdoors_LetsLockDoor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LetsLockDoor.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LetsLockDoor.jpeg"; sourceTree = "<group>"; };
+		BFA8C11F20E548E50026D881 /* Outdoors_PutOnShoes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_PutOnShoes.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_PutOnShoes.jpeg"; sourceTree = "<group>"; };
+		BFA8C12020E548E50026D881 /* Outdoors_LookAtClouds.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LookAtClouds.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LookAtClouds.jpeg"; sourceTree = "<group>"; };
+		BFA8C12120E548E50026D881 /* Outdoors_WantToGoOnSwings.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_WantToGoOnSwings.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_WantToGoOnSwings.jpeg"; sourceTree = "<group>"; };
+		BFA8C12220E548E50026D881 /* Outdoors_SeeBlueCar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_SeeBlueCar.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_SeeBlueCar.jpeg"; sourceTree = "<group>"; };
+		BFA8C12320E548E50026D881 /* Outdoors_SeeTheLadybug.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_SeeTheLadybug.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_SeeTheLadybug.jpeg"; sourceTree = "<group>"; };
+		BFA8C12420E548E50026D881 /* Outdoors_LookAtCar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LookAtCar.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LookAtCar.jpeg"; sourceTree = "<group>"; };
+		BFA8C12520E548E50026D881 /* Outdoors_ThisIsKey.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_ThisIsKey.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_ThisIsKey.jpeg"; sourceTree = "<group>"; };
+		BFA8C12620E548E50026D881 /* Outdoors_WeatherIsGreat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_WeatherIsGreat.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_WeatherIsGreat.jpeg"; sourceTree = "<group>"; };
+		BFA8C12720E548E50026D881 /* Outdoors_LookAtHouse.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LookAtHouse.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LookAtHouse.jpeg"; sourceTree = "<group>"; };
+		BFA8C12820E548E50026D881 /* Outdoors_SeeTheLeaves.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_SeeTheLeaves.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_SeeTheLeaves.jpeg"; sourceTree = "<group>"; };
+		BFA8C12920E548E50026D881 /* Outdoors_TodayIsCloudy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_TodayIsCloudy.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_TodayIsCloudy.jpeg"; sourceTree = "<group>"; };
+		BFA8C12A20E548E60026D881 /* Outdoors_SeeTheGrass.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_SeeTheGrass.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_SeeTheGrass.jpeg"; sourceTree = "<group>"; };
+		BFA8C12B20E548E60026D881 /* Outdoors_LikeTheGrass.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LikeTheGrass.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LikeTheGrass.jpeg"; sourceTree = "<group>"; };
+		BFA8C12C20E548E60026D881 /* Outdoors_LookAtTree.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LookAtTree.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LookAtTree.jpeg"; sourceTree = "<group>"; };
+		BFA8C12D20E548E60026D881 /* Outdoors_SeeTheBicycles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_SeeTheBicycles.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_SeeTheBicycles.jpeg"; sourceTree = "<group>"; };
+		BFA8C12E20E548E60026D881 /* Outdoors_SeeBlackCar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_SeeBlackCar.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_SeeBlackCar.jpeg"; sourceTree = "<group>"; };
+		BFA8C13F20E548FF0026D881 /* Outdoors_HearTheAirplane.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_HearTheAirplane.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_HearTheAirplane.jpeg"; sourceTree = "<group>"; };
+		BFA8C14020E548FF0026D881 /* Outdoors_ItsHot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_ItsHot.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_ItsHot.jpeg"; sourceTree = "<group>"; };
+		BFA8C14120E548FF0026D881 /* Outdoors_LetsGoToParkPlay.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LetsGoToParkPlay.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LetsGoToParkPlay.jpeg"; sourceTree = "<group>"; };
+		BFA8C14220E548FF0026D881 /* Outdoors_ClimbUp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_ClimbUp.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_ClimbUp.jpeg"; sourceTree = "<group>"; };
+		BFA8C14320E549000026D881 /* Outdoors_HearThatSound.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_HearThatSound.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_HearThatSound.jpeg"; sourceTree = "<group>"; };
+		BFA8C14920E584170026D881 /* Outdoors_HelloUncle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_HelloUncle.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_HelloUncle.jpeg"; sourceTree = "<group>"; };
+		BFA8C14A20E584170026D881 /* Outdoors_TodayIsWindy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_TodayIsWindy.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_TodayIsWindy.jpeg"; sourceTree = "<group>"; };
+		BFA8C14B20E584180026D881 /* Outdoors_WeAreInCar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_WeAreInCar.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_WeAreInCar.jpeg"; sourceTree = "<group>"; };
+		BFA8C14C20E584180026D881 /* Outdoors_LookAtFlower.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_LookAtFlower.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_LookAtFlower.jpeg"; sourceTree = "<group>"; };
+		BFA8C14D20E584180026D881 /* Outdoors_SeeTheCat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_SeeTheCat.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_SeeTheCat.jpeg"; sourceTree = "<group>"; };
+		BFA8C14E20E584180026D881 /* Outdoors_ItsSnowing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_ItsSnowing.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_ItsSnowing.jpeg"; sourceTree = "<group>"; };
+		BFA8C14F20E584180026D881 /* Outdoors_WantToGoToStore.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_WantToGoToStore.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_WantToGoToStore.jpeg"; sourceTree = "<group>"; };
+		BFA8C15020E584180026D881 /* Outdoors_HelloAuntie.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_HelloAuntie.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_HelloAuntie.jpeg"; sourceTree = "<group>"; };
+		BFA8C15120E584180026D881 /* Outdoors_DoesThisHurt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_DoesThisHurt.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_DoesThisHurt.jpeg"; sourceTree = "<group>"; };
+		BFA8C15220E584180026D881 /* Outdoors_ItsRaining.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_ItsRaining.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_ItsRaining.jpeg"; sourceTree = "<group>"; };
+		BFA8C15320E584180026D881 /* Outdoors_WasThatFun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_WasThatFun.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_WasThatFun.jpeg"; sourceTree = "<group>"; };
+		BFA8C15520E584180026D881 /* Outdoors_ThisIsBaby.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_ThisIsBaby.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_ThisIsBaby.jpeg"; sourceTree = "<group>"; };
+		BFA8C15620E584180026D881 /* Outdoors_ThisIsDog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_ThisIsDog.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_ThisIsDog.jpeg"; sourceTree = "<group>"; };
+		BFA8C15720E584180026D881 /* Outdoors_BeCareful.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_BeCareful.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_BeCareful.jpeg"; sourceTree = "<group>"; };
+		BFA8C15820E584180026D881 /* Outdoors_BirdFlewAway.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_BirdFlewAway.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_BirdFlewAway.jpeg"; sourceTree = "<group>"; };
+		BFA8C15920E584180026D881 /* Outdoors_GiveMeAHug.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_GiveMeAHug.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_GiveMeAHug.jpeg"; sourceTree = "<group>"; };
+		BFA8C15A20E584180026D881 /* Outdoors_OpenCarDoor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_OpenCarDoor.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_OpenCarDoor.jpeg"; sourceTree = "<group>"; };
+		BFA8C16D20E587FD0026D881 /* Outdoors_WhatDidYouFind.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Outdoors_WhatDidYouFind.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Outdoors/Outdoors_WhatDidYouFind.jpeg"; sourceTree = "<group>"; };
+		BFA8C16F20EBCCB00026D881 /* Playtime_ScissorRockCloth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_ScissorRockCloth.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_ScissorRockCloth.jpeg"; sourceTree = "<group>"; };
+		BFA8C17020EBCCB00026D881 /* Playtime_WheresMouth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WheresMouth.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WheresMouth.jpeg"; sourceTree = "<group>"; };
+		BFA8C17120EBCCB10026D881 /* Playtime_WheresDad.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WheresDad.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WheresDad.jpeg"; sourceTree = "<group>"; };
+		BFA8C17220EBCCB10026D881 /* Playtime_PushToy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_PushToy.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_PushToy.jpeg"; sourceTree = "<group>"; };
+		BFA8C17420EBCCB10026D881 /* Playtime_WhereAreYou.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WhereAreYou.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WhereAreYou.jpeg"; sourceTree = "<group>"; };
+		BFA8C17520EBCCB10026D881 /* Playtime_YourHeadHere.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_YourHeadHere.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_YourHeadHere.jpeg"; sourceTree = "<group>"; };
+		BFA8C17620EBCCB10026D881 /* Playtime_YouAreDrooling.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_YouAreDrooling.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_YouAreDrooling.jpeg"; sourceTree = "<group>"; };
+		BFA8C17720EBCCB10026D881 /* Playtime_WhatsYourName.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WhatsYourName.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WhatsYourName.jpeg"; sourceTree = "<group>"; };
+		BFA8C17820EBCCB20026D881 /* Playtime_ComeOver.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_ComeOver.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_ComeOver.jpeg"; sourceTree = "<group>"; };
+		BFA8C17920EBCCB20026D881 /* Playtime_ThrowBall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_ThrowBall.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_ThrowBall.jpeg"; sourceTree = "<group>"; };
+		BFA8C17A20EBCCB20026D881 /* Playtime_WantToJump.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WantToJump.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WantToJump.jpeg"; sourceTree = "<group>"; };
+		BFA8C17B20EBCCB20026D881 /* Playtime_CanNot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_CanNot.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_CanNot.jpeg"; sourceTree = "<group>"; };
+		BFA8C17C20EBCCB20026D881 /* Playtime_StandUp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_StandUp.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_StandUp.jpeg"; sourceTree = "<group>"; };
+		BFA8C17D20EBCCB20026D881 /* Playtime_CatchBall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_CatchBall.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_CatchBall.jpeg"; sourceTree = "<group>"; };
+		BFA8C17E20EBCCB20026D881 /* Playtime_CrawlOver.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_CrawlOver.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_CrawlOver.jpeg"; sourceTree = "<group>"; };
+		BFA8C17F20EBCCB20026D881 /* Playtime_Let'sTakeTurns.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Playtime_Let'sTakeTurns.jpeg"; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_Let'sTakeTurns.jpeg"; sourceTree = "<group>"; };
+		BFA8C18020EBCCB20026D881 /* Playtime_GoodJob.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_GoodJob.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_GoodJob.jpeg"; sourceTree = "<group>"; };
+		BFA8C18120EBCCB30026D881 /* Playtime_PutAwayToys.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_PutAwayToys.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_PutAwayToys.jpeg"; sourceTree = "<group>"; };
+		BFA8C18220EBCCB30026D881 /* Playtime_WheresEye.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WheresEye.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WheresEye.jpeg"; sourceTree = "<group>"; };
+		BFA8C18320EBCCB30026D881 /* Playtime_Singing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_Singing.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_Singing.jpeg"; sourceTree = "<group>"; };
+		BFA8C18420EBCCB30026D881 /* Playtime_OneMoreStep.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_OneMoreStep.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_OneMoreStep.jpeg"; sourceTree = "<group>"; };
+		BFA8C18520EBCCB30026D881 /* Playtime_PlayBall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_PlayBall.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_PlayBall.jpeg"; sourceTree = "<group>"; };
+		BFA8C18620EBCCB30026D881 /* Playtime_TakeOutToys.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_TakeOutToys.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_TakeOutToys.jpeg"; sourceTree = "<group>"; };
+		BFA8C18720EBCCB30026D881 /* Playtime_YourEyeHere.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_YourEyeHere.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_YourEyeHere.jpeg"; sourceTree = "<group>"; };
+		BFA8C18820EBCCB30026D881 /* Playtime_Dancing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_Dancing.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_Dancing.jpeg"; sourceTree = "<group>"; };
+		BFA8C18920EBCCB30026D881 /* Playtime_WheresMom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WheresMom.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WheresMom.jpeg"; sourceTree = "<group>"; };
+		BFA8C18A20EBCCB40026D881 /* Playtime_YourMouthHere.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_YourMouthHere.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_YourMouthHere.jpeg"; sourceTree = "<group>"; };
+		BFA8C18B20EBCCB40026D881 /* Playtime_WhyCrying.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WhyCrying.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WhyCrying.jpeg"; sourceTree = "<group>"; };
+		BFA8C18C20EBCCB40026D881 /* Playtime_Fly.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_Fly.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_Fly.jpeg"; sourceTree = "<group>"; };
+		BFA8C18D20EBCCB40026D881 /* Playtime_WheresHead.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WheresHead.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WheresHead.jpeg"; sourceTree = "<group>"; };
+		BFA8C18E20EBCCB40026D881 /* Playtime_GiveMeToy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_GiveMeToy.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_GiveMeToy.jpeg"; sourceTree = "<group>"; };
+		BFA991112100FB8A0021742C /* Playtime_WheresNose.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_WheresNose.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_WheresNose.jpeg"; sourceTree = "<group>"; };
+		BFA991122100FB8A0021742C /* Playtime_YourNoseHere.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Playtime_YourNoseHere.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Playtime/Playtime_YourNoseHere.jpeg"; sourceTree = "<group>"; };
+		BFA991152102950D0021742C /* Mealtime_ItsCooled.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_ItsCooled.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_ItsCooled.jpeg"; sourceTree = "<group>"; };
+		BFA991162102950E0021742C /* Mealtime_YouCanTakeThis.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_YouCanTakeThis.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_YouCanTakeThis.jpeg"; sourceTree = "<group>"; };
 		BFBB9E2B1ECF393800DA1C37 /* OctoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoCard.swift; sourceTree = "<group>"; };
+		BFCA90D9206AD03F0047EAB5 /* Mealtime_LikeSomeApplesauce.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_LikeSomeApplesauce.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_LikeSomeApplesauce.jpeg"; sourceTree = "<group>"; };
+		BFCA90DE206AD0400047EAB5 /* Mealtime_MomHelpYouGetFruit.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_MomHelpYouGetFruit.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_MomHelpYouGetFruit.jpeg"; sourceTree = "<group>"; };
+		BFCA90E7206AD8390047EAB5 /* Mealtime_UseCup.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_UseCup.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_UseCup.jpeg"; sourceTree = "<group>"; };
+		BFCA90EB206AD9900047EAB5 /* Mealtime_EatBanana.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_EatBanana.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_EatBanana.jpeg"; sourceTree = "<group>"; };
+		BFCA90ED206ADA220047EAB5 /* Mealtime_DrinkWater.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mealtime_DrinkWater.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Mealtime/Mealtime_DrinkWater.jpeg"; sourceTree = "<group>"; };
+		BFCA90EF206C08C40047EAB5 /* Bedtime_TurnOffLights.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bedtime_TurnOffLights.jpeg; path = "../../../../../Google Drive/Octo Academy/Infant Cards/Images/Card Images/Bedtime/Bedtime_TurnOffLights.jpeg"; sourceTree = "<group>"; };
 		BFD1C7961F44FD9D00B50984 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		BFDB920D1FE2CF56001F3FFE /* Mealtime_WaitAMinute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_WaitAMinute.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_WaitAMinute.mp3"; sourceTree = "<group>"; };
 		BFDB920E1FE2CF56001F3FFE /* Mealtime_EatBanana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_EatBanana.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_EatBanana.mp3"; sourceTree = "<group>"; };
-		BFDB920F1FE2CF56001F3FFE /* Mealtime_LetsCount123.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_LetsCount123.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_LetsCount123.mp3"; sourceTree = "<group>"; };
 		BFDB92101FE2CF56001F3FFE /* Mealtime_UseCup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_UseCup.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_UseCup.mp3"; sourceTree = "<group>"; };
-		BFDB92111FE2CF56001F3FFE /* Mealtime_MomHelpYouGetFruit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_MomHelpYouGetFruit.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_MomHelpYouGetFruit.mp3"; sourceTree = "<group>"; };
 		BFDB92121FE2CF56001F3FFE /* Mealtime_ThisIsHot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_ThisIsHot.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_ThisIsHot.mp3"; sourceTree = "<group>"; };
 		BFDB92131FE2CF57001F3FFE /* Mealtime_WashDishes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_WashDishes.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_WashDishes.mp3"; sourceTree = "<group>"; };
 		BFDB92141FE2CF57001F3FFE /* Mealtime_LikeSomeWater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_LikeSomeWater.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_LikeSomeWater.mp3"; sourceTree = "<group>"; };
 		BFDB92151FE2CF57001F3FFE /* Mealtime_DrinkWater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_DrinkWater.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_DrinkWater.mp3"; sourceTree = "<group>"; };
-		BFDB92161FE2CF57001F3FFE /* Mealtime_NoMore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_NoMore.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_NoMore.mp3"; sourceTree = "<group>"; };
 		BFDB92171FE2CF57001F3FFE /* Mealtime_DrinkMilk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_DrinkMilk.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_DrinkMilk.mp3"; sourceTree = "<group>"; };
 		BFDB92181FE2CF57001F3FFE /* Mealtime_WipeMouth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_WipeMouth.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_WipeMouth.mp3"; sourceTree = "<group>"; };
 		BFDB92191FE2CF57001F3FFE /* Mealtime_AreYouHungry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_AreYouHungry.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_AreYouHungry.mp3"; sourceTree = "<group>"; };
@@ -440,7 +859,6 @@
 		BFDB92211FE2CF58001F3FFE /* Mealtime_CrackerCrunchy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_CrackerCrunchy.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_CrackerCrunchy.mp3"; sourceTree = "<group>"; };
 		BFDB92221FE2CF58001F3FFE /* Mealtime_PutInBowl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_PutInBowl.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_PutInBowl.mp3"; sourceTree = "<group>"; };
 		BFDB92231FE2CF58001F3FFE /* Mealtime_EatFish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_EatFish.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_EatFish.mp3"; sourceTree = "<group>"; };
-		BFDB92241FE2CF58001F3FFE /* Mealtime_CookieIsSweet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_CookieIsSweet.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_CookieIsSweet.mp3"; sourceTree = "<group>"; };
 		BFDB92251FE2CF58001F3FFE /* Mealtime_TimeToEatBreakfast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_TimeToEatBreakfast.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_TimeToEatBreakfast.mp3"; sourceTree = "<group>"; };
 		BFDB92261FE2CF58001F3FFE /* Mealtime_UseFork.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_UseFork.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_UseFork.mp3"; sourceTree = "<group>"; };
 		BFDB92271FE2CF58001F3FFE /* Mealtime_PutOnPlate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mealtime_PutOnPlate.mp3; path = "../../../../Google Drive/Octo Academy/Infant Cards/Audio/Mealtime /Mealtime_PutOnPlate.mp3"; sourceTree = "<group>"; };
@@ -552,6 +970,7 @@
 				BF0069261EC4EAD0004DC195 /* Main.storyboard */,
 				FA09E9121ECB97DE003AF8CE /* Storyboards */,
 				BF0069291EC4EAD0004DC195 /* Assets.xcassets */,
+				BF73E8472017BACC00F2A5D2 /* CardImages */,
 				BF6D13C21EEF14610061B441 /* Audio */,
 				BF00692B1EC4EAD0004DC195 /* LaunchScreen.storyboard */,
 				BF00692E1EC4EAD0004DC195 /* Info.plist */,
@@ -562,6 +981,16 @@
 		BF6D13C21EEF14610061B441 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				BF585AC8202CEDC90055DB36 /* Shopping_LookAtCarrot.mp3 */,
+				BF8978C82023B4040093D3B3 /* Outdoors_KeepQuietHere.mp3 */,
+				BF73E85B201A938800F2A5D2 /* Playtime_YourMouthHere.mp3 */,
+				BF73E859201A928E00F2A5D2 /* Playtime_WheresMouth.mp3 */,
+				BF73E857201A8B9F00F2A5D2 /* Mealtime_LetsCount123.mp3 */,
+				BF73E855201A892700F2A5D2 /* Mealtime_CookieIsSweet.mp3 */,
+				BF73E853201A875800F2A5D2 /* Mealtime_NoMore.mp3 */,
+				BF73E851201A84CF00F2A5D2 /* Mealtime_MomHelpYouGetFruit.mp3 */,
+				BF73E84F201A7F5500F2A5D2 /* SelfCare_AllClothed.mp3 */,
+				BF0D2D3E2011511F00174EFF /* SelfCare_AllDry.mp3 */,
 				BF0D2D0D2004157E00174EFF /* Outdoors_BeCareful.mp3 */,
 				BF0D2D0E2004157E00174EFF /* Outdoors_BirdFlewAway.mp3 */,
 				BF0D2D122004157F00174EFF /* Outdoors_ClimbUp.mp3 */,
@@ -575,7 +1004,6 @@
 				BF0D2D012004157C00174EFF /* Outdoors_ItsHot.mp3 */,
 				BF0D2D002004157C00174EFF /* Outdoors_ItsRaining.mp3 */,
 				BF0D2D0A2004157E00174EFF /* Outdoors_ItsSnowing.mp3 */,
-				BF0D2D032004157D00174EFF /* Outdoors_KeepQuietHere.mp3 */,
 				BF0D2CEA2004157900174EFF /* Outdoors_LetsGoToParkPlay.mp3 */,
 				BF0D2D132004157F00174EFF /* Outdoors_LetsLockDoor.mp3 */,
 				BF0D2D0B2004157E00174EFF /* Outdoors_LikeTheGrass.mp3 */,
@@ -621,8 +1049,6 @@
 				BF9792B31FE8F20F00D1BC28 /* Shopping_MakeForDinner.mp3 */,
 				BF9792B41FE8F20F00D1BC28 /* Shopping_ThankYou.mp3 */,
 				BF97924D1FE8EFA300D1BC28 /* SelfCare_AllClean.mp3 */,
-				BF9792571FE8EFA400D1BC28 /* SelfCare_AllDressed.mp3 */,
-				BF9792731FE8EFA600D1BC28 /* SelfCare_AllDry.mp3 */,
 				BF97926E1FE8EFA600D1BC28 /* SelfCare_AllWet.mp3 */,
 				BF97925B1FE8EFA400D1BC28 /* SelfCare_Awesome.mp3 */,
 				BF9792771FE8EFA700D1BC28 /* SelfCare_Bathtime.mp3 */,
@@ -631,6 +1057,7 @@
 				BF9792541FE8EFA400D1BC28 /* SelfCare_ChangeShirt.mp3 */,
 				BF9792681FE8EFA500D1BC28 /* SelfCare_ClothesInWasher.mp3 */,
 				BF9792521FE8EFA400D1BC28 /* SelfCare_CountClothing.mp3 */,
+				BF0D2D422011558500174EFF /* SelfCare_LookAtMirror.mp3 */,
 				BF9792561FE8EFA400D1BC28 /* SelfCare_DiaperChange.mp3 */,
 				BF9792741FE8EFA600D1BC28 /* SelfCare_DiaperComfy.mp3 */,
 				BF97924E1FE8EFA300D1BC28 /* SelfCare_DiaperStinky.mp3 */,
@@ -670,7 +1097,6 @@
 				BFDB92201FE2CF58001F3FFE /* Mealtime_AllDoneEating.mp3 */,
 				BFDB92191FE2CF57001F3FFE /* Mealtime_AreYouHungry.mp3 */,
 				BFDB92401FE2CF5B001F3FFE /* Mealtime_BlowFood.mp3 */,
-				BFDB92241FE2CF58001F3FFE /* Mealtime_CookieIsSweet.mp3 */,
 				BFDB92211FE2CF58001F3FFE /* Mealtime_CrackerCrunchy.mp3 */,
 				BFDB923C1FE2CF5A001F3FFE /* Mealtime_DadIsGoingToEat.mp3 */,
 				BFDB92281FE2CF58001F3FFE /* Mealtime_DoneEating.mp3 */,
@@ -693,13 +1119,10 @@
 				BFDB921F1FE2CF58001F3FFE /* Mealtime_IsItGood.mp3 */,
 				BFDB92421FE2CF5B001F3FFE /* Mealtime_ItsCooled.mp3 */,
 				BFDB922C1FE2CF59001F3FFE /* Mealtime_ItsHot.mp3 */,
-				BFDB920F1FE2CF56001F3FFE /* Mealtime_LetsCount123.mp3 */,
 				BFDB92371FE2CF5A001F3FFE /* Mealtime_LikeSomeApplesauce.mp3 */,
 				BFDB92141FE2CF57001F3FFE /* Mealtime_LikeSomeWater.mp3 */,
 				BFDB92341FE2CF5A001F3FFE /* Mealtime_LikeYogurt.mp3 */,
-				BFDB92111FE2CF56001F3FFE /* Mealtime_MomHelpYouGetFruit.mp3 */,
 				BFDB923F1FE2CF5B001F3FFE /* Mealtime_MomIsGoingToEat.mp3 */,
-				BFDB92161FE2CF57001F3FFE /* Mealtime_NoMore.mp3 */,
 				BFDB92411FE2CF5B001F3FFE /* Mealtime_OpenFridge.mp3 */,
 				BFDB921B1FE2CF57001F3FFE /* Mealtime_OpenMouth.mp3 */,
 				BFDB92221FE2CF58001F3FFE /* Mealtime_PutInBowl.mp3 */,
@@ -759,13 +1182,11 @@
 				BF867A6C1FDB5EE100252D63 /* Playtime_WheresEye.mp3 */,
 				BF867A801FDB5EE300252D63 /* Playtime_WheresHead.mp3 */,
 				BF867A731FDB5EE200252D63 /* Playtime_WheresMom.mp3 */,
-				BF867A661FDB5EE100252D63 /* Playtime_WheresMouth.mp3 */,
 				BF867A641FDB5EE100252D63 /* Playtime_WheresNose.mp3 */,
 				BF867A611FDB5EE100252D63 /* Playtime_WhyCrying.mp3 */,
 				BF867A721FDB5EE200252D63 /* Playtime_YouAreDrooling.mp3 */,
 				BF867A791FDB5EE200252D63 /* Playtime_YourEyeHere.mp3 */,
 				BF867A651FDB5EE100252D63 /* Playtime_YourHeadHere.mp3 */,
-				BF867A6D1FDB5EE200252D63 /* Playtime_YourMouthHere.mp3 */,
 				BF867A6E1FDB5EE200252D63 /* Playtime_YourNoseHere.mp3 */,
 			);
 			name = Audio;
@@ -778,6 +1199,220 @@
 				BF6D13C41EEF16190061B441 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF73E8472017BACC00F2A5D2 /* CardImages */ = {
+			isa = PBXGroup;
+			children = (
+				BFA991152102950D0021742C /* Mealtime_ItsCooled.jpeg */,
+				BFA991162102950E0021742C /* Mealtime_YouCanTakeThis.jpeg */,
+				BF3BA49720FE5DB100535DF9 /* SelfCare_PutOnPJs.jpeg */,
+				BF3BA49420FE5CBD00535DF9 /* Shopping_LookAtCarrot.jpeg */,
+				BF3BA49320FE5CBD00535DF9 /* Shopping_LookJuice.jpeg */,
+				BF5AACA8208A82B100A71FE3 /* Bedtime_AreYouWarm.jpeg */,
+				BFA5219B207803B900CDA9A9 /* Bedtime_BrushYourTeeth.jpeg */,
+				BF5AACB72092ED5300A71FE3 /* Bedtime_ChangeIntoPajamas.jpeg */,
+				BF5AACA7208A82B100A71FE3 /* Bedtime_Goodnight.jpeg */,
+				BFA52197207802F500CDA9A9 /* Bedtime_LookTheMoon.jpeg */,
+				BFA52198207802F600CDA9A9 /* Bedtime_PutAwayBook.jpeg */,
+				BF3BA48D20FE5B1F00535DF9 /* Bedtime_Quiet.jpeg */,
+				BFA5219C207803B900CDA9A9 /* Bedtime_ReadABook.jpeg */,
+				BF06D9BD2045EB33008D8AF1 /* Bedtime_TimeToSleep.jpeg */,
+				BFCA90EF206C08C40047EAB5 /* Bedtime_TurnOffLights.jpeg */,
+				BFA8C0BC20DAF9940026D881 /* Mealtime_AllDoneEating.jpeg */,
+				BF5AACB02092631C00A71FE3 /* Mealtime_AreYouHungry.jpeg */,
+				BF5AACE520A234D200A71FE3 /* Mealtime_BlowFood.jpeg */,
+				BFA8C0BA20DAF9940026D881 /* Mealtime_CookieIsSweet.jpeg */,
+				BF5AACC72092F12C00A71FE3 /* Mealtime_CrackerCrunchy.jpeg */,
+				BF5AACAD2092631C00A71FE3 /* Mealtime_DadIsGoingToEat.jpeg */,
+				BF5AACDF20A232FA00A71FE3 /* Mealtime_DoneEating.jpeg */,
+				BF5AACC32092EF7700A71FE3 /* Mealtime_DoYouLikeBanana.jpeg */,
+				BF5AACBC2092EDA500A71FE3 /* Mealtime_DrinkJuice.jpeg */,
+				BF5AACAE2092631C00A71FE3 /* Mealtime_DrinkMilk.jpeg */,
+				BFA8C0CB20E529B30026D881 /* Mealtime_DrinkSoup.jpeg */,
+				BFCA90ED206ADA220047EAB5 /* Mealtime_DrinkWater.jpeg */,
+				BFCA90EB206AD9900047EAB5 /* Mealtime_EatBanana.jpeg */,
+				BF5AACC12092EEFA00A71FE3 /* Mealtime_EatBread.jpeg */,
+				BFA8C0B920DAF9940026D881 /* Mealtime_EatChicken.jpeg */,
+				BFA8C0BD20DAF9950026D881 /* Mealtime_EatFish.jpeg */,
+				BF7BACA020CF8B23008B1631 /* Mealtime_EatMore.jpeg */,
+				BFA8C0BE20DAF9950026D881 /* Mealtime_EatNoodle.jpeg */,
+				BF7BAC9E20CF1DC9008B1631 /* Mealtime_EatOatmeal.jpeg */,
+				BFA8C0C720DB11F40026D881 /* Mealtime_EatRice.jpeg */,
+				BF7BACA220CF9005008B1631 /* Mealtime_EatSlowly.jpeg */,
+				BFA8C0B720DAF9930026D881 /* Mealtime_EatSpinach.jpeg */,
+				BF7BACA820CF9097008B1631 /* Mealtime_FeedMe.jpeg */,
+				BF5AACD920A2100E00A71FE3 /* Mealtime_IsItGood.jpeg */,
+				BFA991112100FB8A0021742C /* Playtime_WheresNose.jpeg */,
+				BFA991122100FB8A0021742C /* Playtime_YourNoseHere.jpeg */,
+				BF5AACD720A20F5B00A71FE3 /* Mealtime_ItsHot.jpeg */,
+				BF5AACC52092F01C00A71FE3 /* Mealtime_LetsCount123.jpeg */,
+				BFCA90D9206AD03F0047EAB5 /* Mealtime_LikeSomeApplesauce.jpeg */,
+				BF5AACE120A2334D00A71FE3 /* Mealtime_LikeSomeWater.jpeg */,
+				BFA8C0C920E5299A0026D881 /* Mealtime_LikeYogurt.jpeg */,
+				BFCA90DE206AD0400047EAB5 /* Mealtime_MomHelpYouGetFruit.jpeg */,
+				BF5AACCB2098ADEE00A71FE3 /* Mealtime_MomIsGoingToEat.jpeg */,
+				BF7BACA420CF9006008B1631 /* Mealtime_NoMore.jpeg */,
+				BF5AACC92098AD9C00A71FE3 /* Mealtime_OpenFridge.jpeg */,
+				BFA8C0B120DAF96B0026D881 /* Mealtime_OpenMouth.jpeg */,
+				BF5AACE320A2342500A71FE3 /* Mealtime_PutInBowl.jpeg */,
+				BF5AACF120A400C500A71FE3 /* Mealtime_PutOnPlate.jpeg */,
+				BF5AACAF2092631C00A71FE3 /* Mealtime_SitDown.jpeg */,
+				BF7BACA320CF9006008B1631 /* Mealtime_SpitItOut.jpeg */,
+				BF5AACDD20A210C700A71FE3 /* Mealtime_TheresNoMore.jpeg */,
+				BF5AACE620A234D200A71FE3 /* Mealtime_ThisIsHot.jpeg */,
+				BFA8C0AF20DAF96B0026D881 /* Mealtime_TimeToEatBreakfast.jpeg */,
+				BFA8C0B220DAF96C0026D881 /* Mealtime_TimeToEatDinner.jpeg */,
+				BFA8C0B020DAF96B0026D881 /* Mealtime_TimeToEatLunch.jpeg */,
+				BFCA90E7206AD8390047EAB5 /* Mealtime_UseCup.jpeg */,
+				BF5AACEC20A3FFB900A71FE3 /* Mealtime_UseFork.jpeg */,
+				BF5AACF020A400C500A71FE3 /* Mealtime_UseNapkin.jpeg */,
+				BF5AACEB20A3FFB800A71FE3 /* Mealtime_UseSpoon.jpeg */,
+				BF5AACBB2092EDA500A71FE3 /* Mealtime_WaitAMinute.jpeg */,
+				BF5AACDA20A2100E00A71FE3 /* Mealtime_WantMore.jpeg */,
+				BF5AACEF20A400C500A71FE3 /* Mealtime_WashDishes.jpeg */,
+				BFA8C0B820DAF9940026D881 /* Mealtime_WipeMouth.jpeg */,
+				BFA8C0BB20DAF9940026D881 /* Mealtime_YouCannotEatThis.jpeg */,
+				BF5AACF520A40A3800A71FE3 /* Mealtime_YourWelcome.jpeg */,
+				BFA8C15720E584180026D881 /* Outdoors_BeCareful.jpeg */,
+				BFA8C15820E584180026D881 /* Outdoors_BirdFlewAway.jpeg */,
+				BFA8C14220E548FF0026D881 /* Outdoors_ClimbUp.jpeg */,
+				BFA8C15120E584180026D881 /* Outdoors_DoesThisHurt.jpeg */,
+				BFA8C15920E584180026D881 /* Outdoors_GiveMeAHug.jpeg */,
+				BF3BA48F20FE5B5F00535DF9 /* Outdoors_GoodJob.jpeg */,
+				BFA8C14320E549000026D881 /* Outdoors_HearThatSound.jpeg */,
+				BFA8C13F20E548FF0026D881 /* Outdoors_HearTheAirplane.jpeg */,
+				BFA8C15020E584180026D881 /* Outdoors_HelloAuntie.jpeg */,
+				BFA8C14920E584170026D881 /* Outdoors_HelloUncle.jpeg */,
+				BFA8C14020E548FF0026D881 /* Outdoors_ItsHot.jpeg */,
+				BFA8C15220E584180026D881 /* Outdoors_ItsRaining.jpeg */,
+				BFA8C14E20E584180026D881 /* Outdoors_ItsSnowing.jpeg */,
+				BF3BA49020FE5B5F00535DF9 /* Outdoors_KeepQuietHere.jpeg */,
+				BFA8C14120E548FF0026D881 /* Outdoors_LetsGoToParkPlay.jpeg */,
+				BFA8C11D20E546D10026D881 /* Outdoors_LetsLockDoor.jpeg */,
+				BFA8C12B20E548E60026D881 /* Outdoors_LikeTheGrass.jpeg */,
+				BFA8C12420E548E50026D881 /* Outdoors_LookAtCar.jpeg */,
+				BFA8C12020E548E50026D881 /* Outdoors_LookAtClouds.jpeg */,
+				BFA8C14C20E584180026D881 /* Outdoors_LookAtFlower.jpeg */,
+				BFA8C12720E548E50026D881 /* Outdoors_LookAtHouse.jpeg */,
+				BFA8C12C20E548E60026D881 /* Outdoors_LookAtTree.jpeg */,
+				BFA8C15A20E584180026D881 /* Outdoors_OpenCarDoor.jpeg */,
+				BFA8C11F20E548E50026D881 /* Outdoors_PutOnShoes.jpeg */,
+				BFA8C12E20E548E60026D881 /* Outdoors_SeeBlackCar.jpeg */,
+				BFA8C12220E548E50026D881 /* Outdoors_SeeBlueCar.jpeg */,
+				BFA8C12D20E548E60026D881 /* Outdoors_SeeTheBicycles.jpeg */,
+				BFA8C14D20E584180026D881 /* Outdoors_SeeTheCat.jpeg */,
+				BFA8C12A20E548E60026D881 /* Outdoors_SeeTheGrass.jpeg */,
+				BFA8C12320E548E50026D881 /* Outdoors_SeeTheLadybug.jpeg */,
+				BFA8C12820E548E50026D881 /* Outdoors_SeeTheLeaves.jpeg */,
+				BFA8C15520E584180026D881 /* Outdoors_ThisIsBaby.jpeg */,
+				BFA8C15620E584180026D881 /* Outdoors_ThisIsDog.jpeg */,
+				BFA8C12520E548E50026D881 /* Outdoors_ThisIsKey.jpeg */,
+				BFA8C12920E548E50026D881 /* Outdoors_TodayIsCloudy.jpeg */,
+				BFA8C14A20E584170026D881 /* Outdoors_TodayIsWindy.jpeg */,
+				BFA8C12120E548E50026D881 /* Outdoors_WantToGoOnSwings.jpeg */,
+				BFA8C14F20E584180026D881 /* Outdoors_WantToGoToStore.jpeg */,
+				BFA8C15320E584180026D881 /* Outdoors_WasThatFun.jpeg */,
+				BFA8C14B20E584180026D881 /* Outdoors_WeAreInCar.jpeg */,
+				BFA8C12620E548E50026D881 /* Outdoors_WeatherIsGreat.jpeg */,
+				BFA8C16D20E587FD0026D881 /* Outdoors_WhatDidYouFind.jpeg */,
+				BFA8C17B20EBCCB20026D881 /* Playtime_CanNot.jpeg */,
+				BFA8C17D20EBCCB20026D881 /* Playtime_CatchBall.jpeg */,
+				BF5AACCD2098AE0F00A71FE3 /* Playtime_ClapHands.jpeg */,
+				BFA8C17820EBCCB20026D881 /* Playtime_ComeOver.jpeg */,
+				BFA8C17E20EBCCB20026D881 /* Playtime_CrawlOver.jpeg */,
+				BFA8C18820EBCCB30026D881 /* Playtime_Dancing.jpeg */,
+				BFA8C18C20EBCCB40026D881 /* Playtime_Fly.jpeg */,
+				BFA8C18E20EBCCB40026D881 /* Playtime_GiveMeToy.jpeg */,
+				BFA8C18020EBCCB20026D881 /* Playtime_GoodJob.jpeg */,
+				BF5AACCE2098AE0F00A71FE3 /* Playtime_Jump.jpeg */,
+				BFA8C17F20EBCCB20026D881 /* Playtime_Let'sTakeTurns.jpeg */,
+				BFA8C18420EBCCB30026D881 /* Playtime_OneMoreStep.jpeg */,
+				BFA8C18520EBCCB30026D881 /* Playtime_PlayBall.jpeg */,
+				BFA8C17220EBCCB10026D881 /* Playtime_PushToy.jpeg */,
+				BFA8C18120EBCCB30026D881 /* Playtime_PutAwayToys.jpeg */,
+				BFA8C16F20EBCCB00026D881 /* Playtime_ScissorRockCloth.jpeg */,
+				BFA8C18320EBCCB30026D881 /* Playtime_Singing.jpeg */,
+				BFA8C17C20EBCCB20026D881 /* Playtime_StandUp.jpeg */,
+				BFA8C18620EBCCB30026D881 /* Playtime_TakeOutToys.jpeg */,
+				BFA8C17920EBCCB20026D881 /* Playtime_ThrowBall.jpeg */,
+				BFA8C17A20EBCCB20026D881 /* Playtime_WantToJump.jpeg */,
+				BFA8C17720EBCCB10026D881 /* Playtime_WhatsYourName.jpeg */,
+				BFA8C17420EBCCB10026D881 /* Playtime_WhereAreYou.jpeg */,
+				BFA8C17120EBCCB10026D881 /* Playtime_WheresDad.jpeg */,
+				BFA8C18220EBCCB30026D881 /* Playtime_WheresEye.jpeg */,
+				BFA8C18D20EBCCB40026D881 /* Playtime_WheresHead.jpeg */,
+				BFA8C18920EBCCB30026D881 /* Playtime_WheresMom.jpeg */,
+				BFA8C17020EBCCB00026D881 /* Playtime_WheresMouth.jpeg */,
+				BFA8C18B20EBCCB40026D881 /* Playtime_WhyCrying.jpeg */,
+				BFA8C17620EBCCB10026D881 /* Playtime_YouAreDrooling.jpeg */,
+				BFA8C18720EBCCB30026D881 /* Playtime_YourEyeHere.jpeg */,
+				BFA8C17520EBCCB10026D881 /* Playtime_YourHeadHere.jpeg */,
+				BFA8C18A20EBCCB40026D881 /* Playtime_YourMouthHere.jpeg */,
+				BF284E5320F7D4470064852A /* SelfCare_AllClean.jpeg */,
+				BF284E5920F7D4480064852A /* SelfCare_AllClothed.jpeg */,
+				BF284E6620F7D4490064852A /* SelfCare_AllDry.jpeg */,
+				BF284E6420F7D4480064852A /* SelfCare_AllWet.jpeg */,
+				BF5AACD12098AE2E00A71FE3 /* SelfCare_Awesome.jpeg */,
+				BF284E5D20F7D4480064852A /* SelfCare_Bathtime.jpeg */,
+				BF284E6120F7D4480064852A /* SelfCare_ChangeClothes.jpeg */,
+				BF5AACBF2092EDD100A71FE3 /* SelfCare_ChangePants.jpeg */,
+				BF284E4A20F7D4460064852A /* SelfCare_ChangeShirt.jpeg */,
+				BF284E5F20F7D4480064852A /* SelfCare_ClothesInWasher.jpeg */,
+				BF284E6520F7D4490064852A /* SelfCare_CountClothing.jpeg */,
+				BF284E5420F7D4470064852A /* SelfCare_DiaperChange.jpeg */,
+				BF284E4E20F7D4470064852A /* SelfCare_DiaperComfy.jpeg */,
+				BF284E4D20F7D4470064852A /* SelfCare_DiaperStinky.jpeg */,
+				BF284E4F20F7D4470064852A /* SelfCare_Fingers.jpeg */,
+				BF284E5120F7D4470064852A /* SelfCare_FoldClothes.jpeg */,
+				BF284E5C20F7D4480064852A /* SelfCare_Foot.jpeg */,
+				BF284E6720F7D4490064852A /* SelfCare_GoBathroom.jpeg */,
+				BF06D9E82045ED89008D8AF1 /* SelfCare_GoodMorning.jpeg */,
+				BF284E5020F7D4470064852A /* SelfCare_InBathtub.jpeg */,
+				BF284E5220F7D4470064852A /* SelfCare_Knees.jpeg */,
+				BF3BA46120F9578100535DF9 /* SelfCare_LookAtMirror.jpeg */,
+				BF284E4720F7D4460064852A /* SelfCare_NeedBath.jpeg */,
+				BF284E6020F7D4480064852A /* SelfCare_PickupClothes.jpeg */,
+				BF284E4820F7D4460064852A /* SelfCare_PlaceYouDown.jpeg */,
+				BF284E6220F7D4480064852A /* SelfCare_PutAway.jpeg */,
+				BF3BA46220F9578100535DF9 /* SelfCare_PutAwayClothes.jpeg */,
+				BF3BA45C20F9578000535DF9 /* SelfCare_PutOnBib.jpeg */,
+				BF284E5520F7D4470064852A /* SelfCare_PutOnMittens.jpeg */,
+				BF284E4B20F7D4460064852A /* SelfCare_PutOnSocks.jpeg */,
+				BF3BA45E20F9578100535DF9 /* SelfCare_RubLotion.jpeg */,
+				BF284E4920F7D4460064852A /* SelfCare_SeeYourself.jpeg */,
+				BF3BA45D20F9578100535DF9 /* SelfCare_SkinSoft.jpeg */,
+				BF3BA45B20F9578000535DF9 /* SelfCare_TakeBath.jpeg */,
+				BF284E6820F7D4490064852A /* SelfCare_Toes.jpeg */,
+				BF3BA46020F9578100535DF9 /* SelfCare_TooTight.jpeg */,
+				BF5AACAB209262BD00A71FE3 /* SelfCare_TossGarbage.jpeg */,
+				BF06D9DC2045EBB2008D8AF1 /* SelfCare_TrimNails.jpeg */,
+				BF284E5820F7D4470064852A /* SelfCare_UseSoap.jpeg */,
+				BF284E5E20F7D4480064852A /* SelfCare_UseTowel.jpeg */,
+				BF284E5620F7D4470064852A /* SelfCare_UseWater.jpeg */,
+				BF3BA45F20F9578100535DF9 /* SelfCare_Wash.jpeg */,
+				BF284E4C20F7D4460064852A /* SelfCare_WashHair.jpeg */,
+				BF284E8B20F7D5760064852A /* SelfCare_WashHands.jpeg */,
+				BF284E5A20F7D4480064852A /* SelfCare_WhatEat.jpeg */,
+				BF284E6320F7D4480064852A /* SelfCare_WhatWear.jpeg */,
+				BF284E5720F7D4470064852A /* SelfCare_WhiteSocks.jpeg */,
+				BF3BA48420FE5AF400535DF9 /* Shopping_DoesItSmellGood.jpeg */,
+				BF3BA48520FE5AF400535DF9 /* Shopping_GoodBye.jpeg */,
+				BF3BA47F20FE5AF300535DF9 /* Shopping_HowAreYou.jpeg */,
+				BF3BA48320FE5AF400535DF9 /* Shopping_IAmSorry.jpeg */,
+				BF3BA48020FE5AF400535DF9 /* Shopping_LetsPay.jpeg */,
+				BF3BA46D20F957A300535DF9 /* Shopping_LikeToEatThis.jpeg */,
+				BF3BA47020F957A400535DF9 /* Shopping_LookAtApples.jpeg */,
+				BF3BA46E20F957A400535DF9 /* Shopping_LookAtBananas.jpeg */,
+				BF3BA46B20F957A300535DF9 /* Shopping_LookAtCorn.jpeg */,
+				BF3BA47220F957A400535DF9 /* Shopping_LookAtFish.jpeg */,
+				BF3BA46C20F957A300535DF9 /* Shopping_LookMilk.jpeg */,
+				BF3BA47320F957A400535DF9 /* Shopping_LookPotato.jpeg */,
+				BF3BA47420F957A500535DF9 /* Shopping_LookStrawberries.jpeg */,
+				BF3BA48120FE5AF400535DF9 /* Shopping_MakeForDinner.jpeg */,
+				BF3BA48220FE5AF400535DF9 /* Shopping_ThankYou.jpeg */,
+			);
+			name = CardImages;
 			sourceTree = "<group>";
 		};
 		BFBB9E281ECF358700DA1C37 /* MyOcto */ = {
@@ -985,180 +1620,366 @@
 			files = (
 				BF867AAF1FDB5F0000252D63 /* Bedtime_Goodnight.mp3 in Resources */,
 				BF9792911FE8EFA700D1BC28 /* SelfCare_WashHands.mp3 in Resources */,
+				BF5AACD02098AE0F00A71FE3 /* Playtime_Jump.jpeg in Resources */,
+				BF7BACA720CF9006008B1631 /* Mealtime_NoMore.jpeg in Resources */,
 				BF867A9F1FDB5EE300252D63 /* Playtime_Fly.mp3 in Resources */,
+				BFA8C18F20EBCCB40026D881 /* Playtime_ScissorRockCloth.jpeg in Resources */,
 				BF0D2D362004157F00174EFF /* Outdoors_SeeTheBicycles.mp3 in Resources */,
+				BF284E8520F7D4490064852A /* SelfCare_WhatWear.jpeg in Resources */,
 				BF867A8D1FDB5EE300252D63 /* Playtime_PutAwayToys.mp3 in Resources */,
+				BFA8C1A020EBCCB40026D881 /* Playtime_GoodJob.jpeg in Resources */,
 				BF9792841FE8EFA700D1BC28 /* SelfCare_Fingers.mp3 in Resources */,
 				BF9792901FE8EFA700D1BC28 /* SelfCare_Foot.mp3 in Resources */,
+				BF3BA46420F9578100535DF9 /* SelfCare_PutOnBib.jpeg in Resources */,
+				BFA8C1AB20EBCCB40026D881 /* Playtime_WhyCrying.jpeg in Resources */,
+				BF5AACEE20A3FFB900A71FE3 /* Mealtime_UseFork.jpeg in Resources */,
+				BFA8C0C420DAF9950026D881 /* Mealtime_AllDoneEating.jpeg in Resources */,
 				BF0D2D172004157F00174EFF /* Outdoors_WeAreInCar.mp3 in Resources */,
+				BF5AACB12092631C00A71FE3 /* Mealtime_DadIsGoingToEat.jpeg in Resources */,
 				BFDB92441FE2CF5B001F3FFE /* Mealtime_WaitAMinute.mp3 in Resources */,
 				BF9792781FE8EFA700D1BC28 /* SelfCare_PutOnMittens.mp3 in Resources */,
 				BF867A851FDB5EE300252D63 /* Playtime_OneMoreStep.mp3 in Resources */,
 				BF97927E1FE8EFA700D1BC28 /* SelfCare_PlaceYouDown.mp3 in Resources */,
 				BF0D2D202004157F00174EFF /* Outdoors_HearTheAirplane.mp3 in Resources */,
+				BF5AACB32092631C00A71FE3 /* Mealtime_SitDown.jpeg in Resources */,
+				BF5AACCF2098AE0F00A71FE3 /* Playtime_ClapHands.jpeg in Resources */,
+				BFA8C13520E548E60026D881 /* Outdoors_ThisIsKey.jpeg in Resources */,
 				BF97928C1FE8EFA700D1BC28 /* SelfCare_SeeYourself.mp3 in Resources */,
-				BFDB92461FE2CF5B001F3FFE /* Mealtime_LetsCount123.mp3 in Resources */,
+				BFA8C1A820EBCCB40026D881 /* Playtime_Dancing.jpeg in Resources */,
+				BF5AACCA2098AD9C00A71FE3 /* Mealtime_OpenFridge.jpeg in Resources */,
+				BFCA90EC206AD9900047EAB5 /* Mealtime_EatBanana.jpeg in Resources */,
 				BF97928D1FE8EFA700D1BC28 /* SelfCare_Toes.mp3 in Resources */,
+				BF73E856201A892700F2A5D2 /* Mealtime_CookieIsSweet.mp3 in Resources */,
+				BFA8C16920E584190026D881 /* Outdoors_BeCareful.jpeg in Resources */,
+				BFA991182102950E0021742C /* Mealtime_YouCanTakeThis.jpeg in Resources */,
+				BF3BA48620FE5AF400535DF9 /* Shopping_HowAreYou.jpeg in Resources */,
+				BFA8C13820E548E60026D881 /* Outdoors_SeeTheLeaves.jpeg in Resources */,
+				BF7BACA120CF8B24008B1631 /* Mealtime_EatMore.jpeg in Resources */,
 				BF867AA21FDB5EE300252D63 /* Playtime_WheresDad.mp3 in Resources */,
+				BF284E7920F7D4490064852A /* SelfCare_WhiteSocks.jpeg in Resources */,
+				BF5AACC82092F12C00A71FE3 /* Mealtime_CrackerCrunchy.jpeg in Resources */,
+				BFA8C1A920EBCCB40026D881 /* Playtime_WheresMom.jpeg in Resources */,
+				BF5AACC42092EF7700A71FE3 /* Mealtime_DoYouLikeBanana.jpeg in Resources */,
 				BF97928E1FE8EFA700D1BC28 /* SelfCare_UseWater.mp3 in Resources */,
 				BF867A8F1FDB5EE300252D63 /* Playtime_WheresEye.mp3 in Resources */,
+				BFA8C13220E548E60026D881 /* Outdoors_SeeBlueCar.jpeg in Resources */,
+				BFA8C1AD20EBCCB40026D881 /* Playtime_WheresHead.jpeg in Resources */,
+				BF284E6F20F7D4490064852A /* SelfCare_DiaperStinky.jpeg in Resources */,
 				BF9792A01FE8EFA700D1BC28 /* SelfCare_TooTight.mp3 in Resources */,
 				BF9792B81FE8F20F00D1BC28 /* Shopping_DoesItSmellGood.mp3 in Resources */,
 				BF97929B1FE8EFA700D1BC28 /* SelfCare_ChangeClothes.mp3 in Resources */,
 				BF867A971FDB5EE300252D63 /* Playtime_WhereAreYou.mp3 in Resources */,
+				BF5AACC22092EEFA00A71FE3 /* Mealtime_EatBread.jpeg in Resources */,
+				BFCA90EE206ADA220047EAB5 /* Mealtime_DrinkWater.jpeg in Resources */,
 				BF0D2D242004157F00174EFF /* Outdoors_LookAtHouse.mp3 in Resources */,
+				BFA8C1AC20EBCCB40026D881 /* Playtime_Fly.jpeg in Resources */,
 				BF0D2D2E2004157F00174EFF /* Outdoors_ThisIsKey.mp3 in Resources */,
+				BFA8C15C20E584190026D881 /* Outdoors_TodayIsWindy.jpeg in Resources */,
+				BF3BA46920F9578100535DF9 /* SelfCare_LookAtMirror.jpeg in Resources */,
+				BF73E850201A7F5500F2A5D2 /* SelfCare_AllClothed.mp3 in Resources */,
+				BFA8C19C20EBCCB40026D881 /* Playtime_StandUp.jpeg in Resources */,
+				BF3BA49120FE5B5F00535DF9 /* Outdoors_GoodJob.jpeg in Resources */,
+				BF284E8320F7D4490064852A /* SelfCare_ChangeClothes.jpeg in Resources */,
+				BFA8C16B20E584190026D881 /* Outdoors_GiveMeAHug.jpeg in Resources */,
+				BF5AACF620A40A3800A71FE3 /* Mealtime_YourWelcome.jpeg in Resources */,
+				BF3BA47D20F957A500535DF9 /* Shopping_LookPotato.jpeg in Resources */,
+				BFA5219A207802F600CDA9A9 /* Bedtime_PutAwayBook.jpeg in Resources */,
+				BFA8C13020E548E60026D881 /* Outdoors_LookAtClouds.jpeg in Resources */,
 				BFDB92581FE2CF5B001F3FFE /* Mealtime_CrackerCrunchy.mp3 in Resources */,
+				BF284E8A20F7D4490064852A /* SelfCare_Toes.jpeg in Resources */,
 				BF9792921FE8EFA700D1BC28 /* SelfCare_PutAwayClothes.mp3 in Resources */,
 				BFDB92471FE2CF5B001F3FFE /* Mealtime_UseCup.mp3 in Resources */,
+				BFA8C0B320DAF96C0026D881 /* Mealtime_TimeToEatBreakfast.jpeg in Resources */,
 				BF0D2D1C2004157F00174EFF /* Outdoors_SeeTheGrass.mp3 in Resources */,
 				BFDB925D1FE2CF5B001F3FFE /* Mealtime_UseFork.mp3 in Resources */,
+				BFA8C19220EBCCB40026D881 /* Playtime_PushToy.jpeg in Resources */,
 				BF97929D1FE8EFA700D1BC28 /* SelfCare_AllWet.mp3 in Resources */,
 				BF9792B91FE8F20F00D1BC28 /* Shopping_LikeToEatThis.mp3 in Resources */,
+				BF0D2D3F2011511F00174EFF /* SelfCare_AllDry.mp3 in Resources */,
+				BF06D9E32045EBB2008D8AF1 /* SelfCare_TrimNails.jpeg in Resources */,
+				BFA8C0B620DAF96C0026D881 /* Mealtime_TimeToEatDinner.jpeg in Resources */,
+				BF3BA49520FE5CBD00535DF9 /* Shopping_LookJuice.jpeg in Resources */,
 				BF0D2D302004157F00174EFF /* Outdoors_LookAtTree.mp3 in Resources */,
 				FA6A097A1ED15A7A000457C2 /* Root.storyboard in Resources */,
-				BF867A901FDB5EE300252D63 /* Playtime_YourMouthHere.mp3 in Resources */,
+				BF3BA48E20FE5B1F00535DF9 /* Bedtime_Quiet.jpeg in Resources */,
+				BF3BA49620FE5CBD00535DF9 /* Shopping_LookAtCarrot.jpeg in Resources */,
 				BF9792891FE8EFA700D1BC28 /* SelfCare_FoldClothes.mp3 in Resources */,
+				BF5AACA9208A82B100A71FE3 /* Bedtime_Goodnight.jpeg in Resources */,
+				BF3BA47620F957A500535DF9 /* Shopping_LookMilk.jpeg in Resources */,
+				BF5AACB92092ED5300A71FE3 /* Bedtime_ChangeIntoPajamas.jpeg in Resources */,
 				BFDB927A1FE2CF5B001F3FFE /* Mealtime_TimeToEatLunch.mp3 in Resources */,
+				BF284E8420F7D4490064852A /* SelfCare_PutAway.jpeg in Resources */,
+				BFCA90E8206AD8390047EAB5 /* Mealtime_UseCup.jpeg in Resources */,
+				BFA8C19720EBCCB40026D881 /* Playtime_WhatsYourName.jpeg in Resources */,
 				BF867A8A1FDB5EE300252D63 /* Playtime_CatchBall.mp3 in Resources */,
+				BFA8C16C20E584190026D881 /* Outdoors_OpenCarDoor.jpeg in Resources */,
 				BF9792A11FE8EFA700D1BC28 /* SelfCare_WhiteSocks.mp3 in Resources */,
+				BFA8C0C320DAF9950026D881 /* Mealtime_YouCannotEatThis.jpeg in Resources */,
 				BF0D2D312004157F00174EFF /* Outdoors_SeeBlackCar.mp3 in Resources */,
+				BFA8C16220E584190026D881 /* Outdoors_HelloAuntie.jpeg in Resources */,
 				BFDB92771FE2CF5B001F3FFE /* Mealtime_BlowFood.mp3 in Resources */,
 				BF0D2D152004157F00174EFF /* Outdoors_TodayIsCloudy.mp3 in Resources */,
+				BFA8C13720E548E60026D881 /* Outdoors_LookAtHouse.jpeg in Resources */,
+				BF3BA46320F9578100535DF9 /* SelfCare_TakeBath.jpeg in Resources */,
 				BFDB925F1FE2CF5B001F3FFE /* Mealtime_DoneEating.mp3 in Resources */,
+				BFA8C0C620DAF9950026D881 /* Mealtime_EatNoodle.jpeg in Resources */,
+				BF284E6A20F7D4490064852A /* SelfCare_PlaceYouDown.jpeg in Resources */,
+				BFA8C1AE20EBCCB40026D881 /* Playtime_GiveMeToy.jpeg in Resources */,
+				BF284E7820F7D4490064852A /* SelfCare_UseWater.jpeg in Resources */,
+				BF3BA48A20FE5AF400535DF9 /* Shopping_IAmSorry.jpeg in Resources */,
 				BF97928F1FE8EFA700D1BC28 /* SelfCare_GoBathroom.mp3 in Resources */,
 				BFDB926F1FE2CF5B001F3FFE /* Mealtime_YourWelcome.mp3 in Resources */,
 				BF867AB51FDB5F0000252D63 /* Bedtime_BrushYourTeeth.mp3 in Resources */,
 				BF867A831FDB5EE300252D63 /* Playtime_Singing.mp3 in Resources */,
 				BF0D2D142004157F00174EFF /* Outdoors_LetsGoToParkPlay.mp3 in Resources */,
+				BF5AACE420A2342600A71FE3 /* Mealtime_PutInBowl.jpeg in Resources */,
+				BF284E7120F7D4490064852A /* SelfCare_Fingers.jpeg in Resources */,
+				BFA8C16320E584190026D881 /* Outdoors_DoesThisHurt.jpeg in Resources */,
+				BF3BA46820F9578100535DF9 /* SelfCare_TooTight.jpeg in Resources */,
 				BF9792791FE8EFA700D1BC28 /* SelfCare_Wash.mp3 in Resources */,
+				BF284E7220F7D4490064852A /* SelfCare_InBathtub.jpeg in Resources */,
+				BFA8C1A320EBCCB40026D881 /* Playtime_Singing.jpeg in Resources */,
 				BFDB92791FE2CF5B001F3FFE /* Mealtime_ItsCooled.mp3 in Resources */,
 				BF9792881FE8EFA700D1BC28 /* SelfCare_PutOnPJs.mp3 in Resources */,
+				BF284E6D20F7D4490064852A /* SelfCare_PutOnSocks.jpeg in Resources */,
+				BF284E6C20F7D4490064852A /* SelfCare_ChangeShirt.jpeg in Resources */,
 				BF9792871FE8EFA700D1BC28 /* SelfCare_NeedBath.mp3 in Resources */,
+				BFA8C13C20E548E60026D881 /* Outdoors_LookAtTree.jpeg in Resources */,
 				FA09E9181ECB990B003AF8CE /* GotIt.storyboard in Resources */,
 				BF867A871FDB5EE300252D63 /* Playtime_WheresNose.mp3 in Resources */,
+				BF5AACCC2098ADEE00A71FE3 /* Mealtime_MomIsGoingToEat.jpeg in Resources */,
 				BFDB92641FE2CF5B001F3FFE /* Mealtime_EatNoodle.mp3 in Resources */,
 				BF9792831FE8EFA700D1BC28 /* SelfCare_ChangeShirt.mp3 in Resources */,
 				FA09E9161ECB98E7003AF8CE /* PickOne.storyboard in Resources */,
+				BFA8C19620EBCCB40026D881 /* Playtime_YouAreDrooling.jpeg in Resources */,
 				BFDB92701FE2CF5B001F3FFE /* Mealtime_UseNapkin.mp3 in Resources */,
 				BF0D2D3C2004157F00174EFF /* Outdoors_ClimbUp.mp3 in Resources */,
-				BFDB924D1FE2CF5B001F3FFE /* Mealtime_NoMore.mp3 in Resources */,
+				BF73E852201A84CF00F2A5D2 /* Mealtime_MomHelpYouGetFruit.mp3 in Resources */,
 				BF9792C21FE8F20F00D1BC28 /* Shopping_LookMilk.mp3 in Resources */,
+				BF284E8620F7D4490064852A /* SelfCare_AllWet.jpeg in Resources */,
 				BFDB92511FE2CF5B001F3FFE /* Mealtime_YouCannotEatThis.mp3 in Resources */,
+				BFA8C14820E549000026D881 /* Outdoors_HearThatSound.jpeg in Resources */,
 				BF9792C61FE8F20F00D1BC28 /* Shopping_LookPotato.mp3 in Resources */,
 				BF97927C1FE8EFA700D1BC28 /* SelfCare_AllClean.mp3 in Resources */,
+				BFA8C0C520DAF9950026D881 /* Mealtime_EatFish.jpeg in Resources */,
+				BF3BA47720F957A500535DF9 /* Shopping_LikeToEatThis.jpeg in Resources */,
 				BF0D2D212004157F00174EFF /* Outdoors_LookAtClouds.mp3 in Resources */,
 				BFDB92661FE2CF5B001F3FFE /* Mealtime_UseSpoon.mp3 in Resources */,
 				BF867A931FDB5EE300252D63 /* Playtime_Dancing.mp3 in Resources */,
 				BF0D2D292004157F00174EFF /* Outdoors_ThisIsDog.mp3 in Resources */,
+				BF284E6B20F7D4490064852A /* SelfCare_SeeYourself.jpeg in Resources */,
 				BF9792931FE8EFA700D1BC28 /* SelfCare_TrimNails.mp3 in Resources */,
 				BF0D2D222004157F00174EFF /* Outdoors_LookAtFlower.mp3 in Resources */,
 				BF9792B71FE8F20F00D1BC28 /* Shopping_LookAtFish.mp3 in Resources */,
-				BF9792A21FE8EFA700D1BC28 /* SelfCare_AllDry.mp3 in Resources */,
 				BF00692D1EC4EAD0004DC195 /* LaunchScreen.storyboard in Resources */,
 				BF9792BF1FE8F20F00D1BC28 /* Shopping_LetsPay.mp3 in Resources */,
 				BFDB92521FE2CF5B001F3FFE /* Mealtime_OpenMouth.mp3 in Resources */,
+				BF7BAC9F20CF1DC9008B1631 /* Mealtime_EatOatmeal.jpeg in Resources */,
+				BF284E7320F7D4490064852A /* SelfCare_FoldClothes.jpeg in Resources */,
 				BFDB92681FE2CF5B001F3FFE /* Mealtime_EatMore.mp3 in Resources */,
+				BFA8C13E20E548E60026D881 /* Outdoors_SeeBlackCar.jpeg in Resources */,
 				BF0D2D2A2004157F00174EFF /* Outdoors_ItsRaining.mp3 in Resources */,
 				BF0D2D3B2004157F00174EFF /* Outdoors_PutOnShoes.mp3 in Resources */,
+				BF3BA48720FE5AF400535DF9 /* Shopping_LetsPay.jpeg in Resources */,
+				BFA8C13A20E548E60026D881 /* Outdoors_SeeTheGrass.jpeg in Resources */,
 				BF867AA11FDB5EE300252D63 /* Playtime_ThrowBall.mp3 in Resources */,
 				BFDB926B1FE2CF5B001F3FFE /* Mealtime_LikeYogurt.mp3 in Resources */,
+				BFA8C14720E549000026D881 /* Outdoors_ClimbUp.jpeg in Resources */,
+				BFA8C19520EBCCB40026D881 /* Playtime_YourHeadHere.jpeg in Resources */,
 				BF97929A1FE8EFA700D1BC28 /* SelfCare_ChangePants.mp3 in Resources */,
 				BF0D2D1B2004157F00174EFF /* Outdoors_WantToGoToStore.mp3 in Resources */,
+				BF284E7E20F7D4490064852A /* SelfCare_Foot.jpeg in Resources */,
+				BF5AACAC209262BD00A71FE3 /* SelfCare_TossGarbage.jpeg in Resources */,
 				BF9792BA1FE8F20F00D1BC28 /* Shopping_HowAreYou.mp3 in Resources */,
+				BF5AACD820A20F5B00A71FE3 /* Mealtime_ItsHot.jpeg in Resources */,
 				BF9792851FE8EFA700D1BC28 /* SelfCare_DiaperChange.mp3 in Resources */,
 				BFDB92671FE2CF5B001F3FFE /* Mealtime_TheresNoMore.mp3 in Resources */,
 				BF0D2D192004157F00174EFF /* Outdoors_TodayIsWindy.mp3 in Resources */,
+				BF7BACA920CF9097008B1631 /* Mealtime_FeedMe.jpeg in Resources */,
 				BF9792801FE8EFA700D1BC28 /* SelfCare_WhatWear.mp3 in Resources */,
 				BF0D2D3A2004157F00174EFF /* Outdoors_ThisIsBaby.mp3 in Resources */,
 				BFDB925C1FE2CF5B001F3FFE /* Mealtime_TimeToEatBreakfast.mp3 in Resources */,
 				BF9792C41FE8F20F00D1BC28 /* Shopping_ThankYou.mp3 in Resources */,
 				BF867AA31FDB5EE300252D63 /* Playtime_WheresHead.mp3 in Resources */,
+				BFA8C19A20EBCCB40026D881 /* Playtime_WantToJump.jpeg in Resources */,
 				BFDB926C1FE2CF5B001F3FFE /* Mealtime_EatSpinach.mp3 in Resources */,
 				BF867A8C1FDB5EE300252D63 /* Playtime_WantToJump.mp3 in Resources */,
+				BF5AACDB20A2100E00A71FE3 /* Mealtime_IsItGood.jpeg in Resources */,
 				BF97928B1FE8EFA700D1BC28 /* SelfCare_RubLotion.mp3 in Resources */,
-				BFDB925B1FE2CF5B001F3FFE /* Mealtime_CookieIsSweet.mp3 in Resources */,
 				BFDB92551FE2CF5B001F3FFE /* Mealtime_EatChicken.mp3 in Resources */,
+				BF7BACA620CF9006008B1631 /* Mealtime_SpitItOut.jpeg in Resources */,
 				BF0D2D352004157F00174EFF /* Outdoors_LikeTheGrass.mp3 in Resources */,
+				BFA8C12F20E548E60026D881 /* Outdoors_PutOnShoes.jpeg in Resources */,
 				BFDB924E1FE2CF5B001F3FFE /* Mealtime_DrinkMilk.mp3 in Resources */,
+				BFA8C19920EBCCB40026D881 /* Playtime_ThrowBall.jpeg in Resources */,
+				BFA8C1A720EBCCB40026D881 /* Playtime_YourEyeHere.jpeg in Resources */,
 				BFDB924A1FE2CF5B001F3FFE /* Mealtime_WashDishes.mp3 in Resources */,
 				BF867A9B1FDB5EE300252D63 /* Playtime_TakeOutToys.mp3 in Resources */,
+				BFA8C1A520EBCCB40026D881 /* Playtime_PlayBall.jpeg in Resources */,
 				BF0D2D252004157F00174EFF /* Outdoors_WeatherIsGreat.mp3 in Resources */,
+				BFA8C16420E584190026D881 /* Outdoors_ItsRaining.jpeg in Resources */,
 				BFDB926A1FE2CF5B001F3FFE /* Mealtime_EatOatmeal.mp3 in Resources */,
+				BF5AACAA208A82B100A71FE3 /* Bedtime_AreYouWarm.jpeg in Resources */,
 				BF0D2D2C2004157F00174EFF /* Outdoors_SeeTheLadybug.mp3 in Resources */,
+				BFA8C16520E584190026D881 /* Outdoors_WasThatFun.jpeg in Resources */,
 				BFDB92491FE2CF5B001F3FFE /* Mealtime_ThisIsHot.mp3 in Resources */,
+				BFA8C16720E584190026D881 /* Outdoors_ThisIsBaby.jpeg in Resources */,
+				BF5AACBD2092EDA500A71FE3 /* Mealtime_WaitAMinute.jpeg in Resources */,
+				BF3BA48820FE5AF400535DF9 /* Shopping_MakeForDinner.jpeg in Resources */,
+				BF3BA47E20F957A500535DF9 /* Shopping_LookStrawberries.jpeg in Resources */,
 				BFDB92761FE2CF5B001F3FFE /* Mealtime_MomIsGoingToEat.mp3 in Resources */,
+				BFA8C14620E549000026D881 /* Outdoors_LetsGoToParkPlay.jpeg in Resources */,
 				BF867AB01FDB5F0000252D63 /* Bedtime_PutAwayBook.mp3 in Resources */,
+				BFCA90E5206AD0400047EAB5 /* Mealtime_MomHelpYouGetFruit.jpeg in Resources */,
+				BF5AACF220A400C500A71FE3 /* Mealtime_WashDishes.jpeg in Resources */,
+				BF06D9C02045EB33008D8AF1 /* Bedtime_TimeToSleep.jpeg in Resources */,
 				BF867AB71FDB5F0000252D63 /* Bedtime_TurnOffLights.mp3 in Resources */,
 				BF9792BC1FE8F20F00D1BC28 /* Shopping_LookAtBananas.mp3 in Resources */,
 				BF867AB41FDB5F0000252D63 /* Bedtime_TimeToSleep.mp3 in Resources */,
+				BFA8C16E20E587FE0026D881 /* Outdoors_WhatDidYouFind.jpeg in Resources */,
 				BFDB92611FE2CF5B001F3FFE /* Mealtime_EatSlowly.mp3 in Resources */,
+				BFA8C0C220DAF9950026D881 /* Mealtime_CookieIsSweet.jpeg in Resources */,
 				BF0D2D1E2004157F00174EFF /* Outdoors_HelloAuntie.mp3 in Resources */,
 				BF0D2D382004157F00174EFF /* Outdoors_BirdFlewAway.mp3 in Resources */,
-				BF0D2D2D2004157F00174EFF /* Outdoors_KeepQuietHere.mp3 in Resources */,
 				BF0D2D1A2004157F00174EFF /* Outdoors_WantToGoOnSwings.mp3 in Resources */,
 				BF9792BB1FE8F20F00D1BC28 /* Shopping_LookAtApples.mp3 in Resources */,
 				BF9792991FE8EFA700D1BC28 /* SelfCare_InBathtub.mp3 in Resources */,
+				BF5AACC62092F01C00A71FE3 /* Mealtime_LetsCount123.jpeg in Resources */,
+				BFA52199207802F600CDA9A9 /* Bedtime_LookTheMoon.jpeg in Resources */,
+				BF284E8720F7D4490064852A /* SelfCare_CountClothing.jpeg in Resources */,
+				BF3BA46A20F9578100535DF9 /* SelfCare_PutAwayClothes.jpeg in Resources */,
 				BFDB924C1FE2CF5B001F3FFE /* Mealtime_DrinkWater.mp3 in Resources */,
 				BF9792A31FE8EFA700D1BC28 /* SelfCare_DiaperComfy.mp3 in Resources */,
+				BF5AACF420A400C500A71FE3 /* Mealtime_PutOnPlate.jpeg in Resources */,
+				BFA8C1A620EBCCB40026D881 /* Playtime_TakeOutToys.jpeg in Resources */,
+				BF5AACE020A232FA00A71FE3 /* Mealtime_DoneEating.jpeg in Resources */,
+				BFA8C19B20EBCCB40026D881 /* Playtime_CanNot.jpeg in Resources */,
 				BFDB92531FE2CF5B001F3FFE /* Mealtime_DrinkJuice.mp3 in Resources */,
-				BFDB92481FE2CF5B001F3FFE /* Mealtime_MomHelpYouGetFruit.mp3 in Resources */,
 				BF0D2D272004157F00174EFF /* Outdoors_WasThatFun.mp3 in Resources */,
 				BF97928A1FE8EFA700D1BC28 /* SelfCare_Awesome.mp3 in Resources */,
+				BFA8C16120E584190026D881 /* Outdoors_WantToGoToStore.jpeg in Resources */,
 				BF97929C1FE8EFA700D1BC28 /* SelfCare_PutAway.mp3 in Resources */,
+				BF73E85A201A928E00F2A5D2 /* Playtime_WheresMouth.mp3 in Resources */,
+				BFA5219E207803BA00CDA9A9 /* Bedtime_ReadABook.jpeg in Resources */,
+				BFA8C19420EBCCB40026D881 /* Playtime_WhereAreYou.jpeg in Resources */,
+				BF7BACA520CF9006008B1631 /* Mealtime_EatSlowly.jpeg in Resources */,
+				BF585AC9202CEDC90055DB36 /* Shopping_LookAtCarrot.mp3 in Resources */,
+				BF284E7720F7D4490064852A /* SelfCare_PutOnMittens.jpeg in Resources */,
 				BF9792C01FE8F20F00D1BC28 /* Shopping_IAmSorry.mp3 in Resources */,
+				BF73E85C201A938800F2A5D2 /* Playtime_YourMouthHere.mp3 in Resources */,
 				BF867A991FDB5EE300252D63 /* Playtime_GoodJob.mp3 in Resources */,
+				BFA8C13B20E548E60026D881 /* Outdoors_LikeTheGrass.jpeg in Resources */,
+				BF284E7420F7D4490064852A /* SelfCare_Knees.jpeg in Resources */,
 				BF00692A1EC4EAD0004DC195 /* Assets.xcassets in Resources */,
+				BFA8C11E20E546D10026D881 /* Outdoors_LetsLockDoor.jpeg in Resources */,
+				BFA8C16020E584190026D881 /* Outdoors_ItsSnowing.jpeg in Resources */,
 				BF9792BE1FE8F20F00D1BC28 /* Shopping_LookJuice.mp3 in Resources */,
 				BFDB92741FE2CF5B001F3FFE /* Mealtime_SpitItOut.mp3 in Resources */,
+				BF3BA46720F9578100535DF9 /* SelfCare_Wash.jpeg in Resources */,
+				BF3BA46620F9578100535DF9 /* SelfCare_RubLotion.jpeg in Resources */,
 				BF9792A61FE8EFA700D1BC28 /* SelfCare_Bathtime.mp3 in Resources */,
 				BF0D2D262004157F00174EFF /* Outdoors_SeeTheLeaves.mp3 in Resources */,
 				BF0D2D3D2004157F00174EFF /* Outdoors_LetsLockDoor.mp3 in Resources */,
 				BF867AA01FDB5EE300252D63 /* Playtime_PlayBall.mp3 in Resources */,
 				BFDB925E1FE2CF5B001F3FFE /* Mealtime_PutOnPlate.mp3 in Resources */,
+				BFA8C0B520DAF96C0026D881 /* Mealtime_OpenMouth.jpeg in Resources */,
 				BF9792A51FE8EFA700D1BC28 /* SelfCare_TakeBath.mp3 in Resources */,
+				BFA8C0C120DAF9950026D881 /* Mealtime_EatChicken.jpeg in Resources */,
+				BF284E6920F7D4490064852A /* SelfCare_NeedBath.jpeg in Resources */,
 				BF0D2D332004157F00174EFF /* Outdoors_OpenCarDoor.mp3 in Resources */,
 				BF867A941FDB5EE300252D63 /* Playtime_PushToy.mp3 in Resources */,
 				BFDB92541FE2CF5B001F3FFE /* Mealtime_EatBread.mp3 in Resources */,
+				BFCA90F0206C08C40047EAB5 /* Bedtime_TurnOffLights.jpeg in Resources */,
+				BFA8C19F20EBCCB40026D881 /* Playtime_Let'sTakeTurns.jpeg in Resources */,
+				BF5AACDC20A2100E00A71FE3 /* Mealtime_WantMore.jpeg in Resources */,
 				BF0D2D322004157F00174EFF /* Outdoors_GiveMeAHug.mp3 in Resources */,
+				BFA8C15F20E584190026D881 /* Outdoors_SeeTheCat.jpeg in Resources */,
+				BF284E7F20F7D4490064852A /* SelfCare_Bathtime.jpeg in Resources */,
+				BFA8C16A20E584190026D881 /* Outdoors_BirdFlewAway.jpeg in Resources */,
+				BF5AACBE2092EDA500A71FE3 /* Mealtime_DrinkJuice.jpeg in Resources */,
 				BFDB92571FE2CF5B001F3FFE /* Mealtime_AllDoneEating.mp3 in Resources */,
 				BF9792821FE8EFA700D1BC28 /* SelfCare_WashHair.mp3 in Resources */,
+				BF284E8820F7D4490064852A /* SelfCare_AllDry.jpeg in Resources */,
+				BFA991172102950E0021742C /* Mealtime_ItsCooled.jpeg in Resources */,
+				BFA8C19820EBCCB40026D881 /* Playtime_ComeOver.jpeg in Resources */,
 				BF9792941FE8EFA700D1BC28 /* SelfCare_GoodMorning.mp3 in Resources */,
+				BF5AACE220A2334D00A71FE3 /* Mealtime_LikeSomeWater.jpeg in Resources */,
 				BFDB926D1FE2CF5B001F3FFE /* Mealtime_EatRice.mp3 in Resources */,
+				BFA8C13120E548E60026D881 /* Outdoors_WantToGoOnSwings.jpeg in Resources */,
+				BF5AACB22092631C00A71FE3 /* Mealtime_DrinkMilk.jpeg in Resources */,
+				BF3BA47A20F957A500535DF9 /* Shopping_LookAtApples.jpeg in Resources */,
 				BF867A961FDB5EE300252D63 /* Playtime_WheresMom.mp3 in Resources */,
 				BF97929F1FE8EFA700D1BC28 /* SelfCare_UseSoap.mp3 in Resources */,
 				BF867A9D1FDB5EE300252D63 /* Playtime_CrawlOver.mp3 in Resources */,
+				BF73E854201A875900F2A5D2 /* Mealtime_NoMore.mp3 in Resources */,
+				BF5AACE720A234D200A71FE3 /* Mealtime_BlowFood.jpeg in Resources */,
 				BFDB926E1FE2CF5B001F3FFE /* Mealtime_LikeSomeApplesauce.mp3 in Resources */,
+				BF5AACF320A400C500A71FE3 /* Mealtime_UseNapkin.jpeg in Resources */,
+				BF284E8020F7D4490064852A /* SelfCare_UseTowel.jpeg in Resources */,
+				BFA991142100FB8A0021742C /* Playtime_YourNoseHere.jpeg in Resources */,
+				BF284E7020F7D4490064852A /* SelfCare_DiaperComfy.jpeg in Resources */,
+				BF3BA49820FE5DB100535DF9 /* SelfCare_PutOnPJs.jpeg in Resources */,
 				BF867AB21FDB5F0000252D63 /* Bedtime_AreYouWarm.mp3 in Resources */,
 				BF867A951FDB5EE300252D63 /* Playtime_YouAreDrooling.mp3 in Resources */,
+				BFA8C14420E549000026D881 /* Outdoors_HearTheAirplane.jpeg in Resources */,
 				BF97927F1FE8EFA700D1BC28 /* SelfCare_TossGarbage.mp3 in Resources */,
 				BF97927B1FE8EFA700D1BC28 /* SelfCare_PickupClothes.mp3 in Resources */,
 				BF0069281EC4EAD0004DC195 /* Main.storyboard in Resources */,
+				BFA8C14520E549000026D881 /* Outdoors_ItsHot.jpeg in Resources */,
 				BF9792981FE8EFA700D1BC28 /* SelfCare_Knees.mp3 in Resources */,
 				BF9792A41FE8EFA700D1BC28 /* SelfCare_PutOnSocks.mp3 in Resources */,
 				BFDB92621FE2CF5B001F3FFE /* Mealtime_DoYouLikeBanana.mp3 in Resources */,
+				BFA8C0C820DB11F40026D881 /* Mealtime_EatRice.jpeg in Resources */,
+				BF284E7B20F7D4490064852A /* SelfCare_AllClothed.jpeg in Resources */,
+				BF5AACD32098AE2E00A71FE3 /* SelfCare_Awesome.jpeg in Resources */,
 				BF867A921FDB5EE300252D63 /* Playtime_ClapHands.mp3 in Resources */,
 				BF0D2D162004157F00174EFF /* Outdoors_SeeBlueCar.mp3 in Resources */,
+				BF8978C92023B4040093D3B3 /* Outdoors_KeepQuietHere.mp3 in Resources */,
+				BFA8C19020EBCCB40026D881 /* Playtime_WheresMouth.jpeg in Resources */,
+				BFA8C0C020DAF9950026D881 /* Mealtime_WipeMouth.jpeg in Resources */,
+				BFA8C0B420DAF96C0026D881 /* Mealtime_TimeToEatLunch.jpeg in Resources */,
 				BF867A9C1FDB5EE300252D63 /* Playtime_YourEyeHere.mp3 in Resources */,
 				BF9792951FE8EFA700D1BC28 /* SelfCare_UseTowel.mp3 in Resources */,
+				BFA8C19120EBCCB40026D881 /* Playtime_WheresDad.jpeg in Resources */,
+				BF284E7A20F7D4490064852A /* SelfCare_UseSoap.jpeg in Resources */,
 				BFDB92711FE2CF5B001F3FFE /* Mealtime_YouCanTakeThis.mp3 in Resources */,
+				BF5AACDE20A210C700A71FE3 /* Mealtime_TheresNoMore.jpeg in Resources */,
 				BFDB92451FE2CF5B001F3FFE /* Mealtime_EatBanana.mp3 in Resources */,
+				BF3BA47520F957A500535DF9 /* Shopping_LookAtCorn.jpeg in Resources */,
+				BFA8C19D20EBCCB40026D881 /* Playtime_CatchBall.jpeg in Resources */,
 				BFDB92691FE2CF5B001F3FFE /* Mealtime_FeedMe.mp3 in Resources */,
+				BF284E7520F7D4490064852A /* SelfCare_AllClean.jpeg in Resources */,
+				BFA8C1A120EBCCB40026D881 /* Playtime_PutAwayToys.jpeg in Resources */,
+				BF3BA48B20FE5AF400535DF9 /* Shopping_DoesItSmellGood.jpeg in Resources */,
 				BF867A9A1FDB5EE300252D63 /* Playtime_StandUp.mp3 in Resources */,
 				FA09E9141ECB989A003AF8CE /* MyOcto.storyboard in Resources */,
+				BF5AACED20A3FFB900A71FE3 /* Mealtime_UseSpoon.jpeg in Resources */,
 				BF9792971FE8EFA700D1BC28 /* SelfCare_ClothesInWasher.mp3 in Resources */,
+				BFCA90E0206AD0400047EAB5 /* Mealtime_LikeSomeApplesauce.jpeg in Resources */,
+				BF3BA46520F9578100535DF9 /* SelfCare_SkinSoft.jpeg in Resources */,
 				BFDB92781FE2CF5B001F3FFE /* Mealtime_OpenFridge.mp3 in Resources */,
 				BF0D2D372004157F00174EFF /* Outdoors_BeCareful.mp3 in Resources */,
+				BF3BA47820F957A500535DF9 /* Shopping_LookAtBananas.jpeg in Resources */,
 				BF0D2D1D2004157F00174EFF /* Outdoors_HearThatSound.mp3 in Resources */,
+				BFA8C13420E548E60026D881 /* Outdoors_LookAtCar.jpeg in Resources */,
+				BFA8C15B20E584190026D881 /* Outdoors_HelloUncle.jpeg in Resources */,
 				BF867A841FDB5EE300252D63 /* Playtime_WhyCrying.mp3 in Resources */,
 				BF867AB61FDB5F0000252D63 /* Bedtime_LookTheMoon.mp3 in Resources */,
 				BF0D2D392004157F00174EFF /* Outdoors_SeeTheCat.mp3 in Resources */,
+				BF284E6E20F7D4490064852A /* SelfCare_WashHair.jpeg in Resources */,
+				BF3BA49220FE5B5F00535DF9 /* Outdoors_KeepQuietHere.jpeg in Resources */,
+				BF3BA48920FE5AF400535DF9 /* Shopping_ThankYou.jpeg in Resources */,
 				BF0D2D282004157F00174EFF /* Outdoors_HelloUncle.mp3 in Resources */,
+				BFA5219D207803BA00CDA9A9 /* Bedtime_BrushYourTeeth.jpeg in Resources */,
 				BF97927A1FE8EFA700D1BC28 /* SelfCare_SkinSoft.mp3 in Resources */,
 				BF867A821FDB5EE300252D63 /* Playtime_ComeOver.mp3 in Resources */,
-				BF867A891FDB5EE300252D63 /* Playtime_WheresMouth.mp3 in Resources */,
+				BF5AACB42092631C00A71FE3 /* Mealtime_AreYouHungry.jpeg in Resources */,
+				BFA8C0CC20E529B40026D881 /* Mealtime_DrinkSoup.jpeg in Resources */,
+				BFA8C0BF20DAF9950026D881 /* Mealtime_EatSpinach.jpeg in Resources */,
+				BFA8C1A220EBCCB40026D881 /* Playtime_WheresEye.jpeg in Resources */,
 				BF867A911FDB5EE300252D63 /* Playtime_YourNoseHere.mp3 in Resources */,
 				BF0D2D342004157F00174EFF /* Outdoors_ItsSnowing.mp3 in Resources */,
+				BFA8C13920E548E60026D881 /* Outdoors_TodayIsCloudy.jpeg in Resources */,
 				BF9792961FE8EFA700D1BC28 /* SelfCare_WhatEat.mp3 in Resources */,
 				BF867A981FDB5EE300252D63 /* Playtime_Jump.mp3 in Resources */,
 				FA6A097E1ED15B0A000457C2 /* LeftNavigation.storyboard in Resources */,
@@ -1166,37 +1987,60 @@
 				BFDB92731FE2CF5B001F3FFE /* Mealtime_DadIsGoingToEat.mp3 in Resources */,
 				BF0D2D1F2004157F00174EFF /* Outdoors_LookAtCar.mp3 in Resources */,
 				BFDB92751FE2CF5B001F3FFE /* Mealtime_WantMore.mp3 in Resources */,
+				BF5AACE820A234D200A71FE3 /* Mealtime_ThisIsHot.jpeg in Resources */,
 				BF0D2D232004157F00174EFF /* Outdoors_DoesThisHurt.mp3 in Resources */,
 				BF867A9E1FDB5EE300252D63 /* Playtime_CanNot.mp3 in Resources */,
+				BF284E8120F7D4490064852A /* SelfCare_ClothesInWasher.jpeg in Resources */,
 				BF867A8B1FDB5EE300252D63 /* Playtime_GiveMeToy.mp3 in Resources */,
 				BFDB924B1FE2CF5B001F3FFE /* Mealtime_LikeSomeWater.mp3 in Resources */,
+				BF3BA48C20FE5AF400535DF9 /* Shopping_GoodBye.jpeg in Resources */,
 				BFDB92651FE2CF5B001F3FFE /* Mealtime_SitDown.mp3 in Resources */,
 				BFDB92721FE2CF5B001F3FFE /* Mealtime_TimeToEatDinner.mp3 in Resources */,
+				BFA8C15E20E584190026D881 /* Outdoors_LookAtFlower.jpeg in Resources */,
 				BF97929E1FE8EFA700D1BC28 /* SelfCare_PutOnBib.mp3 in Resources */,
+				BFA8C0CA20E5299B0026D881 /* Mealtime_LikeYogurt.jpeg in Resources */,
 				BFDB92631FE2CF5B001F3FFE /* Mealtime_ItsHot.mp3 in Resources */,
+				BF73E858201A8B9F00F2A5D2 /* Mealtime_LetsCount123.mp3 in Resources */,
+				BFA8C1A420EBCCB40026D881 /* Playtime_OneMoreStep.jpeg in Resources */,
 				FA6A09751ED11869000457C2 /* InfantCard.storyboard in Resources */,
+				BFA991132100FB8A0021742C /* Playtime_WheresNose.jpeg in Resources */,
 				BFDB924F1FE2CF5B001F3FFE /* Mealtime_WipeMouth.mp3 in Resources */,
 				BFDB92561FE2CF5B001F3FFE /* Mealtime_IsItGood.mp3 in Resources */,
+				BFA8C15D20E584190026D881 /* Outdoors_WeAreInCar.jpeg in Resources */,
 				BFDB92591FE2CF5B001F3FFE /* Mealtime_PutInBowl.mp3 in Resources */,
 				FA09E90F1ECB968D003AF8CE /* Category.json in Resources */,
 				BF867AAE1FDB5F0000252D63 /* Bedtime_ChangeIntoPajamas.mp3 in Resources */,
+				BFA8C13320E548E60026D881 /* Outdoors_SeeTheLadybug.jpeg in Resources */,
+				BF284E7C20F7D4490064852A /* SelfCare_WhatEat.jpeg in Resources */,
+				BFA8C13D20E548E60026D881 /* Outdoors_SeeTheBicycles.jpeg in Resources */,
 				BF9792811FE8EFA700D1BC28 /* SelfCare_CountClothing.mp3 in Resources */,
+				BF0D2D432011558500174EFF /* SelfCare_LookAtMirror.mp3 in Resources */,
 				BF0D2D2F2004157F00174EFF /* Outdoors_WhatDidYouFind.mp3 in Resources */,
 				BF97927D1FE8EFA700D1BC28 /* SelfCare_DiaperStinky.mp3 in Resources */,
+				BFA8C1AA20EBCCB40026D881 /* Playtime_YourMouthHere.jpeg in Resources */,
 				BF867AB31FDB5F0000252D63 /* Bedtime_Quiet.mp3 in Resources */,
 				BF867A861FDB5EE300252D63 /* Playtime_ScissorRockCloth.mp3 in Resources */,
 				BF867A8E1FDB5EE300252D63 /* Playtime_Let'sTakeTurns.mp3 in Resources */,
+				BFA8C13620E548E60026D881 /* Outdoors_WeatherIsGreat.jpeg in Resources */,
 				BFDB925A1FE2CF5B001F3FFE /* Mealtime_EatFish.mp3 in Resources */,
 				BF9792C11FE8F20F00D1BC28 /* Shopping_LookAtCorn.mp3 in Resources */,
+				BF5AACC02092EDD100A71FE3 /* SelfCare_ChangePants.jpeg in Resources */,
 				BF0D2D182004157F00174EFF /* Outdoors_GoodJob.mp3 in Resources */,
 				BF867A881FDB5EE300252D63 /* Playtime_YourHeadHere.mp3 in Resources */,
+				BF3BA47C20F957A500535DF9 /* Shopping_LookAtFish.jpeg in Resources */,
+				BFA8C16820E584190026D881 /* Outdoors_ThisIsDog.jpeg in Resources */,
+				BF06D9EA2045ED8A008D8AF1 /* SelfCare_GoodMorning.jpeg in Resources */,
+				BF284E8C20F7D5770064852A /* SelfCare_WashHands.jpeg in Resources */,
+				BF284E8220F7D4490064852A /* SelfCare_PickupClothes.jpeg in Resources */,
+				BF284E8920F7D4490064852A /* SelfCare_GoBathroom.jpeg in Resources */,
+				BFA8C19E20EBCCB40026D881 /* Playtime_CrawlOver.jpeg in Resources */,
 				BF9792C51FE8F20F00D1BC28 /* Shopping_LookStrawberries.mp3 in Resources */,
 				BF9792BD1FE8F20F00D1BC28 /* Shopping_GoodBye.mp3 in Resources */,
 				BF9792C31FE8F20F00D1BC28 /* Shopping_MakeForDinner.mp3 in Resources */,
 				BFDB92601FE2CF5B001F3FFE /* Mealtime_DrinkSoup.mp3 in Resources */,
 				BF867A811FDB5EE300252D63 /* Playtime_WhatsYourName.mp3 in Resources */,
-				BF9792861FE8EFA700D1BC28 /* SelfCare_AllDressed.mp3 in Resources */,
 				BFDB92501FE2CF5B001F3FFE /* Mealtime_AreYouHungry.mp3 in Resources */,
+				BF284E7620F7D4490064852A /* SelfCare_DiaperChange.jpeg in Resources */,
 				BF867AB11FDB5F0000252D63 /* Bedtime_ReadABook.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,6 +30,8 @@ class InfantCardsViewController: UIViewController{
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var chineseTranslation: UILabel!
     @IBOutlet weak var englishPhrase: UILabel!
+
+    
     
     @IBOutlet weak var directTranslation: UILabel!
     @IBOutlet weak var tips: UILabel!

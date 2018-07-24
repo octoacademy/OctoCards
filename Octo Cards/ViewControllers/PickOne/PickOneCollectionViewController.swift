@@ -22,7 +22,6 @@ class PickOneCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
 
         // For Notifications
-       
         if UIDevice.current.model == "iPad" {
             print("******** USING IPAD *********")
             

@@ -55,15 +55,19 @@ class GotItCategoryTableViewController: UITableViewController {
         
         cell.textLabel?.text = item?.item.phrase_py
         cell.detailTextLabel?.text = item?.item.phrase
-        //cell.imageView?.image = UIImage(named: "first")
         //cell.imageView?.frame.size.height = 1
         print("&&&&&&&&&&&&& sub cat is: \(item?.subCategoryKey ?? "")")
-        /*if (itemName == "Self Care") {
-            cell.imageView?.image = UIImage(named: "SelfCareSm")
-        }
-        else {*/
-            cell.imageView?.image = UIImage(named: "\(item?.subCategoryKey ?? "")Sm")
-       // }
+        //cell.imageView?.image = UIImage(named: "\(item?.subCategoryKey ?? "")Sm")
+        cell.imageView?.image = UIImage(named: "\((item?.item.itemName)!).jpeg")
+        
+        //modify image size (copied from sample code)
+        let rowheight = cell.frame.height
+        let itemSize = CGSize(width:rowheight-5, height:rowheight-5)
+        UIGraphicsBeginImageContextWithOptions(itemSize, false, 0.0)
+        let imageRect = CGRect(x:0.0, y:0.0, width:itemSize.width, height:itemSize.height)
+        cell.imageView?.image?.draw(in:imageRect)
+        cell.imageView?.image? = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
     
     return cell
     }
