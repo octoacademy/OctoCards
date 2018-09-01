@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ww9-yV-2uZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ww9-yV-2uZ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="ChalkboardSE.ttc">
-            <string>ChalkboardSE-Bold</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Pick One-->
         <scene sceneID="aWU-Cg-ivL">
@@ -50,7 +42,7 @@
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                             <variation key="heightClass=regular-widthClass=regular">
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -79,6 +71,9 @@
                                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
                                     <color key="textColor" red="0.086274509803921567" green="0.035294117647058823" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                    </variation>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -97,7 +92,7 @@
                             <outlet property="delegate" destination="ww9-yV-2uZ" id="gWG-ud-jps"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Pick One" image="first" id="8xX-vg-0PH"/>
+                    <tabBarItem key="tabBarItem" title="Pick One" image="menuTabCircle" selectedImage="menuTabCircle.png" id="8xX-vg-0PH"/>
                     <navigationItem key="navigationItem" id="f4o-vg-16U"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
@@ -107,6 +102,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="menuTabCircle" width="30" height="30"/>
+        <image name="menuTabCircle.png" width="30" height="30"/>
     </resources>
 </document>

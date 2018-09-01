@@ -2214,7 +2214,7 @@
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OctoAcademy.OctoCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -2230,7 +2230,7 @@
 				INFOPLIST_FILE = "Octo Cards/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OctoAcademy.Octo-Cards2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OctoAcademy.OctoCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

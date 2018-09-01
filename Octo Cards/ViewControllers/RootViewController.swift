@@ -43,7 +43,12 @@ class RootViewController: SlideMenuController {
             
             let title = UIImage(named: "OctoTitleLogo.png")
             let imageView = UIImageView(image: title)
-            let height = nav.navigationBar.frame.height * 0.5;
+            var height = nav.navigationBar.frame.height * 0.5;
+            
+            if (UIDevice.current.userInterfaceIdiom == .pad) {
+                height = nav.navigationBar.frame.height * 0.75;
+                print("IPAD!!")
+            }
             
             print("PHONE MODEL is a \(UIDevice.accessibilityContainerType().rawValue)")
             print ("SCREEN SIZE IS: \(UIScreen.main.nativeBounds.height)")
