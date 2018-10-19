@@ -47,7 +47,6 @@ class RootViewController: SlideMenuController {
             
             if (UIDevice.current.userInterfaceIdiom == .pad) {
                 height = nav.navigationBar.frame.height * 0.75;
-                print("IPAD!!")
             }
             
             print("PHONE MODEL is a \(UIDevice.accessibilityContainerType().rawValue)")

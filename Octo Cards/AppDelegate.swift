@@ -93,7 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Configure Notification Content
         notificationContent.title = "Octo Reminder"
         notificationContent.subtitle = "Remember to practice your words!"
-        notificationContent.body = "Your most recent Octo word is XXXXX."
+        //notificationContent.body = "Your most recent Octo word is XXXXX."
         
         // Add Trigger
         var dateComponents = DateComponents()

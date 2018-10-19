@@ -10,13 +10,18 @@ import UIKit
 
 class LeftNavigationTableViewController: UITableViewController {
 
+    @IBAction func About(_ sender: Any) {
+        let url = URL(string: "https://www.octoacademykids.com/about.html") //update with website url to About
+        UIApplication.shared.open(url!)
+    }
+    
     @IBAction func Terms(_ sender: Any) {
-        let url = URL(string: "http://www.google.com") //update with website url to Terms
+        let url = URL(string: "https://www.octoacademykids.com/terms.html") //update with website url to Terms
         UIApplication.shared.open(url!)
     }
     
     @IBAction func Privacy(_ sender: Any) {
-        let url = URL(string: "http://www.google.com") //update with website url to Privacy
+        let url = URL(string: "https://www.octoacademykids.com/privacy.html") //update with website url to Privacy
         UIApplication.shared.open(url!)
     }
     

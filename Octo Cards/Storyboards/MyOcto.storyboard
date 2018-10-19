@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wVn-cZ-VFZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wVn-cZ-VFZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,15 +20,15 @@
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexColor" red="0.086274509799999996" green="0.035294117649999998" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyOctoItem" textLabel="k6c-rX-Uoh" detailTextLabel="BXI-X8-5k3" imageView="jh8-qm-ymp" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="YTo-Cg-LhA" userLabel="MyOctoItemCell" customClass="MyOctoViewCell" customModule="Octo_Cards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="88"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyOctoItem" textLabel="k6c-rX-Uoh" detailTextLabel="BXI-X8-5k3" imageView="jh8-qm-ymp" rowHeight="85" style="IBUITableViewCellStyleSubtitle" id="YTo-Cg-LhA" userLabel="MyOctoItemCell" customClass="MyOctoViewCell" customModule="Octo_Cards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTo-Cg-LhA" id="ye4-0a-Nvu">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="87.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="84.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="k6c-rX-Uoh">
-                                            <rect key="frame" x="16" y="14.5" width="48.5" height="31.5"/>
+                                            <rect key="frame" x="16" y="16.5" width="48.5" height="31.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <color key="textColor" red="0.086274509803921567" green="0.035294117647058823" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,7 +38,7 @@
                                             </variation>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="BXI-X8-5k3">
-                                            <rect key="frame" x="16" y="50.5" width="53" height="18"/>
+                                            <rect key="frame" x="16" y="49.5" width="53" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>

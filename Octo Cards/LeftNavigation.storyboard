@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,25 +44,26 @@
                             </tableViewSection>
                             <tableViewSection id="1Q2-e9-SHS">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" textLabel="CiM-tg-dYF" style="IBUITableViewCellStyleDefault" id="Cqa-g0-Itk">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="Cqa-g0-Itk">
                                         <rect key="frame" x="0.0" y="115" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cqa-g0-Itk" id="WFz-Tg-7ov">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CiM-tg-dYF">
-                                                    <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxY-oS-y1O">
+                                                    <rect key="frame" x="16" y="6" width="288" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <state key="normal" title="About">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="About:" destination="MNT-jf-20O" eventType="touchUpInside" id="5jU-Zg-zjQ"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="tTc-vU-jSU" kind="presentation" id="ZL7-xb-vFK"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" textLabel="Ae2-Gz-RTt" style="IBUITableViewCellStyleDefault" id="6ge-oK-Avd">
                                         <rect key="frame" x="0.0" y="159" width="320" height="44"/>
@@ -203,7 +203,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBc-rD-n5n">
-                                                    <rect key="frame" x="259" y="6" width="46" height="30"/>
+                                                    <rect key="frame" x="259" y="7" width="46" height="30"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <state key="normal" title="Button"/>
@@ -245,64 +245,6 @@
             </objects>
             <point key="canvasLocation" x="3720" y="-435.21126760563379"/>
         </scene>
-        <!--About View Controller-->
-        <scene sceneID="39n-p5-s67">
-            <objects>
-                <viewController storyboardIdentifier="About" id="LLa-Q4-uF5" userLabel="About View Controller" customClass="AboutViewController" customModule="Octo_Cards" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rNa-KP-Lgc"/>
-                        <viewControllerLayoutGuide type="bottom" id="rWn-3Q-Yks"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vuT-Qz-hw5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACB-1S-JLf">
-                                <rect key="frame" x="16" y="64" width="288" height="504"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqR-9q-jMg" userLabel="AboutText">
-                                        <rect key="frame" x="20" y="28" width="248" height="614.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" priority="950" constant="476" id="jaf-b4-amW"/>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="wXT-9c-pk9"/>
-                                        </constraints>
-                                        <string key="text">Octo Academy is a program designed to immerse children in the sounds of a second language. Research shows bilingual children demonstrate a significant advantage in executive function over monolingual children. This means an advantage in the abilities to plan, focus attention, problem solve, and switch between tasks.
-
-Children are amazing language learners. During a child's early years, their brains absorb language simply through playing and interacting with others on a day to day basis. Our program introduces a second language by incorporating phrases commonly used in a child's everyday interaction with a care giver. By hearing these phrases regularly, a child's brain effortlessly learns the fundamental set of sounds to learn the language.</string>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="MqR-9q-jMg" secondAttribute="bottom" constant="20" symbolic="YES" id="UiW-Rv-Qyz"/>
-                                    <constraint firstItem="MqR-9q-jMg" firstAttribute="leading" secondItem="ACB-1S-JLf" secondAttribute="leading" constant="20" id="YEy-XI-CCS"/>
-                                    <constraint firstItem="MqR-9q-jMg" firstAttribute="centerX" secondItem="ACB-1S-JLf" secondAttribute="centerX" id="aS2-el-Dng"/>
-                                    <constraint firstItem="MqR-9q-jMg" firstAttribute="top" secondItem="ACB-1S-JLf" secondAttribute="topMargin" constant="20" id="ns7-tY-mAc"/>
-                                    <constraint firstAttribute="trailing" secondItem="MqR-9q-jMg" secondAttribute="trailing" constant="20" id="vwI-ZK-2wX"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ACB-1S-JLf" firstAttribute="trailing" secondItem="vuT-Qz-hw5" secondAttribute="trailingMargin" id="I5f-mL-B55"/>
-                            <constraint firstItem="rWn-3Q-Yks" firstAttribute="top" secondItem="ACB-1S-JLf" secondAttribute="bottom" id="XPJ-WO-h2j"/>
-                            <constraint firstItem="ACB-1S-JLf" firstAttribute="leading" secondItem="vuT-Qz-hw5" secondAttribute="leadingMargin" id="ZP1-I9-gqK"/>
-                            <constraint firstItem="ACB-1S-JLf" firstAttribute="top" secondItem="rNa-KP-Lgc" secondAttribute="bottom" id="shI-fw-wt8"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="About" id="sLz-Pc-4qM">
-                        <barButtonItem key="rightBarButtonItem" title="Close" id="9g8-Mb-KTa">
-                            <connections>
-                                <action selector="Close:" destination="LLa-Q4-uF5" id="gnp-SS-BUb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o4K-oX-aNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3720" y="212.32394366197184"/>
-        </scene>
         <!--Contact View Controller-->
         <scene sceneID="tsC-dG-ykp">
             <objects>
@@ -330,7 +272,7 @@ Children are amazing language learners. During a child's early years, their brai
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="octoacademy@gmail.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="W9w-j6-PKa">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="info@octoacademykids.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="W9w-j6-PKa">
                                         <rect key="frame" x="20" y="152" width="278" height="43"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -382,24 +324,6 @@ Children are amazing language learners. During a child's early years, their brai
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLs-LA-3X9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3834.375" y="437.32394366197184"/>
-        </scene>
-        <!--About Navigation Controller-->
-        <scene sceneID="LIi-vk-QBQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tTc-vU-jSU" userLabel="About Navigation Controller" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Men-OT-cqd">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="LLa-Q4-uF5" kind="relationship" relationship="rootViewController" id="dBq-TW-znf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Icx-3b-0rW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2796" y="214"/>
         </scene>
         <!--Contact Navigation Controller-->
         <scene sceneID="5SV-ni-Cm9">

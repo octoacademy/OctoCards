@@ -87,7 +87,6 @@ class CategoryManager
               
                         let itemsJSONArray = subCatJson["items"]
                         var items = [Item]()
-                        print("CATEGORY MANAGER - loadCategoryContent func")
                         
                         for itemJson in itemsJSONArray as! [[String:Any]] {
                             
@@ -111,7 +110,7 @@ class CategoryManager
                             
                             positionCounter+=1
                             
-                            print (category.key + "||" + subCategory.key + "||"  + item.itemName!)
+                            //print (category.key + "||" + subCategory.key + "||"  + item.itemName!)
                             categoryInternalDictionary[category.key + "||" + subCategory.key + "||"  + item.itemName!] = card
                             
                             //setting up a cardArray instead of using Dictionary

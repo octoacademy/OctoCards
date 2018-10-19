@@ -73,15 +73,31 @@ class PickOneCollectionViewController: UICollectionViewController {
         let pageHeight = self.view.frame.size.height
         let cellHeight = collectionView.frame.width * 0.34 + 15 /* label font */
         let headerHeight = (pageHeight - (cellHeight * 3 /* num rows*/ + 50 /* header height */))/2
+        let isiPhoneXSize = "\(UIScreen.main.nativeBounds.width), \(UIScreen.main.nativeBounds.height)"
     
         if (section == 0) {
-            return CGSize (width: self.view.frame.size.width, height: headerHeight);
+            switch isiPhoneXSize {
+            case "1242.0, 2688.0": /* XS, XS Max*/
+                print("iPhone XS Max \n");
+                return CGSize (width: self.view.frame.size.width, height: headerHeight-30);
+            case "828.0, 1792.0": /* XR */
+                print("iPhone XR \n");
+                return CGSize (width: self.view.frame.size.width, height: headerHeight-30);
+            case "1125.0, 2436.0": /* X, XS */
+                print("iPhone X, XS \n");
+                return CGSize (width: self.view.frame.size.width, height: headerHeight-30);
+            default: /* not an iPhone X */
+                print ("not an iPhone X\n");
+                return CGSize (width: self.view.frame.size.width, height: headerHeight)
+            }
         }
         else {
+            if (UIScreen.main.nativeBounds.width == 1536.0 && UIScreen.main.nativeBounds.height == 2048.0) { /* header needs to be bigger for ipad air and 9.7" ipads */
+               return CGSize( width: self.view.frame.size.width, height: headerHeight+25)
+            }
             return CGSize( width: self.view.frame.size.width, height: headerHeight+15)
         }
     }
-
 
     // MARK: UICollectionViewDataSource
 
@@ -141,7 +157,6 @@ class PickOneCollectionViewController: UICollectionViewController {
         {
             //return CGSize(width: 120, height:120)
             let width = UIScreen.main.bounds.width/3.5
-            
             return CGSize(width: width, height: width)
 
         }
@@ -176,10 +191,10 @@ class PickOneCollectionViewController: UICollectionViewController {
             sectionInsets = UIEdgeInsets(top: collectionView.frame.height * 0.04, left: collectionView.frame.width * 0.12, bottom: collectionView.frame.height * 0.05, right: collectionView.frame.width * 0.12)
         }
         else {
-        print("frame height: \(collectionView.frame.height)")
-        print("sectioninsetBottom: \(sectionInsetBottom)")
-        print("sectionInsetTop: \(sectionInsetTop)")
-        sectionInsets = UIEdgeInsets(top: 5.0, left: (collectionView.frame.width * 0.12), bottom: 15, right: (collectionView.frame.width * 0.12))
+        //print("frame height: \(collectionView.frame.height)")
+        //print("sectioninsetBottom: \(sectionInsetBottom)")
+        //print("sectionInsetTop: \(sectionInsetTop)")
+        sectionInsets = UIEdgeInsets(top: 0.0, left: (collectionView.frame.width * 0.12), bottom: 15, right: (collectionView.frame.width * 0.12))
         }
         
         return sectionInsets
